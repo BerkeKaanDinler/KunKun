@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #FBFBFA; }
+  a { color: #3A5A40; text-decoration: none; }
+  a:hover { color: #1F3225; }
+</style>
+</helmet>
+
+<div style="padding:60px 64px 110px;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;gap:72px">
+
+<div style="max-width:880px;display:flex;flex-direction:column;gap:14px">
+  <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px;letter-spacing:.14em;color:#8A8A85">T6 + T7 · EKRAN DURUMLARI</div>
+  <div style="font-family:Spectral,serif;font-size:40px;line-height:1.18;color:#17181A;text-wrap:pretty">Boş, hata ve ses kapalı durumları</div>
+  <div style="font-size:15px;line-height:1.65;color:#5C5E62;text-wrap:pretty">Tek desen, altı temada token'lardan türer. Desen bir kez bileşen olarak kurulur; ekran ekran kopyalanmaz. Hiçbir hata metninde ağ veya internet göndermesi yok.</div>
+</div>
+
+
+<section style="display:flex;flex-direction:column;gap:18px">
+  <div style="display:flex;flex-direction:column;gap:11px;max-width:880px">
+    <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;letter-spacing:.14em;color:#8A8A85">T6 · DESEN</div>
+    <div style="font-family:Spectral,serif;font-size:29px;line-height:1.22;color:#17181A;text-wrap:pretty">Desen anatomisi, altı temada</div>
+    <div style="font-size:14.5px;line-height:1.65;color:#5C5E62;text-wrap:pretty">Zemin <code style="font-family:'JetBrains Mono',monospace;font-size:13px">--surface-sunken</code>, kenar <code style="font-family:'JetBrains Mono',monospace;font-size:13px">--border</code>, köşe <code style="font-family:'JetBrains Mono',monospace;font-size:13px">--radius-md</code>, dikey ortalı. İkon 44 px <code style="font-family:'JetBrains Mono',monospace;font-size:13px">--text-tertiary</code> · başlık 17 px/600 <code style="font-family:'JetBrains Mono',monospace;font-size:13px">--text-primary</code> · açıklama 13.5 px <code style="font-family:'JetBrains Mono',monospace;font-size:13px">--text-secondary</code>. Aksiyon butonu ikincil buton değerlerinde: cam kart + 52 px. Ekran başlığı ve sekmeler her zaman korunur — yalnızca içerik alanı desenle değişir.</div>
+  </div>
+  <div style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap"><div style="display:flex;flex-direction:column;gap:9px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 22px;background:#0B1613;font-family:system-ui,-apple-system,sans-serif;display:flex;flex-direction:column;overflow:hidden"><div style="flex:none;padding:2px 8px 0;display:flex;align-items:center;justify-content:space-between;min-height:44px"><span style="width:40px;height:44px;display:flex;align-items:center;justify-content:center"><svg width="12" height="20" viewBox="0 0 12 20"><path d="M9 2L2.5 10 9 18" fill="none" stroke="#4FD1A5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="width:44px"></span></div>
+  <div style="flex:none;padding:4px 20px 0;font-size:34px;font-weight:700;letter-spacing:-.02em;color:#E8F2EC">Kaydedilenler</div>
+  <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:0 30px">
+    <div style="width:100%;box-sizing:border-box;padding:32px 24px;background:#0F1B16;border:1px solid rgba(255,255,255,.12);border-radius:18px;display:flex;flex-direction:column;align-items:center;gap:13px">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><path d="M13 7h18v30l-9-7.5L13 37V7z" stroke="rgba(232,242,236,.40)" stroke-width="1.8" stroke-linejoin="round"></path></svg>
+      <div style="font-size:17px;font-weight:600;color:#E8F2EC;text-align:center">Henüz kayıt yok</div>
+      <div style="font-size:13.5px;line-height:1.55;color:rgba(232,242,236,.62);text-align:center;text-wrap:pretty">Bir ayeti okurken sağ üstteki işareti kullan; buraya düşer.</div>
+      <div style="margin-top:5px;min-height:52px;padding:0 22px;background:rgba(140,220,190,.09);border:1px solid rgba(160,230,200,.16);border-radius:14px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;color:#4FD1A5">Ayetlere git</div>
+    </div>
+  </div>
+  <div style="flex:none;padding:14px 20px 0;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;line-height:1.8;letter-spacing:.06em;color:rgba(232,242,236,.40)">ZEMİN --surface-sunken · KÖŞE --radius-md<br>İKON 44 px --text-tertiary · BAŞLIK 17/600<br>AÇIKLAMA 13.5/1.55 --text-secondary</div></div>
+</x-import>
+<div style="display:flex;flex-direction:column;gap:2px;max-width:402px"><div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">Cam · gece yeşimi</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 22px;background:#0F0C18;font-family:system-ui,-apple-system,sans-serif;display:flex;flex-direction:column;overflow:hidden"><div style="flex:none;padding:2px 8px 0;display:flex;align-items:center;justify-content:space-between;min-height:44px"><span style="width:40px;height:44px;display:flex;align-items:center;justify-content:center"><svg width="12" height="20" viewBox="0 0 12 20"><path d="M9 2L2.5 10 9 18" fill="none" stroke="#A78BFA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="width:44px"></span></div>
+  <div style="flex:none;padding:4px 20px 0;font-size:34px;font-weight:700;letter-spacing:-.02em;color:#EDE9FB">Kaydedilenler</div>
+  <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:0 30px">
+    <div style="width:100%;box-sizing:border-box;padding:32px 24px;background:#141020;border:1px solid rgba(255,255,255,.13);border-radius:18px;display:flex;flex-direction:column;align-items:center;gap:13px">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><path d="M13 7h18v30l-9-7.5L13 37V7z" stroke="rgba(237,233,251,.40)" stroke-width="1.8" stroke-linejoin="round"></path></svg>
+      <div style="font-size:17px;font-weight:600;color:#EDE9FB;text-align:center">Henüz kayıt yok</div>
+      <div style="font-size:13.5px;line-height:1.55;color:rgba(237,233,251,.62);text-align:center;text-wrap:pretty">Bir ayeti okurken sağ üstteki işareti kullan; buraya düşer.</div>
+      <div style="margin-top:5px;min-height:52px;padding:0 22px;background:rgba(180,160,255,.10);border:1px solid rgba(190,175,255,.18);border-radius:14px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;color:#A78BFA">Ayetlere git</div>
+    </div>
+  </div>
+  <div style="flex:none;padding:14px 20px 0;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;line-height:1.8;letter-spacing:.06em;color:rgba(237,233,251,.40)">ZEMİN --surface-sunken · KÖŞE --radius-md<br>İKON 44 px --text-tertiary · BAŞLIK 17/600<br>AÇIKLAMA 13.5/1.55 --text-secondary</div></div>
+</x-import>
+<div style="display:flex;flex-direction:column;gap:2px;max-width:402px"><div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">Cam · mürekkep moru</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 22px;background:#121110;font-family:system-ui,-apple-system,sans-serif;display:flex;flex-direction:column;overflow:hidden"><div style="flex:none;padding:2px 8px 0;display:flex;align-items:center;justify-content:space-between;min-height:44px"><span style="width:40px;height:44px;display:flex;align-items:center;justify-content:center"><svg width="12" height="20" viewBox="0 0 12 20"><path d="M9 2L2.5 10 9 18" fill="none" stroke="#E0894A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="width:44px"></span></div>
+  <div style="flex:none;padding:4px 20px 0;font-size:34px;font-weight:700;letter-spacing:-.02em;color:#F2EDE7">Kaydedilenler</div>
+  <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:0 30px">
+    <div style="width:100%;box-sizing:border-box;padding:32px 24px;background:#171514;border:1px solid rgba(255,255,255,.12);border-radius:18px;display:flex;flex-direction:column;align-items:center;gap:13px">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><path d="M13 7h18v30l-9-7.5L13 37V7z" stroke="rgba(242,237,231,.38)" stroke-width="1.8" stroke-linejoin="round"></path></svg>
+      <div style="font-size:17px;font-weight:600;color:#F2EDE7;text-align:center">Henüz kayıt yok</div>
+      <div style="font-size:13.5px;line-height:1.55;color:rgba(242,237,231,.60);text-align:center;text-wrap:pretty">Bir ayeti okurken sağ üstteki işareti kullan; buraya düşer.</div>
+      <div style="margin-top:5px;min-height:52px;padding:0 22px;background:rgba(255,235,215,.07);border:1px solid rgba(255,225,200,.14);border-radius:14px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;color:#E0894A">Ayetlere git</div>
+    </div>
+  </div>
+  <div style="flex:none;padding:14px 20px 0;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;line-height:1.8;letter-spacing:.06em;color:rgba(242,237,231,.38)">ZEMİN --surface-sunken · KÖŞE --radius-md<br>İKON 44 px --text-tertiary · BAŞLIK 17/600<br>AÇIKLAMA 13.5/1.55 --text-secondary</div></div>
+</x-import>
+<div style="display:flex;flex-direction:column;gap:2px;max-width:402px"><div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">Cam · kömür + bakır</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 22px;background:#0F1115;font-family:system-ui,-apple-system,sans-serif;display:flex;flex-direction:column;overflow:hidden"><div style="flex:none;padding:2px 8px 0;display:flex;align-items:center;justify-content:space-between;min-height:44px"><span style="width:40px;height:44px;display:flex;align-items:center;justify-content:center"><svg width="12" height="20" viewBox="0 0 12 20"><path d="M9 2L2.5 10 9 18" fill="none" stroke="#0A84FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="width:44px"></span></div>
+  <div style="flex:none;padding:4px 20px 0;font-size:34px;font-weight:700;letter-spacing:-.02em;color:#F2F3F5">Kaydedilenler</div>
+  <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:0 30px">
+    <div style="width:100%;box-sizing:border-box;padding:32px 24px;background:#14171C;border:1px solid rgba(255,255,255,.12);border-radius:18px;display:flex;flex-direction:column;align-items:center;gap:13px">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><path d="M13 7h18v30l-9-7.5L13 37V7z" stroke="rgba(235,235,245,.40)" stroke-width="1.8" stroke-linejoin="round"></path></svg>
+      <div style="font-size:17px;font-weight:600;color:#F2F3F5;text-align:center">Henüz kayıt yok</div>
+      <div style="font-size:13.5px;line-height:1.55;color:rgba(235,235,245,.62);text-align:center;text-wrap:pretty">Bir ayeti okurken sağ üstteki işareti kullan; buraya düşer.</div>
+      <div style="margin-top:5px;min-height:52px;padding:0 22px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;color:#0A84FF">Ayetlere git</div>
+    </div>
+  </div>
+  <div style="flex:none;padding:14px 20px 0;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;line-height:1.8;letter-spacing:.06em;color:rgba(235,235,245,.40)">ZEMİN --surface-sunken · KÖŞE --radius-md<br>İKON 44 px --text-tertiary · BAŞLIK 17/600<br>AÇIKLAMA 13.5/1.55 --text-secondary</div></div>
+</x-import>
+<div style="display:flex;flex-direction:column;gap:2px;max-width:402px"><div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">Cam · gece</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 22px;background:#EAE8E1;font-family:'Libre Franklin',system-ui,sans-serif;display:flex;flex-direction:column;overflow:hidden"><div style="flex:none;padding:2px 8px 0;display:flex;align-items:center;justify-content:space-between;min-height:44px"><span style="width:40px;height:44px;display:flex;align-items:center;justify-content:center"><svg width="12" height="20" viewBox="0 0 12 20"><path d="M9 2L2.5 10 9 18" fill="none" stroke="#2B4A5A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="width:44px"></span></div>
+  <div style="flex:none;padding:4px 20px 0;font-family:Spectral,serif;font-size:34px;font-weight:600;letter-spacing:-.01em;color:#1A1A17">Kaydedilenler</div>
+  <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:0 30px">
+    <div style="width:100%;box-sizing:border-box;padding:32px 24px;background:#DCD9CE;border:1px solid #E0DCD2;border-radius:4px;display:flex;flex-direction:column;align-items:center;gap:13px">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><path d="M13 7h18v30l-9-7.5L13 37V7z" stroke="rgba(26,26,23,.46)" stroke-width="1.8" stroke-linejoin="round"></path></svg>
+      <div style="font-size:17px;font-weight:600;color:#1A1A17;text-align:center">Henüz kayıt yok</div>
+      <div style="font-size:13.5px;line-height:1.55;color:rgba(26,26,23,.66);text-align:center;text-wrap:pretty">Bir ayeti okurken sağ üstteki işareti kullan; buraya düşer.</div>
+      <div style="margin-top:5px;min-height:52px;padding:0 22px;background:#F4F3EE;border:1px solid #E0DCD2;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;color:#2B4A5A">Ayetlere git</div>
+    </div>
+  </div>
+  <div style="flex:none;padding:14px 20px 0;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;line-height:1.8;letter-spacing:.06em;color:rgba(26,26,23,.46)">ZEMİN --surface-sunken · KÖŞE --radius-md<br>İKON 44 px --text-tertiary · BAŞLIK 17/600<br>AÇIKLAMA 13.5/1.55 --text-secondary</div></div>
+</x-import>
+<div style="display:flex;flex-direction:column;gap:2px;max-width:402px"><div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">Kâğıt indeks</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 22px;background:#EEF4F1;font-family:system-ui,-apple-system,sans-serif;display:flex;flex-direction:column;overflow:hidden"><div style="flex:none;padding:2px 8px 0;display:flex;align-items:center;justify-content:space-between;min-height:44px"><span style="width:40px;height:44px;display:flex;align-items:center;justify-content:center"><svg width="12" height="20" viewBox="0 0 12 20"><path d="M9 2L2.5 10 9 18" fill="none" stroke="#1F7A5C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="width:44px"></span></div>
+  <div style="flex:none;padding:4px 20px 0;font-size:34px;font-weight:700;letter-spacing:-.02em;color:#12241E">Kaydedilenler</div>
+  <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:0 30px">
+    <div style="width:100%;box-sizing:border-box;padding:32px 24px;background:#E4EDE8;border:1px solid rgba(30,70,58,.13);border-radius:18px;display:flex;flex-direction:column;align-items:center;gap:13px">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><path d="M13 7h18v30l-9-7.5L13 37V7z" stroke="rgba(20,50,42,.44)" stroke-width="1.8" stroke-linejoin="round"></path></svg>
+      <div style="font-size:17px;font-weight:600;color:#12241E;text-align:center">Henüz kayıt yok</div>
+      <div style="font-size:13.5px;line-height:1.55;color:rgba(20,50,42,.64);text-align:center;text-wrap:pretty">Bir ayeti okurken sağ üstteki işareti kullan; buraya düşer.</div>
+      <div style="margin-top:5px;min-height:52px;padding:0 22px;background:rgba(255,255,255,.70);border:1px solid rgba(255,255,255,.92);border-radius:14px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 10px 26px rgba(0,0,0,.08);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;color:#1F7A5C">Ayetlere git</div>
+    </div>
+  </div>
+  <div style="flex:none;padding:14px 20px 0;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;line-height:1.8;letter-spacing:.06em;color:rgba(20,50,42,.44)">ZEMİN --surface-sunken · KÖŞE --radius-md<br>İKON 44 px --text-tertiary · BAŞLIK 17/600<br>AÇIKLAMA 13.5/1.55 --text-secondary</div></div>
+</x-import>
+<div style="display:flex;flex-direction:column;gap:2px;max-width:402px"><div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">Cam · yeşim (açık)</div></div>
+</div></div>
+</section>
+
+
+<section style="display:flex;flex-direction:column;gap:18px">
+  <div style="display:flex;flex-direction:column;gap:11px;max-width:880px">
+    <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;letter-spacing:.14em;color:#8A8A85">T6 · DURUMLAR</div>
+    <div style="font-family:Spectral,serif;font-size:29px;line-height:1.22;color:#17181A;text-wrap:pretty">Etkilenen altı ekran</div>
+    <div style="font-size:14.5px;line-height:1.65;color:#5C5E62;text-wrap:pretty">Varsayılan temada gösteriliyor; diğer beş temada yalnızca token değerleri değişir. Aksiyon butonu her durumda kullanıcıyı bir sonraki adıma taşır — “Tekrar dene” yalnızca gerçek hatada çıkar.</div>
+  </div>
+  <div style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap"><div style="display:flex;flex-direction:column;gap:9px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 22px;background:#0F1115;font-family:system-ui,-apple-system,sans-serif;display:flex;flex-direction:column;overflow:hidden"><div style="flex:none;padding:2px 8px 0;display:flex;align-items:center;justify-content:space-between;min-height:44px"><span style="width:40px;height:44px;display:flex;align-items:center;justify-content:center"><svg width="12" height="20" viewBox="0 0 12 20"><path d="M9 2L2.5 10 9 18" fill="none" stroke="#0A84FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="width:44px"></span></div>
+  <div style="flex:none;padding:4px 20px 0;font-size:34px;font-weight:700;letter-spacing:-.02em;color:#F2F3F5">Kategori</div><div style="flex:1;display:flex;align-items:center;justify-content:center;padding:0 30px">
+    <div style="width:100%;box-sizing:border-box;padding:32px 24px;background:#14171C;border:1px solid rgba(255,255,255,.12);border-radius:18px;display:flex;flex-direction:column;align-items:center;gap:13px">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><rect x="6" y="12" width="32" height="24" rx="3" stroke="rgba(235,235,245,.40)" stroke-width="1.8"></rect><path d="M6 20h32M16 12v-4h12v4" stroke="rgba(235,235,245,.40)" stroke-width="1.8" stroke-linecap="round"></path></svg>
+      <div style="font-size:17px;font-weight:600;color:#F2F3F5;text-align:center">Bu kategoride ayet yok</div>
+      <div style="font-size:13.5px;line-height:1.55;color:rgba(235,235,245,.62);text-align:center;text-wrap:pretty">Kategori hazırlanıyor. Yakındaki başlıklardan devam edebilirsin.</div>
+      <div style="margin-top:5px;min-height:52px;padding:0 22px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;color:#0A84FF">Diğer kategoriler</div>
+    </div>
+  </div></div>
+</x-import>
+<div style="display:flex;flex-direction:column;gap:2px;max-width:402px"><div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">T6 · Kategori · boş</div><div style="font-family:'DM Sans',system-ui;font-size:11.5px;line-height:1.45;color:#9A9A95;text-wrap:pretty">Fixture'da kasıtlı boş kategoriler var; başlık ve alt metin korunur, liste kartı hiç çizilmez.</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 22px;background:#0F1115;font-family:system-ui,-apple-system,sans-serif;display:flex;flex-direction:column;overflow:hidden"><div style="flex:none;padding:2px 8px 0;display:flex;align-items:center;justify-content:space-between;min-height:44px"><span style="width:40px;height:44px;display:flex;align-items:center;justify-content:center"><svg width="12" height="20" viewBox="0 0 12 20"><path d="M9 2L2.5 10 9 18" fill="none" stroke="#0A84FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="width:44px"></span></div>
+  <div style="flex:none;padding:4px 20px 0;font-size:34px;font-weight:700;letter-spacing:-.02em;color:#F2F3F5">Kaydedilenler</div><div style="flex:1;display:flex;align-items:center;justify-content:center;padding:0 30px">
+    <div style="width:100%;box-sizing:border-box;padding:32px 24px;background:#14171C;border:1px solid rgba(255,255,255,.12);border-radius:18px;display:flex;flex-direction:column;align-items:center;gap:13px">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><path d="M13 7h18v30l-9-7.5L13 37V7z" stroke="rgba(235,235,245,.40)" stroke-width="1.8" stroke-linejoin="round"></path></svg>
+      <div style="font-size:17px;font-weight:600;color:#F2F3F5;text-align:center">Henüz kayıt yok</div>
+      <div style="font-size:13.5px;line-height:1.55;color:rgba(235,235,245,.62);text-align:center;text-wrap:pretty">Bir ayeti okurken sağ üstteki işareti kullan; buraya düşer.</div>
+      <div style="margin-top:5px;min-height:52px;padding:0 22px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;color:#0A84FF">Ayetlere git</div>
+    </div>
+  </div></div>
+</x-import>
+<div style="display:flex;flex-direction:column;gap:2px;max-width:402px"><div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">T6 · Kaydedilenler · boş</div><div style="font-family:'DM Sans',system-ui;font-size:11.5px;line-height:1.45;color:#9A9A95;text-wrap:pretty">Sekmeler görünür kalır — hangi sekmenin boş olduğu bilgi taşır.</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 22px;background:#0F1115;font-family:system-ui,-apple-system,sans-serif;display:flex;flex-direction:column;overflow:hidden"><div style="flex:none;padding:2px 8px 0;display:flex;align-items:center;justify-content:space-between;min-height:44px"><span style="width:40px;height:44px;display:flex;align-items:center;justify-content:center"><svg width="12" height="20" viewBox="0 0 12 20"><path d="M9 2L2.5 10 9 18" fill="none" stroke="#0A84FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="width:44px"></span></div>
+  <div style="flex:none;padding:4px 20px 0;font-size:34px;font-weight:700;letter-spacing:-.02em;color:#F2F3F5">Zikir</div><div style="flex:1;display:flex;align-items:center;justify-content:center;padding:0 30px">
+    <div style="width:100%;box-sizing:border-box;padding:32px 24px;background:#14171C;border:1px solid rgba(255,255,255,.12);border-radius:18px;display:flex;flex-direction:column;align-items:center;gap:13px">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="15" stroke="rgba(235,235,245,.40)" stroke-width="1.8" stroke-dasharray="3 5"></circle><circle cx="22" cy="7" r="3" fill="rgba(235,235,245,.40)"></circle></svg>
+      <div style="font-size:17px;font-weight:600;color:#F2F3F5;text-align:center">Kendi zikrin yok</div>
+      <div style="font-size:13.5px;line-height:1.55;color:rgba(235,235,245,.62);text-align:center;text-wrap:pretty">Serbest zikirler sınırsız sayar. Hedef koymadan da kullanabilirsin.</div>
+      <div style="margin-top:5px;min-height:52px;padding:0 22px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;color:#0A84FF">Serbest zikir ekle</div>
+    </div>
+  </div></div>
+</x-import>
+<div style="display:flex;flex-direction:column;gap:2px;max-width:402px"><div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">T6 · Serbest zikirlerim · boş</div><div style="font-family:'DM Sans',system-ui;font-size:11.5px;line-height:1.45;color:#9A9A95;text-wrap:pretty">Hazır sekmesi hiç boşalmaz; bu durum yalnızca serbest sekmesinde görünür.</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 22px;background:#0F1115;font-family:system-ui,-apple-system,sans-serif;display:flex;flex-direction:column;overflow:hidden"><div style="flex:none;padding:2px 8px 0;display:flex;align-items:center;justify-content:space-between;min-height:44px"><span style="width:40px;height:44px;display:flex;align-items:center;justify-content:center"><svg width="12" height="20" viewBox="0 0 12 20"><path d="M9 2L2.5 10 9 18" fill="none" stroke="#0A84FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="width:44px"></span></div>
+  <div style="flex:none;padding:4px 20px 0;font-size:34px;font-weight:700;letter-spacing:-.02em;color:#F2F3F5">İstatistik</div><div style="flex:1;display:flex;align-items:center;justify-content:center;padding:0 30px">
+    <div style="width:100%;box-sizing:border-box;padding:32px 24px;background:#14171C;border:1px solid rgba(255,255,255,.12);border-radius:18px;display:flex;flex-direction:column;align-items:center;gap:13px">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><path d="M8 36V24M18 36V14M28 36v-8M38 36V19" stroke="rgba(235,235,245,.40)" stroke-width="2.2" stroke-linecap="round"></path><path d="M6 40h32" stroke="rgba(235,235,245,.40)" stroke-width="1.4" stroke-linecap="round" opacity=".6"></path></svg>
+      <div style="font-size:17px;font-weight:600;color:#F2F3F5;text-align:center">Sayacak bir şey yok</div>
+      <div style="font-size:13.5px;line-height:1.55;color:rgba(235,235,245,.62);text-align:center;text-wrap:pretty">İlk zikrini tamamladığında seri, günlük toplam ve grafik burada belirir.</div>
+      <div style="margin-top:5px;min-height:52px;padding:0 22px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;color:#0A84FF">Zikre başla</div>
+    </div>
+  </div></div>
+</x-import>
+<div style="display:flex;flex-direction:column;gap:2px;max-width:402px"><div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">T6 · İstatistik · boş</div><div style="font-family:'DM Sans',system-ui;font-size:11.5px;line-height:1.45;color:#9A9A95;text-wrap:pretty">Seri kartı ve grafik gösterilmez — sıfır dolu grafik yanlış okunur.</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 22px;background:#0F1115;font-family:system-ui,-apple-system,sans-serif;display:flex;flex-direction:column;overflow:hidden"><div style="flex:none;padding:2px 8px 0;display:flex;align-items:center;justify-content:space-between;min-height:44px"><span style="width:40px;height:44px;display:flex;align-items:center;justify-content:center"><svg width="12" height="20" viewBox="0 0 12 20"><path d="M9 2L2.5 10 9 18" fill="none" stroke="#0A84FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="width:44px"></span></div>
+  <div style="flex:none;padding:4px 20px 0;font-size:34px;font-weight:700;letter-spacing:-.02em;color:#F2F3F5">Tüm ayetler</div><div style="flex:1;display:flex;align-items:center;justify-content:center;padding:0 30px">
+    <div style="width:100%;box-sizing:border-box;padding:32px 24px;background:#14171C;border:1px solid rgba(255,255,255,.12);border-radius:18px;display:flex;flex-direction:column;align-items:center;gap:13px">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><path d="M9 13h26M9 22h26M9 31h16" stroke="rgba(235,235,245,.40)" stroke-width="1.8" stroke-linecap="round"></path></svg>
+      <div style="font-size:17px;font-weight:600;color:#F2F3F5;text-align:center">Liste yüklenemedi</div>
+      <div style="font-size:13.5px;line-height:1.55;color:rgba(235,235,245,.62);text-align:center;text-wrap:pretty">Ayet verisi okunamadı. Yeniden denemek sorunu genelde çözer.</div>
+      <div style="margin-top:5px;min-height:52px;padding:0 22px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;color:#F2F3F5">Tekrar dene</div>
+    </div>
+  </div></div>
+</x-import>
+<div style="display:flex;flex-direction:column;gap:2px;max-width:402px"><div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">T6 · Tüm ayetler · hata</div><div style="font-family:'DM Sans',system-ui;font-size:11.5px;line-height:1.45;color:#9A9A95;text-wrap:pretty">Hata metninde ağ veya internet göndermesi yok. Buton ikincil (cam) buton değerlerinde, 52 px.</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 22px;background:#0F1115;font-family:system-ui,-apple-system,sans-serif;display:flex;flex-direction:column;overflow:hidden"><div style="flex:none;padding:2px 8px 0;display:flex;align-items:center;justify-content:space-between;min-height:44px"><span style="width:40px;height:44px;display:flex;align-items:center;justify-content:center"><svg width="12" height="20" viewBox="0 0 12 20"><path d="M9 2L2.5 10 9 18" fill="none" stroke="#0A84FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="width:44px"></span></div>
+  <div style="flex:none;padding:4px 20px 0;font-size:34px;font-weight:700;letter-spacing:-.02em;color:#F2F3F5">Ayetler</div><div style="flex:1;display:flex;align-items:center;justify-content:center;padding:0 30px">
+    <div style="width:100%;box-sizing:border-box;padding:32px 24px;background:#14171C;border:1px solid rgba(255,255,255,.12);border-radius:18px;display:flex;flex-direction:column;align-items:center;gap:13px">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><circle cx="20" cy="20" r="11" stroke="rgba(235,235,245,.40)" stroke-width="1.8"></circle><path d="M28 28l8 8" stroke="rgba(235,235,245,.40)" stroke-width="1.8" stroke-linecap="round"></path></svg>
+      <div style="font-size:17px;font-weight:600;color:#F2F3F5;text-align:center">Sonuç bulunamadı</div>
+      <div style="font-size:13.5px;line-height:1.55;color:rgba(235,235,245,.62);text-align:center;text-wrap:pretty">“2:255” gibi bir referans veya sûre adı deneyebilirsin.</div>
+      
+    </div>
+  </div></div>
+</x-import>
+<div style="display:flex;flex-direction:column;gap:2px;max-width:402px"><div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">T6 · Arama · sonuç yok</div><div style="font-family:'DM Sans',system-ui;font-size:11.5px;line-height:1.45;color:#9A9A95;text-wrap:pretty">Aksiyon butonu yok: kullanıcı zaten arama alanının içinde.</div></div>
+</div></div>
+</section>
+
+
+<section style="display:flex;flex-direction:column;gap:18px">
+  <div style="display:flex;flex-direction:column;gap:11px;max-width:880px">
+    <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;letter-spacing:.14em;color:#8A8A85">T7 · SES KAPALI</div>
+    <div style="font-family:Spectral,serif;font-size:29px;line-height:1.22;color:#17181A;text-wrap:pretty">Ses kapalıyken alt band</div>
+    <div style="font-size:14.5px;line-height:1.65;color:#5C5E62;text-wrap:pretty">Karar: boşluk kaydırma alanına katılır. Alt güvenli alan dolgusu (22 px) korunur, çubuğun yerine hiçbir öğe gelmez, liste kartı aşağı doğru uzar. Ses açıldığında çubuk aynı yere döner — layout değişmez, yalnızca bileşen açılır. Etkilenen ekranlar: Tüm ayetler · Keşif · Kategori · Ayet odak · Karşılaştırma.</div>
+  </div>
+  <div style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap"><div style="display:flex;flex-direction:column;gap:9px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 22px;background:#0F1115;font-family:system-ui,-apple-system,sans-serif;display:flex;flex-direction:column;overflow:hidden"><div style="flex:none;padding:2px 8px 0;display:flex;align-items:center;justify-content:space-between;min-height:44px"><span style="width:40px;height:44px;display:flex;align-items:center;justify-content:center"><svg width="12" height="20" viewBox="0 0 12 20"><path d="M9 2L2.5 10 9 18" fill="none" stroke="#0A84FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="width:44px"></span></div>
+  <div style="flex:none;padding:4px 20px 0;font-size:34px;font-weight:700;letter-spacing:-.02em;color:#F2F3F5">Tüm ayetler</div>
+  <div style="flex:none;padding:12px 18px 0"><div style="min-height:52px;padding:0 16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:flex;align-items:center;gap:10px"><svg width="17" height="17" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="rgba(235,235,245,.40)" stroke-width="2"></circle><path d="M16.5 16.5L21 21" stroke="rgba(235,235,245,.40)" stroke-width="2" stroke-linecap="round"></path></svg><span style="font-size:15.5px;color:rgba(235,235,245,.40)">Sûre veya ayet ara · “2:255”</span></div></div>
+  <div style="flex:none;padding:16px 20px 8px;font-size:11px;font-weight:600;letter-spacing:.12em;color:rgba(235,235,245,.40)">SIRAYLA · 6.236 AYET</div>
+  <div style="margin:0 18px;flex:none;background:#191C22;border:1px solid rgba(255,255,255,.12);border-radius:22px;overflow:hidden"><div style="padding:13px 16px;display:flex;flex-direction:column;gap:6px;">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px"><span dir="rtl" style="font-size:15px;color:#0A84FF">اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;color:rgba(235,235,245,.40);flex:none">2:255</span></div>
+    <div style="font-size:16px;line-height:1.45;color:#F2F3F5;text-wrap:pretty">Allah, kendisinden başka ilah olmayandır</div>
+  </div><div style="padding:13px 16px;display:flex;flex-direction:column;gap:6px;border-top:1px solid rgba(255,255,255,.10)">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px"><span dir="rtl" style="font-size:15px;color:#0A84FF">فَإِنَّ مَعَ الْعُسْرِ يُسْرًا</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;color:rgba(235,235,245,.40);flex:none">94:6</span></div>
+    <div style="font-size:16px;line-height:1.45;color:#F2F3F5;text-wrap:pretty">Şüphesiz her zorluğun ardından bir genişlik gelir</div>
+  </div><div style="padding:13px 16px;display:flex;flex-direction:column;gap:6px;border-top:1px solid rgba(255,255,255,.10)">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px"><span dir="rtl" style="font-size:15px;color:#0A84FF">وَمَن يَتَوَكَّلْ عَلَى اللَّهِ</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;color:rgba(235,235,245,.40);flex:none">65:3</span></div>
+    <div style="font-size:16px;line-height:1.45;color:#F2F3F5;text-wrap:pretty">Kim Allah'a tevekkül ederse</div>
+  </div><div style="padding:13px 16px;display:flex;flex-direction:column;gap:6px;border-top:1px solid rgba(255,255,255,.10)">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px"><span dir="rtl" style="font-size:15px;color:#0A84FF">أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;color:rgba(235,235,245,.40);flex:none">13:28</span></div>
+    <div style="font-size:16px;line-height:1.45;color:#F2F3F5;text-wrap:pretty">Kalpler ancak Allah'ı anmakla huzur bulur</div>
+  </div><div style="padding:13px 16px;display:flex;flex-direction:column;gap:6px;border-top:1px solid rgba(255,255,255,.10)">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px"><span dir="rtl" style="font-size:15px;color:#0A84FF">وَلَلْآخِرَةُ خَيْرٌ لَّكَ</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;color:rgba(235,235,245,.40);flex:none">93:5</span></div>
+    <div style="font-size:16px;line-height:1.45;color:#F2F3F5;text-wrap:pretty">Elbette ahiret senin için daha hayırlıdır</div>
+  </div><div style="padding:13px 16px;display:flex;flex-direction:column;gap:6px;border-top:1px solid rgba(255,255,255,.10)">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px"><span dir="rtl" style="font-size:15px;color:#0A84FF">اللَّهُ نُورُ السَّمَاوَاتِ</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;color:rgba(235,235,245,.40);flex:none">24:35</span></div>
+    <div style="font-size:16px;line-height:1.45;color:#F2F3F5;text-wrap:pretty">Allah, göklerin ve yerin nurudur</div>
+  </div></div>
+  <div style="flex:1"></div>
+  <div style="flex:none;padding:12px 18px 2px"><div style="padding:12px 14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:18px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:flex;align-items:center;gap:12px">
+    <span style="width:38px;height:38px;flex:none;border-radius:99px;background:#0A84FF;display:flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 20 20"><path d="M6 3.6l10 6.4-10 6.4v-12.8z" fill="#FFFFFF"></path></svg></span>
+    <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px"><span style="font-size:14px;font-weight:600;color:#F2F3F5">Bakara · 2:255</span><span style="height:3px;border-radius:2px;background:rgba(235,235,245,.14);overflow:hidden"><span style="display:block;width:38%;height:100%;background:#0A84FF"></span></span></span>
+  </div></div></div>
+</x-import>
+<div style="display:flex;flex-direction:column;gap:2px;max-width:402px"><div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">Ses açık · audio == true</div><div style="font-family:'DM Sans',system-ui;font-size:11.5px;line-height:1.45;color:#9A9A95;text-wrap:pretty">Alt çalar çubuğu cam kart değerlerinde, 12/14 px dolgu, üstünde 12 px boşluk.</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 22px;background:#0F1115;font-family:system-ui,-apple-system,sans-serif;display:flex;flex-direction:column;overflow:hidden"><div style="flex:none;padding:2px 8px 0;display:flex;align-items:center;justify-content:space-between;min-height:44px"><span style="width:40px;height:44px;display:flex;align-items:center;justify-content:center"><svg width="12" height="20" viewBox="0 0 12 20"><path d="M9 2L2.5 10 9 18" fill="none" stroke="#0A84FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="width:44px"></span></div>
+  <div style="flex:none;padding:4px 20px 0;font-size:34px;font-weight:700;letter-spacing:-.02em;color:#F2F3F5">Tüm ayetler</div>
+  <div style="flex:none;padding:12px 18px 0"><div style="min-height:52px;padding:0 16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:flex;align-items:center;gap:10px"><svg width="17" height="17" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="rgba(235,235,245,.40)" stroke-width="2"></circle><path d="M16.5 16.5L21 21" stroke="rgba(235,235,245,.40)" stroke-width="2" stroke-linecap="round"></path></svg><span style="font-size:15.5px;color:rgba(235,235,245,.40)">Sûre veya ayet ara · “2:255”</span></div></div>
+  <div style="flex:none;padding:16px 20px 8px;font-size:11px;font-weight:600;letter-spacing:.12em;color:rgba(235,235,245,.40)">SIRAYLA · 6.236 AYET</div>
+  <div style="margin:0 18px;flex:none;background:#191C22;border:1px solid rgba(255,255,255,.12);border-radius:22px;overflow:hidden"><div style="padding:13px 16px;display:flex;flex-direction:column;gap:6px;">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px"><span dir="rtl" style="font-size:15px;color:#0A84FF">اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;color:rgba(235,235,245,.40);flex:none">2:255</span></div>
+    <div style="font-size:16px;line-height:1.45;color:#F2F3F5;text-wrap:pretty">Allah, kendisinden başka ilah olmayandır</div>
+  </div><div style="padding:13px 16px;display:flex;flex-direction:column;gap:6px;border-top:1px solid rgba(255,255,255,.10)">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px"><span dir="rtl" style="font-size:15px;color:#0A84FF">فَإِنَّ مَعَ الْعُسْرِ يُسْرًا</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;color:rgba(235,235,245,.40);flex:none">94:6</span></div>
+    <div style="font-size:16px;line-height:1.45;color:#F2F3F5;text-wrap:pretty">Şüphesiz her zorluğun ardından bir genişlik gelir</div>
+  </div><div style="padding:13px 16px;display:flex;flex-direction:column;gap:6px;border-top:1px solid rgba(255,255,255,.10)">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px"><span dir="rtl" style="font-size:15px;color:#0A84FF">وَمَن يَتَوَكَّلْ عَلَى اللَّهِ</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;color:rgba(235,235,245,.40);flex:none">65:3</span></div>
+    <div style="font-size:16px;line-height:1.45;color:#F2F3F5;text-wrap:pretty">Kim Allah'a tevekkül ederse</div>
+  </div><div style="padding:13px 16px;display:flex;flex-direction:column;gap:6px;border-top:1px solid rgba(255,255,255,.10)">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px"><span dir="rtl" style="font-size:15px;color:#0A84FF">أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;color:rgba(235,235,245,.40);flex:none">13:28</span></div>
+    <div style="font-size:16px;line-height:1.45;color:#F2F3F5;text-wrap:pretty">Kalpler ancak Allah'ı anmakla huzur bulur</div>
+  </div><div style="padding:13px 16px;display:flex;flex-direction:column;gap:6px;border-top:1px solid rgba(255,255,255,.10)">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px"><span dir="rtl" style="font-size:15px;color:#0A84FF">وَلَلْآخِرَةُ خَيْرٌ لَّكَ</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;color:rgba(235,235,245,.40);flex:none">93:5</span></div>
+    <div style="font-size:16px;line-height:1.45;color:#F2F3F5;text-wrap:pretty">Elbette ahiret senin için daha hayırlıdır</div>
+  </div><div style="padding:13px 16px;display:flex;flex-direction:column;gap:6px;border-top:1px solid rgba(255,255,255,.10)">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px"><span dir="rtl" style="font-size:15px;color:#0A84FF">اللَّهُ نُورُ السَّمَاوَاتِ</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;color:rgba(235,235,245,.40);flex:none">24:35</span></div>
+    <div style="font-size:16px;line-height:1.45;color:#F2F3F5;text-wrap:pretty">Allah, göklerin ve yerin nurudur</div>
+  </div></div>
+  <div style="flex:1"></div>
+  </div>
+</x-import>
+<div style="display:flex;flex-direction:column;gap:2px;max-width:402px"><div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">Ses kapalı · audio == false</div><div style="font-family:'DM Sans',system-ui;font-size:11.5px;line-height:1.45;color:#9A9A95;text-wrap:pretty">Çubuk hiç çizilmez; ~76 px band kaydırma alanına katılır. Pasif çubuk gösterilmez.</div></div>
+</div></div>
+</section>
+
+</div>
+</x-dc>
+</body>
+</html>

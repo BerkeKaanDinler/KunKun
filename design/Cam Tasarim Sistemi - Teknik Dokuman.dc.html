@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+doc-page:not(:defined){visibility:hidden}
+a{color:#1F5C8B}
+a:hover{color:#144160}
+</style>
+<script src="./doc-page.js"></script>
+</helmet>
+<doc-page margin="0.8in">
+
+<div style="font-family:'DM Sans',system-ui;font-size:10.5px;font-weight:600;letter-spacing:.16em;color:#8A8A85">TEKNİK DOKÜMAN · v1 · AĞUSTOS 2026</div>
+<h1 style="margin:10px 0 0;font-family:Newsreader,serif;font-size:34px;font-weight:600;line-height:1.15;letter-spacing:-.01em;color:#17181A">Koyu Cam Tasarım Sistemi</h1>
+<p style="margin:12px 0 0;font-family:'DM Sans',system-ui;font-size:14.5px;line-height:1.65;color:#43454A">iOS için tasarlanmış, arka plan bulanıklığına dayanan koyu arayüz sistemi. Bu doküman sistemin renk belirteçlerini, cam katman reçetesini, tipografi ölçeğini, bileşen tariflerini ve uygulama kurallarını içerir. Başka bir uygulamada sıfırdan kurmak için gereken tüm sayısal değerler burada.</p>
+
+<div style="margin:22px 0 0;padding:16px 18px;background:#F7F7F5;border:1px solid #E6E5E1;border-radius:10px;break-inside:avoid">
+<div style="font-family:'DM Sans',system-ui;font-size:10.5px;font-weight:700;letter-spacing:.14em;color:#8A8A85">SİSTEMİN ÜÇ KURALI</div>
+<ol style="margin:10px 0 0;padding-left:20px;font-family:'DM Sans',system-ui;font-size:14px;line-height:1.7;color:#43454A">
+<li><strong>Cam bir malzemedir, dekorasyon değil.</strong> Yalnızca içeriğin üzerinde yüzen katmanlar cam olur: arama çubuğu, mini oynatıcı, aksiyon çubuğu, aile başlıkları. Liste satırları ve okuma panelleri düz yüzeydir.</li>
+<li><strong>Tek aksan rengi.</strong> Her tema tek bir açık aksan tonu kullanır. Aksan; birincil butonda, seçili durumda, ilerleme çubuğunda ve ayet künyesinde görünür. İkinci bir vurgu rengi yoktur.</li>
+<li><strong>Koyu zemin, açık aksan, koyu buton metni.</strong> Açık aksan üzerinde beyaz metin kontrastı düşürür; buton metinleri her zaman koyu (#10100F).</li>
+</ol>
+</div>
+
+<h2 style="margin:34px 0 0;font-family:Newsreader,serif;font-size:22px;font-weight:600;color:#17181A">1 · Renk belirteçleri</h2>
+<p style="margin:8px 0 0;font-family:'DM Sans',system-ui;font-size:14px;line-height:1.65;color:#43454A">Sistem on bir belirteçten oluşur. Bir tema üretmek, bu on bir değeri doldurmaktır; başka hiçbir renk tanımlanmaz.</p>
+
+<table style="margin:14px 0 0;width:100%;border-collapse:collapse;font-family:'DM Sans',system-ui;font-size:12.5px">
+<thead>
+<tr style="background:#F2F2F0">
+<th style="padding:9px 10px;text-align:left;font-weight:700;color:#17181A;border-bottom:1px solid #E0DFDB">Belirteç</th>
+<th style="padding:9px 10px;text-align:left;font-weight:700;color:#17181A;border-bottom:1px solid #E0DFDB">Görevi</th>
+<th style="padding:9px 10px;text-align:left;font-weight:700;color:#17181A;border-bottom:1px solid #E0DFDB">Örnek (kömür + bakır)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">bg</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">Ekran zemini</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#121110</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">card</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">Düz yüzey: liste grubu, ayet kartı</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#1C1A18</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">sub</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">İkincil yüzey: Arapça paneli</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#171514</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">bd</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">Kart kenarı</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">rgba(255,255,255,.12)</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">line</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">Satır ayıracı (kart içi)</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">rgba(255,255,255,.09)</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">acc</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">Tek aksan</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#E0894A</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">tint</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">Aksanın %13–16 saydam hali: rozet, etiket</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">rgba(224,137,74,.14)</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">ink</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">Birincil metin</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#F2EDE7</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">mut</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">İkincil metin — ink %60</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">rgba(242,237,231,.6)</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">faint</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">Künye, sayaç — ink %38</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">rgba(242,237,231,.38)</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">wall</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">Hero bandı ve widget duvar kağıdı zemini</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#2B211A</td></tr>
+<tr><td style="padding:8px 10px;font-family:'JetBrains Mono',monospace">danger</td><td style="padding:8px 10px;color:#5C5E62">Yıkıcı eylem metni</td><td style="padding:8px 10px;font-family:'JetBrains Mono',monospace">#FF6B5E</td></tr>
+</tbody>
+</table>
+
+<h3 style="margin:26px 0 0;font-family:'DM Sans',system-ui;font-size:15px;font-weight:700;color:#17181A">Üretilmiş beş ton</h3>
+<p style="margin:7px 0 0;font-family:'DM Sans',system-ui;font-size:13.5px;line-height:1.6;color:#5C5E62">Zemin ve aksan dışında hiçbir şey değişmez. Aksan seçiminde ölçüt: koyu zemin üzerinde en az 4.5:1 kontrast ve %100 doygunluktan uzak durmak (neon rengler koyu arayüzde titrer).</p>
+
+<table style="margin:12px 0 0;width:100%;border-collapse:collapse;font-family:'DM Sans',system-ui;font-size:12.5px">
+<thead>
+<tr style="background:#F2F2F0">
+<th style="padding:9px 10px;text-align:left;font-weight:700;color:#17181A;border-bottom:1px solid #E0DFDB">Ton</th>
+<th style="padding:9px 10px;text-align:left;font-weight:700;color:#17181A;border-bottom:1px solid #E0DFDB">bg</th>
+<th style="padding:9px 10px;text-align:left;font-weight:700;color:#17181A;border-bottom:1px solid #E0DFDB">card</th>
+<th style="padding:9px 10px;text-align:left;font-weight:700;color:#17181A;border-bottom:1px solid #E0DFDB">acc</th>
+<th style="padding:9px 10px;text-align:left;font-weight:700;color:#17181A;border-bottom:1px solid #E0DFDB">Karakter</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">Gece yeşimi</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#0B1613</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#122019</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#4FD1A5</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">En düşük parlaklık hissi</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">Mürekkep moru</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#0F0C18</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#181428</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#A78BFA</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">Yumuşak, soğuk</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">Kömür + bakır</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#121110</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#1C1A18</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#E0894A</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">En sıcak, kontrast yüksek</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">Derin lacivert</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#0A1020</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#121A2E</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace">#5AA9FF</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">Sakin, kurumsal değil</td></tr>
+<tr><td style="padding:8px 10px">Siyah + kum</td><td style="padding:8px 10px;font-family:'JetBrains Mono',monospace">#0C0C0C</td><td style="padding:8px 10px;font-family:'JetBrains Mono',monospace">#161514</td><td style="padding:8px 10px;font-family:'JetBrains Mono',monospace">#D9C08A</td><td style="padding:8px 10px;color:#5C5E62">OLED tasarruflu, süs minimum</td></tr>
+</tbody>
+</table>
+
+<h2 style="margin:34px 0 0;font-family:Newsreader,serif;font-size:22px;font-weight:600;color:#17181A">2 · Cam katman reçetesi</h2>
+<p style="margin:8px 0 0;font-family:'DM Sans',system-ui;font-size:14px;line-height:1.65;color:#43454A">Cam üç bileşenden oluşur: düşük alfalı açık dolgu, ondan bir tık yüksek alfalı kenar, ve bulanıklık. Koyu temada dolgu <strong>beyaz değil</strong>, aksanın veya zeminin sıcak/soğuk yönüne çekilmiş açık bir tondur — saf beyaz cam koyu zeminde gri ve ölü görünür.</p>
+
+<div style="margin:14px 0 0;padding:16px 18px;background:#17181A;border-radius:10px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.85;color:#E8E6E1;break-inside:avoid">
+background: rgba(255,235,215,.07);<br>
+border: 1px solid rgba(255,225,200,.14);<br>
+backdrop-filter: blur(22px);<br>
+-webkit-backdrop-filter: blur(22px);<br>
+border-radius: 22px;
+</div>
+
+<table style="margin:14px 0 0;width:100%;border-collapse:collapse;font-family:'DM Sans',system-ui;font-size:12.5px">
+<thead>
+<tr style="background:#F2F2F0">
+<th style="padding:9px 10px;text-align:left;font-weight:700;color:#17181A;border-bottom:1px solid #E0DFDB">Katman</th>
+<th style="padding:9px 10px;text-align:left;font-weight:700;color:#17181A;border-bottom:1px solid #E0DFDB">Dolgu alfası</th>
+<th style="padding:9px 10px;text-align:left;font-weight:700;color:#17181A;border-bottom:1px solid #E0DFDB">Kenar alfası</th>
+<th style="padding:9px 10px;text-align:left;font-weight:700;color:#17181A;border-bottom:1px solid #E0DFDB">Blur</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">Arama çubuğu</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">.06–.10</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">.13–.18</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">20px</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">Aile başlığı (keşif)</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">.06–.10</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">.13–.18</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">18px</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">Günün ayeti kartı</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">.06–.10</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">.13–.18</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">22px</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">Mini oynatıcı</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">.06–.10</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">.13–.18</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">22px</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">Aksiyon çubuğu (ayet odak)</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">.06–.10</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">.13–.18</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">24px</td></tr>
+<tr><td style="padding:8px 10px">Kilit ekranı widget'ı</td><td style="padding:8px 10px">.14 (beyaz)</td><td style="padding:8px 10px">.20 (beyaz)</td><td style="padding:8px 10px">22px</td></tr>
+</tbody>
+</table>
+
+<div style="margin:16px 0 0;padding:14px 16px;background:#FDF9F2;border:1px solid #E8DFCC;border-radius:10px;font-family:'DM Sans',system-ui;font-size:13.5px;line-height:1.65;color:#5A4F3C;break-inside:avoid">
+<strong>Cam yalnızca arkasında bir şey varken cam görünür.</strong> Düz zemin üzerine konan cam, hafif açık bir dikdörtgenden ibarettir. Bu yüzden her ekranda camın altında ya hero bandı, ya kaydırılan liste, ya da duvar kağıdı bulunur. Aksi durumda düz <code style="font-family:'JetBrains Mono',monospace;font-size:12px">card</code> yüzeyi kullanılır.
+</div>
+
+<h2 style="margin:34px 0 0;font-family:Newsreader,serif;font-size:22px;font-weight:600;color:#17181A">3 · Geometri ve boşluk</h2>
+<ul style="margin:10px 0 0;padding-left:20px;font-family:'DM Sans',system-ui;font-size:14px;line-height:1.75;color:#43454A">
+<li><strong>Köşe yarıçapı:</strong> büyük yüzey ve cam çubuk 22px; liste grubu 22px; küçük kontrol (sekme, meal çipi, arama) 10–14px; hero bandı 26px; rozet ve ilerleme 99px.</li>
+<li><strong>Ekran kenar boşluğu:</strong> 18px. Cam çubuklar 14px (kenara daha yakın dururlar, yüzdükleri hissi güçlensin diye).</li>
+<li><strong>Dikey ritim:</strong> bloklar arası 9–12px; grup başlığı ile grup arası 7px; kart içi başlık ile gövde arası 8–9px.</li>
+<li><strong>Kart içi padding:</strong> 13–17px. Liste satırı 12–14px dikey.</li>
+<li><strong>Dokunma alanı:</strong> her etkileşimli öğe en az 44×44px. İkonlar 17–20px çizilir, 44px kutuya ortalanır.</li>
+<li><strong>Gölge:</strong> yalnızca birincil butonda ve yüzen widget kartında — <code style="font-family:'JetBrains Mono',monospace;font-size:12px">0 14px 30px rgba(0,0,0,.5)</code>. Cam katmanlarda gölge yok; ayrımı kenar çizgisi yapar.</li>
+</ul>
+
+<h2 style="margin:34px 0 0;font-family:Newsreader,serif;font-size:22px;font-weight:600;color:#17181A">4 · Tipografi</h2>
+<p style="margin:8px 0 0;font-family:'DM Sans',system-ui;font-size:14px;line-height:1.65;color:#43454A">Tek aile: sistem yazı tipi (<code style="font-family:'JetBrains Mono',monospace;font-size:12px">system-ui, -apple-system</code>). Sistem tipi Dynamic Type ile ölçeklenir ve iOS'ta yerli hissettirir; ikinci bir aile eklemek bu sistemde gereksizdir.</p>
+
+<table style="margin:12px 0 0;width:100%;border-collapse:collapse;font-family:'DM Sans',system-ui;font-size:12.5px">
+<thead>
+<tr style="background:#F2F2F0">
+<th style="padding:9px 10px;text-align:left;font-weight:700;color:#17181A;border-bottom:1px solid #E0DFDB">Rol</th>
+<th style="padding:9px 10px;text-align:left;font-weight:700;color:#17181A;border-bottom:1px solid #E0DFDB">Boyut / ağırlık</th>
+<th style="padding:9px 10px;text-align:left;font-weight:700;color:#17181A;border-bottom:1px solid #E0DFDB">Not</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">Büyük başlık</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">34 / 700, ls −.02em</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">Keşif, Kaydedilenler</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">Ekran başlığı</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">27 / 700, ls −.02em</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">Kategori, Ayarlar</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">Onboarding başlığı</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">30 / 700, lh 1.2</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">İki satırı geçmez</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">Okuma metni (ayet)</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">26 / 400, lh 1.42</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">Kendi panelinde</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">Arapça</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">22 / 400, lh 1.85</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">dir="rtl", ayrı panel</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">Gövde / liste</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">16–17 / 400</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">iOS taban ölçüsü</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">İkincil satır</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9">12.5–13 / 400, mut</td><td style="padding:8px 10px;border-bottom:1px solid #EDECE9;color:#5C5E62">Ayarlar açıklamaları</td></tr>
+<tr><td style="padding:8px 10px">Grup etiketi</td><td style="padding:8px 10px">10.5–11 / 600–700, ls .12–.14em, versal</td><td style="padding:8px 10px;color:#5C5E62">En küçük ölçü 11px</td></tr>
+</tbody>
+</table>
+
+<p style="margin:12px 0 0;font-family:'DM Sans',system-ui;font-size:14px;line-height:1.65;color:#43454A">Uzun metinlerde <code style="font-family:'JetBrains Mono',monospace;font-size:12px">text-wrap: pretty</code>; başlıklarda negatif harf aralığı yalnızca 24px üstünde.</p>
+
+<h2 style="margin:34px 0 0;font-family:Newsreader,serif;font-size:22px;font-weight:600;color:#17181A">5 · Bileşen tarifleri</h2>
+
+<h3 style="margin:16px 0 0;font-family:'DM Sans',system-ui;font-size:15px;font-weight:700;color:#17181A">Hero bandı</h3>
+<p style="margin:6px 0 0;font-family:'DM Sans',system-ui;font-size:14px;line-height:1.65;color:#43454A">212px yüksekliğinde, 26px yarıçaplı, <code style="font-family:'JetBrains Mono',monospace;font-size:12px">wall</code> zeminli blok. İçinde iki radyal gradyan (sol üstte %16 beyaz ışık, sağ altta %50 siyah gölge) ve sağ üst köşede %20 opaklıkta geometrik motif. Fotoğraf kullanılmaz; bu doku kodla üretilir, telif sorunu doğurmaz. Metin bloğu sol altta, 20px içeriden.</p>
+
+<h3 style="margin:16px 0 0;font-family:'DM Sans',system-ui;font-size:15px;font-weight:700;color:#17181A">Birincil buton</h3>
+<p style="margin:6px 0 0;font-family:'DM Sans',system-ui;font-size:14px;line-height:1.65;color:#43454A">Ekranın en ağır elemanı. 22px dikey padding, 22px yarıçap, dolu aksan zemin, koyu metin. İki satırlı: 24px/700 başlık ve 13px açıklama, sağda ok. Ekranın alt bölgesine yerleşir, üstünde esnek boşluk bırakılır. Her ekranda en fazla bir tane.</p>
+
+<h3 style="margin:16px 0 0;font-family:'DM Sans',system-ui;font-size:15px;font-weight:700;color:#17181A">Liste grubu</h3>
+<p style="margin:6px 0 0;font-family:'DM Sans',system-ui;font-size:14px;line-height:1.65;color:#43454A">Düz <code style="font-family:'JetBrains Mono',monospace;font-size:12px">card</code> zemin, 1px <code style="font-family:'JetBrains Mono',monospace;font-size:12px">bd</code> kenar, 22px yarıçap, <code style="font-family:'JetBrains Mono',monospace;font-size:12px">overflow:hidden</code>. Satırlar arası 1px <code style="font-family:'JetBrains Mono',monospace;font-size:12px">line</code>; son satırda ayıraç yok. Satır yapısı: sol tarafta başlık + isteğe bağlı ikincil satır, sağda değer + chevron (13px).</p>
+
+<h3 style="margin:16px 0 0;font-family:'DM Sans',system-ui;font-size:15px;font-weight:700;color:#17181A">Mini oynatıcı</h3>
+<p style="margin:6px 0 0;font-family:'DM Sans',system-ui;font-size:14px;line-height:1.65;color:#43454A">Cam çubuk, 20px yarıçap. Solda 40px aksan kare (12px yarıçap) içinde duraklat ikonu, ortada iki satır (künye + 3px ilerleme çubuğu), sağda süre. İlerleme dolgusu aksan, yatağı <code style="font-family:'JetBrains Mono',monospace;font-size:12px">bd</code>.</p>
+
+<h3 style="margin:16px 0 0;font-family:'DM Sans',system-ui;font-size:15px;font-weight:700;color:#17181A">Aksiyon çubuğu</h3>
+<p style="margin:6px 0 0;font-family:'DM Sans',system-ui;font-size:14px;line-height:1.65;color:#43454A">Ayet odak ekranının altında yüzen cam, 22px yarıçap. Dört eşit sütun: ikon (19px) + 10.5px etiket, her sütun en az 44px yüksek. Yalnızca birincil eylem (sesli oku) aksan renkli, diğerleri <code style="font-family:'JetBrains Mono',monospace;font-size:12px">ink</code>.</p>
+
+<h3 style="margin:16px 0 0;font-family:'DM Sans',system-ui;font-size:15px;font-weight:700;color:#17181A">Geometrik motif</h3>
+<p style="margin:6px 0 0;font-family:'DM Sans',system-ui;font-size:14px;line-height:1.65;color:#43454A">Sekiz köşeli yıldız: iki kare (biri 45° döndürülmüş) ve ortada bir daire, hepsi konturlu. Üç ölçekte kullanılır — 22px marka işareti, 42–72px boş durum/onboarding görseli, 190–250px %7–20 opaklıkta filigran. Kontur kalınlığı ölçekle ters orantılı (küçükte 1, büyükte 0.5).</p>
+
+<h2 style="margin:34px 0 0;font-family:Newsreader,serif;font-size:22px;font-weight:600;color:#17181A">6 · Ekran envanteri</h2>
+<p style="margin:8px 0 0;font-family:'DM Sans',system-ui;font-size:14px;line-height:1.65;color:#43454A">Her tema on dört ekranla tanımlanır. Alt sekme çubuğu <strong>yoktur</strong>: uygulama tek kapılıdır, gezinme ana sayfadaki birincil butondan başlar ve geri düğmesiyle döner.</p>
+<ol style="margin:10px 0 0;padding-left:20px;font-family:'DM Sans',system-ui;font-size:14px;line-height:1.7;color:#43454A">
+<li>Açılış — logo, uygulama adı, Arapça isim</li>
+<li>Tanıtım 1 ve 2 — atla düğmesi sağ üstte, altta nokta göstergesi</li>
+<li>İsim sorma — atlanabilir, son adımda</li>
+<li>Ana sayfa — hero bandı, cam günün ayeti kartı, birincil buton</li>
+<li>Keşif — büyük başlık, cam arama, iki sekme, cam aile başlıkları + düz liste grupları</li>
+<li>Kategori — başlık, sayaç rozeti, ayet kartları, cam mini oynatıcı</li>
+<li>Ayet odak — meal çipleri, okuma paneli, Arapça paneli, kategori etiketleri, cam aksiyon çubuğu</li>
+<li>Karşılaştırma — üstte Arapça, üç meal paneli, seçili olanda aksan kenar</li>
+<li>Ayarlar (iki ekran) — okuma/ses/widget ve kayıtlar/kişisel/hakkında</li>
+<li>Kaydedilenler — sekmeler, cam arama, etiketli kayıt listesi</li>
+<li>Kilit ekranı widget'ı ve ana ekran widget'ı</li>
+</ol>
+
+<h2 style="margin:34px 0 0;font-family:Newsreader,serif;font-size:22px;font-weight:600;color:#17181A">7 · iOS uyum notları</h2>
+<ul style="margin:10px 0 0;padding-left:20px;font-family:'DM Sans',system-ui;font-size:14px;line-height:1.75;color:#43454A">
+<li>Geri düğmesi her zaman sol üstte, chevron + "Geri" metni, aksan renkli, 44px yükseklikte.</li>
+<li>Güvenli alan: üstte 58px, altta 34px iç boşluk bırakılır (çentik ve ana ekran çizgisi).</li>
+<li>Anahtar (switch) 51×31px, sap 27px — iOS ölçüsü. Kapalıyken yatak <code style="font-family:'JetBrains Mono',monospace;font-size:12px">rgba(120,120,128,.36)</code>.</li>
+<li>Yıkıcı eylem kırmızı metinle işaretlenir, kırmızı butonla değil; öncesinde onay ve "önce dışa aktar" önerisi.</li>
+<li>Kilit ekranı widget'ı tek renktir ve iki satırla sınırlıdır — tasarımda bu kısıt varsayılır.</li>
+<li>En küçük metin 11px; ikincil metinlerin kontrastı koyu zeminde 4.5:1 altına düşürülmez.</li>
+</ul>
+
+<div style="margin:26px 0 0;padding:16px 18px;background:#F7F7F5;border:1px solid #E6E5E1;border-radius:10px;font-family:'DM Sans',system-ui;font-size:13.5px;line-height:1.65;color:#43454A;break-inside:avoid">
+<strong>Başka bir uygulamada kurarken:</strong> önce on bir belirteci doldurun, sonra cam reçetesini tek bir yardımcıya bağlayın ve yalnızca yüzen katmanlarda çağırın. Bileşen tariflerindeki sayıları değiştirmeden içeriği değiştirin — sistemin tutarlılığı renkten değil, tekrarlanan geometriden geliyor.
+</div>
+
+</doc-page>
+</x-dc>
+</body>
+</html>

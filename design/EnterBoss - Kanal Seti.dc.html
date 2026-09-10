@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Spectral:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #FBFBFA; }
+  a { color: #3A5A40; text-decoration: none; }
+  a:hover { color: #1F3225; }
+</style>
+</helmet>
+
+<div style="padding:60px 64px 120px;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;gap:60px">
+
+<div style="max-width:900px;display:flex;flex-direction:column;gap:13px">
+  <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px;letter-spacing:.14em;color:#8A8A85">ENTERBOSS · KANAL SETİ</div>
+  <div style="font-family:Spectral,serif;font-size:38px;line-height:1.18;color:#17181A;text-wrap:pretty">Dört kilit, beş ton, beş banner</div>
+  <div style="font-size:15px;line-height:1.65;color:#5C5E62;text-wrap:pretty">Gönderdiğin iki EnterBoss görseli kullanıldı — fırça izi, damlalar ve doku olduğu gibi duruyor, yalnızca kırmızı her temanın aksan tonuna çevrildi. Taçsız ve yazısız kesimler ayrıca üretildi. Banner'ların arkasında geometrik desen soluk bir katman olarak duruyor, altında platform ikonlarıyla adres satırı var; kullanıcı adları yer tutucu.</div>
+</div>
+
+<section style="display:flex;flex-direction:column;gap:22px">
+  <div style="display:flex;align-items:center;gap:13px">
+    <span style="display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:24px;padding:0 8px;border-radius:5px;background:#17181A;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:#FBFBFA">2a</span>
+    <span style="font-size:18px;font-weight:600;color:#17181A">Kilitler · dört kesim, beş ton</span>
+  </div>
+  <sc-for list="{{ rows }}" as="r" hint-placeholder-count="4">
+    <div style="display:flex;flex-direction:column;gap:11px">
+      <div style="font-size:14.5px;font-weight:700;color:#17181A">{{ r.title }}</div>
+      <div style="display:flex;flex-wrap:wrap;gap:16px">
+        <sc-for list="{{ r.items }}" as="it" hint-placeholder-count="5">
+          <div style="width:288px;display:flex;flex-direction:column;gap:9px">
+            <div style="width:288px;height:288px;background:{{ it.bg }};border:1px solid {{ it.hair }};border-radius:16px;overflow:hidden">
+              <img src="{{ it.src }}" alt="{{ it.name }}" style="width:100%;height:100%;object-fit:contain;display:block" />
+            </div>
+            <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;color:#8A8A85">{{ it.name }} · {{ it.acc }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-for>
+</section>
+
+<section style="display:flex;flex-direction:column;gap:22px">
+  <div style="display:flex;align-items:center;gap:13px">
+    <span style="display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:24px;padding:0 8px;border-radius:5px;background:#17181A;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:#FBFBFA">2b</span>
+    <span style="font-size:18px;font-weight:600;color:#17181A">Banner'lar · gerçek ölçüde</span>
+  </div>
+  <div style="font-size:13.5px;line-height:1.6;color:#5C5E62;max-width:900px;text-wrap:pretty">Her biri tam piksel ölçüsünde. YouTube'da içerik, tüm cihazlarda görünen 1546×423'lük güvenli alanın içinde tutuldu — dışı televizyonda taşan bölge, kesikli çizgiyle işaretli.</div>
+  <div style="display:flex;flex-direction:column;gap:34px">
+    <sc-for list="{{ banners }}" as="b" hint-placeholder-count="5">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span style="font-size:14.5px;font-weight:700;color:#17181A">{{ b.label }}</span>
+          <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px;color:#8A8A85">{{ b.dims }}</span>
+        </div>
+        {{ b.node }}
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<section style="display:flex;flex-direction:column;gap:22px">
+  <div style="display:flex;align-items:center;gap:13px">
+    <span style="display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:24px;padding:0 8px;border-radius:5px;background:#17181A;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:#FBFBFA">2c</span>
+    <span style="font-size:18px;font-weight:600;color:#17181A">Kick banner · beş tonda</span>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:20px">
+    <sc-for list="{{ kickSet }}" as="k" hint-placeholder-count="5">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;color:#8A8A85">{{ k.name }}</span>
+        {{ k.node }}
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<div style="max-width:900px;padding:20px 22px;background:#F7F7F5;border:1px solid #E6E5E1;border-radius:10px;display:flex;flex-direction:column;gap:8px">
+  <div style="font-size:10.5px;font-weight:700;letter-spacing:.14em;color:#8A8A85">DOSYALAR</div>
+  <div style="font-size:14px;line-height:1.7;color:#43454A;text-wrap:pretty">Kare sürümler <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">logo/enterboss/</span> altında: <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">yazi-tacli-</span>, <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">yazi-sade-</span>, <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">eb-tam-</span>, <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">eb-monogram-</span>. Saydam zeminli, kenarına kadar kırpılmış sürümler aynı adların başında <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">t-</span> ile duruyor — banner ve tişört gibi serbest yerleşimler için. Gerçek kanal adreslerini verirsen banner metinlerini değiştiririm.</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  pal() {
+    return [
+      { slug: 'gece-yesimi', name: 'Gece yeşimi', acc: '#5FD8AF', bg: '#0B1613', ink: '#5FD8AF', mut: 'rgba(232,242,236,.55)', hair: 'rgba(255,255,255,.1)' },
+      { slug: 'murekkep-moru', name: 'Mürekkep moru', acc: '#B29AFB', bg: '#0F0C18', ink: '#B29AFB', mut: 'rgba(237,233,251,.55)', hair: 'rgba(255,255,255,.11)' },
+      { slug: 'komur-bakir', name: 'Kömür + bakır', acc: '#E39A63', bg: '#121110', ink: '#E39A63', mut: 'rgba(242,237,231,.55)', hair: 'rgba(255,255,255,.1)' },
+      { slug: 'cam-gece', name: 'Cam gece', acc: '#4CA3FF', bg: '#0F1115', ink: '#4CA3FF', mut: 'rgba(235,235,245,.55)', hair: 'rgba(255,255,255,.1)' },
+      { slug: 'kagit-indeks', name: 'Kâğıt indeks', acc: '#2B4A5A', bg: '#EAE8E1', ink: '#2B4A5A', mut: 'rgba(26,26,23,.6)', hair: '#D6D3C9' }
+    ];
+  }
+
+  icon(kind, s, col) {
+    const e = React.createElement;
+    const svg = (kids, vb) => e('svg', { width: s, height: s, viewBox: vb || '0 0 24 24', style: { display: 'block', flex: 'none' } }, kids);
+    if (kind === 'youtube') return svg([
+      e('path', { key: 'a', d: 'M22.6 7.2a2.8 2.8 0 00-1.98-1.98C18.88 4.75 12 4.75 12 4.75s-6.88 0-8.62.47A2.8 2.8 0 001.4 7.2C.94 8.95.94 12 .94 12s0 3.05.46 4.8a2.8 2.8 0 001.98 1.98c1.74.47 8.62.47 8.62.47s6.88 0 8.62-.47a2.8 2.8 0 001.98-1.98c.46-1.75.46-4.8.46-4.8s0-3.05-.46-4.8z', fill: col }),
+      e('path', { key: 'b', d: 'M9.9 15.3l5.7-3.3-5.7-3.3v6.6z', fill: '#000', fillOpacity: '.55' })
+    ]);
+    if (kind === 'kick') return svg([
+      e('path', { key: 'a', d: 'M3 3h5.4v5.4h2.7V5.7h2.7V3H19.2v8.1h-2.7v1.8h2.7V21h-8.4v-2.7H8.4v-5.4H8.4V21H3V3z', fill: col })
+    ]);
+    if (kind === 'x') return svg([
+      e('path', { key: 'a', d: 'M17.6 3h3.3l-7.2 8.2L22 21h-6.5l-5-6.2-5.8 6.2H1.4l7.7-8.8L2 3h6.7l4.6 5.7L17.6 3zm-1.2 16.1h1.8L7.7 4.8H5.8l10.6 14.3z', fill: col })
+    ]);
+    return svg([
+      e('path', { key: 'a', d: 'M19.6 5.6A16.2 16.2 0 0015.6 4.4l-.2.4a15 15 0 00-3.4-.4c-1.2 0-2.3.1-3.4.4l-.2-.4c-1.4.2-2.8.6-4 1.2C1.6 9.4.9 13.1 1.2 16.7A16.4 16.4 0 006.2 19.2l1-1.6c-.6-.2-1.1-.5-1.6-.8l.4-.3a11.6 11.6 0 0010 0l.4.3c-.5.3-1 .6-1.6.8l1 1.6a16.4 16.4 0 005-2.5c.4-4.2-.7-7.9-2.2-11.1zM8.6 14.6c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2zm6.8 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2z', fill: col })
+    ]);
+  }
+
+  socials(p, size, gap) {
+    const e = React.createElement;
+    const items = [
+      ['youtube', 'youtube.com/@enterboss'],
+      ['kick', 'kick.com/enterboss'],
+      ['x', 'x.com/enterboss'],
+      ['discord', 'discord.gg/enterboss']
+    ];
+    const ic = Math.round(size * 1.35);
+    return e('div', { style: { display: 'flex', alignItems: 'center', gap: gap + 'px' } },
+      items.map(([kind, handle]) => e('span', {
+        key: kind,
+        style: { display: 'flex', alignItems: 'center', gap: Math.round(size * 0.42) + 'px' }
+      },
+        this.icon(kind, ic, p.ink),
+        e('span', {
+          style: { fontFamily: "'DM Sans', system-ui", fontSize: size + 'px', fontWeight: 500, letterSpacing: '.04em', color: p.mut, whiteSpace: 'nowrap' }
+        }, handle)
+      ))
+    );
+  }
+
+  banner(p, w, h, o) {
+    const e = React.createElement;
+    const art = e('img', {
+      src: `./logo/enterboss/t-${o.art}-${p.slug}.png`,
+      alt: '',
+      style: { width: o.artW + 'px', height: 'auto', display: 'block' }
+    });
+    const inner = e('div', {
+      style: {
+        width: (o.safeW || w) + 'px', height: (o.safeH || h) + 'px',
+        display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: o.gap + 'px',
+        outline: o.showSafe ? '1px dashed rgba(255,255,255,.18)' : 'none'
+      }
+    }, art, this.socials(p, o.social, o.socialGap));
+    const backdropSize = Math.round(h * (o.backdrop || 1.55));
+    const backdrop = e('img', {
+      src: `./logo/enterboss/t-mandala-${p.slug}.png`,
+      alt: '',
+      style: {
+        position: 'absolute', left: '50%', top: '50%',
+        width: backdropSize + 'px', height: backdropSize + 'px',
+        transform: 'translate(-50%,-50%)',
+        opacity: p.slug === 'kagit-indeks' ? 0.18 : 0.34,
+        pointerEvents: 'none'
+      }
+    });
+    return e('div', {
+      style: {
+        width: w + 'px', height: h + 'px', flex: 'none', background: p.bg,
+        border: '1px solid ' + p.hair, display: 'flex', alignItems: 'center', justifyContent: 'center',
+        overflow: 'hidden', position: 'relative'
+      }
+    }, backdrop, e('div', { style: { position: 'relative' } }, inner));
+  }
+
+  renderVals() {
+    const pal = this.pal();
+    const set = (kind) => pal.map(p => ({
+      name: p.name, acc: p.acc, bg: p.bg, hair: p.hair,
+      src: `./logo/enterboss/${kind}-${p.slug}.png`
+    }));
+
+    const rows = [
+      { title: 'Yazı · taçlı', items: set('yazi-tacli') },
+      { title: 'Yazı · taçsız', items: set('yazi-sade') },
+      { title: 'EB amblemi + yazı', items: set('eb-tam') },
+      { title: 'EB amblemi · tek başına', items: set('eb-monogram') }
+    ];
+
+    const banners = [
+      { label: 'YouTube kanal · taçsız', dims: '2560 × 1440 · güvenli alan 1546 × 423', node: this.banner(pal[3], 2560, 1440, { art: 'yazi-sade', artW: 560, social: 19, socialGap: 14, gap: 18, safeW: 1546, safeH: 423, showSafe: true }) },
+      { label: 'YouTube kanal · alternatif, daha büyük logo', dims: '2560 × 1440 · güvenli alan 1546 × 423', node: this.banner(pal[3], 2560, 1440, { art: 'yazi-sade', artW: 700, social: 19, socialGap: 14, gap: 14, safeW: 1546, safeH: 423, showSafe: true }) },
+      { label: 'YouTube kanal · EB amblemi, gece yeşimi', dims: '2560 × 1440 · güvenli alan 1546 × 423', node: this.banner(pal[0], 2560, 1440, { art: 'eb-tam', artW: 360, social: 19, socialGap: 14, gap: 14, safeW: 1546, safeH: 423, showSafe: true }) },
+      { label: 'Kick banner', dims: '1920 × 480', node: this.banner(pal[3], 1920, 480, { art: 'yazi-sade', artW: 620, social: 19, socialGap: 15, gap: 20 }) },
+      { label: 'Twitch banner', dims: '1920 × 480', node: this.banner(pal[2], 1920, 480, { art: 'yazi-sade', artW: 620, social: 19, socialGap: 15, gap: 20 }) },
+      { label: 'X / Twitter kapak', dims: '1500 × 500', node: this.banner(pal[1], 1500, 500, { art: 'yazi-tacli', artW: 470, social: 18, socialGap: 14, gap: 18 }) },
+      { label: 'Discord davet görseli', dims: '1920 × 1080', node: this.banner(pal[0], 1920, 1080, { art: 'eb-tam', artW: 620, social: 24, socialGap: 18, gap: 34 }) }
+    ];
+
+    const kickSet = pal.map(p => ({
+      name: p.name,
+      node: this.banner(p, 1920, 480, { art: 'yazi-sade', artW: 620, social: 19, socialGap: 15, gap: 20 })
+    }));
+
+    return { rows, banners, kickSet };
+  }
+}
+</script>
+</body>
+</html>

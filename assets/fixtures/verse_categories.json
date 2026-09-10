@@ -1,0 +1,2895 @@
+{
+  "_not": "Ü10 · deterministik sahte eşleşme, editoryaldir, dinî hüküm değildir. Bir ayet en fazla 5 kategoriye bağlanır (brief normu).",
+  "mappings": [
+    {
+      "verseId": "F07:05",
+      "categoryId": "A01",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F08:04",
+      "categoryId": "A01",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F09:03",
+      "categoryId": "A01",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F10:02",
+      "categoryId": "A01",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F11:01",
+      "categoryId": "A01",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F22:03",
+      "categoryId": "A02",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F23:02",
+      "categoryId": "A02",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F24:01",
+      "categoryId": "A02",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F24:08",
+      "categoryId": "A02",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F25:07",
+      "categoryId": "A02",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F24:05",
+      "categoryId": "A03",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F25:04",
+      "categoryId": "A03",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F01:03",
+      "categoryId": "A03",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F02:02",
+      "categoryId": "A03",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F03:01",
+      "categoryId": "A03",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F05:07",
+      "categoryId": "A04",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F21:04",
+      "categoryId": "A05",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F22:03",
+      "categoryId": "A05",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F23:02",
+      "categoryId": "A05",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F24:01",
+      "categoryId": "A05",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F24:08",
+      "categoryId": "A05",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F25:07",
+      "categoryId": "A05",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F01:06",
+      "categoryId": "A05",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F07:04",
+      "categoryId": "A06",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F08:03",
+      "categoryId": "A06",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F09:02",
+      "categoryId": "A06",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F10:01",
+      "categoryId": "A06",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F10:08",
+      "categoryId": "A06",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F11:07",
+      "categoryId": "A06",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F12:06",
+      "categoryId": "A06",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F13:05",
+      "categoryId": "A06",
+      "relevanceScore": 65
+    },
+    {
+      "verseId": "F16:07",
+      "categoryId": "A07",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F17:06",
+      "categoryId": "A07",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F18:05",
+      "categoryId": "A07",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F19:04",
+      "categoryId": "A07",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F20:03",
+      "categoryId": "A07",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F05:06",
+      "categoryId": "A08",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F06:05",
+      "categoryId": "A08",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F20:05",
+      "categoryId": "A09",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F17:02",
+      "categoryId": "B01",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F18:01",
+      "categoryId": "B01",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F18:08",
+      "categoryId": "B01",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F19:07",
+      "categoryId": "B01",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F20:06",
+      "categoryId": "B01",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F21:05",
+      "categoryId": "B01",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F22:04",
+      "categoryId": "B01",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F23:03",
+      "categoryId": "B01",
+      "relevanceScore": 65
+    },
+    {
+      "verseId": "F07:02",
+      "categoryId": "B02",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F14:05",
+      "categoryId": "B03",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F15:04",
+      "categoryId": "B03",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F22:03",
+      "categoryId": "B04",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F23:02",
+      "categoryId": "B04",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F24:01",
+      "categoryId": "B04",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F24:08",
+      "categoryId": "B04",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F14:08",
+      "categoryId": "B06",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F15:07",
+      "categoryId": "B06",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F16:06",
+      "categoryId": "B06",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F20:08",
+      "categoryId": "B07",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F21:07",
+      "categoryId": "B07",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F18:08",
+      "categoryId": "B08",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F19:07",
+      "categoryId": "B08",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F01:03",
+      "categoryId": "B09",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F02:02",
+      "categoryId": "B09",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F03:01",
+      "categoryId": "B09",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F03:08",
+      "categoryId": "B09",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F07:08",
+      "categoryId": "B10",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F08:07",
+      "categoryId": "B10",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F09:06",
+      "categoryId": "B10",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F16:08",
+      "categoryId": "C01",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F17:07",
+      "categoryId": "C01",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F18:06",
+      "categoryId": "C01",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F19:05",
+      "categoryId": "C01",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F20:04",
+      "categoryId": "C01",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F21:03",
+      "categoryId": "C01",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F22:02",
+      "categoryId": "C01",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F23:01",
+      "categoryId": "C01",
+      "relevanceScore": 65
+    },
+    {
+      "verseId": "F15:05",
+      "categoryId": "C02",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F16:04",
+      "categoryId": "C02",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F17:03",
+      "categoryId": "C02",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F18:02",
+      "categoryId": "C02",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F01:05",
+      "categoryId": "C03",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F02:04",
+      "categoryId": "C03",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F03:03",
+      "categoryId": "C03",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F16:03",
+      "categoryId": "C04",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F17:02",
+      "categoryId": "C04",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F18:01",
+      "categoryId": "C04",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F18:08",
+      "categoryId": "C04",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F19:07",
+      "categoryId": "C04",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F20:06",
+      "categoryId": "C04",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F21:05",
+      "categoryId": "C04",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F06:05",
+      "categoryId": "C06",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F23:05",
+      "categoryId": "C07",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F24:04",
+      "categoryId": "C07",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F25:03",
+      "categoryId": "C07",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F01:02",
+      "categoryId": "C07",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F02:01",
+      "categoryId": "C07",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F02:08",
+      "categoryId": "C07",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F03:07",
+      "categoryId": "C07",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F13:07",
+      "categoryId": "C09",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F14:06",
+      "categoryId": "C09",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F12:01",
+      "categoryId": "C10",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F12:08",
+      "categoryId": "C10",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F13:07",
+      "categoryId": "C10",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F14:06",
+      "categoryId": "C10",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F25:05",
+      "categoryId": "D01",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F01:04",
+      "categoryId": "D01",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F02:03",
+      "categoryId": "D01",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F03:02",
+      "categoryId": "D01",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F04:01",
+      "categoryId": "D01",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F07:08",
+      "categoryId": "D02",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F08:07",
+      "categoryId": "D02",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F09:06",
+      "categoryId": "D02",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F10:05",
+      "categoryId": "D02",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F11:04",
+      "categoryId": "D02",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F12:03",
+      "categoryId": "D02",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F13:02",
+      "categoryId": "D02",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F20:02",
+      "categoryId": "D03",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F21:01",
+      "categoryId": "D03",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F21:08",
+      "categoryId": "D03",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F22:07",
+      "categoryId": "D03",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F23:06",
+      "categoryId": "D03",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F24:05",
+      "categoryId": "D03",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F02:03",
+      "categoryId": "D04",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F03:02",
+      "categoryId": "D04",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F04:01",
+      "categoryId": "D04",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F04:08",
+      "categoryId": "D04",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F05:07",
+      "categoryId": "D04",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F18:03",
+      "categoryId": "D05",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F19:02",
+      "categoryId": "D05",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F20:01",
+      "categoryId": "D05",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F20:08",
+      "categoryId": "D05",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F21:07",
+      "categoryId": "D05",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F22:06",
+      "categoryId": "D05",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F23:05",
+      "categoryId": "D05",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F24:04",
+      "categoryId": "D05",
+      "relevanceScore": 65
+    },
+    {
+      "verseId": "F03:06",
+      "categoryId": "D06",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F04:05",
+      "categoryId": "D06",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F06:07",
+      "categoryId": "D07",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F07:06",
+      "categoryId": "D07",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F08:05",
+      "categoryId": "D07",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F09:04",
+      "categoryId": "D07",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F10:03",
+      "categoryId": "D07",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F16:02",
+      "categoryId": "D08",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F17:01",
+      "categoryId": "D08",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F17:08",
+      "categoryId": "D08",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F02:03",
+      "categoryId": "D09",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F03:02",
+      "categoryId": "D09",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F04:01",
+      "categoryId": "D09",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F04:08",
+      "categoryId": "D09",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F05:07",
+      "categoryId": "D09",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F06:06",
+      "categoryId": "D09",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F07:05",
+      "categoryId": "D09",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F08:04",
+      "categoryId": "D09",
+      "relevanceScore": 65
+    },
+    {
+      "verseId": "F06:04",
+      "categoryId": "D10",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F07:03",
+      "categoryId": "D10",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F08:02",
+      "categoryId": "D10",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F09:01",
+      "categoryId": "D10",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F09:08",
+      "categoryId": "D10",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F15:06",
+      "categoryId": "E03",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F16:05",
+      "categoryId": "E03",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F17:04",
+      "categoryId": "E03",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F18:03",
+      "categoryId": "E03",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F22:05",
+      "categoryId": "E04",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F23:04",
+      "categoryId": "E04",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F24:03",
+      "categoryId": "E04",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F25:02",
+      "categoryId": "E04",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F01:01",
+      "categoryId": "E04",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F04:03",
+      "categoryId": "E05",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F05:02",
+      "categoryId": "E05",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F06:01",
+      "categoryId": "E05",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F06:08",
+      "categoryId": "E05",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F07:05",
+      "categoryId": "E06",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F08:04",
+      "categoryId": "E06",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F09:03",
+      "categoryId": "E06",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F09:01",
+      "categoryId": "E08",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F09:08",
+      "categoryId": "E08",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F10:07",
+      "categoryId": "E08",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F11:06",
+      "categoryId": "E08",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F12:05",
+      "categoryId": "E08",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F13:04",
+      "categoryId": "E08",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F14:03",
+      "categoryId": "E08",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F23:03",
+      "categoryId": "E09",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F14:06",
+      "categoryId": "E10",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F25:07",
+      "categoryId": "F01",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F01:06",
+      "categoryId": "F01",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F02:05",
+      "categoryId": "F01",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F03:04",
+      "categoryId": "F01",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F04:03",
+      "categoryId": "F01",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F05:02",
+      "categoryId": "F01",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F23:03",
+      "categoryId": "F02",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F24:02",
+      "categoryId": "F02",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F06:05",
+      "categoryId": "F03",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F07:04",
+      "categoryId": "F03",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F22:07",
+      "categoryId": "F04",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F23:06",
+      "categoryId": "F04",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F24:05",
+      "categoryId": "F04",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F25:04",
+      "categoryId": "F04",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F01:03",
+      "categoryId": "F04",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F22:04",
+      "categoryId": "F05",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F23:03",
+      "categoryId": "F05",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F24:02",
+      "categoryId": "F05",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F25:01",
+      "categoryId": "F05",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F25:08",
+      "categoryId": "F05",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F13:06",
+      "categoryId": "F06",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F06:02",
+      "categoryId": "F07",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F07:01",
+      "categoryId": "F07",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F07:08",
+      "categoryId": "F07",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F08:07",
+      "categoryId": "F07",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F09:06",
+      "categoryId": "F07",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F10:05",
+      "categoryId": "F07",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F11:04",
+      "categoryId": "F07",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F12:03",
+      "categoryId": "F07",
+      "relevanceScore": 65
+    },
+    {
+      "verseId": "F17:04",
+      "categoryId": "F10",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F18:03",
+      "categoryId": "F10",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F19:02",
+      "categoryId": "F10",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F18:06",
+      "categoryId": "M01",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F19:05",
+      "categoryId": "M01",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F20:04",
+      "categoryId": "M01",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F21:06",
+      "categoryId": "M02",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F22:05",
+      "categoryId": "M02",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F01:01",
+      "categoryId": "M03",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F01:08",
+      "categoryId": "M03",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F02:07",
+      "categoryId": "M03",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F03:06",
+      "categoryId": "M03",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F04:05",
+      "categoryId": "M03",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F05:04",
+      "categoryId": "M03",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F06:03",
+      "categoryId": "M03",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F04:07",
+      "categoryId": "M04",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F05:06",
+      "categoryId": "M04",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F06:05",
+      "categoryId": "M04",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F15:03",
+      "categoryId": "M05",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F16:02",
+      "categoryId": "M05",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F17:01",
+      "categoryId": "M05",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F17:08",
+      "categoryId": "M05",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F18:07",
+      "categoryId": "M05",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F19:06",
+      "categoryId": "M05",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F19:06",
+      "categoryId": "M06",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F20:05",
+      "categoryId": "M06",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F22:04",
+      "categoryId": "M07",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F23:03",
+      "categoryId": "M07",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F24:02",
+      "categoryId": "M07",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F25:01",
+      "categoryId": "M07",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F24:06",
+      "categoryId": "M08",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F25:05",
+      "categoryId": "M08",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F01:04",
+      "categoryId": "M08",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F02:03",
+      "categoryId": "M08",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F03:02",
+      "categoryId": "M08",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F04:01",
+      "categoryId": "M08",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F04:08",
+      "categoryId": "M08",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F14:02",
+      "categoryId": "M09",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F15:01",
+      "categoryId": "M09",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F15:08",
+      "categoryId": "M09",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F16:07",
+      "categoryId": "M09",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F17:06",
+      "categoryId": "M09",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F03:01",
+      "categoryId": "M10",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F03:08",
+      "categoryId": "M10",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F04:07",
+      "categoryId": "M10",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F05:06",
+      "categoryId": "M10",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F21:03",
+      "categoryId": "G01",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F22:02",
+      "categoryId": "G01",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F23:01",
+      "categoryId": "G01",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F23:08",
+      "categoryId": "G01",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F24:07",
+      "categoryId": "G01",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F25:06",
+      "categoryId": "G01",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F01:05",
+      "categoryId": "G01",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F02:04",
+      "categoryId": "G01",
+      "relevanceScore": 65
+    },
+    {
+      "verseId": "F23:08",
+      "categoryId": "G03",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F24:07",
+      "categoryId": "G03",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F25:06",
+      "categoryId": "G03",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F22:01",
+      "categoryId": "G04",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F22:08",
+      "categoryId": "G04",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F23:07",
+      "categoryId": "G04",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F24:06",
+      "categoryId": "G04",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F19:02",
+      "categoryId": "G06",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F20:01",
+      "categoryId": "G06",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F20:08",
+      "categoryId": "G06",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F17:02",
+      "categoryId": "G07",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F18:01",
+      "categoryId": "G07",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F18:08",
+      "categoryId": "G07",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F19:07",
+      "categoryId": "G07",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F20:06",
+      "categoryId": "G07",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F15:02",
+      "categoryId": "G08",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F16:01",
+      "categoryId": "G08",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F16:08",
+      "categoryId": "G08",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F17:07",
+      "categoryId": "G08",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F18:06",
+      "categoryId": "G08",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F19:05",
+      "categoryId": "G08",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F08:06",
+      "categoryId": "G09",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F09:05",
+      "categoryId": "G09",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F10:04",
+      "categoryId": "G09",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F11:03",
+      "categoryId": "G09",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F12:02",
+      "categoryId": "G09",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F13:02",
+      "categoryId": "G10",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F14:01",
+      "categoryId": "G10",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F14:08",
+      "categoryId": "G10",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F15:07",
+      "categoryId": "G10",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F18:02",
+      "categoryId": "H02",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F19:01",
+      "categoryId": "H02",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F19:08",
+      "categoryId": "H02",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F20:07",
+      "categoryId": "H02",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F21:06",
+      "categoryId": "H02",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F22:05",
+      "categoryId": "H02",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F23:04",
+      "categoryId": "H02",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F24:03",
+      "categoryId": "H02",
+      "relevanceScore": 65
+    },
+    {
+      "verseId": "F14:08",
+      "categoryId": "H03",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F15:07",
+      "categoryId": "H03",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F13:05",
+      "categoryId": "H04",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F14:04",
+      "categoryId": "H04",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F15:03",
+      "categoryId": "H04",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F16:02",
+      "categoryId": "H04",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F17:01",
+      "categoryId": "H04",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F13:03",
+      "categoryId": "H05",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F14:02",
+      "categoryId": "H05",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F15:01",
+      "categoryId": "H05",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F15:08",
+      "categoryId": "H05",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F16:07",
+      "categoryId": "H05",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F20:03",
+      "categoryId": "H08",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F06:06",
+      "categoryId": "H09",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F07:05",
+      "categoryId": "H09",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F08:04",
+      "categoryId": "H09",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F09:05",
+      "categoryId": "H10",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F10:04",
+      "categoryId": "H10",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F08:08",
+      "categoryId": "I01",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F09:07",
+      "categoryId": "I01",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F10:06",
+      "categoryId": "I01",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F11:05",
+      "categoryId": "I01",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F10:06",
+      "categoryId": "I02",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F11:05",
+      "categoryId": "I02",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F11:08",
+      "categoryId": "I03",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F12:07",
+      "categoryId": "I03",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F13:06",
+      "categoryId": "I03",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F14:05",
+      "categoryId": "I03",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F15:04",
+      "categoryId": "I03",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F16:03",
+      "categoryId": "I03",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F17:02",
+      "categoryId": "I03",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F18:01",
+      "categoryId": "I03",
+      "relevanceScore": 65
+    },
+    {
+      "verseId": "F20:02",
+      "categoryId": "I04",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F21:01",
+      "categoryId": "I04",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F21:08",
+      "categoryId": "I04",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F22:07",
+      "categoryId": "I04",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F23:06",
+      "categoryId": "I04",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F24:05",
+      "categoryId": "I04",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F25:04",
+      "categoryId": "I04",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F08:03",
+      "categoryId": "I05",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F09:02",
+      "categoryId": "I05",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F05:06",
+      "categoryId": "I06",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F06:05",
+      "categoryId": "I06",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F07:04",
+      "categoryId": "I06",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F08:03",
+      "categoryId": "I06",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F09:02",
+      "categoryId": "I06",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F10:01",
+      "categoryId": "I06",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F10:08",
+      "categoryId": "I06",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F20:04",
+      "categoryId": "I07",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F15:06",
+      "categoryId": "I08",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F06:06",
+      "categoryId": "I09",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F07:05",
+      "categoryId": "I09",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F08:04",
+      "categoryId": "I09",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F04:05",
+      "categoryId": "I10",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F05:04",
+      "categoryId": "I10",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F07:06",
+      "categoryId": "J01",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F08:05",
+      "categoryId": "J01",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F09:04",
+      "categoryId": "J01",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F10:03",
+      "categoryId": "J01",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F11:02",
+      "categoryId": "J01",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F05:08",
+      "categoryId": "J02",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F06:07",
+      "categoryId": "J02",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F25:06",
+      "categoryId": "J03",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F01:05",
+      "categoryId": "J03",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F02:04",
+      "categoryId": "J03",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F03:03",
+      "categoryId": "J03",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F04:02",
+      "categoryId": "J03",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F05:01",
+      "categoryId": "J03",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F05:08",
+      "categoryId": "J03",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F23:08",
+      "categoryId": "J04",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F24:07",
+      "categoryId": "J04",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F25:06",
+      "categoryId": "J04",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F01:05",
+      "categoryId": "J04",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F02:04",
+      "categoryId": "J04",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F03:03",
+      "categoryId": "J04",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F04:02",
+      "categoryId": "J04",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F01:01",
+      "categoryId": "J06",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F01:08",
+      "categoryId": "J06",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F13:06",
+      "categoryId": "J07",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F14:05",
+      "categoryId": "J07",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F15:04",
+      "categoryId": "J07",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F16:03",
+      "categoryId": "J07",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F17:02",
+      "categoryId": "J07",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F18:01",
+      "categoryId": "J07",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F15:06",
+      "categoryId": "J09",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F16:05",
+      "categoryId": "J09",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F17:04",
+      "categoryId": "J09",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F18:03",
+      "categoryId": "J09",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F19:02",
+      "categoryId": "J09",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F07:06",
+      "categoryId": "J10",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F22:02",
+      "categoryId": "K01",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F23:01",
+      "categoryId": "K01",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F23:08",
+      "categoryId": "K01",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F23:07",
+      "categoryId": "K02",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F24:06",
+      "categoryId": "K02",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F25:05",
+      "categoryId": "K02",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F01:05",
+      "categoryId": "K03",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F02:04",
+      "categoryId": "K03",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F03:03",
+      "categoryId": "K03",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F04:02",
+      "categoryId": "K03",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F05:01",
+      "categoryId": "K03",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F05:08",
+      "categoryId": "K03",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F06:07",
+      "categoryId": "K03",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F19:04",
+      "categoryId": "K04",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F20:03",
+      "categoryId": "K04",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F21:02",
+      "categoryId": "K04",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F22:01",
+      "categoryId": "K04",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F22:08",
+      "categoryId": "K04",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F16:06",
+      "categoryId": "K05",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F17:05",
+      "categoryId": "K05",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F18:04",
+      "categoryId": "K05",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F19:03",
+      "categoryId": "K05",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F20:02",
+      "categoryId": "K05",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F21:01",
+      "categoryId": "K05",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F21:08",
+      "categoryId": "K05",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F22:07",
+      "categoryId": "K05",
+      "relevanceScore": 65
+    },
+    {
+      "verseId": "F04:08",
+      "categoryId": "K06",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F05:07",
+      "categoryId": "K06",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F06:06",
+      "categoryId": "K06",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F09:03",
+      "categoryId": "K06",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F10:02",
+      "categoryId": "K06",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F11:01",
+      "categoryId": "K06",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F10:06",
+      "categoryId": "K08",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F11:05",
+      "categoryId": "K08",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F12:04",
+      "categoryId": "K08",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F13:03",
+      "categoryId": "K08",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F14:02",
+      "categoryId": "K08",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F15:01",
+      "categoryId": "K08",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F15:08",
+      "categoryId": "K08",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F16:07",
+      "categoryId": "K08",
+      "relevanceScore": 65
+    },
+    {
+      "verseId": "F03:03",
+      "categoryId": "K09",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F12:02",
+      "categoryId": "K10",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F13:01",
+      "categoryId": "K10",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F25:04",
+      "categoryId": "L01",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F01:03",
+      "categoryId": "L01",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F02:02",
+      "categoryId": "L01",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F03:01",
+      "categoryId": "L01",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F03:08",
+      "categoryId": "L01",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F04:07",
+      "categoryId": "L01",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F05:06",
+      "categoryId": "L01",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F16:01",
+      "categoryId": "L02",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F16:08",
+      "categoryId": "L02",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F17:07",
+      "categoryId": "L02",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F18:06",
+      "categoryId": "L02",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F19:05",
+      "categoryId": "L02",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F20:04",
+      "categoryId": "L02",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F17:05",
+      "categoryId": "L04",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F18:04",
+      "categoryId": "L04",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F19:03",
+      "categoryId": "L04",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F20:02",
+      "categoryId": "L04",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F12:05",
+      "categoryId": "L06",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F13:02",
+      "categoryId": "L07",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F14:01",
+      "categoryId": "L07",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F14:08",
+      "categoryId": "L07",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F15:07",
+      "categoryId": "L07",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F16:06",
+      "categoryId": "L07",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F17:05",
+      "categoryId": "L07",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F18:04",
+      "categoryId": "L07",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F19:03",
+      "categoryId": "L07",
+      "relevanceScore": 65
+    },
+    {
+      "verseId": "F17:07",
+      "categoryId": "L09",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F18:06",
+      "categoryId": "L09",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F19:05",
+      "categoryId": "L09",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F04:02",
+      "categoryId": "L10",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F05:01",
+      "categoryId": "L10",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F05:08",
+      "categoryId": "L10",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F06:07",
+      "categoryId": "L10",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F07:06",
+      "categoryId": "L10",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F16:07",
+      "categoryId": "N01",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F17:06",
+      "categoryId": "N01",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F18:05",
+      "categoryId": "N01",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F10:01",
+      "categoryId": "N03",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F10:08",
+      "categoryId": "N03",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F11:07",
+      "categoryId": "N03",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F12:06",
+      "categoryId": "N03",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F13:05",
+      "categoryId": "N03",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F02:01",
+      "categoryId": "N05",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F02:08",
+      "categoryId": "N05",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F03:01",
+      "categoryId": "N06",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F03:08",
+      "categoryId": "N06",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F04:07",
+      "categoryId": "N06",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F07:04",
+      "categoryId": "N06",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F08:03",
+      "categoryId": "N06",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F09:02",
+      "categoryId": "N06",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F10:01",
+      "categoryId": "N06",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F22:06",
+      "categoryId": "N07",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F23:05",
+      "categoryId": "N07",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F24:04",
+      "categoryId": "N07",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F25:03",
+      "categoryId": "N07",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F04:02",
+      "categoryId": "N08",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F05:01",
+      "categoryId": "N08",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F05:08",
+      "categoryId": "N08",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F06:07",
+      "categoryId": "N08",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F07:06",
+      "categoryId": "N08",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F02:07",
+      "categoryId": "N09",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F03:06",
+      "categoryId": "N09",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F04:05",
+      "categoryId": "N09",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F21:08",
+      "categoryId": "N10",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F22:07",
+      "categoryId": "N10",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F23:06",
+      "categoryId": "N10",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F24:05",
+      "categoryId": "N10",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F25:04",
+      "categoryId": "N10",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F01:06",
+      "categoryId": "O01",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F02:05",
+      "categoryId": "O01",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F03:04",
+      "categoryId": "O01",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F04:03",
+      "categoryId": "O01",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F05:02",
+      "categoryId": "O01",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F06:01",
+      "categoryId": "O01",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F06:08",
+      "categoryId": "O01",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F07:07",
+      "categoryId": "O01",
+      "relevanceScore": 65
+    },
+    {
+      "verseId": "F09:05",
+      "categoryId": "O02",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F10:04",
+      "categoryId": "O02",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F11:03",
+      "categoryId": "O02",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F18:05",
+      "categoryId": "O03",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F05:01",
+      "categoryId": "O04",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F08:05",
+      "categoryId": "O04",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F20:05",
+      "categoryId": "O05",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F21:04",
+      "categoryId": "O05",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F22:03",
+      "categoryId": "O05",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F23:02",
+      "categoryId": "O05",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F24:01",
+      "categoryId": "O05",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F24:08",
+      "categoryId": "O05",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F03:04",
+      "categoryId": "O06",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F04:03",
+      "categoryId": "O06",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F05:02",
+      "categoryId": "O06",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F09:01",
+      "categoryId": "O07",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F09:08",
+      "categoryId": "O07",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F10:07",
+      "categoryId": "O07",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F11:06",
+      "categoryId": "O07",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F12:05",
+      "categoryId": "O07",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F13:04",
+      "categoryId": "O07",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F03:02",
+      "categoryId": "O08",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F04:01",
+      "categoryId": "O08",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F04:08",
+      "categoryId": "O08",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F05:07",
+      "categoryId": "O08",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F25:05",
+      "categoryId": "O09",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F01:04",
+      "categoryId": "O09",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F02:03",
+      "categoryId": "O09",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F06:06",
+      "categoryId": "O09",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F09:03",
+      "categoryId": "O09",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F21:08",
+      "categoryId": "O10",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F23:06",
+      "categoryId": "O10",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F01:03",
+      "categoryId": "O10",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F15:02",
+      "categoryId": "P01",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F16:01",
+      "categoryId": "P01",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F16:08",
+      "categoryId": "P01",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F17:07",
+      "categoryId": "P01",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F09:05",
+      "categoryId": "P02",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F08:05",
+      "categoryId": "P03",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F18:08",
+      "categoryId": "P04",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F19:07",
+      "categoryId": "P04",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F20:06",
+      "categoryId": "P04",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F22:06",
+      "categoryId": "P05",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F23:05",
+      "categoryId": "P05",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F12:05",
+      "categoryId": "P06",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F13:04",
+      "categoryId": "P06",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F14:03",
+      "categoryId": "P06",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F15:07",
+      "categoryId": "P07",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F08:05",
+      "categoryId": "P08",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F09:04",
+      "categoryId": "P08",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F10:03",
+      "categoryId": "P08",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F11:02",
+      "categoryId": "P08",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F01:01",
+      "categoryId": "P09",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F01:08",
+      "categoryId": "P09",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F02:07",
+      "categoryId": "P09",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F03:06",
+      "categoryId": "P09",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F04:05",
+      "categoryId": "P09",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F05:04",
+      "categoryId": "P09",
+      "relevanceScore": 75
+    },
+    {
+      "verseId": "F06:03",
+      "categoryId": "P09",
+      "relevanceScore": 70
+    },
+    {
+      "verseId": "F24:07",
+      "categoryId": "P10",
+      "relevanceScore": 100
+    },
+    {
+      "verseId": "F25:06",
+      "categoryId": "P10",
+      "relevanceScore": 95
+    },
+    {
+      "verseId": "F09:04",
+      "categoryId": "P10",
+      "relevanceScore": 90
+    },
+    {
+      "verseId": "F10:03",
+      "categoryId": "P10",
+      "relevanceScore": 85
+    },
+    {
+      "verseId": "F11:02",
+      "categoryId": "P10",
+      "relevanceScore": 80
+    },
+    {
+      "verseId": "F12:01",
+      "categoryId": "P10",
+      "relevanceScore": 75
+    }
+  ]
+}

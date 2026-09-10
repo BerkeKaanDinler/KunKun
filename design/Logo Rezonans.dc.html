@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FBFBFA}
+a{color:#1F5C8B}
+a:hover{color:#144160}
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+
+<div style="padding:44px 48px 0;display:flex;flex-direction:column;gap:16px;font-family:'DM Sans',system-ui">
+  <div style="display:flex;flex-direction:column;gap:8px;max-width:820px">
+    <div style="font-size:10.5px;font-weight:600;letter-spacing:.16em;color:#8A8A85">GERÇEK KUM DESENLERİ · REFERANS</div>
+    <div style="font-family:Newsreader,serif;font-size:26px;font-weight:600;line-height:1.2;color:#17181A">Ölçüm bu üç fotoğraftan alındı</div>
+    <div style="font-size:14px;line-height:1.65;color:#43454A;text-wrap:pretty">Her fotoğrafın açısal ve radyal parlaklık profili çıkarıldı; nodal çizgi sayıları ve halka yarıçapları buradan geldi. Yeni desen eklersen çizim de güncellenir.</div>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start">
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="width:300px;height:300px;border-radius:12px;overflow:hidden;background:#F2F2F0;border:1px solid #E4E3DF">
+        <image-slot id="rezonans-432" shape="rect" placeholder="432 Hz · gerçek desen"></image-slot>
+      </div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#17181A">432 Hz · double ring</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="width:300px;height:300px;border-radius:12px;overflow:hidden;background:#F2F2F0;border:1px solid #E4E3DF">
+        <image-slot id="rezonans-761" shape="rect" placeholder="761.7 Hz · sunburst"></image-slot>
+      </div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#17181A">761.7 Hz · 12 ışın</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="width:300px;height:300px;border-radius:12px;overflow:hidden;background:#F2F2F0;border:1px solid #E4E3DF">
+        <image-slot id="rezonans-1646" shape="rect" placeholder="1646.7 Hz · asteriks yıldız"></image-slot>
+      </div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#17181A">1646.7 Hz · 8 ışın</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="width:300px;height:300px;border-radius:12px;overflow:hidden;background:#F2F2F0;border:1px solid #E4E3DF">
+        <image-slot id="rezonans-birlesik" shape="rect" placeholder="Ek referans"></image-slot>
+      </div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#17181A">Ek referans</div>
+    </div>
+  </div>
+</div>
+
+<section style="padding:40px 48px 70px;display:flex;flex-direction:column;gap:34px;font-family:'DM Sans',system-ui">
+
+  <div style="display:flex;flex-direction:column;gap:9px;max-width:820px">
+    <div style="font-size:10.5px;font-weight:600;letter-spacing:.16em;color:#8A8A85">LOGO · REZONANS DESENİ · 2. TUR</div>
+    <div style="font-family:Newsreader,serif;font-size:31px;font-weight:600;line-height:1.15;color:#17181A">Ölçülen desenlerle</div>
+    <div style="font-size:14.5px;line-height:1.65;color:#43454A;text-wrap:pretty">432 Hz tabanda: fotoğrafta ışın yok, iki halka var (double ring) — dış 0.98R, iç 0.31R. Üstüne 761.7 Hz'in on iki ince ışını geliyor, 1px kaydırık. En üste 1646.7 Hz'in sekiz kalın ışını, 2px kaydırık — asteriks okuması buradan geliyor. Üç katman aynı merkezi paylaşıyor, kaydırma onları ayırt edilebilir tutuyor.</div>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:34px;align-items:flex-start">
+    <div style="display:flex;flex-direction:column;gap:11px">
+      <div style="padding:36px;background:#FFFFFF;border:1px solid #E6E5E1;border-radius:14px">
+        <svg width="420" height="420" viewBox="0 0 200 200" fill="none">
+          <g stroke="#17181A" stroke-width="1.1">
+            <circle cx="100" cy="100" r="88"></circle>
+            <circle cx="100" cy="100" r="28"></circle>
+          </g>
+          <g transform="translate(1,1)" stroke="#17181A" stroke-width=".75" stroke-linecap="round" opacity=".7">
+            <sc-for list="{{ spokes12 }}" as="l" hint-placeholder-count="12"><line x1="{{ l.x1 }}" y1="{{ l.y1 }}" x2="{{ l.x2 }}" y2="{{ l.y2 }}"></line></sc-for>
+          </g>
+          <g transform="translate(2,2)" stroke="#17181A" stroke-width="2.4" stroke-linecap="round">
+            <sc-for list="{{ spokes8 }}" as="l" hint-placeholder-count="8"><line x1="{{ l.x1 }}" y1="{{ l.y1 }}" x2="{{ l.x2 }}" y2="{{ l.y2 }}"></line></sc-for>
+          </g>
+        </svg>
+      </div>
+      <div style="font-size:12.5px;color:#6B6B6B">Üç katman birlikte · tek renk</div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:11px">
+      <div style="padding:36px;background:#121110;border:1px solid #262220;border-radius:14px">
+        <svg width="300" height="300" viewBox="0 0 200 200" fill="none">
+          <g stroke="#F2EDE7" stroke-width="1.1" opacity=".5">
+            <circle cx="100" cy="100" r="88"></circle>
+            <circle cx="100" cy="100" r="28"></circle>
+          </g>
+          <g transform="translate(1,1)" stroke="#F2EDE7" stroke-width=".75" stroke-linecap="round" opacity=".62">
+            <sc-for list="{{ spokes12 }}" as="l" hint-placeholder-count="12"><line x1="{{ l.x1 }}" y1="{{ l.y1 }}" x2="{{ l.x2 }}" y2="{{ l.y2 }}"></line></sc-for>
+          </g>
+          <g transform="translate(2,2)" stroke="#E0894A" stroke-width="2.4" stroke-linecap="round">
+            <sc-for list="{{ spokes8 }}" as="l" hint-placeholder-count="8"><line x1="{{ l.x1 }}" y1="{{ l.y1 }}" x2="{{ l.x2 }}" y2="{{ l.y2 }}"></line></sc-for>
+          </g>
+        </svg>
+      </div>
+      <div style="font-size:12.5px;color:#6B6B6B">Koyu zemin · asteriks katmanı aksan renginde</div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:14px">
+    <div style="font-size:15.5px;font-weight:600;color:#17181A">Katmanlar ayrı ayrı</div>
+    <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start">
+
+      <div style="display:flex;flex-direction:column;gap:9px">
+        <div style="padding:20px;background:#FFFFFF;border:1px solid #E6E5E1;border-radius:12px">
+          <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+            <g stroke="#17181A" stroke-width="1.1">
+              <circle cx="100" cy="100" r="88"></circle>
+              <circle cx="100" cy="100" r="28"></circle>
+            </g>
+          </svg>
+        </div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#17181A">432 Hz · taban</div>
+        <div style="width:200px;font-size:12px;line-height:1.5;color:#77797D">Double ring: 0.31R ve 0.98R. Işın yok, kaydırma yok.</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:9px">
+        <div style="padding:20px;background:#FFFFFF;border:1px solid #E6E5E1;border-radius:12px">
+          <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+            <g transform="translate(1,1)" stroke="#17181A" stroke-width=".75" stroke-linecap="round">
+              <sc-for list="{{ spokes12 }}" as="l" hint-placeholder-count="12"><line x1="{{ l.x1 }}" y1="{{ l.y1 }}" x2="{{ l.x2 }}" y2="{{ l.y2 }}"></line></sc-for>
+            </g>
+          </svg>
+        </div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#17181A">761.7 Hz · sunburst</div>
+        <div style="width:200px;font-size:12px;line-height:1.5;color:#77797D">12 ışın, 30° aralık, 0.15–0.88R. 1px kaydırık, %70 opaklık.</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:9px">
+        <div style="padding:20px;background:#FFFFFF;border:1px solid #E6E5E1;border-radius:12px">
+          <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+            <g transform="translate(2,2)" stroke="#17181A" stroke-width="2.4" stroke-linecap="round">
+              <sc-for list="{{ spokes8 }}" as="l" hint-placeholder-count="8"><line x1="{{ l.x1 }}" y1="{{ l.y1 }}" x2="{{ l.x2 }}" y2="{{ l.y2 }}"></line></sc-for>
+            </g>
+          </svg>
+        </div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#17181A">1646.7 Hz · asteriks</div>
+        <div style="width:200px;font-size:12px;line-height:1.5;color:#77797D">8 ışın, 45° aralık, 0.09–1.0R. 2px kaydırık, en kalın kontur.</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:9px">
+        <div style="padding:20px;background:#FFFFFF;border:1px solid #E6E5E1;border-radius:12px">
+          <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+            <g stroke="#1F5C8B" stroke-width="1.1">
+              <circle cx="100" cy="100" r="88"></circle>
+              <circle cx="100" cy="100" r="28"></circle>
+            </g>
+            <g transform="translate(1,1)" stroke="#A85434" stroke-width=".75" stroke-linecap="round">
+              <sc-for list="{{ spokes12 }}" as="l" hint-placeholder-count="12"><line x1="{{ l.x1 }}" y1="{{ l.y1 }}" x2="{{ l.x2 }}" y2="{{ l.y2 }}"></line></sc-for>
+            </g>
+            <g transform="translate(2,2)" stroke="#4E5B3A" stroke-width="2.4" stroke-linecap="round">
+              <sc-for list="{{ spokes8 }}" as="l" hint-placeholder-count="8"><line x1="{{ l.x1 }}" y1="{{ l.y1 }}" x2="{{ l.x2 }}" y2="{{ l.y2 }}"></line></sc-for>
+            </g>
+          </svg>
+        </div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#17181A">İnceleme · renk ayrımlı</div>
+        <div style="width:200px;font-size:12px;line-height:1.5;color:#77797D">Kaydırmayı görmek için: mavi halkalar, kiremit sunburst, zeytin asteriks.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:14px">
+    <div style="font-size:15.5px;font-weight:600;color:#17181A">Ölçek merdiveni</div>
+    <div style="display:flex;flex-wrap:wrap;gap:26px;align-items:flex-end">
+
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:center">
+        <svg width="128" height="128" viewBox="0 0 200 200" fill="none">
+          <g stroke="#17181A" stroke-width="1.6">
+            <circle cx="100" cy="100" r="88"></circle>
+            <circle cx="100" cy="100" r="28"></circle>
+          </g>
+          <g transform="translate(1,1)" stroke="#17181A" stroke-width="1" stroke-linecap="round" opacity=".6">
+            <sc-for list="{{ spokes12 }}" as="l" hint-placeholder-count="12"><line x1="{{ l.x1 }}" y1="{{ l.y1 }}" x2="{{ l.x2 }}" y2="{{ l.y2 }}"></line></sc-for>
+          </g>
+          <g transform="translate(2,2)" stroke="#17181A" stroke-width="3" stroke-linecap="round">
+            <sc-for list="{{ spokes8 }}" as="l" hint-placeholder-count="8"><line x1="{{ l.x1 }}" y1="{{ l.y1 }}" x2="{{ l.x2 }}" y2="{{ l.y2 }}"></line></sc-for>
+          </g>
+        </svg>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#77797D">128 · üç katman</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:center">
+        <svg width="64" height="64" viewBox="0 0 200 200" fill="none">
+          <g stroke="#17181A" stroke-width="3.4">
+            <circle cx="100" cy="100" r="86"></circle>
+            <circle cx="100" cy="100" r="28"></circle>
+          </g>
+          <g transform="translate(2,2)" stroke="#17181A" stroke-width="5" stroke-linecap="round">
+            <sc-for list="{{ spokes8 }}" as="l" hint-placeholder-count="8"><line x1="{{ l.x1 }}" y1="{{ l.y1 }}" x2="{{ l.x2 }}" y2="{{ l.y2 }}"></line></sc-for>
+          </g>
+        </svg>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#77797D">64 · double ring + 8 ışın</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:center">
+        <svg width="40" height="40" viewBox="0 0 200 200" fill="none">
+          <g stroke="#17181A" stroke-width="6">
+            <circle cx="100" cy="100" r="84"></circle>
+          </g>
+          <g stroke="#17181A" stroke-width="8" stroke-linecap="round">
+            <sc-for list="{{ spokes8s }}" as="l" hint-placeholder-count="8"><line x1="{{ l.x1 }}" y1="{{ l.y1 }}" x2="{{ l.x2 }}" y2="{{ l.y2 }}"></line></sc-for>
+          </g>
+        </svg>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#77797D">40 · kısa ışın</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:center">
+        <svg width="28" height="28" viewBox="0 0 200 200" fill="none">
+          <g stroke="#17181A" stroke-width="9" stroke-linecap="round">
+            <sc-for list="{{ spokes8s }}" as="l" hint-placeholder-count="8"><line x1="{{ l.x1 }}" y1="{{ l.y1 }}" x2="{{ l.x2 }}" y2="{{ l.y2 }}"></line></sc-for>
+          </g>
+        </svg>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#77797D">28 · yalnız asteriks</div>
+      </div>
+
+    </div>
+    <div style="max-width:760px;font-size:12.5px;line-height:1.6;color:#77797D;text-wrap:pretty">Küçüldükçe katmanlar dökülüyor: 128'de üçü, 64'te halka ve sekiz ışın, 40'ta tek halka, 28'de yalnız asteriks. Aynı desenin sadeleşmesi, başka bir logo değil.</div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:14px">
+    <div style="font-size:15.5px;font-weight:600;color:#17181A">Uygulama ikonu · dört tema</div>
+    <div style="display:flex;flex-wrap:wrap;gap:16px">
+      <sc-for list="{{ icons }}" as="i" hint-placeholder-count="4">
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:center">
+        <div style="width:120px;height:120px;border-radius:27px;display:flex;align-items:center;justify-content:center;background:{{ i.bg }};box-shadow:0 8px 20px rgba(0,0,0,.14)">
+          <svg width="84" height="84" viewBox="0 0 200 200" fill="none">
+            <g stroke="{{ i.fg }}" stroke-width="1.8" opacity=".55">
+              <circle cx="100" cy="100" r="88"></circle>
+              <circle cx="100" cy="100" r="28"></circle>
+            </g>
+            <g transform="translate(1,1)" stroke="{{ i.fg }}" stroke-width="1" stroke-linecap="round" opacity=".5">
+              <sc-for list="{{ spokes12 }}" as="l" hint-placeholder-count="12"><line x1="{{ l.x1 }}" y1="{{ l.y1 }}" x2="{{ l.x2 }}" y2="{{ l.y2 }}"></line></sc-for>
+            </g>
+            <g transform="translate(2,2)" stroke="{{ i.fg }}" stroke-width="3.4" stroke-linecap="round">
+              <sc-for list="{{ spokes8 }}" as="l" hint-placeholder-count="8"><line x1="{{ l.x1 }}" y1="{{ l.y1 }}" x2="{{ l.x2 }}" y2="{{ l.y2 }}"></line></sc-for>
+            </g>
+          </svg>
+        </div>
+        <div style="font-size:11.5px;color:#77797D">{{ i.name }}</div>
+      </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="max-width:820px;padding:16px 18px;background:#F7F7F5;border:1px solid #E6E5E1;border-radius:10px;display:flex;flex-direction:column;gap:8px">
+    <div style="font-size:10.5px;font-weight:700;letter-spacing:.14em;color:#8A8A85">ÖLÇÜM VE GEOMETRİ</div>
+    <div style="font-size:13px;line-height:1.7;color:#43454A;text-wrap:pretty">Fotoğrafların açısal parlaklık profilinde 432 Hz'de belirgin ışın tepesi yok — iki parlak bant var, yani desen double ring. 761.7 Hz'de tepeler 30° aralıkla, on iki ışın. 1646.7 Hz'de 45° aralıkla, sekiz ışın; merkez ve kenar parlak. Tuval 200×200, merkez 100/100, dış yarıçap 88. Kaydırma viewBox biriminde 1 ve 2; 420px'te yaklaşık 2 ve 4 gerçek piksele denk düşer.</div>
+  </div>
+
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  ring(n, r1, r2, rotDeg) {
+    const out = [];
+    const rot = ((rotDeg || 0) - 90) * Math.PI / 180;
+    for (let k = 0; k < n; k++) {
+      const a = rot + k * 2 * Math.PI / n;
+      const c = Math.cos(a), s = Math.sin(a);
+      out.push({
+        x1: +(100 + r1 * c).toFixed(2), y1: +(100 + r1 * s).toFixed(2),
+        x2: +(100 + r2 * c).toFixed(2), y2: +(100 + r2 * s).toFixed(2)
+      });
+    }
+    return out;
+  }
+  renderVals() {
+    return {
+      spokes12: this.ring(12, 14, 79, 15),
+      spokes8: this.ring(8, 8, 90),
+      spokes8s: this.ring(8, 26, 84),
+      icons: [
+        { name: 'Kömür + bakır', bg: '#121110', fg: '#E0894A' },
+        { name: 'Zeytin', bg: '#4E5B3A', fg: '#F4F1EA' },
+        { name: 'Çini', bg: '#F4F6F8', fg: '#1F5C8B' },
+        { name: 'Gece yeşimi', bg: '#0B1613', fg: '#4FD1A5' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

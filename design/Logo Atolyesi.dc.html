@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FBFBFA}
+a{color:#1F5C8B}
+a:hover{color:#144160}
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+
+<section style="padding:44px 48px 60px;display:flex;flex-direction:column;gap:26px;font-family:'DM Sans',system-ui">
+  <div style="display:flex;flex-direction:column;gap:9px;max-width:760px">
+    <div style="font-size:10.5px;font-weight:600;letter-spacing:.16em;color:#8A8A85">LOGO ATÖLYESİ · BOŞ SAYFA</div>
+    <div style="font-family:Newsreader,serif;font-size:31px;font-weight:600;line-height:1.15;color:#17181A">Eskizini buraya bırak</div>
+    <div style="font-size:14.5px;line-height:1.65;color:#43454A;text-wrap:pretty">Elle çizdiğin logoyu telefondan bilgisayara alıp aşağıdaki kutuya sürükle. Bırakınca kayıtlı kalır ve ben de görürüm. Birden fazla eskizin varsa üç kutu var — hepsini doldurabilirsin. Sonra ne istediğini yaz, vektöre çevirip varyasyonlarını çizerim.</div>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start">
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="width:420px;height:420px;border-radius:14px;overflow:hidden;background:#F2F2F0;border:1px solid #E4E3DF">
+        <image-slot id="logo-eskiz-1" shape="rect" placeholder="Ana eskiz · buraya sürükle"></image-slot>
+      </div>
+      <div style="font-size:12.5px;color:#6B6B6B">1 · ana eskiz</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="width:260px;height:260px;border-radius:14px;overflow:hidden;background:#F2F2F0;border:1px solid #E4E3DF">
+        <image-slot id="logo-eskiz-2" shape="rect" placeholder="İkinci eskiz"></image-slot>
+      </div>
+      <div style="font-size:12.5px;color:#6B6B6B">2 · varyant</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="width:260px;height:260px;border-radius:14px;overflow:hidden;background:#F2F2F0;border:1px solid #E4E3DF">
+        <image-slot id="logo-eskiz-3" shape="rect" placeholder="Detay / not"></image-slot>
+      </div>
+      <div style="font-size:12.5px;color:#6B6B6B">3 · detay ya da not</div>
+    </div>
+  </div>
+
+  <div style="max-width:760px;padding:16px 18px;background:#F7F7F5;border:1px solid #E6E5E1;border-radius:10px;display:flex;flex-direction:column;gap:8px">
+    <div style="font-size:10.5px;font-weight:700;letter-spacing:.14em;color:#8A8A85">EKSİZİ ATTIKTAN SONRA ŞUNLARI YAZ</div>
+    <div style="font-size:13.5px;line-height:1.7;color:#43454A;text-wrap:pretty">Uygulama adı ne olacak · logo yalnızca simge mi, isimle birlikte mi · nerede kullanılacak (app ikonu, açılış, favicon) · hangi temanın rengiyle uyumlu olsun · eskizde korunması şart olan şey ne.</div>
+    <div style="font-size:12.5px;line-height:1.6;color:#77797D;text-wrap:pretty">Not: fotoğraf üretemem. Eskizini vektör SVG'ye çeviririm — geometrik formlar, monogram, harf işareti. Serbest el illüstrasyon ya da hat sanatı gerekiyorsa onu bir çizerden almak gerekir.</div>
+  </div>
+</section>
+</x-dc>
+</body>
+</html>

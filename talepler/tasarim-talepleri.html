@@ -1,0 +1,274 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8">
+<title>KUN · Tasarım Talepleri</title>
+<link rel="stylesheet" href="_stil.css"></head><body>
+
+<h1>KUN · İlm-i Hâl</h1>
+<p class="sub">Tasarımdan Talepler — Aşama 1 öncesi</p>
+<p class="subsub">Sürüm 1.0 · 9 Eylül 2026 · Claude Code → tasarım tarafı</p>
+
+<div class="lead">
+<code>md/</code> tasarım dökümü okundu. Renk token'ları, ölçüler, tipografi skalası ve tesbih halkası
+geometrisi <b>kodlanabilir netlikte</b> — bu tarafta eksik yok. Aşağıdaki talepler üç başlıkta toplanıyor:
+<b>(1)</b> teslim edilmemiş varlıklar, <b>(2)</b> dökümde tanımı olmayan ekran durumları,
+<b>(3)</b> mimari brief ile çelişen ve tasarım tarafında karşılığı üretilmesi gereken noktalar.
+</div>
+
+<div class="legend">
+  <span><b style="color:#b3261e">BLOKE</b> — gelmeden ilgili ekran tamamlanamaz</span>
+  <span><b style="color:#8a6100">ÜRETİM</b> — yeni tasarım işi gerektirir</span>
+  <span><b style="color:#5a6570">NETLEŞTİRME</b> — yorum farkı, tek cümlelik cevap yeter</span>
+</div>
+
+<h2>1 · Dosya teslimi</h2>
+
+<div class="item">
+  <div class="ihead"><span class="id blk">T1</span><span class="q">md/ klasörünü orijinal UTF-8 hâliyle istiyorum</span><span class="tag t-blk">Bloke</span></div>
+  <p class="why">Dosyalar bana bozuk kodlamayla ulaştı ve hasar <b>kayıplı</b> — geri döndürülemiyor.
+  Doğrulama:</p>
+  <pre>Gelen        Olması gereken     Durum
+─────────────────────────────────────────────────────
+SÃ¼bhanallah  Sübhanallah        ✓ kurtarılabiliyor
+Ã¶lÃ§ek        ölçek              ✓ kurtarılabiliyor
+KÃ¢ÄÄ±t        Kâğıt              ✗ ğ kayıp
+Ø³ÙØ¨Ù...      (harekeli Arapça)   ✗ harfler kısmen, harekeler tamamen kayıp
+
+Sebep: UTF-8 metin Latin-1 olarak çözülmüş. İkinci baytı
+0x80–0x9F aralığındaki her karakter taşımada silinmiş:
+  ğ (C4 9F) · ş (C5 9F) · Ğ · Ş · eğik tırnaklar
+  ve bütün Arapça harekeler (D9 8F, D9 92, D9 8E …)</pre>
+  <p class="why">Renk hex'leri, px ölçüleri ve geometri formülleri ASCII olduğu için <b>sağlam</b> —
+  tema katmanını bunlarla kurabilirim. Sorun yalnızca metin içeriğinde, özellikle
+  <b>hazır zikir setinin dört Arapça metninde</b>. Bunları tamamlamak dinî metin üretmek olur, yapmam.</p>
+  <div class="rec"><b>İstediğim:</b> <code>md/</code> klasörünü olduğu gibi
+  <code>/Users/berkekaandinler/KUN/md/</code> altına kopyala. Aktarırken zip'le veya doğrudan dosya olarak ver;
+  panoya kopyalayıp yapıştırmak aynı hasarı tekrar üretir.</div>
+</div>
+
+<h2>2 · Teslim edilmemiş varlıklar</h2>
+<p>Çalışma dizini şu an tamamen boş. Aşağıdaki varlıkların hiçbiri elimde yok.</p>
+
+<div class="item">
+  <div class="ihead"><span class="id blk">T2</span><span class="q">Logolar — SVG, 6 tema varyantı</span><span class="tag t-blk">Bloke</span></div>
+  <p class="why">Mimari brief net: "<b>Logolar SVG olarak gömülür, PNG değil</b> — 6 tema × çoklu boyut sorunu
+  böyle biter." Ama tasarım dökümü PNG dosya adları veriyor
+  (<code>logo/yuvarlak/4FD1A5-isik.png</code> gibi). SVG sürümüne ihtiyacım var.</p>
+  <p class="why">Logonun göründüğü yerler: açılış ekranı · ana sayfa hero'su (188 px, %34 opaklık) ·
+  <b>tesbih halkasının merkezi</b> (62 px — zikir modülünün görsel merkezi) · widget önizlemeleri.</p>
+  <table>
+    <tr><th style="width:30%">Dosya</th><th style="width:22%">Kullanım</th><th>Varyant</th></tr>
+    <tr><td class="mono">logo/yuvarlak/&lt;accent&gt;.svg</td><td>Halka merkezi, hero, kart</td><td>6 — 4FD1A5 · A78BFA · E0894A · 0A84FF · 2B4A5A · 1F7A5C</td></tr>
+    <tr><td class="mono">logo/widget/&lt;tema&gt;.svg</td><td>Widget önizleme</td><td>6</td></tr>
+    <tr><td class="mono">logo/app-icon.svg</td><td>Uygulama ikonu kaynağı</td><td>1 (+ hangi temanın rengiyle?)</td></tr>
+  </table>
+  <div class="rec"><b>Gelene kadar:</b> her temanın <code>--accent</code> rengiyle çizilmiş sade geometrik
+  yer tutucu mark kullanırım (kod içinde çizilir, dosya değil). Ekranlar boş görünmez ama logo değildir.
+  <br><b>Not:</b> SVG için <code>flutter_svg</code> paketi gerekiyor — brief'in paket listesinde yok,
+  "minimum bağımlılık ilkesi" gereği ürün tarafından onay alıyorum. Gerekçe brief'in kendi SVG kuralı.</div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id blk">T3</span><span class="q">Fontlar — hangileri, nereden?</span><span class="tag t-blk">Bloke</span></div>
+  <p class="why">Brief gömülecek font setini daraltmış: "JetBrains Mono · Libre Franklin · Spectral ·
+  Arapça için <b>Amiri veya Scheherazade New</b> (OFL). Diğerleri gömülmez."
+  Tasarım dökümünün listelediği yedi aileden diğerleri (EB Garamond, Newsreader, DM Sans, Manrope, Roboto)
+  gömülmeyecek — beş tema sistem fontu kullanıyor.</p>
+  <table>
+    <tr><th style="width:26%">Font</th><th style="width:30%">Nerede</th><th>Gereken kesitler</th></tr>
+    <tr><td>JetBrains Mono</td><td>Bütün künyeler, sayaç rakamları</td><td>Regular 400 · Bold 700</td></tr>
+    <tr><td>Libre Franklin</td><td>Kâğıt indeks — gövde</td><td>400 · 600 · 700</td></tr>
+    <tr><td>Spectral</td><td>Kâğıt indeks — başlıklar</td><td>600</td></tr>
+    <tr><td><b>Amiri</b> veya <b>Scheherazade New</b></td><td>Bütün Arapça metin</td><td>Regular 400</td></tr>
+  </table>
+  <div class="rec"><b>Sorum iki tane:</b> (1) Arapça font <b>Amiri</b> mi <b>Scheherazade New</b> mi?
+  Önerim <b>Amiri</b> — hareke yerleşimi daha oturaklı ve 15 px liste boyunda okunaklı kalıyor,
+  brief'in "minimum 14 px, harekeler daha küçük puntoda okunmaz" kuralına daha iyi uyuyor.
+  (2) Dosyaları sen mi göndereceksin, yoksa Google Fonts'tan OFL sürümlerini indirmemi onaylıyor musun?</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Amiri · indirmeni onaylıyorum</div>
+    <div class="opt"><span class="box"></span>Scheherazade New · indirmeni onaylıyorum</div>
+    <div class="opt"><span class="box"></span>Font dosyalarını ben göndereceğim</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id med">T4</span><span class="q">Widget önizleme ekranlarının arka planı — duvar kâğıdı çelişkisi</span><span class="tag t-med">Üretim</span></div>
+  <p class="why">Tasarım dökümü widget ekranlarını (Kur'an #14, #15 ve zikir Z9) duvar kâğıdı üzerine kuruyor:
+  <code>logo/duvar/ios-kilit-&lt;tema&gt;-1290x2796.png</code> + karartma gradyanı.
+  Mimari brief ise net: "<b>Duvar kâğıtları yalnızca tasarım önizlemesidir, uygulamaya gömülmez</b> —
+  1290×2796 görseller boşuna yer kaplar."</p>
+  <p class="why">Yani üç ekranın arka planı tanımsız kalıyor. Bunlar Aşama 1'de <b>uygulama içi önizleme</b>
+  olarak çizilecek — gerçek widget değil.</p>
+  <div class="rec"><b>Önerim:</b> Duvar kâğıdı yerine token'lardan türetilmiş sentetik zemin:
+  <code>--hero-surface</code> + dökümdeki iki radyal katman + aynı karartma gradyanı.
+  Tema değişince otomatik uyar, tek bayt asset eklemez, "bu bir önizlemedir" hissini de doğru verir.
+  <br><b>Onayına ihtiyacım var</b>, çünkü bu üç ekranın görünüşü mock'tan belirgin şekilde ayrılacak.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy — sentetik gradyan zemin</div>
+    <div class="opt"><span class="box"></span>Küçültülmüş (ör. 430×932) duvar kâğıdı gömülsün, 6 tema × 1 dosya</div>
+    <div class="opt"><span class="box"></span>Widget önizleme ekranları Aşama 3'e ertelensin</div>
+  </div>
+</div>
+
+<h2 class="pgbrk">3 · Eksik ekran seti ve tanımsız durumlar</h2>
+
+<div class="item">
+  <div class="ihead"><span class="id med">T5</span><span class="q">Kâğıt indeks temasının 15 Kur'an ekranı üretilmemiş</span><span class="tag t-med">Üretim</span></div>
+  <p class="why">Tasarım dökümü bunu "bilinen boşluk" olarak kendisi işaretliyor: Kâğıt indeks Kur'an setinde
+  yalnızca palet + tipografi kartı olarak tanımlı, 15 ekranlık set üretilmedi. Kapsam tablosu da
+  15 × <b>5</b> tema = 75 diyor. Ama mimari brief ve teslim şartı <b>6 tema</b> diyor.</p>
+  <div class="rec"><b>Önerim:</b> Ekranları üretmeni beklemem. Tek iskelet / altı tema ilkesi gereği
+  Kâğıt indeks'in Kur'an ekranlarını ortak iskeletten <b>türetirim</b>: aynı yapı, opak yüzeyler,
+  4 px köşe, Libre Franklin gövde + Spectral başlık, görünür aile kodları.
+  Zikir setinde bu temanın 10 ekranı zaten tam — oradaki karakteri referans alırım.
+  <br><b>Riski söyleyeyim:</b> mock olmadan ürettiğim bu 15 ekran senin gözünle bir kez geçilmeli.
+  Bölüm bölüm teslimde ayrıca göstereceğim.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Türet — sonra birlikte gözden geçiririz</div>
+    <div class="opt"><span class="box"></span>Ekranları üreteceğim, bekle</div>
+    <div class="opt"><span class="box"></span>Kâğıt indeks yalnızca zikir modülünde seçilebilir olsun</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id med">T6</span><span class="q">Boş ve hata durumları hiçbir ekran için çizilmemiş</span><span class="tag t-med">Üretim</span></div>
+  <p class="why">Teslim şartı: "<b>her ekranın boş, dolu ve hata durumu var</b>". Tasarım dökümü 25 ekranın
+  yalnızca <b>dolu</b> durumunu tanımlıyor. Boş ve hata durumlarının görsel dili tanımsız.
+  Etkilenen ekranlar: Kategori (boş kategori — fixture'da kasıtlı boşlar olacak) · Kaydedilenler ·
+  Serbest zikirlerim · İstatistik (hiç zikir yok) · Tüm ayetler · Arama sonuçları.</p>
+  <div class="rec"><b>Önerim — tek bir boş/hata deseni, altı temada token'lardan:</b>
+  <ul>
+    <li>Zemin <code>--surface-sunken</code>, köşe <code>--radius-md</code>, dikey ortalı</li>
+    <li>Üstte 44 px ikon <code>--text-tertiary</code> · başlık 17 px/600 <code>--text-primary</code> ·
+        açıklama 13.5 px <code>--text-secondary</code></li>
+    <li>Hata durumunda ayrıca ikincil buton "Tekrar dene" (cam kart değerleri, 52 px)</li>
+    <li><b>Hiçbir hata metninde ağ/internet göndermesi olmaz</b> — brief'in kuralı</li>
+  </ul>
+  Bu deseni Bölüm 1'de bileşen olarak kurarım, ekran ekran kopyalanmaz.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy</div>
+    <div class="opt"><span class="box"></span>Boş/hata durumlarını çizeceğim</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id med">T7</span><span class="q">Ses kapalıyken beş ekranın alt bandı boşalıyor — ne gelecek?</span><span class="tag t-med">Üretim</span></div>
+  <p class="why">Mimari brief <code>audio == false</code> iken alt çalar çubuğunun <b>hiç çizilmemesini</b>
+  istiyor ("pasif bir çubuk göstermek kafa karıştırır"). Tasarımda bu çubuk beş ekranın altında duruyor
+  ve kompozisyonun bir parçası: Tüm ayetler · Keşif · Kategori · Ayet odak · Karşılaştırma.</p>
+  <p class="why">Çubuk kalkınca bu ekranların alt bandında <b>~72–80 px boşluk</b> kalıyor.
+  Tasarım tarafının kararı gerekiyor: boşluk kaydırma alanına mı katılsın, yoksa oraya başka bir şey mi gelsin?</p>
+  <div class="rec"><b>Önerim:</b> Boşluğu kaydırma alanına kat, alt güvenli alan dolgusu
+  (döküm kökündeki 22 px) korunur. Ekranlar daha sakin görünür, hiçbir ekranda "eksik" hissi olmaz.
+  Ses geldiğinde çubuk aynı yere döner — layout değişmez, bileşen açılır.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy — boşluk kaydırma alanına</div>
+    <div class="opt"><span class="box"></span>Ayet odak dışındakilerde de pasif çubuk çizilsin</div>
+    <div class="opt"><span class="box"></span>Alt banda başka öğe gelecek, çizeceğim</div>
+  </div>
+</div>
+
+<h2>4 · Netleştirme — dökümde iki okuması olan noktalar</h2>
+
+<div class="item">
+  <div class="ihead"><span class="id">T8</span><span class="q">Keşif ekranı: chip satırı mı, iki sekme mi?</span><span class="tag t-low">Netleştirme</span></div>
+  <p class="why">Tasarım dökümü: "Aksan zeminli <b>chip satırı</b> (aktif chip <code>--accent</code> +
+  <code>--on-accent</code>, köşe 10 px)". Mimari brief teslim listesi: "Keşif — <b>iki sekme</b>
+  (Hayattan / Kur'an'dan), gruplu kategori listesi". Chip'ler eksen seçici mi, yoksa eksenlerin
+  <i>içinde</i> aile filtresi mi?</p>
+  <div class="rec"><b>Önerim:</b> Chip'ler = iki eksen seçici. Anlam brief'ten (Hayattan / Kur'an'dan),
+  görsel dökümden (chip satırı, aksan zemin, köşe 10 px). Chip satırında kaç öğe olacağı da netleşsin:
+  iki mi (Hayattan · Kur'an'dan), üç mü (+ Tümü)?</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>İki chip — Hayattan · Kur'an'dan</div>
+    <div class="opt"><span class="box"></span>Üç chip — Tümü · Hayattan · Kur'an'dan</div>
+    <div class="opt"><span class="box"></span>Chip'ler aile filtresi, eksenler ayrı sekme çubuğunda</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id">T9</span><span class="q">Token sayısı 17 mi 20 mi — <code>--glass-blur</code> token mı?</span><span class="tag t-low">Netleştirme</span></div>
+  <p class="why">Döküm "17 token adı tüm temalarda aynıdır" diyor ve tema tabloları 17 satır.
+  Ama <code>:root</code> bloğunda <b>20 ad</b> var: fark <code>--glass-blur</code> ve radius üçlüsünün
+  tek satırda gösterilmesi. Tema tablolarında <code>--glass-blur</code> için değer verilmemiş.</p>
+  <div class="rec"><b>Önerim:</b> <code>glassBlur</code>'ü tam token yap, temaya göre değer al:
+  <table style="margin-top:6px">
+    <tr><th>Tema</th><th>glassBlur</th><th>Sonuç</th></tr>
+    <tr><td>01–04, 06 (cam)</td><td>20 (yoğun 22 · iç içe 18 · çalar 24)</td><td>BackdropFilter yolu</td></tr>
+    <tr><td>05 Kâğıt indeks</td><td><b>0</b></td><td>Opak yol — cam kod hiç çalışmaz</td></tr>
+  </table>
+  Bunun mimari faydası büyük: brief "düşük segmentte blur kapanır, opak yüzeye geçilir,
+  <b>Kâğıt indeks teması zaten opaktır — o kod yolu her tema için yeniden kullanılabilir</b>" diyor.
+  <code>glassBlur = 0</code> tam olarak o anahtar. Performans ölçümü kötü çıkarsa
+  her temanın blur değerini sıfıra çekmek tek satır olur.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy — glassBlur token olsun</div>
+    <div class="opt"><span class="box"></span>17'de kal, blur değerleri kodda sabit</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id">T10</span><span class="q"><code>--accent-soft</code> ve <code>--danger</code> nerede kullanılacak?</span><span class="tag t-low">Netleştirme</span></div>
+  <p class="why">Hem döküm hem brief bu ikisinin <b>türetilmiş</b> olduğunu ve henüz hiçbir ekranda
+  kullanılmadığını söylüyor. Ama tasarım metinlerinde iki yerde geçiyorlar:
+  Ayarlar 2'de "silme satırı <code>--danger</code>" ve sağa kaydırarak silme jesti.</p>
+  <div class="rec"><b>Önerim:</b> <code>--danger</code>'ı üç yerde kullan — Ayarlar 2 silme satırı ·
+  Kaydedilenler kaydırarak silme zemini · serbest zikir silme. <code>--accent-soft</code>'u
+  seçili chip ve rozet zemininde kullan. Böylece 17 token'ın hepsi ekranda karşılık bulur,
+  ölü token kalmaz. Onaylamazsan ikisini de tanımlı ama kullanılmamış bırakırım.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy</div>
+    <div class="opt"><span class="box"></span>Tanımlı kalsın, kullanılmasın</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id">T11</span><span class="q">402 px dışındaki cihazlar ve %135 metin ölçeği</span><span class="tag t-low">Netleştirme</span></div>
+  <p class="why">Tasarım 402 × 874 px üzerine çizilmiş; brief "birebir sabit kodlanmamalıdır,
+  yatay kenar boşlukları korunur, yükseklikler esner" diyor. Ayrıca %135 metin ölçeğinde kontrol isteniyor.
+  %135'te 34 px başlık ~46 px'e, 11 px künye ~15 px'e çıkıyor.</p>
+  <div class="rec"><b>Önerim:</b> Yatay kenar boşlukları sabit (kart 18 px · metin 20 px · tam genişlik liste 14 px),
+  bütün yükseklikler esner, her ekran kaydırılabilir. Metin ölçeği <b>0.85–1.35 arasına clamp'lenir</b> —
+  sistemde daha yükseği seçilse bile layout dağılmaz, brief'in istediği %135 sınırı korunur.
+  Dokunma hedefi 44 × 44 px hiçbir koşulda küçülmez.
+  <br><b>Tesbih halkası özel durum:</b> 306 / 274 / 266 px sabit boyutlar dar ekranda taşar.
+  Halkayı <code>min(ekranGenişliği − 2×18, dökümOranı)</code> ile ölçeklerim; boncuk çapı ve
+  yarıçap formülü orantılı küçülür, 33 boncuk / −90° / 10.909° geometrisi <b>birebir korunur</b>.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy</div>
+    <div class="opt"><span class="box"></span>Halka dar ekranda da sabit kalsın, yatay kaydırılsın</div>
+  </div>
+</div>
+
+<h2>5 · Talep özeti</h2>
+<table>
+  <tr><th style="width:8%">No</th><th style="width:44%">Talep</th><th style="width:16%">Tür</th><th>Gelmezse</th></tr>
+  <tr><td class="mono">T1</td><td><b>md/ orijinal UTF-8</b></td><td>Dosya</td><td>Arapça alanlar boş kalır</td></tr>
+  <tr><td class="mono">T2</td><td><b>Logolar — SVG × 6 tema</b></td><td>Varlık</td><td>Geometrik yer tutucu</td></tr>
+  <tr><td class="mono">T3</td><td><b>Fontlar + Arapça font seçimi</b></td><td>Varlık / karar</td><td>Sistem fontu — Arapça bozuk render</td></tr>
+  <tr><td class="mono">T4</td><td>Widget önizleme zemini</td><td>Karar</td><td>Sentetik gradyan</td></tr>
+  <tr><td class="mono">T5</td><td>Kâğıt indeks · 15 Kur'an ekranı</td><td>Üretim / karar</td><td>İskeletten türetilir</td></tr>
+  <tr><td class="mono">T6</td><td>Boş ve hata durumu deseni</td><td>Üretim / karar</td><td>Token'lardan tek desen</td></tr>
+  <tr><td class="mono">T7</td><td>Ses kapalı → alt band boşluğu</td><td>Karar</td><td>Kaydırma alanına katılır</td></tr>
+  <tr><td class="mono">T8</td><td>Keşif: chip mi sekme mi</td><td>Netleştirme</td><td>Chip = eksen seçici</td></tr>
+  <tr><td class="mono">T9</td><td><code>--glass-blur</code> token mı</td><td>Netleştirme</td><td>Token yapılır</td></tr>
+  <tr><td class="mono">T10</td><td><code>--accent-soft</code> / <code>--danger</code></td><td>Netleştirme</td><td>Tanımlı, kullanılmaz</td></tr>
+  <tr><td class="mono">T11</td><td>Esneme ve %135 metin ölçeği</td><td>Netleştirme</td><td>Clamp 0.85–1.35</td></tr>
+</table>
+
+<div class="warn">
+<b>Bölüm 1'i bloke eden tek madde T3 (fontlar).</b> Tema katmanı token'larla kurulacak ve hex değerleri sağlam;
+T1, T2, T4–T11 sonraki bölümlerde devreye giriyor. Font kararını verirsen tema katmanına
+bugün başlayabilirim — diğerleri paralel ilerleyebilir.
+</div>
+
+<h2>6 · Ek not — cam/blur performansı</h2>
+<p>Mimari brief'in "en önemli uyarı" başlıklı maddesi ilk hafta gerçek bir orta segment Android cihazda
+keşif ekranının 40 cam kartla ölçülmesini istiyor. <b>Bu makinede bağlı Android cihaz veya emülatör yok,
+<code>adb</code> kurulu değil.</b> Emülatör ölçümü gerçek cihazı temsil etmez ve brief'in istediği şey değildir.</p>
+<p>Bölüm 1'e <code>/dev/blur-bench</code> ekranı ekliyorum: 40 cam kart, kaydırma, blur/opak/otomatik üç mod,
+kare süresi sayacı. Orta segment bir Android bağlandığında tek komutla çalışır.
+Bu arada <b>her iki kod yolu da baştan yazılıyor</b> — ölçüm kötü çıkarsa çağrı yerleri değil,
+yalnızca <code>GlassPolicy</code> kararı değişir.</p>
+
+<p class="foot">KUN · İlm-i Hâl — Tasarım Talepleri v1.0 · Kaynak: md/ tasarım dökümü + kun-mimari-brief.pdf v1.0</p>
+</body></html>

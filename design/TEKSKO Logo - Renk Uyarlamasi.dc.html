@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Spectral:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #FBFBFA; }
+  a { color: #3A5A40; text-decoration: none; }
+  a:hover { color: #1F3225; }
+</style>
+</helmet>
+
+<div style="padding:60px 64px 110px;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;gap:56px">
+
+<div style="max-width:900px;display:flex;flex-direction:column;gap:13px">
+  <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px;letter-spacing:.14em;color:#8A8A85">TEKSKO · RENK UYARLAMASI</div>
+  <div style="font-family:Spectral,serif;font-size:38px;line-height:1.18;color:#17181A;text-wrap:pretty">Üç logo, beş palet</div>
+  <div style="font-size:15px;line-height:1.65;color:#5C5E62;text-wrap:pretty">Gönderdiğin görsellerin kendisi kullanıldı — çizim, doku, krom ve fırça izi olduğu gibi duruyor. Değişen tek şey renk: mavi–mor ve kırmızı tonlar her temanın aksanına kaydırıldı, gümüş kısımlar korundu. Kâğıt indeks açık zemin olduğu için parlaklık ters çevrildi.</div>
+  <div style="font-size:15px;line-height:1.65;color:#5C5E62;text-wrap:pretty">Graffiti yazıda renk dışında iki müdahale var: <a href="#1c">1c</a>'de taç kaldırıldı ve kompozisyon yeniden ortalandı, <a href="#1d">1d</a>'de tacın yerine benim çizdiğim sade işaret kondu — iki paralel çizgi ve ortada eşkenar dörtgen. Taçlı ilk hâli <a href="#1e">1e</a> olarak duruyor.</div>
+</div>
+
+<sc-for list="{{ groups }}" as="g" hint-placeholder-count="2">
+<section style="display:flex;flex-direction:column;gap:24px">
+  <div style="display:flex;align-items:center;gap:13px">
+    <span style="display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:24px;padding:0 8px;border-radius:5px;background:#17181A;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:#FBFBFA">{{ g.id }}</span>
+    <span style="font-size:18px;font-weight:600;color:#17181A">{{ g.title }}</span>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:18px">
+    <sc-for list="{{ g.items }}" as="it" hint-placeholder-count="5">
+      <div style="width:300px;display:flex;flex-direction:column;gap:10px">
+        <div style="width:300px;height:300px;background:{{ it.bg }};border:1px solid {{ it.hair }};border-radius:16px;overflow:hidden;display:flex;align-items:center;justify-content:center">
+          <img src="{{ it.src }}" alt="{{ it.name }}" style="width:100%;height:100%;object-fit:contain;display:block" />
+        </div>
+        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+          <span style="font-size:12.5px;font-weight:600;color:#17181A">{{ it.name }}</span>
+          <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;color:#8A8A85">{{ it.acc }}</span>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+</section>
+</sc-for>
+
+<section style="display:flex;flex-direction:column;gap:26px">
+  <div style="display:flex;align-items:center;gap:13px">
+    <span style="display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:24px;padding:0 8px;border-radius:5px;background:#17181A;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:#FBFBFA">1h</span>
+    <span style="font-size:18px;font-weight:600;color:#17181A">Platform boyutları · yüksek çözünürlük</span>
+  </div>
+  <div style="max-width:900px;font-size:14px;line-height:1.65;color:#5C5E62;text-wrap:pretty">Avatar için krom yatay kilit, uzun yatay alanlar için 1c'deki taçsız yazı kullanıldı. Hepsi tam piksel ölçüsünde PNG olarak <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">logo/teksko/hd/</span> altında.</div>
+  <sc-for list="{{ hdRows }}" as="g" hint-placeholder-count="4">
+    <div style="display:flex;flex-direction:column;gap:11px">
+      <div style="display:flex;align-items:baseline;gap:11px">
+        <span style="font-size:14.5px;font-weight:700;color:#17181A">{{ g.title }}</span>
+        <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px;color:#8A8A85">{{ g.dims }}</span>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:14px">
+        <sc-for list="{{ g.items }}" as="it" hint-placeholder-count="5">
+          <div style="display:flex;flex-direction:column;gap:7px">
+            <img src="{{ it.src }}" alt="{{ it.name }}" style="width:{{ it.w }};height:{{ it.h }};display:block;border:1px solid #E0DFDB;border-radius:8px" />
+            <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;color:#8A8A85">{{ it.name }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-for>
+</section>
+
+<div style="max-width:900px;padding:20px 22px;background:#F7F7F5;border:1px solid #E6E5E1;border-radius:10px;display:flex;flex-direction:column;gap:8px">
+  <div style="font-size:10.5px;font-weight:700;letter-spacing:.14em;color:#8A8A85">DOSYALAR</div>
+  <div style="font-size:14px;line-height:1.7;color:#43454A;text-wrap:pretty">Yirmi beş PNG <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">logo/teksko/</span> klasöründe, 880×880. Yedi önek, her biri beş tonda: <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">yatay-</span>, <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">amblem-</span>, <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">tek-</span>, <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">monogram-</span>, <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">graffiti-sade-</span>, <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">graffiti-isaret-</span>, <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">graffiti-</span> · ton ekleri <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">gece-yesimi</span>, <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">murekkep-moru</span>, <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">komur-bakir</span>, <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">cam-gece</span>, <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px">kagit-indeks</span>. Başka bir tona çevirmemi istersen ton adını söylemen yeter.</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const pal = [
+      { slug: 'gece-yesimi', name: 'Gece yeşimi', acc: '#4FD1A5', bg: '#0B1613', hair: 'rgba(255,255,255,.1)' },
+      { slug: 'murekkep-moru', name: 'Mürekkep moru', acc: '#A78BFA', bg: '#0F0C18', hair: 'rgba(255,255,255,.11)' },
+      { slug: 'komur-bakir', name: 'Kömür + bakır', acc: '#E0894A', bg: '#121110', hair: 'rgba(255,255,255,.1)' },
+      { slug: 'cam-gece', name: 'Cam gece', acc: '#0A84FF', bg: '#0F1115', hair: 'rgba(255,255,255,.1)' },
+      { slug: 'kagit-indeks', name: 'Kâğıt indeks', acc: '#2B4A5A', bg: '#EAE8E1', hair: '#D6D3C9' }
+    ];
+    const build = (kind) => pal.map(p => ({
+      name: p.name, acc: p.acc, bg: p.bg, hair: p.hair,
+      src: `./logo/teksko/${kind}-${p.slug}.png`
+    }));
+    const hd = [
+      { title: 'Avatar · Discord, Steam, X profil resmi', dims: '1024 × 1024 (ve 512 × 512)', w: 300, h: 300, file: s => `./logo/teksko/hd/avatar-1024-${s}.png` },
+      { title: 'Steam profil arka planı', dims: '1438 × 810', w: 479, h: 270, file: s => `./logo/teksko/hd/steam-arkaplan-1438x810-${s}.png` },
+      { title: 'Steam vitrin görseli', dims: '1920 × 620', w: 620, h: 200, file: s => `./logo/teksko/hd/steam-vitrin-1920x620-${s}.png` },
+      { title: 'Kick banner', dims: '1920 × 480', w: 640, h: 160, file: s => `./logo/teksko/hd/kick-1920x480-${s}.png` }
+    ];
+    const tones = [
+      { slug: 'gece-yesimi', name: 'Gece yeşimi' },
+      { slug: 'murekkep-moru', name: 'Mürekkep moru' },
+      { slug: 'komur-bakir', name: 'Kömür + bakır' },
+      { slug: 'cam-gece', name: 'Cam gece' },
+      { slug: 'kagit-indeks', name: 'Kâğıt indeks' }
+    ];
+    const hdRows = hd.map(g => ({
+      title: g.title, dims: g.dims,
+      items: tones.map(t => ({ name: t.name, src: g.file(t.slug), w: g.w + 'px', h: g.h + 'px' }))
+    }));
+
+    return {
+      hdRows,
+      groups: [
+        { id: '1a', title: 'Yatay kilit', items: build('yatay') },
+        { id: '1b', title: 'Amblem', items: build('amblem') },
+        { id: '1f', title: 'TEK monogramı · K aynı dokudan kuruldu', items: build('tek') },
+        { id: '1g', title: 'TE monogramı · alt yazı kaldırıldı', items: build('monogram') },
+        { id: '1c', title: 'Graffiti yazı · taçsız', items: build('graffiti-sade') },
+        { id: '1d', title: 'Graffiti yazı · çizgi işareti', items: build('graffiti-isaret') },
+        { id: '1e', title: 'Graffiti yazı · taçlı (ilk hâli)', items: build('graffiti') }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

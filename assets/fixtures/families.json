@@ -1,0 +1,1399 @@
+{
+  "_not": "Aile ve kategori adları GERÇEKTİR (brief taksonomisi). Açıklamalar kategori adlarından türetilmiştir.",
+  "families": [
+    {
+      "code": "A",
+      "axis": "hayattan",
+      "name": "Zor duygular",
+      "description": "Kaygı, Korku, Üzüntü, Yalnızlık…",
+      "sortOrder": 0
+    },
+    {
+      "code": "B",
+      "axis": "hayattan",
+      "name": "Güçlenme ve umut",
+      "description": "Umut, Sabır, Tevekkül, Cesaret…",
+      "sortOrder": 1
+    },
+    {
+      "code": "C",
+      "axis": "hayattan",
+      "name": "Kayıp, hastalık, kriz",
+      "description": "Hastalık, Yas ve kayıp, Ölümle yüzleşmek, Maddi sıkıntı…",
+      "sortOrder": 2
+    },
+    {
+      "code": "D",
+      "axis": "hayattan",
+      "name": "Kararlar ve değişim",
+      "description": "Karar vermek, İstişare, Belirsizlik, Hayat değişimi…",
+      "sortOrder": 3
+    },
+    {
+      "code": "E",
+      "axis": "hayattan",
+      "name": "İlişkiler",
+      "description": "Anne baba, Evlilik, Çocuklar, Kardeşlik ve akrabalık…",
+      "sortOrder": 4
+    },
+    {
+      "code": "F",
+      "axis": "hayattan",
+      "name": "Kendinle mücadele",
+      "description": "Nefis ve dürtüler, Haset, Kibir, Önyargı…",
+      "sortOrder": 5
+    },
+    {
+      "code": "M",
+      "axis": "hayattan",
+      "name": "Hayat evreleri ve varoluş",
+      "description": "Gençlik, Yaşlanmak, Ebeveyn olmak, Şüphe ve iman krizi…",
+      "sortOrder": 6
+    },
+    {
+      "code": "G",
+      "axis": "kurandan",
+      "name": "Allah'ı tanımak",
+      "description": "Allah'ın birliği, İsim ve sıfatları, Rahmeti, Adaleti…",
+      "sortOrder": 0
+    },
+    {
+      "code": "H",
+      "axis": "kurandan",
+      "name": "İbadet ve kulluk",
+      "description": "Namaz, Oruç, Zekât ve infak, Hac…",
+      "sortOrder": 1
+    },
+    {
+      "code": "I",
+      "axis": "kurandan",
+      "name": "Kıssalar ve peygamberler",
+      "description": "Hz. Âdem, Hz. Nûh, Hz. İbrahim, Hz. Yusuf…",
+      "sortOrder": 2
+    },
+    {
+      "code": "J",
+      "axis": "kurandan",
+      "name": "Kâinat ve yaratılış",
+      "description": "Göklerin ve yerin yaratılışı, İnsanın yaratılışı, Gece ve gündüz, Gökyüzü ve yıldızlar…",
+      "sortOrder": 3
+    },
+    {
+      "code": "K",
+      "axis": "kurandan",
+      "name": "Ahiret ve hesap",
+      "description": "Ölüm ve berzah, Kıyamet, Diriliş, Hesap ve amel defteri…",
+      "sortOrder": 4
+    },
+    {
+      "code": "L",
+      "axis": "kurandan",
+      "name": "Ahlak ve toplum",
+      "description": "Doğruluk, Adalet, Emanet, Cömertlik…",
+      "sortOrder": 5
+    },
+    {
+      "code": "N",
+      "axis": "kurandan",
+      "name": "Kur'an ve vahiy",
+      "description": "Kur'an'ın indirilişi, Vahiy ve nüzul, Kur'an'ın korunması, Önceki kitaplar…",
+      "sortOrder": 6
+    },
+    {
+      "code": "O",
+      "axis": "kurandan",
+      "name": "Toplum, adalet ve yönetim",
+      "description": "Yönetimde adalet, Şûra ve danışma, Hakkı savunmak, Barış…",
+      "sortOrder": 7
+    },
+    {
+      "code": "P",
+      "axis": "kurandan",
+      "name": "Kur'an'da tabiat ve canlılar",
+      "description": "Arı ve bal, Karınca, Örümcek, Fil…",
+      "sortOrder": 8
+    }
+  ],
+  "categories": [
+    {
+      "id": "A01",
+      "familyCode": "A",
+      "slug": "kaygi",
+      "name": "Kaygı",
+      "description": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "A02",
+      "familyCode": "A",
+      "slug": "korku",
+      "name": "Korku",
+      "description": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "A03",
+      "familyCode": "A",
+      "slug": "uzuntu",
+      "name": "Üzüntü",
+      "description": null,
+      "sortOrder": 3
+    },
+    {
+      "id": "A04",
+      "familyCode": "A",
+      "slug": "yalnizlik",
+      "name": "Yalnızlık",
+      "description": null,
+      "sortOrder": 4
+    },
+    {
+      "id": "A05",
+      "familyCode": "A",
+      "slug": "umutsuzluk",
+      "name": "Umutsuzluk",
+      "description": null,
+      "sortOrder": 5
+    },
+    {
+      "id": "A06",
+      "familyCode": "A",
+      "slug": "ofke",
+      "name": "Öfke",
+      "description": null,
+      "sortOrder": 6
+    },
+    {
+      "id": "A07",
+      "familyCode": "A",
+      "slug": "sucluluk",
+      "name": "Suçluluk",
+      "description": null,
+      "sortOrder": 7
+    },
+    {
+      "id": "A08",
+      "familyCode": "A",
+      "slug": "kafa-karisikligi",
+      "name": "Kafa karışıklığı",
+      "description": null,
+      "sortOrder": 8
+    },
+    {
+      "id": "A09",
+      "familyCode": "A",
+      "slug": "degersizlik-hissi",
+      "name": "Değersizlik hissi",
+      "description": null,
+      "sortOrder": 9
+    },
+    {
+      "id": "A10",
+      "familyCode": "A",
+      "slug": "tukenmislik",
+      "name": "Tükenmişlik",
+      "description": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "B01",
+      "familyCode": "B",
+      "slug": "umut",
+      "name": "Umut",
+      "description": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "B02",
+      "familyCode": "B",
+      "slug": "sabir",
+      "name": "Sabır",
+      "description": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "B03",
+      "familyCode": "B",
+      "slug": "tevekkul",
+      "name": "Tevekkül",
+      "description": null,
+      "sortOrder": 3
+    },
+    {
+      "id": "B04",
+      "familyCode": "B",
+      "slug": "cesaret",
+      "name": "Cesaret",
+      "description": null,
+      "sortOrder": 4
+    },
+    {
+      "id": "B05",
+      "familyCode": "B",
+      "slug": "sukur",
+      "name": "Şükür",
+      "description": null,
+      "sortOrder": 5
+    },
+    {
+      "id": "B06",
+      "familyCode": "B",
+      "slug": "tovbe",
+      "name": "Tövbe",
+      "description": null,
+      "sortOrder": 6
+    },
+    {
+      "id": "B07",
+      "familyCode": "B",
+      "slug": "bagislanma-umidi",
+      "name": "Bağışlanma ümidi",
+      "description": null,
+      "sortOrder": 7
+    },
+    {
+      "id": "B08",
+      "familyCode": "B",
+      "slug": "yeni-baslangic",
+      "name": "Yeni başlangıç",
+      "description": null,
+      "sortOrder": 8
+    },
+    {
+      "id": "B09",
+      "familyCode": "B",
+      "slug": "ic-huzur",
+      "name": "İç huzur",
+      "description": null,
+      "sortOrder": 9
+    },
+    {
+      "id": "B10",
+      "familyCode": "B",
+      "slug": "ferahlik",
+      "name": "Ferahlık",
+      "description": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "C01",
+      "familyCode": "C",
+      "slug": "hastalik",
+      "name": "Hastalık",
+      "description": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "C02",
+      "familyCode": "C",
+      "slug": "yas-ve-kayip",
+      "name": "Yas ve kayıp",
+      "description": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "C03",
+      "familyCode": "C",
+      "slug": "olumle-yuzlesmek",
+      "name": "Ölümle yüzleşmek",
+      "description": null,
+      "sortOrder": 3
+    },
+    {
+      "id": "C04",
+      "familyCode": "C",
+      "slug": "maddi-sikinti",
+      "name": "Maddi sıkıntı",
+      "description": null,
+      "sortOrder": 4
+    },
+    {
+      "id": "C05",
+      "familyCode": "C",
+      "slug": "borc",
+      "name": "Borç",
+      "description": null,
+      "sortOrder": 5
+    },
+    {
+      "id": "C06",
+      "familyCode": "C",
+      "slug": "issizlik",
+      "name": "İşsizlik",
+      "description": null,
+      "sortOrder": 6
+    },
+    {
+      "id": "C07",
+      "familyCode": "C",
+      "slug": "haksizliga-ugramak",
+      "name": "Haksızlığa uğramak",
+      "description": null,
+      "sortOrder": 7
+    },
+    {
+      "id": "C08",
+      "familyCode": "C",
+      "slug": "zulum-ve-baski",
+      "name": "Zulüm ve baskı",
+      "description": null,
+      "sortOrder": 8
+    },
+    {
+      "id": "C09",
+      "familyCode": "C",
+      "slug": "imtihan-bilinci",
+      "name": "İmtihan bilinci",
+      "description": null,
+      "sortOrder": 9
+    },
+    {
+      "id": "C10",
+      "familyCode": "C",
+      "slug": "afet-ve-kriz",
+      "name": "Afet ve kriz",
+      "description": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "D01",
+      "familyCode": "D",
+      "slug": "karar-vermek",
+      "name": "Karar vermek",
+      "description": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "D02",
+      "familyCode": "D",
+      "slug": "istisare",
+      "name": "İstişare",
+      "description": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "D03",
+      "familyCode": "D",
+      "slug": "belirsizlik",
+      "name": "Belirsizlik",
+      "description": null,
+      "sortOrder": 3
+    },
+    {
+      "id": "D04",
+      "familyCode": "D",
+      "slug": "hayat-degisimi",
+      "name": "Hayat değişimi",
+      "description": null,
+      "sortOrder": 4
+    },
+    {
+      "id": "D05",
+      "familyCode": "D",
+      "slug": "ayrilik",
+      "name": "Ayrılık",
+      "description": null,
+      "sortOrder": 5
+    },
+    {
+      "id": "D06",
+      "familyCode": "D",
+      "slug": "gurbet",
+      "name": "Gurbet",
+      "description": null,
+      "sortOrder": 6
+    },
+    {
+      "id": "D07",
+      "familyCode": "D",
+      "slug": "hedef-ve-niyet",
+      "name": "Hedef ve niyet",
+      "description": null,
+      "sortOrder": 7
+    },
+    {
+      "id": "D08",
+      "familyCode": "D",
+      "slug": "basari",
+      "name": "Başarı",
+      "description": null,
+      "sortOrder": 8
+    },
+    {
+      "id": "D09",
+      "familyCode": "D",
+      "slug": "basarisizlik",
+      "name": "Başarısızlık",
+      "description": null,
+      "sortOrder": 9
+    },
+    {
+      "id": "D10",
+      "familyCode": "D",
+      "slug": "bekleyis",
+      "name": "Bekleyiş",
+      "description": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "E01",
+      "familyCode": "E",
+      "slug": "anne-baba",
+      "name": "Anne baba",
+      "description": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "E02",
+      "familyCode": "E",
+      "slug": "evlilik",
+      "name": "Evlilik",
+      "description": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "E03",
+      "familyCode": "E",
+      "slug": "cocuklar",
+      "name": "Çocuklar",
+      "description": null,
+      "sortOrder": 3
+    },
+    {
+      "id": "E04",
+      "familyCode": "E",
+      "slug": "kardeslik-ve-akrabalik",
+      "name": "Kardeşlik ve akrabalık",
+      "description": null,
+      "sortOrder": 4
+    },
+    {
+      "id": "E05",
+      "familyCode": "E",
+      "slug": "dostluk",
+      "name": "Dostluk",
+      "description": null,
+      "sortOrder": 5
+    },
+    {
+      "id": "E06",
+      "familyCode": "E",
+      "slug": "komsuluk",
+      "name": "Komşuluk",
+      "description": null,
+      "sortOrder": 6
+    },
+    {
+      "id": "E07",
+      "familyCode": "E",
+      "slug": "sevgi-ve-merhamet",
+      "name": "Sevgi ve merhamet",
+      "description": null,
+      "sortOrder": 7
+    },
+    {
+      "id": "E08",
+      "familyCode": "E",
+      "slug": "anlasmazlik",
+      "name": "Anlaşmazlık",
+      "description": null,
+      "sortOrder": 8
+    },
+    {
+      "id": "E09",
+      "familyCode": "E",
+      "slug": "affetmek-ve-barismak",
+      "name": "Affetmek ve barışmak",
+      "description": null,
+      "sortOrder": 9
+    },
+    {
+      "id": "E10",
+      "familyCode": "E",
+      "slug": "kotu-arkadaslik",
+      "name": "Kötü arkadaşlık",
+      "description": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "F01",
+      "familyCode": "F",
+      "slug": "nefis-ve-durtuler",
+      "name": "Nefis ve dürtüler",
+      "description": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "F02",
+      "familyCode": "F",
+      "slug": "haset",
+      "name": "Haset",
+      "description": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "F03",
+      "familyCode": "F",
+      "slug": "kibir",
+      "name": "Kibir",
+      "description": null,
+      "sortOrder": 3
+    },
+    {
+      "id": "F04",
+      "familyCode": "F",
+      "slug": "onyargi",
+      "name": "Önyargı",
+      "description": null,
+      "sortOrder": 4
+    },
+    {
+      "id": "F05",
+      "familyCode": "F",
+      "slug": "kotu-aliskanliklar",
+      "name": "Kötü alışkanlıklar",
+      "description": null,
+      "sortOrder": 5
+    },
+    {
+      "id": "F06",
+      "familyCode": "F",
+      "slug": "gunaha-direnmek",
+      "name": "Günaha direnmek",
+      "description": null,
+      "sortOrder": 6
+    },
+    {
+      "id": "F07",
+      "familyCode": "F",
+      "slug": "kanaat",
+      "name": "Kanaat",
+      "description": null,
+      "sortOrder": 7
+    },
+    {
+      "id": "F08",
+      "familyCode": "F",
+      "slug": "ozdenetim",
+      "name": "Özdenetim",
+      "description": null,
+      "sortOrder": 8
+    },
+    {
+      "id": "F09",
+      "familyCode": "F",
+      "slug": "kendini-hesaba-cekmek",
+      "name": "Kendini hesaba çekmek",
+      "description": null,
+      "sortOrder": 9
+    },
+    {
+      "id": "F10",
+      "familyCode": "F",
+      "slug": "dunya-ahiret-dengesi",
+      "name": "Dünya–ahiret dengesi",
+      "description": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "M01",
+      "familyCode": "M",
+      "slug": "genclik",
+      "name": "Gençlik",
+      "description": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "M02",
+      "familyCode": "M",
+      "slug": "yaslanmak",
+      "name": "Yaşlanmak",
+      "description": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "M03",
+      "familyCode": "M",
+      "slug": "ebeveyn-olmak",
+      "name": "Ebeveyn olmak",
+      "description": null,
+      "sortOrder": 3
+    },
+    {
+      "id": "M04",
+      "familyCode": "M",
+      "slug": "suphe-ve-iman-krizi",
+      "name": "Şüphe ve iman krizi",
+      "description": null,
+      "sortOrder": 4
+    },
+    {
+      "id": "M05",
+      "familyCode": "M",
+      "slug": "anlam-arayisi",
+      "name": "Anlam arayışı",
+      "description": null,
+      "sortOrder": 5
+    },
+    {
+      "id": "M06",
+      "familyCode": "M",
+      "slug": "fanilik-ve-zaman",
+      "name": "Fanilik ve zaman",
+      "description": null,
+      "sortOrder": 6
+    },
+    {
+      "id": "M07",
+      "familyCode": "M",
+      "slug": "goc-ve-yerinden-olmak",
+      "name": "Göç ve yerinden olmak",
+      "description": null,
+      "sortOrder": 7
+    },
+    {
+      "id": "M08",
+      "familyCode": "M",
+      "slug": "hasta-yakinina-bakmak",
+      "name": "Hasta yakınına bakmak",
+      "description": null,
+      "sortOrder": 8
+    },
+    {
+      "id": "M09",
+      "familyCode": "M",
+      "slug": "kimsesizlik",
+      "name": "Kimsesizlik",
+      "description": null,
+      "sortOrder": 9
+    },
+    {
+      "id": "M10",
+      "familyCode": "M",
+      "slug": "yeniden-insa",
+      "name": "Yeniden inşa",
+      "description": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "G01",
+      "familyCode": "G",
+      "slug": "allah-in-birligi",
+      "name": "Allah'ın birliği",
+      "description": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "G02",
+      "familyCode": "G",
+      "slug": "isim-ve-sifatlari",
+      "name": "İsim ve sıfatları",
+      "description": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "G03",
+      "familyCode": "G",
+      "slug": "rahmeti",
+      "name": "Rahmeti",
+      "description": null,
+      "sortOrder": 3
+    },
+    {
+      "id": "G04",
+      "familyCode": "G",
+      "slug": "adaleti",
+      "name": "Adaleti",
+      "description": null,
+      "sortOrder": 4
+    },
+    {
+      "id": "G05",
+      "familyCode": "G",
+      "slug": "kudreti",
+      "name": "Kudreti",
+      "description": null,
+      "sortOrder": 5
+    },
+    {
+      "id": "G06",
+      "familyCode": "G",
+      "slug": "yakinligi",
+      "name": "Yakınlığı",
+      "description": null,
+      "sortOrder": 6
+    },
+    {
+      "id": "G07",
+      "familyCode": "G",
+      "slug": "ilmi",
+      "name": "İlmi",
+      "description": null,
+      "sortOrder": 7
+    },
+    {
+      "id": "G08",
+      "familyCode": "G",
+      "slug": "allah-sevgisi",
+      "name": "Allah sevgisi",
+      "description": null,
+      "sortOrder": 8
+    },
+    {
+      "id": "G09",
+      "familyCode": "G",
+      "slug": "takva",
+      "name": "Takva",
+      "description": null,
+      "sortOrder": 9
+    },
+    {
+      "id": "G10",
+      "familyCode": "G",
+      "slug": "teslimiyet",
+      "name": "Teslimiyet",
+      "description": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "H01",
+      "familyCode": "H",
+      "slug": "namaz",
+      "name": "Namaz",
+      "description": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "H02",
+      "familyCode": "H",
+      "slug": "oruc",
+      "name": "Oruç",
+      "description": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "H03",
+      "familyCode": "H",
+      "slug": "zekat-ve-infak",
+      "name": "Zekât ve infak",
+      "description": null,
+      "sortOrder": 3
+    },
+    {
+      "id": "H04",
+      "familyCode": "H",
+      "slug": "hac",
+      "name": "Hac",
+      "description": null,
+      "sortOrder": 4
+    },
+    {
+      "id": "H05",
+      "familyCode": "H",
+      "slug": "dua",
+      "name": "Dua",
+      "description": null,
+      "sortOrder": 5
+    },
+    {
+      "id": "H06",
+      "familyCode": "H",
+      "slug": "zikir",
+      "name": "Zikir",
+      "description": null,
+      "sortOrder": 6
+    },
+    {
+      "id": "H07",
+      "familyCode": "H",
+      "slug": "kurban-ve-adak",
+      "name": "Kurban ve adak",
+      "description": null,
+      "sortOrder": 7
+    },
+    {
+      "id": "H08",
+      "familyCode": "H",
+      "slug": "temizlik",
+      "name": "Temizlik",
+      "description": null,
+      "sortOrder": 8
+    },
+    {
+      "id": "H09",
+      "familyCode": "H",
+      "slug": "yemin-ve-ahit",
+      "name": "Yemin ve ahit",
+      "description": null,
+      "sortOrder": 9
+    },
+    {
+      "id": "H10",
+      "familyCode": "H",
+      "slug": "helal-ve-haram",
+      "name": "Helal ve haram",
+      "description": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "I01",
+      "familyCode": "I",
+      "slug": "hz-adem",
+      "name": "Hz. Âdem",
+      "description": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "I02",
+      "familyCode": "I",
+      "slug": "hz-nuh",
+      "name": "Hz. Nûh",
+      "description": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "I03",
+      "familyCode": "I",
+      "slug": "hz-ibrahim",
+      "name": "Hz. İbrahim",
+      "description": null,
+      "sortOrder": 3
+    },
+    {
+      "id": "I04",
+      "familyCode": "I",
+      "slug": "hz-yusuf",
+      "name": "Hz. Yusuf",
+      "description": null,
+      "sortOrder": 4
+    },
+    {
+      "id": "I05",
+      "familyCode": "I",
+      "slug": "hz-musa",
+      "name": "Hz. Musa",
+      "description": null,
+      "sortOrder": 5
+    },
+    {
+      "id": "I06",
+      "familyCode": "I",
+      "slug": "hz-isa-ve-hz-meryem",
+      "name": "Hz. İsa ve Hz. Meryem",
+      "description": null,
+      "sortOrder": 6
+    },
+    {
+      "id": "I07",
+      "familyCode": "I",
+      "slug": "hz-muhammed",
+      "name": "Hz. Muhammed",
+      "description": null,
+      "sortOrder": 7
+    },
+    {
+      "id": "I08",
+      "familyCode": "I",
+      "slug": "diger-peygamberler",
+      "name": "Diğer peygamberler",
+      "description": null,
+      "sortOrder": 8
+    },
+    {
+      "id": "I09",
+      "familyCode": "I",
+      "slug": "helak-olan-kavimler",
+      "name": "Helak olan kavimler",
+      "description": null,
+      "sortOrder": 9
+    },
+    {
+      "id": "I10",
+      "familyCode": "I",
+      "slug": "ashab-i-kehf-ve-diger-kissalar",
+      "name": "Ashâb-ı Kehf ve diğer kıssalar",
+      "description": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "J01",
+      "familyCode": "J",
+      "slug": "goklerin-ve-yerin-yaratilisi",
+      "name": "Göklerin ve yerin yaratılışı",
+      "description": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "J02",
+      "familyCode": "J",
+      "slug": "insanin-yaratilisi",
+      "name": "İnsanın yaratılışı",
+      "description": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "J03",
+      "familyCode": "J",
+      "slug": "gece-ve-gunduz",
+      "name": "Gece ve gündüz",
+      "description": null,
+      "sortOrder": 3
+    },
+    {
+      "id": "J04",
+      "familyCode": "J",
+      "slug": "gokyuzu-ve-yildizlar",
+      "name": "Gökyüzü ve yıldızlar",
+      "description": null,
+      "sortOrder": 4
+    },
+    {
+      "id": "J05",
+      "familyCode": "J",
+      "slug": "yagmur-ve-su",
+      "name": "Yağmur ve su",
+      "description": null,
+      "sortOrder": 5
+    },
+    {
+      "id": "J06",
+      "familyCode": "J",
+      "slug": "bitkiler-ve-toprak",
+      "name": "Bitkiler ve toprak",
+      "description": null,
+      "sortOrder": 6
+    },
+    {
+      "id": "J07",
+      "familyCode": "J",
+      "slug": "daglar",
+      "name": "Dağlar",
+      "description": null,
+      "sortOrder": 7
+    },
+    {
+      "id": "J08",
+      "familyCode": "J",
+      "slug": "ruzgar",
+      "name": "Rüzgâr",
+      "description": null,
+      "sortOrder": 8
+    },
+    {
+      "id": "J09",
+      "familyCode": "J",
+      "slug": "denizler-ve-gemiler",
+      "name": "Denizler ve gemiler",
+      "description": null,
+      "sortOrder": 9
+    },
+    {
+      "id": "J10",
+      "familyCode": "J",
+      "slug": "yaratilisin-evreleri",
+      "name": "Yaratılışın evreleri",
+      "description": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "K01",
+      "familyCode": "K",
+      "slug": "olum-ve-berzah",
+      "name": "Ölüm ve berzah",
+      "description": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "K02",
+      "familyCode": "K",
+      "slug": "kiyamet",
+      "name": "Kıyamet",
+      "description": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "K03",
+      "familyCode": "K",
+      "slug": "dirilis",
+      "name": "Diriliş",
+      "description": null,
+      "sortOrder": 3
+    },
+    {
+      "id": "K04",
+      "familyCode": "K",
+      "slug": "hesap-ve-amel-defteri",
+      "name": "Hesap ve amel defteri",
+      "description": null,
+      "sortOrder": 4
+    },
+    {
+      "id": "K05",
+      "familyCode": "K",
+      "slug": "mizan",
+      "name": "Mizan",
+      "description": null,
+      "sortOrder": 5
+    },
+    {
+      "id": "K06",
+      "familyCode": "K",
+      "slug": "cennet",
+      "name": "Cennet",
+      "description": null,
+      "sortOrder": 6
+    },
+    {
+      "id": "K07",
+      "familyCode": "K",
+      "slug": "cehennem",
+      "name": "Cehennem",
+      "description": null,
+      "sortOrder": 7
+    },
+    {
+      "id": "K08",
+      "familyCode": "K",
+      "slug": "sefaat",
+      "name": "Şefaat",
+      "description": null,
+      "sortOrder": 8
+    },
+    {
+      "id": "K09",
+      "familyCode": "K",
+      "slug": "melekler",
+      "name": "Melekler",
+      "description": null,
+      "sortOrder": 9
+    },
+    {
+      "id": "K10",
+      "familyCode": "K",
+      "slug": "seytan-ve-vesvese",
+      "name": "Şeytan ve vesvese",
+      "description": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "L01",
+      "familyCode": "L",
+      "slug": "dogruluk",
+      "name": "Doğruluk",
+      "description": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "L02",
+      "familyCode": "L",
+      "slug": "adalet",
+      "name": "Adalet",
+      "description": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "L03",
+      "familyCode": "L",
+      "slug": "emanet",
+      "name": "Emanet",
+      "description": null,
+      "sortOrder": 3
+    },
+    {
+      "id": "L04",
+      "familyCode": "L",
+      "slug": "comertlik",
+      "name": "Cömertlik",
+      "description": null,
+      "sortOrder": 4
+    },
+    {
+      "id": "L05",
+      "familyCode": "L",
+      "slug": "guzel-soz",
+      "name": "Güzel söz",
+      "description": null,
+      "sortOrder": 5
+    },
+    {
+      "id": "L06",
+      "familyCode": "L",
+      "slug": "giybet-ve-iftira",
+      "name": "Gıybet ve iftira",
+      "description": null,
+      "sortOrder": 6
+    },
+    {
+      "id": "L07",
+      "familyCode": "L",
+      "slug": "yetim-ve-yoksul-hakki",
+      "name": "Yetim ve yoksul hakkı",
+      "description": null,
+      "sortOrder": 7
+    },
+    {
+      "id": "L08",
+      "familyCode": "L",
+      "slug": "yardimlasma",
+      "name": "Yardımlaşma",
+      "description": null,
+      "sortOrder": 8
+    },
+    {
+      "id": "L09",
+      "familyCode": "L",
+      "slug": "insan-onuru",
+      "name": "İnsan onuru",
+      "description": null,
+      "sortOrder": 9
+    },
+    {
+      "id": "L10",
+      "familyCode": "L",
+      "slug": "ticaret-ve-olcu",
+      "name": "Ticaret ve ölçü",
+      "description": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "N01",
+      "familyCode": "N",
+      "slug": "kur-an-in-indirilisi",
+      "name": "Kur'an'ın indirilişi",
+      "description": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "N02",
+      "familyCode": "N",
+      "slug": "vahiy-ve-nuzul",
+      "name": "Vahiy ve nüzul",
+      "description": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "N03",
+      "familyCode": "N",
+      "slug": "kur-an-in-korunmasi",
+      "name": "Kur'an'ın korunması",
+      "description": null,
+      "sortOrder": 3
+    },
+    {
+      "id": "N04",
+      "familyCode": "N",
+      "slug": "onceki-kitaplar",
+      "name": "Önceki kitaplar",
+      "description": null,
+      "sortOrder": 4
+    },
+    {
+      "id": "N05",
+      "familyCode": "N",
+      "slug": "kur-an-i-okumak-ve-anlamak",
+      "name": "Kur'an'ı okumak ve anlamak",
+      "description": null,
+      "sortOrder": 5
+    },
+    {
+      "id": "N06",
+      "familyCode": "N",
+      "slug": "muhkem-ve-mutesabih",
+      "name": "Muhkem ve müteşabih",
+      "description": null,
+      "sortOrder": 6
+    },
+    {
+      "id": "N07",
+      "familyCode": "N",
+      "slug": "kur-an-in-benzersizligi",
+      "name": "Kur'an'ın benzersizliği",
+      "description": null,
+      "sortOrder": 7
+    },
+    {
+      "id": "N08",
+      "familyCode": "N",
+      "slug": "uyari-ve-mujde",
+      "name": "Uyarı ve müjde",
+      "description": null,
+      "sortOrder": 8
+    },
+    {
+      "id": "N09",
+      "familyCode": "N",
+      "slug": "kur-an-a-iman",
+      "name": "Kur'an'a iman",
+      "description": null,
+      "sortOrder": 9
+    },
+    {
+      "id": "N10",
+      "familyCode": "N",
+      "slug": "tefekkur-daveti",
+      "name": "Tefekkür daveti",
+      "description": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "O01",
+      "familyCode": "O",
+      "slug": "yonetimde-adalet",
+      "name": "Yönetimde adalet",
+      "description": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "O02",
+      "familyCode": "O",
+      "slug": "sura-ve-danisma",
+      "name": "Şûra ve danışma",
+      "description": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "O03",
+      "familyCode": "O",
+      "slug": "hakki-savunmak",
+      "name": "Hakkı savunmak",
+      "description": null,
+      "sortOrder": 3
+    },
+    {
+      "id": "O04",
+      "familyCode": "O",
+      "slug": "baris",
+      "name": "Barış",
+      "description": null,
+      "sortOrder": 4
+    },
+    {
+      "id": "O05",
+      "familyCode": "O",
+      "slug": "savas-ve-savunma-hukuku",
+      "name": "Savaş ve savunma hukuku",
+      "description": null,
+      "sortOrder": 5
+    },
+    {
+      "id": "O06",
+      "familyCode": "O",
+      "slug": "antlasmalara-sadakat",
+      "name": "Antlaşmalara sadakat",
+      "description": null,
+      "sortOrder": 6
+    },
+    {
+      "id": "O07",
+      "familyCode": "O",
+      "slug": "farkliliklara-saygi",
+      "name": "Farklılıklara saygı",
+      "description": null,
+      "sortOrder": 7
+    },
+    {
+      "id": "O08",
+      "familyCode": "O",
+      "slug": "dinde-zorlama-yoktur",
+      "name": "Dinde zorlama yoktur",
+      "description": null,
+      "sortOrder": 8
+    },
+    {
+      "id": "O09",
+      "familyCode": "O",
+      "slug": "fitne-ve-bozgunculuk",
+      "name": "Fitne ve bozgunculuk",
+      "description": null,
+      "sortOrder": 9
+    },
+    {
+      "id": "O10",
+      "familyCode": "O",
+      "slug": "toplumlarin-cokus-sebepleri",
+      "name": "Toplumların çöküş sebepleri",
+      "description": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "P01",
+      "familyCode": "P",
+      "slug": "ari-ve-bal",
+      "name": "Arı ve bal",
+      "description": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "P02",
+      "familyCode": "P",
+      "slug": "karinca",
+      "name": "Karınca",
+      "description": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "P03",
+      "familyCode": "P",
+      "slug": "orumcek",
+      "name": "Örümcek",
+      "description": null,
+      "sortOrder": 3
+    },
+    {
+      "id": "P04",
+      "familyCode": "P",
+      "slug": "fil",
+      "name": "Fil",
+      "description": null,
+      "sortOrder": 4
+    },
+    {
+      "id": "P05",
+      "familyCode": "P",
+      "slug": "incir-ve-zeytin",
+      "name": "İncir ve zeytin",
+      "description": null,
+      "sortOrder": 5
+    },
+    {
+      "id": "P06",
+      "familyCode": "P",
+      "slug": "demir",
+      "name": "Demir",
+      "description": null,
+      "sortOrder": 6
+    },
+    {
+      "id": "P07",
+      "familyCode": "P",
+      "slug": "kuslar",
+      "name": "Kuşlar",
+      "description": null,
+      "sortOrder": 7
+    },
+    {
+      "id": "P08",
+      "familyCode": "P",
+      "slug": "hurma-ve-uzum",
+      "name": "Hurma ve üzüm",
+      "description": null,
+      "sortOrder": 8
+    },
+    {
+      "id": "P09",
+      "familyCode": "P",
+      "slug": "inci-ve-mercan",
+      "name": "İnci ve mercan",
+      "description": null,
+      "sortOrder": 9
+    },
+    {
+      "id": "P10",
+      "familyCode": "P",
+      "slug": "sinek-ve-sivrisinek",
+      "name": "Sinek ve sivrisinek",
+      "description": null,
+      "sortOrder": 10
+    }
+  ]
+}

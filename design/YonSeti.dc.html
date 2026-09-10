@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600&family=EB+Garamond:wght@400;500;600&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<script src="./image-slot.js"></script>
+</helmet>
+<div style="display:flex;gap:26px;align-items:flex-start">
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ dark }}" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:{{ bg }};font-family:{{ ui }};display:flex;flex-direction:column;overflow:hidden">
+  <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:0 30px">
+    <div style="width:140px;height:140px;background-image:url({{ logoUrl }});background-size:contain;background-repeat:no-repeat;background-position:center"></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:12px">
+      <div style="font-family:{{ disp }};font-size:46px;line-height:1;letter-spacing:.14em;color:{{ ink }};text-transform:uppercase">KUN</div>
+      <div style="width:64px;height:1px;background:{{ acc }};opacity:.75"></div>
+      <div style="font-family:{{ disp }};font-size:22px;line-height:1;letter-spacing:.02em;color:{{ ink2 }}">İlm-i Hâl</div>
+    </div>
+    <div dir="rtl" style="font-family:{{ disp }};font-size:26px;line-height:1;color:{{ acc }}">اللّٰه</div>
+  </div>
+  <div style="padding:0 30px 6px;text-align:center;font-family:{{ meta }};font-size:11px;letter-spacing:.1em;color:{{ ink2 }}">UYGULAMA ADI YER TUTUCU</div>
+</div>
+</x-import>
+<div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">0 · Açılış</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ dark }}" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:{{ bg }};font-family:{{ ui }};display:flex;flex-direction:column;overflow:hidden">
+<div style="padding:6px 16px 0;display:flex;justify-content:flex-end"><div style="min-height:44px;display:flex;align-items:center;padding:0 8px;font-size:14.5px;font-weight:500;color:{{ ink2 }}">Atla</div></div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:26px;padding:0 26px">
+    <div style="height:150px;border-radius:{{ rad }};background:{{ bandBg }};display:flex;align-items:center;justify-content:center"><div style="width:118px;height:118px;background-image:url({{ logoBand }});background-size:contain;background-repeat:no-repeat;background-position:center"></div></div>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div style="font-family:{{ disp }};font-size:29px;line-height:1.2;color:{{ ink }};text-transform:{{ caps }};letter-spacing:{{ ls }};text-wrap:pretty">Hissettiğin duyguya göre ayetler</div>
+      <div style="font-size:15px;line-height:1.6;color:{{ ink2 }};text-wrap:pretty">Kaygı, şükür, borç, yolculuk… 150 konu başlığı. Sure numarası bilmene gerek yok.</div>
+    </div>
+  </div>
+  <div style="padding:0 0 18px"><div style="display:flex;gap:6px;justify-content:center"><span style="width:20px;height:7px;border-radius:99px;background:{{ acc }}"></span><span style="width:7px;height:7px;border-radius:99px;background:{{ line }}"></span><span style="width:7px;height:7px;border-radius:99px;background:{{ line }}"></span></div></div>
+<div style="padding:0 20px 4px"><div style="padding:20px 0;text-align:center;background:{{ acc }};border-radius:{{ rad }};font-size:17px;font-weight:700;letter-spacing:{{ ls }};color:{{ accInk }};text-transform:{{ caps }}">Devam</div></div>
+</div>
+</x-import>
+<div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">0b · Tanıtım 1</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ dark }}" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:{{ bg }};font-family:{{ ui }};display:flex;flex-direction:column;overflow:hidden">
+<div style="padding:6px 16px 0;display:flex;justify-content:flex-end"><div style="min-height:44px;display:flex;align-items:center;padding:0 8px;font-size:14.5px;font-weight:500;color:{{ ink2 }}">Atla</div></div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:26px;padding:0 26px">
+    <div style="padding:18px 18px 20px;border-radius:{{ rad }};background:{{ surf }};border:1px solid {{ line }};display:flex;flex-direction:column;gap:11px">
+      <div style="font-family:{{ meta }};font-size:10.5px;font-weight:600;letter-spacing:.14em;color:{{ ink2 }}">İNŞİRAH · 94:6</div>
+      <div style="font-family:{{ disp }};font-size:19px;line-height:1.5;color:{{ ink }};text-wrap:pretty">Şüphesiz her zorluğun ardından bir genişlik gelir.</div>
+      <div style="display:flex;gap:16px;padding-top:3px">
+        <svg width="18" height="18" viewBox="0 0 20 20"><path d="M5.5 3.5l10 6.5-10 6.5v-13z" fill="{{ acc }}"></path></svg>
+        <svg width="18" height="18" viewBox="0 0 20 20"><path d="M5 2.5h10v15l-5-4-5 4v-15z" fill="none" stroke="{{ ink }}" stroke-width="1.5" stroke-linejoin="round"></path></svg>
+        <svg width="18" height="18" viewBox="0 0 20 20"><path d="M10 13V2.8M10 2.8L6.4 6.4M10 2.8l3.6 3.6M3.5 12v4.5h13V12" fill="none" stroke="{{ ink }}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div style="font-family:{{ disp }};font-size:29px;line-height:1.2;color:{{ ink }};text-transform:{{ caps }};letter-spacing:{{ ls }};text-wrap:pretty">Dinle, kaydet, mealleri karşılaştır</div>
+      <div style="font-size:15px;line-height:1.6;color:{{ ink2 }};text-wrap:pretty">Kayıtların cihazında kalır. Hesap açman gerekmez, çevrimdışı çalışır.</div>
+    </div>
+  </div>
+  <div style="padding:0 0 18px"><div style="display:flex;gap:6px;justify-content:center"><span style="width:7px;height:7px;border-radius:99px;background:{{ line }}"></span><span style="width:20px;height:7px;border-radius:99px;background:{{ acc }}"></span><span style="width:7px;height:7px;border-radius:99px;background:{{ line }}"></span></div></div>
+<div style="padding:0 20px 4px"><div style="padding:20px 0;text-align:center;background:{{ acc }};border-radius:{{ rad }};font-size:17px;font-weight:700;letter-spacing:{{ ls }};color:{{ accInk }};text-transform:{{ caps }}">Devam</div></div>
+</div>
+</x-import>
+<div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">0c · Tanıtım 2</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ dark }}" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:{{ bg }};font-family:{{ ui }};display:flex;flex-direction:column;overflow:hidden">
+<div style="padding:6px 16px 0;display:flex;justify-content:flex-end"><div style="min-height:44px;display:flex;align-items:center;padding:0 8px;font-size:14.5px;font-weight:500;color:{{ ink2 }}">Atla</div></div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:24px;padding:0 26px">
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div style="font-family:{{ disp }};font-size:29px;line-height:1.2;color:{{ ink }};text-transform:{{ caps }};letter-spacing:{{ ls }};text-wrap:pretty">Sana nasıl hitap edelim?</div>
+      <div style="font-size:15px;line-height:1.6;color:{{ ink2 }};text-wrap:pretty">Yalnızca ana sayfada selamlamak için. Cihazından çıkmaz, boş bırakabilirsin.</div>
+    </div>
+    <div style="padding:16px 16px;background:{{ surf }};border:1px solid {{ acc }};border-radius:{{ rad }};display:flex;align-items:center;gap:9px">
+      <span style="font-size:17px;color:{{ ink2 }}">İsmin</span>
+      <span style="width:2px;height:22px;background:{{ acc }}"></span>
+    </div>
+  </div>
+  <div style="padding:0 0 18px"><div style="display:flex;gap:6px;justify-content:center"><span style="width:7px;height:7px;border-radius:99px;background:{{ line }}"></span><span style="width:7px;height:7px;border-radius:99px;background:{{ line }}"></span><span style="width:20px;height:7px;border-radius:99px;background:{{ acc }}"></span></div></div>
+<div style="padding:0 20px 4px"><div style="padding:20px 0;text-align:center;background:{{ acc }};border-radius:{{ rad }};font-size:17px;font-weight:700;letter-spacing:{{ ls }};color:{{ accInk }};text-transform:{{ caps }}">Başla</div></div>
+</div>
+</x-import>
+<div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">0d · İsim (atlanabilir)</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ dark }}" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:{{ bg }};font-family:{{ ui }};display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:6px 16px 0;display:flex;align-items:center;justify-content:space-between;gap:12px">
+    <div style="padding-left:6px;font-size:16px;font-weight:500;line-height:1.2;color:{{ ink }}">Merhaba, Elif</div>
+    <div style="display:flex;gap:4px">
+      <div style="width:44px;height:44px;display:flex;align-items:center;justify-content:center">
+        <svg width="19" height="19" viewBox="0 0 20 20"><path d="M5 2.5h10v15l-5-4-5 4v-15z" fill="none" stroke="{{ ink2 }}" stroke-width="1.5" stroke-linejoin="round"></path></svg>
+      </div>
+      <div style="width:44px;height:44px;display:flex;align-items:center;justify-content:center">
+        <svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="2.6" fill="none" stroke="{{ ink2 }}" stroke-width="1.5"></circle><path d="M10 1.6v2.2M10 16.2v2.2M2.6 6.2l1.9 1.1M15.5 12.7l1.9 1.1M2.6 13.8l1.9-1.1M15.5 7.3l1.9-1.1" stroke="{{ ink2 }}" stroke-width="1.5" stroke-linecap="round"></path></svg>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:10px;position:relative;height:236px;background:{{ bandBg }};overflow:hidden">
+    <div style="position:absolute;right:-30px;top:-26px;opacity:.3;pointer-events:none"><div style="width:176px;height:176px;background-image:url({{ logoBand }});background-size:contain;background-repeat:no-repeat;background-position:center"></div></div>
+    <sc-if value="{{ isPattern }}" hint-placeholder-val="{{ false }}">
+      <div style="position:absolute;inset:0;display:flex;gap:3px;opacity:.9">
+        <div style="flex:1;background:repeating-linear-gradient(45deg,{{ acc }} 0 6px,transparent 6px 16px)"></div>
+        <div style="flex:1;background:repeating-linear-gradient(-45deg,{{ bandInk }} 0 4px,transparent 4px 15px)"></div>
+        <div style="flex:1;background:repeating-linear-gradient(90deg,{{ acc }} 0 3px,transparent 3px 17px)"></div>
+        <div style="flex:1;background:repeating-linear-gradient(45deg,{{ bandInk }} 0 5px,transparent 5px 14px)"></div>
+        <div style="flex:1;background:repeating-linear-gradient(-45deg,{{ acc }} 0 7px,transparent 7px 18px)"></div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ isWash }}" hint-placeholder-val="{{ false }}">
+      <div style="position:absolute;inset:0;background:{{ bandBg }};background-image:radial-gradient(58% 38% at 18% 28%,rgba(110,100,128,.85) 0 24%,transparent 62%),radial-gradient(48% 32% at 72% 22%,rgba(169,137,158,.8) 0 22%,transparent 64%),radial-gradient(66% 42% at 42% 74%,rgba(74,68,104,.9) 0 20%,transparent 66%),radial-gradient(40% 26% at 84% 68%,rgba(200,178,190,.6) 0 20%,transparent 62%),repeating-linear-gradient(112deg,rgba(255,255,255,.22) 0 5px,transparent 5px 17px)"></div>
+      <div style="position:absolute;inset:0;background:rgba(255,255,255,.5);pointer-events:none"></div>
+      <div style="position:absolute;top:9px;right:14px;font-family:{{ meta }};font-size:9px;letter-spacing:.05em;color:{{ bandInk }};opacity:.55;pointer-events:none">Ebru esintili desen · kodla üretildi</div>
+    </sc-if>
+    <sc-if value="{{ isPhoto }}" hint-placeholder-val="{{ false }}">
+      <div style="position:absolute;inset:0;background:{{ bandBg }};background-image:radial-gradient(70% 60% at 30% 20%,rgba(255,255,255,.14) 0 40%,transparent 70%),radial-gradient(60% 50% at 80% 80%,rgba(0,0,0,.35) 0 40%,transparent 72%)"></div>
+      <div style="position:absolute;inset:0">
+        <image-slot id="yonseti-foto-zemin" shape="rect" placeholder="Kendi fotoğrafın"></image-slot>
+      </div>
+      <div style="position:absolute;inset:0;background:rgba(18,20,22,.26);pointer-events:none"></div>
+      <div style="position:absolute;left:0;right:0;bottom:0;height:158px;background:linear-gradient(to bottom,rgba(18,20,22,0),rgba(18,20,22,.62) 34%,rgba(18,20,22,.8));pointer-events:none"></div>
+    </sc-if>
+    <sc-if value="{{ isRule }}" hint-placeholder-val="{{ false }}">
+      <div style="position:absolute;left:20px;top:26px;width:46px;height:2px;background:{{ acc }}"></div>
+    </sc-if>
+    <sc-if value="{{ swapped }}" hint-placeholder-val="{{ false }}">
+      <div style="position:absolute;left:20px;right:20px;bottom:64px">
+        <div style="font-family:{{ meta }};font-size:9.5px;font-weight:600;letter-spacing:.16em;color:{{ acc }}">GÜNÜN AYETİ · İNŞİRAH 94:6</div>
+        <div style="margin-top:11px;font-family:{{ disp }};font-size:25px;line-height:1.38;color:{{ bandInk }};text-wrap:pretty">Şüphesiz her zorluğun ardından bir genişlik gelir.</div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ plain }}" hint-placeholder-val="{{ true }}">
+      <div style="position:absolute;left:20px;right:20px;bottom:64px">
+        <div style="font-family:{{ meta }};font-size:9.5px;font-weight:600;letter-spacing:.16em;color:{{ acc }}">BUGÜNÜN İSMİ · 99 İSİMDEN 69.</div>
+        <div style="margin-top:8px;display:flex;align-items:baseline;gap:12px">
+          <span style="font-family:{{ disp }};font-size:27px;line-height:1.1;color:{{ bandInk }};text-transform:{{ caps }};letter-spacing:{{ ls }}">El-Latîf</span>
+          <span dir="rtl" style="font-family:{{ disp }};font-size:21px;line-height:1.1;color:{{ bandInk }};opacity:.5">اللطيف</span>
+        </div>
+        <div style="margin-top:8px;font-family:{{ ui }};font-size:12px;line-height:1.45;color:{{ bandInk }};opacity:.72;text-wrap:pretty">En ince ayrıntıyı bilen · 6 ayet</div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ ornate }}" hint-placeholder-val="{{ false }}">
+      <div style="position:absolute;left:20px;right:20px;bottom:56px;padding:14px 16px 15px;border-top:1px solid {{ acc }};border-bottom:1px solid {{ acc }};display:flex;align-items:center;gap:14px">
+        <span style="flex:none;opacity:.9">
+          <svg width="38" height="38" viewBox="0 0 24 24"><g fill="none" stroke="{{ acc }}" stroke-width=".9"><rect x="4" y="4" width="16" height="16"></rect><rect x="4" y="4" width="16" height="16" transform="rotate(45 12 12)"></rect><circle cx="12" cy="12" r="3.4"></circle></g></svg>
+        </span>
+        <span style="min-width:0;display:flex;flex-direction:column;gap:6px">
+          <span style="font-family:{{ meta }};font-size:9.5px;font-weight:600;letter-spacing:.16em;color:{{ acc }}">BUGÜNÜN İSMİ · 99 İSİMDEN 69.</span>
+          <span style="display:flex;align-items:baseline;gap:11px">
+            <span style="font-family:{{ disp }};font-size:28px;line-height:1.1;color:{{ bandInk }};text-transform:{{ caps }};letter-spacing:{{ ls }}">El-Latîf</span>
+            <span dir="rtl" style="font-family:{{ disp }};font-size:22px;line-height:1.1;color:{{ acc }}">اللطيف</span>
+          </span>
+          <span style="font-family:{{ ui }};font-size:12px;line-height:1.45;color:{{ bandInk }};opacity:.74;text-wrap:pretty">En ince ayrıntıyı bilen, sezilmez yollarla iyilik ulaştıran · 6 ayet</span>
+        </span>
+      </div>
+    </sc-if>
+  </div>
+
+  <sc-if value="{{ solidCard }}" hint-placeholder-val="{{ true }}">
+  <div style="margin:0 20px;position:relative;padding:16px 17px;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }};box-shadow:0 12px 30px rgba(0,0,0,.1)">
+    <sc-if value="{{ notSwapped }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+        <div style="font-family:{{ meta }};font-size:10.5px;font-weight:600;letter-spacing:.14em;color:{{ ink2 }}">GÜNÜN AYETİ</div>
+        <div style="font-family:{{ meta }};font-size:12px;font-weight:500;color:{{ acc }}">İnşirah · 94:6</div>
+      </div>
+      <div style="margin-top:8px;font-family:{{ disp }};font-size:17px;line-height:1.5;color:{{ ink }};text-wrap:pretty">Şüphesiz her zorluğun ardından bir genişlik gelir.</div>
+    </sc-if>
+    <sc-if value="{{ swapped }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+        <div style="font-family:{{ meta }};font-size:10.5px;font-weight:600;letter-spacing:.14em;color:{{ ink2 }}">BUGÜNÜN İSMİ</div>
+        <div style="font-family:{{ meta }};font-size:12px;font-weight:500;color:{{ acc }}">99 isimden 69.</div>
+      </div>
+      <div style="margin-top:9px;display:flex;align-items:baseline;gap:11px">
+        <span style="font-family:{{ disp }};font-size:22px;line-height:1.1;color:{{ ink }};text-transform:{{ caps }};letter-spacing:{{ ls }}">El-Latîf</span>
+        <span dir="rtl" style="font-family:{{ disp }};font-size:19px;line-height:1.1;color:{{ acc }}">اللطيف</span>
+        <span style="margin-left:auto;font-family:{{ ui }};font-size:11.5px;color:{{ ink2 }}">6 ayet</span>
+      </div>
+    </sc-if>
+  </div>
+  </sc-if>
+  <sc-if value="{{ glassCard }}" hint-placeholder-val="{{ false }}">
+  <div style="margin:0 20px;position:relative;padding:16px 17px;background:{{ glass }};border:1px solid {{ glassLine }};border-radius:{{ rad }};backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);box-shadow:0 12px 30px rgba(0,0,0,.14)">
+    <sc-if value="{{ notSwapped }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+        <div style="font-family:{{ meta }};font-size:10.5px;font-weight:600;letter-spacing:.14em;color:{{ ink2 }}">GÜNÜN AYETİ</div>
+        <div style="font-family:{{ meta }};font-size:12px;font-weight:500;color:{{ acc }}">İnşirah · 94:6</div>
+      </div>
+      <div style="margin-top:8px;font-family:{{ disp }};font-size:17px;line-height:1.5;color:{{ ink }};text-wrap:pretty">Şüphesiz her zorluğun ardından bir genişlik gelir.</div>
+    </sc-if>
+    <sc-if value="{{ swapped }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+        <div style="font-family:{{ meta }};font-size:10.5px;font-weight:600;letter-spacing:.14em;color:{{ ink2 }}">BUGÜNÜN İSMİ</div>
+        <div style="font-family:{{ meta }};font-size:12px;font-weight:500;color:{{ acc }}">99 isimden 69.</div>
+      </div>
+      <div style="margin-top:9px;display:flex;align-items:baseline;gap:11px">
+        <span style="font-family:{{ disp }};font-size:22px;line-height:1.1;color:{{ ink }};text-transform:{{ caps }};letter-spacing:{{ ls }}">El-Latîf</span>
+        <span dir="rtl" style="font-family:{{ disp }};font-size:19px;line-height:1.1;color:{{ acc }}">اللطيف</span>
+        <span style="margin-left:auto;font-family:{{ ui }};font-size:11.5px;color:{{ ink2 }}">6 ayet</span>
+      </div>
+    </sc-if>
+  </div>
+  </sc-if>
+
+  <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:10px;padding:0 20px 20px">
+    <div style="width:100%;padding:7px;background:{{ glass }};border:1px solid {{ glassLine }};border-radius:{{ radOut }};backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 14px 34px rgba(0,0,0,.13)">
+      <div style="padding:26px 0;text-align:center;background:{{ acc }};border-radius:{{ rad }};font-family:{{ ui }};font-size:{{ btn }};font-weight:700;letter-spacing:{{ ls }};color:{{ accInk }};text-transform:{{ caps }}">Ayetler</div>
+    </div>
+    <div style="font-size:12.5px;line-height:1.55;color:{{ ink2 }};text-align:center;text-wrap:pretty">Hissettiğin duyguya veya duruma göre ayetler</div>
+    <div style="margin-top:2px;width:100%;padding:15px 18px;background:{{ glass }};border:1px solid {{ glassLine }};border-radius:{{ rad }};backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);display:flex;align-items:center;justify-content:space-between;gap:14px">
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <div style="font-family:{{ ui }};font-size:18px;font-weight:700;letter-spacing:{{ ls }};color:{{ ink }};text-transform:{{ caps }}">Tüm ayetler</div>
+        <div style="font-size:12px;color:{{ ink2 }}">Tüm ayetleri oku veya sesli dinle</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:9px">
+        <span style="width:32px;height:32px;flex:none;border-radius:99px;background:{{ acc }};display:flex;align-items:center;justify-content:center"><svg width="12" height="12" viewBox="0 0 20 20"><path d="M6 3.6l10 6.4-10 6.4v-12.8z" fill="{{ accInk }}"></path></svg></span>
+        <svg width="20" height="20" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="{{ ink2 }}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </div>
+    </div>
+  </div>
+</div>
+</x-import>
+<div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">1 · Ana sayfa</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ dark }}" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 22px;background:{{ bg }};font-family:{{ ui }};display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 12px 0;display:flex;align-items:center;gap:2px">
+    <div style="width:44px;height:44px;display:flex;align-items:center;justify-content:center">
+      <svg width="11" height="18" viewBox="0 0 11 18"><path d="M8.5 1.5L2 9l6.5 7.5" fill="none" stroke="{{ ink }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </div>
+    <div style="flex:1"></div>
+    <div style="width:44px;height:44px;display:flex;align-items:center;justify-content:center">
+      <span style="width:36px;height:36px;border-radius:99px;background:{{ acc }};display:flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 20 20"><path d="M6 3.6l10 6.4-10 6.4v-12.8z" fill="{{ accInk }}"></path></svg></span>
+    </div>
+  </div>
+  <div style="padding:2px 20px 0;font-family:{{ disp }};font-size:30px;line-height:1.15;color:{{ ink }};text-transform:{{ caps }};letter-spacing:{{ ls }}">Tüm ayetler</div>
+  <div style="padding:8px 20px 0;font-size:12.5px;line-height:1.55;color:{{ ink2 }};text-wrap:pretty">Fâtiha’dan Nâs’a, sırayla. Sağ üstteki düğme birinci ayetten itibaren sesli okur.</div>
+  <div style="margin:13px 18px 0;padding:12px 14px;background:{{ glass }};border:1px solid {{ glassLine }};border-radius:{{ rad }};backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:flex;align-items:center;gap:10px">
+    <svg width="16" height="16" viewBox="0 0 16 16"><circle cx="6.6" cy="6.6" r="4.9" fill="none" stroke="{{ ink2 }}" stroke-width="1.6"></circle><line x1="10.3" y1="10.3" x2="14" y2="14" stroke="{{ ink2 }}" stroke-width="1.6" stroke-linecap="round"></line></svg>
+    <span style="font-size:15px;color:{{ ink2 }}">Sûre veya ayet ara · “2:255”</span>
+  </div>
+  <div style="flex:1;margin-top:13px;padding:0 18px;overflow:hidden">
+    <div style="padding:13px 14px 3px;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }}">
+      <div style="padding:0 0 11px;display:flex;align-items:center;gap:11px">
+        <span style="width:32px;height:32px;flex:none;border-radius:{{ radIn }};background:{{ acc }};display:flex;align-items:center;justify-content:center;font-family:{{ meta }};font-size:12.5px;font-weight:700;color:{{ accInk }}">1</span>
+        <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:3px">
+          <span style="font-size:16.5px;font-weight:700;color:{{ ink }}">Fâtiha</span>
+          <span style="font-family:{{ meta }};font-size:11px;color:{{ ink2 }}">7 ayet · Mekke</span>
+        </span>
+        <span dir="rtl" style="font-family:{{ disp }};font-size:17px;color:{{ acc }}">الفاتحة</span>
+        <svg width="12" height="12" viewBox="0 0 20 20"><path d="M3.5 13L10 6.5 16.5 13" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </div>
+      <div style="padding:10px 13px;display:flex;gap:10px;">
+        <span style="width:25px;height:25px;flex:none;border-radius:99px;background:{{ bandBg }};display:flex;align-items:center;justify-content:center;font-family:{{ meta }};font-size:11px;font-weight:600;color:{{ acc }}">1</span>
+        <span style="flex:1;min-width:0;font-family:{{ disp }};font-size:15px;line-height:1.45;color:{{ ink }};text-wrap:pretty">Rahmân ve Rahîm olan Allah’ın adıyla.</span>
+      </div>
+      <div style="padding:10px 13px;display:flex;gap:10px;border-top:1px solid {{ line }}">
+        <span style="width:25px;height:25px;flex:none;border-radius:99px;background:{{ bandBg }};display:flex;align-items:center;justify-content:center;font-family:{{ meta }};font-size:11px;font-weight:600;color:{{ acc }}">2</span>
+        <span style="flex:1;min-width:0;font-family:{{ disp }};font-size:15px;line-height:1.45;color:{{ ink }};text-wrap:pretty">Hamd, âlemlerin Rabbi Allah’a mahsustur.</span>
+      </div>
+      <div style="padding:10px 13px;display:flex;gap:10px;border-top:1px solid {{ line }}">
+        <span style="width:25px;height:25px;flex:none;border-radius:99px;background:{{ bandBg }};display:flex;align-items:center;justify-content:center;font-family:{{ meta }};font-size:11px;font-weight:600;color:{{ acc }}">3</span>
+        <span style="flex:1;min-width:0;font-family:{{ disp }};font-size:15px;line-height:1.45;color:{{ ink }};text-wrap:pretty">O Rahmân’dır, Rahîm’dir.</span>
+      </div>
+      <div style="padding:10px 13px;display:flex;gap:10px;border-top:1px solid {{ line }}">
+        <span style="width:25px;height:25px;flex:none;border-radius:99px;background:{{ bandBg }};display:flex;align-items:center;justify-content:center;font-family:{{ meta }};font-size:11px;font-weight:600;color:{{ acc }}">4</span>
+        <span style="flex:1;min-width:0;font-family:{{ disp }};font-size:15px;line-height:1.45;color:{{ ink }};text-wrap:pretty">Hesap gününün sahibidir.</span>
+      </div>
+      <div style="padding:11px 13px;border-top:1px solid {{ line }};display:flex;align-items:center;gap:9px"><span style="font-size:13.5px;font-weight:600;color:{{ ink2 }}">Kalan 3 ayeti göster</span><svg width="12" height="12" viewBox="0 0 20 20"><path d="M3.5 7L10 13.5 16.5 7" fill="none" stroke="{{ acc }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+    </div>
+    <div style="margin-top:8px;padding:13px 14px;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }};display:flex;align-items:center;gap:11px">
+      <span style="width:32px;height:32px;flex:none;border-radius:{{ radIn }};background:{{ bandBg }};display:flex;align-items:center;justify-content:center;font-family:{{ meta }};font-size:12.5px;font-weight:700;color:{{ acc }}">2</span>
+      <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:3px">
+        <span style="font-size:16px;font-weight:600;color:{{ ink }}">Bakara</span>
+        <span style="font-family:{{ meta }};font-size:11px;color:{{ ink2 }}">286 ayet · Medine</span>
+      </span>
+      <span dir="rtl" style="font-family:{{ disp }};font-size:16px;color:{{ ink2 }}">البقرة</span>
+      <svg width="12" height="12" viewBox="0 0 20 20"><path d="M7 3.5L13.5 10 7 16.5" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </div>
+    <div style="margin-top:8px;padding:13px 14px;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }};display:flex;align-items:center;gap:11px">
+      <span style="width:32px;height:32px;flex:none;border-radius:{{ radIn }};background:{{ bandBg }};display:flex;align-items:center;justify-content:center;font-family:{{ meta }};font-size:12.5px;font-weight:700;color:{{ acc }}">3</span>
+      <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:3px">
+        <span style="font-size:16px;font-weight:600;color:{{ ink }}">Âl-i İmrân</span>
+        <span style="font-family:{{ meta }};font-size:11px;color:{{ ink2 }}">200 ayet · Medine</span>
+      </span>
+      <span dir="rtl" style="font-family:{{ disp }};font-size:16px;color:{{ ink2 }}">آل عمران</span>
+      <svg width="12" height="12" viewBox="0 0 20 20"><path d="M7 3.5L13.5 10 7 16.5" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </div>
+    <div style="margin-top:8px;padding:13px 14px;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }};display:flex;align-items:center;gap:11px">
+      <span style="width:32px;height:32px;flex:none;border-radius:{{ radIn }};background:{{ bandBg }};display:flex;align-items:center;justify-content:center;font-family:{{ meta }};font-size:12.5px;font-weight:700;color:{{ acc }}">4</span>
+      <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:3px">
+        <span style="font-size:16px;font-weight:600;color:{{ ink }}">Nisâ</span>
+        <span style="font-family:{{ meta }};font-size:11px;color:{{ ink2 }}">176 ayet · Medine</span>
+      </span>
+      <span dir="rtl" style="font-family:{{ disp }};font-size:16px;color:{{ ink2 }}">النساء</span>
+      <svg width="12" height="12" viewBox="0 0 20 20"><path d="M7 3.5L13.5 10 7 16.5" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </div>
+    <div style="margin-top:8px;padding:13px 14px;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }};display:flex;align-items:center;gap:11px">
+      <span style="width:32px;height:32px;flex:none;border-radius:{{ radIn }};background:{{ bandBg }};display:flex;align-items:center;justify-content:center;font-family:{{ meta }};font-size:12.5px;font-weight:700;color:{{ acc }}">5</span>
+      <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:3px">
+        <span style="font-size:16px;font-weight:600;color:{{ ink }}">Mâide</span>
+        <span style="font-family:{{ meta }};font-size:11px;color:{{ ink2 }}">120 ayet · Medine</span>
+      </span>
+      <span dir="rtl" style="font-family:{{ disp }};font-size:16px;color:{{ ink2 }}">المائدة</span>
+      <svg width="12" height="12" viewBox="0 0 20 20"><path d="M7 3.5L13.5 10 7 16.5" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </div>
+  </div>
+  <div style="margin:10px 14px 0;padding:11px 13px;background:{{ glass }};border:1px solid {{ glassLine }};border-radius:{{ rad }};backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);display:flex;align-items:center;gap:12px">
+    <span style="width:36px;height:36px;flex:none;border-radius:{{ radIn }};background:{{ acc }};display:flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 20 20"><path d="M6 3.6l10 6.4-10 6.4v-12.8z" fill="{{ accInk }}"></path></svg></span>
+    <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:5px">
+      <span style="font-size:13px;font-weight:600;color:{{ ink }}">Fâtiha 1:1 · baştan dinle</span>
+      <span style="height:3px;border-radius:2px;background:{{ line }};position:relative"><span style="position:absolute;left:0;top:0;bottom:0;width:6%;border-radius:2px;background:{{ acc }}"></span></span>
+    </span>
+    <span style="font-family:{{ meta }};font-size:11.5px;color:{{ ink2 }}">1×</span>
+  </div>
+</div>
+</x-import>
+<div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">1b · Tüm ayetler · sırayla</div>
+</div>
+
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ dark }}" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:{{ bg }};font-family:{{ ui }};display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 12px 0;display:flex;align-items:center;gap:2px">
+    <div style="width:44px;height:44px;display:flex;align-items:center;justify-content:center">
+      <svg width="11" height="18" viewBox="0 0 11 18"><path d="M8.5 1.5L2 9l6.5 7.5" fill="none" stroke="{{ ink }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </div>
+    <div style="font-size:16px;font-weight:600;color:{{ ink }};letter-spacing:{{ ls }}">Ayetler</div>
+  </div>
+
+  <div style="margin:6px 20px 0;display:flex;align-items:center;gap:10px;background:{{ glass }};border:1px solid {{ glassLine }};border-radius:{{ rad }};padding:13px 14px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 6px 18px rgba(0,0,0,.06)">
+    <svg width="16" height="16" viewBox="0 0 16 16"><circle cx="6.6" cy="6.6" r="4.9" fill="none" stroke="{{ ink2 }}" stroke-width="1.6"></circle><line x1="10.3" y1="10.3" x2="14" y2="14" stroke="{{ ink2 }}" stroke-width="1.6" stroke-linecap="round"></line></svg>
+    <span style="font-size:16px;color:{{ ink2 }}">Ayet veya konu ara</span>
+  </div>
+
+  <div style="margin:14px 20px 0;display:flex;gap:8px">
+    <div style="flex:1;text-align:center;padding:12px 6px;border-radius:{{ rad }};background:{{ acc }};font-size:15px;font-weight:600;color:{{ accInk }}">Hayattan</div>
+    <div style="flex:1;text-align:center;padding:12px 6px;border-radius:{{ rad }};border:1px solid {{ line }};font-size:15px;font-weight:500;color:{{ ink2 }}">Kur'an'dan</div>
+  </div>
+
+  <div style="flex:1;display:flex;overflow:hidden;margin-top:14px">
+    <div style="flex:1;min-width:0;overflow:hidden;padding:0 18px;display:flex;flex-direction:column;gap:8px">
+      <div style="position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:11px;padding:12px 13px;background:{{ glass }};border:1px solid {{ glassLine }};border-radius:{{ rad }};backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)">
+        <span style="width:11px;height:11px;flex:none;border-radius:99px;background:{{ acc }}"></span>
+        <span style="flex:1;min-width:0;font-size:16.5px;font-weight:700;letter-spacing:.01em;color:{{ ink }}">Zor duygular</span>
+        <span style="font-family:{{ meta }};font-size:12px;color:{{ ink2 }}">10 kategori</span>
+      </div>
+      <div style="background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }};overflow:hidden">
+        <div style="padding:11px 13px;display:flex;align-items:center;gap:10px;border-bottom:1px solid {{ line }}"><span style="width:5px;height:5px;flex:none;border-radius:3px;background:{{ acc }}"></span><span style="flex:1;min-width:0;font-size:16px;font-weight:500;color:{{ ink }}">Kaygı</span><span style="font-family:{{ meta }};font-size:12px;color:{{ ink2 }}">7</span></div>
+        <div style="padding:11px 13px;display:flex;align-items:center;gap:10px;border-bottom:1px solid {{ line }}"><span style="width:5px;height:5px;flex:none;border-radius:3px;background:{{ acc }};opacity:.72"></span><span style="flex:1;min-width:0;font-size:16px;font-weight:500;color:{{ ink }}">Korku</span><span style="font-family:{{ meta }};font-size:12px;color:{{ ink2 }}">6</span></div>
+        <div style="padding:11px 13px;display:flex;align-items:center;gap:10px;border-bottom:1px solid {{ line }}"><span style="width:5px;height:5px;flex:none;border-radius:3px;background:{{ acc }};opacity:.64"></span><span style="flex:1;min-width:0;font-size:16px;font-weight:500;color:{{ ink }}">Üzüntü</span><span style="font-family:{{ meta }};font-size:12px;color:{{ ink2 }}">8</span></div>
+        <div style="padding:11px 13px;display:flex;align-items:center;gap:10px;border-bottom:1px solid {{ line }}"><span style="width:5px;height:5px;flex:none;border-radius:3px;background:{{ acc }};opacity:.56"></span><span style="flex:1;min-width:0;font-size:16px;font-weight:500;color:{{ ink }}">Yalnızlık</span><span style="font-family:{{ meta }};font-size:12px;color:{{ ink2 }}">5</span></div>
+        <div style="padding:11px 13px;display:flex;align-items:center;gap:10px;border-bottom:1px solid {{ line }}"><span style="width:5px;height:5px;flex:none;border-radius:3px;background:{{ acc }};opacity:.48"></span><span style="flex:1;min-width:0;font-size:16px;font-weight:500;color:{{ ink }}">Umutsuzluk</span><span style="font-family:{{ meta }};font-size:12px;color:{{ ink2 }}">6</span></div>
+        <div style="padding:11px 13px;display:flex;align-items:center;gap:10px;border-bottom:1px solid {{ line }}"><span style="width:5px;height:5px;flex:none;border-radius:3px;background:{{ acc }};opacity:.4"></span><span style="flex:1;min-width:0;font-size:16px;font-weight:500;color:{{ ink }}">Öfke</span><span style="font-family:{{ meta }};font-size:12px;color:{{ ink2 }}">7</span></div>
+        <div style="padding:11px 13px;display:flex;align-items:center;gap:10px;border-bottom:1px solid {{ line }}"><span style="width:5px;height:5px;flex:none;border-radius:3px;background:{{ acc }};opacity:.34"></span><span style="flex:1;min-width:0;font-size:16px;font-weight:500;color:{{ ink }}">Suçluluk</span><span style="font-family:{{ meta }};font-size:12px;color:{{ ink2 }}">6</span></div>
+        <div style="padding:11px 13px;display:flex;align-items:center;gap:10px"><span style="width:5px;height:5px;flex:none;border-radius:3px;background:{{ acc }};opacity:.28"></span><span style="flex:1;min-width:0;font-size:16px;font-weight:500;color:{{ ink }}">Kafa karışıklığı</span><span style="font-family:{{ meta }};font-size:12px;color:{{ ink2 }}">5</span></div>
+      </div>
+      <div style="position:sticky;top:0;z-index:2;margin-top:4px;display:flex;align-items:center;gap:11px;padding:12px 13px;background:{{ glass }};border:1px solid {{ glassLine }};border-radius:{{ rad }};backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)">
+        <span style="width:11px;height:11px;flex:none;border-radius:99px;background:{{ acc }};opacity:.5"></span>
+        <span style="flex:1;min-width:0;font-size:16.5px;font-weight:700;letter-spacing:.01em;color:{{ ink }}">Güçlenme ve umut</span>
+        <span style="font-family:{{ meta }};font-size:12px;color:{{ ink2 }}">10 kategori</span>
+      </div>
+      <div style="background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }};overflow:hidden">
+        <div style="padding:11px 13px;display:flex;align-items:center;gap:10px;border-bottom:1px solid {{ line }}"><span style="width:5px;height:5px;flex:none;border-radius:3px;background:{{ acc }}"></span><span style="flex:1;min-width:0;font-size:16px;font-weight:500;color:{{ ink }}">Umut</span><span style="font-family:{{ meta }};font-size:12px;color:{{ ink2 }}">7</span></div>
+        <div style="padding:11px 13px;display:flex;align-items:center;gap:10px"><span style="width:5px;height:5px;flex:none;border-radius:3px;background:{{ acc }};opacity:.72"></span><span style="flex:1;min-width:0;font-size:16px;font-weight:500;color:{{ ink }}">Sabır</span><span style="font-family:{{ meta }};font-size:12px;color:{{ ink2 }}">8</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</x-import>
+<div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">2 · Keşif — cam aile başlığı, renk noktalı aileler</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ dark }}" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:{{ bg }};font-family:{{ ui }};display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 12px 0;display:flex;align-items:center;gap:2px">
+    <div style="width:44px;height:44px;display:flex;align-items:center;justify-content:center">
+      <svg width="11" height="18" viewBox="0 0 11 18"><path d="M8.5 1.5L2 9l6.5 7.5" fill="none" stroke="{{ ink }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </div>
+    <div style="font-size:15px;font-weight:500;color:{{ ink2 }}">Güçlenme ve umut</div>
+  </div>
+  <div style="padding:10px 20px 0;display:flex;gap:14px;align-items:flex-start">
+    <div style="width:54px;height:54px;flex:none;border-radius:{{ rad }};background:{{ bandBg }};overflow:hidden;display:flex;gap:2px">
+      <div style="flex:1;background:repeating-linear-gradient(45deg,{{ acc }} 0 4px,transparent 4px 10px)"></div>
+      <div style="flex:1;background:repeating-linear-gradient(-45deg,{{ bandInk }} 0 3px,transparent 3px 11px)"></div>
+    </div>
+    <div style="min-width:0">
+      <div style="font-size:{{ h1 }};font-weight:700;line-height:1.1;letter-spacing:{{ ls }};color:{{ ink }};text-transform:{{ caps }}">Sabır</div>
+      <div style="margin-top:8px;font-size:14px;line-height:1.5;color:{{ ink2 }};text-wrap:pretty">Zorluk uzadığında dayanma gücü üzerine ayetler; kaçmak değil taşımak üzerine.</div>
+    </div>
+  </div>
+  <div style="margin:14px 20px 0;display:flex;align-items:center;gap:10px;background:{{ glass }};border:1px solid {{ glassLine }};border-radius:{{ rad }};padding:12px 13px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)">
+    <svg width="15" height="15" viewBox="0 0 16 16"><circle cx="6.6" cy="6.6" r="4.9" fill="none" stroke="{{ ink2 }}" stroke-width="1.6"></circle><line x1="10.3" y1="10.3" x2="14" y2="14" stroke="{{ ink2 }}" stroke-width="1.6" stroke-linecap="round"></line></svg>
+    <span style="font-size:15px;color:{{ ink2 }}">Bu kategoride ara</span>
+  </div>
+  <div style="padding:14px 20px 6px;font-family:{{ meta }};font-size:11px;letter-spacing:.1em;color:{{ ink2 }}">8 AYET · MEAL METİNLERİ YER TUTUCU</div>
+  <div style="flex:1;overflow:hidden;padding:0 20px;display:flex;flex-direction:column;gap:9px">
+    <div style="padding:13px 15px;background:{{ surf }};border-left:3px solid {{ acc }};border-radius:{{ rad }}">
+      <div style="font-family:{{ meta }};font-size:12px;font-weight:500;color:{{ acc }}">İnşirah · 94:6</div>
+      <div style="margin-top:5px;font-family:{{ disp }};font-size:16px;line-height:1.55;color:{{ ink }}">Şüphesiz her zorluğun ardından bir genişlik gelir.</div>
+    </div>
+    <div style="padding:13px 15px;background:{{ surf }};border-left:3px solid {{ acc }};border-radius:{{ rad }}">
+      <div style="font-family:{{ meta }};font-size:12px;font-weight:500;color:{{ acc }}">Ra'd · 13:28</div>
+      <div style="margin-top:5px;max-height:50px;overflow:hidden;font-family:{{ disp }};font-size:16px;line-height:1.55;color:{{ ink }}">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler; iyilik edenleri</div>
+    </div>
+    <div style="padding:13px 15px;background:{{ surf }};border-left:3px solid {{ acc }};border-radius:{{ rad }}">
+      <div style="font-family:{{ meta }};font-size:12px;font-weight:500;color:{{ acc }}">Bakara · 2:282</div>
+      <div style="margin-top:5px;max-height:50px;overflow:hidden;font-family:{{ disp }};font-size:16px;line-height:1.55;color:{{ ink }}">Ey iman edenler, belirli bir süreye kadar birbirinize borçlandığınız zaman onu yazın; aranızda bir yazıcı</div>
+    </div>
+    <div style="padding:13px 15px;background:{{ surf }};border-left:3px solid {{ acc }};border-radius:{{ rad }}">
+      <div style="font-family:{{ meta }};font-size:12px;font-weight:500;color:{{ acc }}">Nûr · 24:35</div>
+      <div style="margin-top:5px;max-height:50px;overflow:hidden;font-family:{{ disp }};font-size:16px;line-height:1.55;color:{{ ink }}">Gökleri ve yeri yaratan, gece ile gündüzü birbiri ardınca getiren için düşünen bir topluluk için işaretler</div>
+    </div>
+    <div style="padding:13px 15px;background:{{ surf }};border-left:3px solid {{ acc }};border-radius:{{ rad }}">
+      <div style="font-family:{{ meta }};font-size:12px;font-weight:500;color:{{ acc }}">Yûsuf · 12:87</div>
+      <div style="margin-top:5px;max-height:50px;overflow:hidden;font-family:{{ disp }};font-size:16px;line-height:1.55;color:{{ ink }}">Hani İbrâhîm, babasına ve kavmine sormuştu: “Sizin şu karşısında durup beklediğiniz şeyler nedir?”</div>
+    </div>
+  </div>
+  <div style="margin:12px 14px 0;display:flex;align-items:center;gap:12px;padding:10px 12px;background:{{ glass }};border:1px solid {{ glassLine }};border-radius:{{ rad }};backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 8px 24px rgba(0,0,0,.1)">
+    <div style="width:36px;height:36px;flex:none;border-radius:{{ rad }};background:{{ acc }};display:flex;align-items:center;justify-content:center">
+      <svg width="12" height="13" viewBox="0 0 12 13"><rect x="1" y="1" width="3.4" height="11" fill="{{ accInk }}"></rect><rect x="7.6" y="1" width="3.4" height="11" fill="{{ accInk }}"></rect></svg>
+    </div>
+    <div style="flex:1;min-width:0">
+      <div style="font-family:{{ meta }};font-size:13px;font-weight:600;color:{{ ink }}">Ra'd · 13:28</div>
+      <div style="margin-top:3px;font-size:11.5px;color:{{ ink2 }}">okunuyor · 0:24 / 1:02</div>
+    </div>
+    <div style="width:30px;height:30px;display:flex;align-items:center;justify-content:center">
+      <svg width="13" height="13" viewBox="0 0 13 13"><path d="M1 1l11 11M12 1L1 12" stroke="{{ ink2 }}" stroke-width="1.6" stroke-linecap="round"></path></svg>
+    </div>
+  </div>
+</div>
+</x-import>
+<div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">3 · Kategori detayı — cam mini player</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ dark }}" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:{{ bg }};font-family:{{ ui }};display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 12px 0;display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:2px">
+      <div style="width:44px;height:44px;display:flex;align-items:center;justify-content:center">
+        <svg width="11" height="18" viewBox="0 0 11 18"><path d="M8.5 1.5L2 9l6.5 7.5" fill="none" stroke="{{ ink }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </div>
+      <div style="font-size:15px;font-weight:500;color:{{ ink2 }}">Sabır</div>
+    </div>
+    <div style="padding-right:14px;font-family:{{ meta }};font-size:12.5px;font-weight:600;letter-spacing:.04em;color:{{ acc }}">Ra'd · 13:28</div>
+  </div>
+  <div style="flex:1;overflow:hidden;padding:12px 22px 0">
+    <div style="display:flex;align-items:center;gap:6px">
+      <div style="padding:10px 13px;border-radius:{{ rad }};background:{{ acc }};font-size:13.5px;font-weight:600;color:{{ accInk }}">Meal A</div>
+      <div style="padding:10px 13px;border-radius:{{ rad }};border:1px solid {{ line }};font-size:13.5px;font-weight:500;color:{{ ink2 }}">Meal B</div>
+      <div style="padding:10px 13px;border-radius:{{ rad }};border:1px solid {{ line }};font-size:13.5px;font-weight:500;color:{{ ink2 }}">Meal C</div>
+      <div style="margin-left:auto;font-size:13.5px;font-weight:600;color:{{ acc }}">Karşılaştır</div>
+    </div>
+    <div style="margin-top:12px;padding:13px 15px 14px;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }}"><div style="font-family:{{ disp }};font-size:{{ ayet }};line-height:1.4;color:{{ ink }};text-wrap:pretty">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler; iyilik edenleri seven bir merhamet sahibi, onların çabasını karşılıksız bırakmaz ve gönüllerine bir dinginlik indirir.</div></div>
+    <div style="margin-top:10px;display:inline-flex;align-items:center;gap:9px;padding:12px 15px;border-radius:{{ rad }};border:1px solid {{ line }};background:{{ surf }};font-size:14px;font-weight:600;color:{{ ink }}">Arapçasını göster<svg width="12" height="12" viewBox="0 0 20 20"><path d="M3.5 7L10 13.5 16.5 7" fill="none" stroke="{{ acc }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+    <div style="margin-top:7px;font-family:{{ meta }};font-size:11px;line-height:1.5;color:{{ ink2 }}">Meal A · çevirmen adı yer tutucu · sürüm 0.1</div>
+    <div style="margin-top:8px;font-family:{{ meta }};font-size:10.5px;letter-spacing:.1em;color:{{ ink2 }}">BU AYETİN KATEGORİLERİ</div>
+    <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px">
+      <div style="padding:8px 11px;border-radius:{{ rad }};background:{{ surf }};border:1px solid {{ line }};font-size:13.5px;font-weight:500;color:{{ ink }}">Sabır</div>
+      <div style="padding:8px 11px;border-radius:{{ rad }};background:{{ surf }};border:1px solid {{ line }};font-size:13.5px;font-weight:500;color:{{ ink }}">İç huzur</div>
+      <div style="padding:8px 11px;border-radius:{{ rad }};background:{{ surf }};border:1px solid {{ line }};font-size:13.5px;font-weight:500;color:{{ ink }}">Affetmek ve barışmak</div>
+      <div style="padding:8px 11px;border-radius:{{ rad }};background:{{ surf }};border:1px solid {{ line }};font-size:13.5px;font-weight:500;color:{{ ink }}">Öfke</div>
+      <div style="padding:8px 11px;border-radius:{{ rad }};background:{{ surf }};border:1px solid {{ line }};font-size:13.5px;font-weight:500;color:{{ ink }}">Cömertlik</div>
+    </div>
+  </div>
+  <div style="margin:0 14px;display:flex;justify-content:space-between;align-items:center;padding:11px 8px;background:{{ glass }};border:1px solid {{ glassLine }};border-radius:{{ rad }};backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 8px 24px rgba(0,0,0,.1)">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:5px;width:64px">
+      <svg width="20" height="20" viewBox="0 0 20 20"><path d="M5.5 3.5l10 6.5-10 6.5v-13z" fill="{{ acc }}"></path></svg>
+      <span style="font-size:11px;color:{{ ink2 }}">Sesli oku</span>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:5px;width:64px">
+      <svg width="20" height="20" viewBox="0 0 20 20"><path d="M5 2.5h10v15l-5-4-5 4v-15z" fill="{{ acc }}"></path></svg>
+      <span style="font-size:11px;color:{{ ink2 }}">Kayıtlı</span>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:5px;width:64px">
+      <svg width="20" height="20" viewBox="0 0 20 20"><path d="M10 13V2.8M10 2.8L6.4 6.4M10 2.8l3.6 3.6M3.5 12v4.5h13V12" fill="none" stroke="{{ ink }}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      <span style="font-size:11px;color:{{ ink2 }}">Paylaş</span>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:5px;width:64px">
+      <svg width="20" height="20" viewBox="0 0 20 20"><rect x="3" y="3" width="9.5" height="9.5" rx="1.6" fill="none" stroke="{{ ink }}" stroke-width="1.6"></rect><path d="M7.5 16.8h7a2 2 0 002-2v-7" fill="none" stroke="{{ ink }}" stroke-width="1.6" stroke-linecap="round"></path></svg>
+      <span style="font-size:11px;color:{{ ink2 }}">Kopyala</span>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:5px;width:64px">
+      <svg width="20" height="20" viewBox="0 0 20 20"><path d="M3 4.2h5.2A1.8 1.8 0 0110 6v10a1.6 1.6 0 00-1.6-1.6H3V4.2zM17 4.2h-5.2A1.8 1.8 0 0010 6v10a1.6 1.6 0 011.6-1.6H17V4.2z" fill="none" stroke="{{ ink }}" stroke-width="1.5" stroke-linejoin="round"></path></svg>
+      <span style="font-size:11px;color:{{ ink2 }}">Bağlam</span>
+    </div>
+  </div>
+</div>
+</x-import>
+<div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">4 · Ayet odak — cam aksiyon çubuğu</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ kDark }}" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:{{ kBg }};font-family:{{ ui }};display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 12px 0;display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:2px">
+      <div style="width:44px;height:44px;display:flex;align-items:center;justify-content:center">
+        <svg width="11" height="18" viewBox="0 0 11 18"><path d="M8.5 1.5L2 9l6.5 7.5" fill="none" stroke="{{ kInk }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </div>
+      <div style="font-size:15px;font-weight:500;color:{{ kInk2 }}">Sabır</div>
+    </div>
+    <div style="padding-right:14px;font-family:{{ meta }};font-size:12.5px;font-weight:600;letter-spacing:.04em;color:{{ kAcc }}">Ra'd · 13:28</div>
+  </div>
+  <div style="flex:1;overflow:hidden;padding:12px 22px 0">
+    <div style="display:flex;align-items:center;gap:6px">
+      <div style="padding:10px 13px;border-radius:{{ rad }};background:{{ kAcc }};font-size:13.5px;font-weight:600;color:{{ kBg }}">Meal A</div>
+      <div style="padding:10px 13px;border-radius:{{ rad }};border:1px solid {{ kLine }};font-size:13.5px;font-weight:500;color:{{ kInk2 }}">Meal B</div>
+      <div style="padding:10px 13px;border-radius:{{ rad }};border:1px solid {{ kLine }};font-size:13.5px;font-weight:500;color:{{ kInk2 }}">Meal C</div>
+      <div style="margin-left:auto;font-size:13.5px;font-weight:600;color:{{ kAcc }}">Karşılaştır</div>
+    </div>
+    <div style="margin-top:10px;padding:11px 14px 12px;background:{{ kSurf }};border:1px solid {{ kLine }};border-radius:{{ rad }}"><div style="font-family:{{ disp }};font-size:{{ ayet }};line-height:1.5;color:{{ kInk }};text-wrap:pretty">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler; iyilik edenleri seven bir merhamet sahibi, onların çabasını karşılıksız bırakmaz ve gönüllerine bir dinginlik indirir.</div></div>
+    <div style="margin-top:10px;display:inline-flex;align-items:center;gap:9px;padding:12px 15px;border-radius:{{ rad }};border:1px solid {{ kLine }};background:{{ kSurf }};font-size:14px;font-weight:600;color:{{ kInk }}">Arapçasını göster<svg width="12" height="12" viewBox="0 0 20 20"><path d="M3.5 7L10 13.5 16.5 7" fill="none" stroke="{{ acc }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+    <div style="margin-top:7px;font-family:{{ meta }};font-size:11px;line-height:1.55;color:{{ kInk2 }}">Meal A · çevirmen adı yer tutucu · sürüm 0.1</div>
+    <div style="margin-top:9px;font-family:{{ meta }};font-size:10.5px;letter-spacing:.1em;color:{{ kInk2 }}">BU AYETİN KATEGORİLERİ</div>
+    <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px">
+      <div style="padding:8px 11px;border-radius:{{ rad }};background:{{ kSurf }};border:1px solid {{ kLine }};font-size:13.5px;font-weight:500;color:{{ kInk }}">Sabır</div>
+      <div style="padding:8px 11px;border-radius:{{ rad }};background:{{ kSurf }};border:1px solid {{ kLine }};font-size:13.5px;font-weight:500;color:{{ kInk }}">İç huzur</div>
+      <div style="padding:8px 11px;border-radius:{{ rad }};background:{{ kSurf }};border:1px solid {{ kLine }};font-size:13.5px;font-weight:500;color:{{ kInk }}">Affetmek ve barışmak</div>
+      <div style="padding:8px 11px;border-radius:{{ rad }};background:{{ kSurf }};border:1px solid {{ kLine }};font-size:13.5px;font-weight:500;color:{{ kInk }}">Öfke</div>
+      <div style="padding:8px 11px;border-radius:{{ rad }};background:{{ kSurf }};border:1px solid {{ kLine }};font-size:13.5px;font-weight:500;color:{{ kInk }}">Cömertlik</div>
+    </div>
+  </div>
+  <div style="margin:0 14px;display:flex;justify-content:space-between;align-items:center;padding:11px 8px;background:{{ kGlass }};border:1px solid {{ kLine }};border-radius:{{ rad }};backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:5px;width:64px">
+      <svg width="20" height="20" viewBox="0 0 20 20"><path d="M5.5 3.5l10 6.5-10 6.5v-13z" fill="{{ kAcc }}"></path></svg>
+      <span style="font-size:10px;color:{{ kInk2 }}">Sesli oku</span>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:5px;width:64px">
+      <svg width="20" height="20" viewBox="0 0 20 20"><path d="M5 2.5h10v15l-5-4-5 4v-15z" fill="none" stroke="{{ kInk }}" stroke-width="1.5" stroke-linejoin="round"></path></svg>
+      <span style="font-size:10px;color:{{ kInk2 }}">Kaydet</span>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:5px;width:64px">
+      <svg width="20" height="20" viewBox="0 0 20 20"><path d="M10 13V2.8M10 2.8L6.4 6.4M10 2.8l3.6 3.6M3.5 12v4.5h13V12" fill="none" stroke="{{ kInk }}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      <span style="font-size:10px;color:{{ kInk2 }}">Paylaş</span>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:5px;width:64px">
+      <svg width="20" height="20" viewBox="0 0 20 20"><rect x="3" y="3" width="9.5" height="9.5" rx="1.6" fill="none" stroke="{{ kInk }}" stroke-width="1.6"></rect><path d="M7.5 16.8h7a2 2 0 002-2v-7" fill="none" stroke="{{ kInk }}" stroke-width="1.6" stroke-linecap="round"></path></svg>
+      <span style="font-size:10px;color:{{ kInk2 }}">Kopyala</span>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:5px;width:64px">
+      <svg width="20" height="20" viewBox="0 0 20 20"><path d="M3 4.2h5.2A1.8 1.8 0 0110 6v10a1.6 1.6 0 00-1.6-1.6H3V4.2zM17 4.2h-5.2A1.8 1.8 0 0010 6v10a1.6 1.6 0 011.6-1.6H17V4.2z" fill="none" stroke="{{ kInk }}" stroke-width="1.5" stroke-linejoin="round"></path></svg>
+      <span style="font-size:10px;color:{{ kInk2 }}">Bağlam</span>
+    </div>
+  </div>
+</div>
+</x-import>
+<div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">{{ altLabel }}</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ dark }}" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:{{ bg }};font-family:{{ ui }};display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 12px 0;display:flex;align-items:center;gap:2px">
+    <div style="width:44px;height:44px;display:flex;align-items:center;justify-content:center">
+      <svg width="11" height="18" viewBox="0 0 11 18"><path d="M8.5 1.5L2 9l6.5 7.5" fill="none" stroke="{{ ink }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </div>
+    <div style="font-size:16px;font-weight:600;color:{{ ink }};letter-spacing:{{ ls }}">Karşılaştırma</div>
+  </div>
+  <div style="padding:2px 20px 0;display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+    <span style="font-family:{{ disp }};font-size:22px;color:{{ ink }}">İnşirah · 94:6</span>
+    <span style="font-family:{{ meta }};font-size:11.5px;color:{{ ink2 }}">3 meal · aynı ayet</span>
+  </div>
+  <div style="margin:12px 20px 0;padding:9px 15px 13px;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }}">
+    <div style="display:flex;justify-content:flex-end"><span style="width:26px;height:26px;flex:none;border-radius:99px;display:flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 11 11"><path d="M1.5 1.5l8 8M9.5 1.5l-8 8" fill="none" stroke="{{ ink2 }}" stroke-width="1.6" stroke-linecap="round"></path></svg></span></div>
+    <div dir="rtl" style="margin-top:-3px;font-family:{{ disp }};font-size:21px;line-height:1.8;color:{{ ink }};text-align:right">فَإِنَّ مَعَ الْعُسْرِ يُسْرًا</div>
+  </div>
+  <div style="flex:1;margin-top:11px;padding:0 20px;display:flex;flex-direction:column;gap:9px;overflow:hidden">
+    <div style="padding:14px 15px;background:{{ surf }};border:1px solid {{ acc }};border-radius:{{ rad }}">
+      <div style="display:flex;align-items:center;gap:9px">
+        <span style="width:9px;height:9px;flex:none;border-radius:99px;background:{{ acc }}"></span>
+        <span style="flex:1;min-width:0;font-family:{{ meta }};font-size:12.5px;font-weight:700;letter-spacing:.06em;color:{{ ink }}">MEAL A</span>
+        <span style="font-family:{{ meta }};font-size:11px;color:{{ ink2 }}">çevirmen yer tutucu</span><span style="width:26px;height:26px;flex:none;margin-left:2px;border-radius:99px;display:flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 11 11"><path d="M1.5 1.5l8 8M9.5 1.5l-8 8" fill="none" stroke="{{ ink2 }}" stroke-width="1.6" stroke-linecap="round"></path></svg></span>
+      </div>
+      <div style="margin-top:8px;font-family:{{ disp }};font-size:15px;line-height:1.45;color:{{ ink }};text-wrap:pretty">Şüphesiz her zorluğun ardından bir genişlik gelir.</div>
+    </div>
+    <div style="padding:14px 15px;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }}">
+      <div style="display:flex;align-items:center;gap:9px">
+        <span style="width:9px;height:9px;flex:none;border-radius:99px;background:{{ line }}"></span>
+        <span style="flex:1;min-width:0;font-family:{{ meta }};font-size:12.5px;font-weight:700;letter-spacing:.06em;color:{{ ink }}">MEAL B</span>
+        <span style="font-family:{{ meta }};font-size:11px;color:{{ ink2 }}">çevirmen yer tutucu</span><span style="width:26px;height:26px;flex:none;margin-left:2px;border-radius:99px;display:flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 11 11"><path d="M1.5 1.5l8 8M9.5 1.5l-8 8" fill="none" stroke="{{ ink2 }}" stroke-width="1.6" stroke-linecap="round"></path></svg></span>
+      </div>
+      <div style="margin-top:8px;font-family:{{ disp }};font-size:15px;line-height:1.45;color:{{ ink }};text-wrap:pretty">Gerçekten, güçlüğün yanında bir kolaylık vardır.</div>
+    </div>
+    <div style="padding:14px 15px;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }}">
+      <div style="display:flex;align-items:center;gap:9px">
+        <span style="width:9px;height:9px;flex:none;border-radius:99px;background:{{ line }}"></span>
+        <span style="flex:1;min-width:0;font-family:{{ meta }};font-size:12.5px;font-weight:700;letter-spacing:.06em;color:{{ ink }}">MEAL C</span>
+        <span style="font-family:{{ meta }};font-size:11px;color:{{ ink2 }}">çevirmen yer tutucu</span><span style="width:26px;height:26px;flex:none;margin-left:2px;border-radius:99px;display:flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 11 11"><path d="M1.5 1.5l8 8M9.5 1.5l-8 8" fill="none" stroke="{{ ink2 }}" stroke-width="1.6" stroke-linecap="round"></path></svg></span>
+      </div>
+      <div style="margin-top:8px;font-family:{{ disp }};font-size:15px;line-height:1.45;color:{{ ink }};text-wrap:pretty">Kuşkusuz zorlukla beraber bir kolaylık daha vardır.</div>
+    </div>
+    <div style="margin-top:2px;font-family:{{ meta }};font-size:11px;line-height:1.6;color:{{ ink2 }};text-wrap:pretty">Farklar çeviri tercihinden gelir; meal künyeleri Ayarlar › Kaynaklar altında.</div>
+  </div>
+  <div style="margin:0 14px;padding:13px 16px;background:{{ glass }};border:1px solid {{ glassLine }};border-radius:{{ rad }};backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);display:flex;align-items:center;justify-content:space-between;gap:12px">
+    <span style="font-size:14px;font-weight:600;color:{{ ink }}">Meal A varsayılan</span>
+    <span style="font-size:13.5px;font-weight:600;color:{{ acc }}">Değiştir</span>
+  </div>
+</div>
+</x-import>
+<div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">5 · Karşılaştırma</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ dark }}" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:{{ bg }};font-family:{{ ui }};display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 12px 0;display:flex;align-items:center;gap:2px">
+    <div style="width:44px;height:44px;display:flex;align-items:center;justify-content:center">
+      <svg width="11" height="18" viewBox="0 0 11 18"><path d="M8.5 1.5L2 9l6.5 7.5" fill="none" stroke="{{ ink }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </div>
+    <div style="font-size:16px;font-weight:600;color:{{ ink }};letter-spacing:{{ ls }}">Ayarlar</div>
+  </div>
+  <div style="padding:12px 20px 0">
+    <div style="font-family:{{ meta }};font-size:10.5px;font-weight:600;letter-spacing:.14em;color:{{ ink2 }}">OKUMA</div>
+    <div style="margin-top:7px;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }};overflow:hidden">
+      <div style="padding:12px 14px;border-bottom:1px solid {{ line }}">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:15.5px;color:{{ ink }}">Ana meal</span>
+            <span style="font-size:12px;line-height:1.4;color:{{ ink2 }}">Çevirmen adı yer tutucu</span>
+          </span><span style="display:flex;align-items:center;gap:7px"><span style="font-size:14px;color:{{ ink2 }}"></span><svg width="13" height="13" viewBox="0 0 20 20"><path d="M7 3.5L13.5 10 7 16.5" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </div>
+      </div>
+      <div style="padding:12px 14px;border-bottom:1px solid {{ line }}">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:15.5px;color:{{ ink }}">Arapça metni göster</span>
+            <span style="font-size:12px;line-height:1.4;color:{{ ink2 }}">Arapça metin mealin altında görünür</span>
+          </span><span style="width:44px;height:27px;flex:none;border-radius:99px;background:{{ line }};position:relative"><span style="position:absolute;top:3px;left:3px;width:21px;height:21px;border-radius:99px;background:{{ surf }}"></span></span>
+        </div>
+      </div>
+      <div style="padding:12px 14px;border-bottom:1px solid {{ line }}">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:15.5px;color:{{ ink }}">Metin boyutu</span>
+            <span style="font-size:12px;line-height:1.4;color:{{ ink2 }}">Küçük · Normal · Büyük · Çok büyük</span>
+          </span><span style="display:flex;align-items:center;gap:7px"><span style="font-size:14px;color:{{ ink2 }}">Normal</span><svg width="13" height="13" viewBox="0 0 20 20"><path d="M7 3.5L13.5 10 7 16.5" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </div>
+      </div>
+      <div style="padding:12px 14px;">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:15.5px;color:{{ ink }}">Tema</span>
+            <span style="font-size:12px;line-height:1.4;color:{{ ink2 }}">Açık · Koyu · Sistem ayarını kullan</span>
+          </span><span style="display:flex;align-items:center;gap:7px"><span style="font-size:14px;color:{{ ink2 }}">Sistem</span><svg width="13" height="13" viewBox="0 0 20 20"><path d="M7 3.5L13.5 10 7 16.5" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="padding:12px 20px 0">
+    <div style="font-family:{{ meta }};font-size:10.5px;font-weight:600;letter-spacing:.14em;color:{{ ink2 }}">SES</div>
+    <div style="margin-top:7px;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }};overflow:hidden">
+      <div style="padding:12px 14px;">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:15.5px;color:{{ ink }}">Okuma hızı</span>
+            <span style="font-size:12px;line-height:1.4;color:{{ ink2 }}">Varsayılan 1×</span>
+          </span><span style="display:flex;align-items:center;gap:7px"><span style="font-size:14px;color:{{ ink2 }}">1×</span><svg width="13" height="13" viewBox="0 0 20 20"><path d="M7 3.5L13.5 10 7 16.5" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:7px;font-family:{{ meta }};font-size:11px;line-height:1.55;color:{{ ink2 }};text-wrap:pretty">Ses mekanizması kesinleşmedi; netleşince ses seçimi bu gruba eklenir.</div>
+  </div>
+  <div style="padding:12px 20px 0">
+    <div style="font-family:{{ meta }};font-size:10.5px;font-weight:600;letter-spacing:.14em;color:{{ ink2 }}">WIDGET</div>
+    <div style="margin-top:7px;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }};overflow:hidden">
+      <div style="padding:12px 14px;">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:15.5px;color:{{ ink }}">Ana ekran widget’ı</span>
+            <span style="font-size:12px;line-height:1.4;color:{{ ink2 }}">Günün ayetini ana ekranında göster</span>
+          </span><span style="display:flex;align-items:center;gap:7px"><span style="font-size:14px;color:{{ ink2 }}"></span><svg width="13" height="13" viewBox="0 0 20 20"><path d="M7 3.5L13.5 10 7 16.5" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="flex:1"></div>
+</div>
+</x-import>
+<div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">6 · Ayarlar — okuma, ses, widget</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ dark }}" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:{{ bg }};font-family:{{ ui }};display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 12px 0;display:flex;align-items:center;gap:2px">
+    <div style="width:44px;height:44px;display:flex;align-items:center;justify-content:center">
+      <svg width="11" height="18" viewBox="0 0 11 18"><path d="M8.5 1.5L2 9l6.5 7.5" fill="none" stroke="{{ ink }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </div>
+    <div style="font-size:16px;font-weight:600;color:{{ ink }};letter-spacing:{{ ls }}">Ayarlar</div>
+  </div>
+  <div style="padding:12px 20px 0">
+    <div style="font-family:{{ meta }};font-size:10.5px;font-weight:600;letter-spacing:.14em;color:{{ ink2 }}">KAYDEDİLENLER</div>
+    <div style="margin-top:7px;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }};overflow:hidden">
+      <div style="padding:12px 14px;border-bottom:1px solid {{ line }}">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:15.5px;color:{{ ink }}">Dışa aktar</span>
+            <span style="font-size:12px;line-height:1.4;color:{{ ink2 }}">24 ayet kayıtlı</span>
+          </span><span style="display:flex;align-items:center;gap:7px"><span style="font-size:14px;color:{{ ink2 }}"></span><svg width="13" height="13" viewBox="0 0 20 20"><path d="M7 3.5L13.5 10 7 16.5" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </div>
+      </div>
+      <div style="padding:12px 14px;">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:15.5px;color:{{ ink }}">İçe aktar</span>
+            <span style="font-size:12px;line-height:1.4;color:{{ ink2 }}">Birleştir ya da üzerine yaz — dosya seçildikten sonra sorulur</span>
+          </span><span style="display:flex;align-items:center;gap:7px"><span style="font-size:14px;color:{{ ink2 }}"></span><svg width="13" height="13" viewBox="0 0 20 20"><path d="M7 3.5L13.5 10 7 16.5" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="padding:12px 20px 0">
+    <div style="font-family:{{ meta }};font-size:10.5px;font-weight:600;letter-spacing:.14em;color:{{ ink2 }}">KİŞİSEL</div>
+    <div style="margin-top:7px;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }};overflow:hidden">
+      <div style="padding:12px 14px;border-bottom:1px solid {{ line }}">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:15.5px;color:{{ ink }}">İsim</span>
+            <span style="font-size:12px;line-height:1.4;color:{{ ink2 }}">Belirtilmedi</span>
+          </span><span style="display:flex;align-items:center;gap:7px"><span style="font-size:14px;color:{{ ink2 }}"></span><svg width="13" height="13" viewBox="0 0 20 20"><path d="M7 3.5L13.5 10 7 16.5" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </div>
+      </div>
+      <div style="padding:12px 14px;">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:15.5px;color:{{ danger }}">Verileri temizle</span>
+            <span style="font-size:12px;line-height:1.4;color:{{ ink2 }}">Önce dışa aktarman önerilir</span>
+          </span><span style="display:flex;align-items:center;gap:7px"><span style="font-size:14px;color:{{ ink2 }}"></span><svg width="13" height="13" viewBox="0 0 20 20"><path d="M7 3.5L13.5 10 7 16.5" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="padding:12px 20px 0">
+    <div style="font-family:{{ meta }};font-size:10.5px;font-weight:600;letter-spacing:.14em;color:{{ ink2 }}">HAKKINDA</div>
+    <div style="margin-top:7px;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }};overflow:hidden">
+      <div style="padding:12px 14px;border-bottom:1px solid {{ line }}">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:15.5px;color:{{ ink }}">Kaynaklar ve lisanslar</span>
+            <span style="font-size:12px;line-height:1.4;color:{{ ink2 }}">Çevirmenler, meal sürümleri, Arapça metnin kaynağı</span>
+          </span><span style="display:flex;align-items:center;gap:7px"><span style="font-size:14px;color:{{ ink2 }}"></span><svg width="13" height="13" viewBox="0 0 20 20"><path d="M7 3.5L13.5 10 7 16.5" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </div>
+      </div>
+      <div style="padding:12px 14px;border-bottom:1px solid {{ line }}">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:15.5px;color:{{ ink }}">Uygulama hakkında</span>
+            <span style="font-size:12px;line-height:1.4;color:{{ ink2 }}">Sürüm 0.1 · geliştirici</span>
+          </span><span style="display:flex;align-items:center;gap:7px"><span style="font-size:14px;color:{{ ink2 }}"></span><svg width="13" height="13" viewBox="0 0 20 20"><path d="M7 3.5L13.5 10 7 16.5" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </div>
+      </div>
+      <div style="padding:12px 14px;">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:15.5px;color:{{ ink }}">Geri bildirim gönder</span>
+            <span style="font-size:12px;line-height:1.4;color:{{ ink2 }}">İçerik hatası bildirmek için</span>
+          </span><span style="display:flex;align-items:center;gap:7px"><span style="font-size:14px;color:{{ ink2 }}"></span><svg width="13" height="13" viewBox="0 0 20 20"><path d="M7 3.5L13.5 10 7 16.5" fill="none" stroke="{{ ink2 }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="flex:1"></div>
+</div>
+</x-import>
+<div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">6b · Ayarlar — kayıtlar, kişisel, hakkında</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ dark }}" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:{{ bg }};font-family:{{ ui }};display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 12px 0;display:flex;align-items:center;gap:2px">
+    <div style="width:44px;height:44px;display:flex;align-items:center;justify-content:center">
+      <svg width="11" height="18" viewBox="0 0 11 18"><path d="M8.5 1.5L2 9l6.5 7.5" fill="none" stroke="{{ ink }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </div>
+    <div style="font-size:16px;font-weight:600;color:{{ ink }};letter-spacing:{{ ls }}">Kaydedilenler</div>
+  </div>
+  <div style="margin:8px 20px 0;display:flex;gap:8px">
+    <span style="flex:1;text-align:center;padding:11px 6px;border-radius:{{ rad }};background:{{ acc }};font-size:14.5px;font-weight:600;color:{{ accInk }}">Ayetler · 12</span>
+    <span style="flex:1;text-align:center;padding:11px 6px;border-radius:{{ rad }};border:1px solid {{ line }};font-size:14.5px;font-weight:500;color:{{ ink2 }}">Konular · 3</span>
+  </div>
+  <div style="margin:14px 20px 0;padding:12px 14px;background:{{ glass }};border:1px solid {{ glassLine }};border-radius:{{ rad }};backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);display:flex;align-items:center;gap:10px">
+    <svg width="16" height="16" viewBox="0 0 16 16"><circle cx="6.6" cy="6.6" r="4.9" fill="none" stroke="{{ ink2 }}" stroke-width="1.6"></circle><line x1="10.3" y1="10.3" x2="14" y2="14" stroke="{{ ink2 }}" stroke-width="1.6" stroke-linecap="round"></line></svg>
+    <span style="font-size:15px;color:{{ ink2 }}">Kayıtlarda ara</span>
+  </div>
+  <div style="flex:1;margin:12px 20px 0;background:{{ surf }};border:1px solid {{ line }};border-radius:{{ rad }};overflow:hidden">
+    <div style="padding:14px 15px;border-bottom:1px solid {{ line }}">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="font-family:{{ meta }};font-size:11.5px;font-weight:700;letter-spacing:.05em;color:{{ acc }}">İNŞİRAH · 94:6</span>
+        <span style="margin-left:auto;padding:4px 9px;border-radius:99px;background:{{ bg }};border:1px solid {{ line }};font-size:11px;color:{{ ink2 }}">Sabır</span>
+        <svg width="17" height="17" viewBox="0 0 20 20"><path d="M5 2.5h10v15l-5-4-5 4v-15z" fill="{{ acc }}"></path></svg>
+      </div>
+      <div style="margin-top:7px;font-family:{{ disp }};font-size:16px;line-height:1.5;color:{{ ink }};text-wrap:pretty">Şüphesiz her zorluğun ardından bir genişlik gelir.</div>
+    </div>
+    <div style="padding:14px 15px;border-bottom:1px solid {{ line }}">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="font-family:{{ meta }};font-size:11.5px;font-weight:700;letter-spacing:.05em;color:{{ acc }}">BAKARA · 2:286</span>
+        <span style="margin-left:auto;padding:4px 9px;border-radius:99px;background:{{ bg }};border:1px solid {{ line }};font-size:11px;color:{{ ink2 }}">Kaygı</span>
+        <svg width="17" height="17" viewBox="0 0 20 20"><path d="M5 2.5h10v15l-5-4-5 4v-15z" fill="{{ acc }}"></path></svg>
+      </div>
+      <div style="margin-top:7px;font-family:{{ disp }};font-size:16px;line-height:1.5;color:{{ ink }};text-wrap:pretty">Allah kimseye gücünün üstünde bir yük yüklemez.</div>
+    </div>
+    <div style="padding:14px 15px;border-bottom:1px solid {{ line }}">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="font-family:{{ meta }};font-size:11.5px;font-weight:700;letter-spacing:.05em;color:{{ acc }}">RA’D · 13:28</span>
+        <span style="margin-left:auto;padding:4px 9px;border-radius:99px;background:{{ bg }};border:1px solid {{ line }};font-size:11px;color:{{ ink2 }}">İç huzur</span>
+        <svg width="17" height="17" viewBox="0 0 20 20"><path d="M5 2.5h10v15l-5-4-5 4v-15z" fill="{{ acc }}"></path></svg>
+      </div>
+      <div style="margin-top:7px;font-family:{{ disp }};font-size:16px;line-height:1.5;color:{{ ink }};text-wrap:pretty">Kalpler ancak O’nu anmakla huzur bulur.</div>
+    </div>
+    <div style="padding:14px 15px;">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="font-family:{{ meta }};font-size:11.5px;font-weight:700;letter-spacing:.05em;color:{{ acc }}">TALÂK · 65:3</span>
+        <span style="margin-left:auto;padding:4px 9px;border-radius:99px;background:{{ bg }};border:1px solid {{ line }};font-size:11px;color:{{ ink2 }}">Tevekkül</span>
+        <svg width="17" height="17" viewBox="0 0 20 20"><path d="M5 2.5h10v15l-5-4-5 4v-15z" fill="{{ acc }}"></path></svg>
+      </div>
+      <div style="margin-top:7px;font-family:{{ disp }};font-size:16px;line-height:1.5;color:{{ ink }};text-wrap:pretty">Kim Allah’a güvenirse O ona yeter.</div>
+    </div>
+  </div>
+  <div style="padding:12px 20px 0;font-family:{{ meta }};font-size:11px;line-height:1.6;color:{{ ink2 }}">Kayıtlar cihazda tutulur · dışa aktarılabilir</div>
+</div>
+</x-import>
+<div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">7 · Kaydedilenler</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;position:relative;background:{{ bandBg }};font-family:{{ ui }};overflow:hidden">
+  <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(0,0,0,.18),rgba(0,0,0,.42))"></div>
+  <div style="position:relative;height:100%;box-sizing:border-box;padding:70px 22px 42px;display:flex;flex-direction:column">
+    <div style="text-align:center;font-size:15px;font-weight:500;color:rgba(255,255,255,.86)">Cuma 21 Ağustos</div>
+    <div style="margin-top:2px;text-align:center;font-family:{{ disp }};font-size:80px;line-height:1.05;color:#FFFFFF;letter-spacing:-.02em">9:41</div>
+    <div style="margin-top:14px;padding:13px 15px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.24);border-radius:16px;backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)">
+      <div style="display:flex;align-items:center;gap:8px">
+        <div style="width:17px;height:17px;flex:none;background-image:url({{ logoBand }});background-size:contain;background-repeat:no-repeat;background-position:center"></div>
+        <span style="font-size:10.5px;font-weight:700;letter-spacing:.12em;color:rgba(255,255,255,.82)">İNŞİRAH · 94:6</span>
+      </div>
+      <div style="margin-top:7px;font-family:{{ disp }};font-size:16px;line-height:1.4;color:#FFFFFF;text-wrap:pretty">Şüphesiz her zorluğun ardından bir genişlik gelir.</div>
+    </div>
+    <div style="margin-top:9px;font-size:10.5px;line-height:1.5;color:rgba(255,255,255,.6)">Kilit ekranı widget’ı tek renktir ve iki satırla sınırlıdır; uzun ayetler kısaltılır.</div>
+    <div style="flex:1"></div>
+    <div style="display:flex;align-items:center;justify-content:space-between">
+      <span style="width:50px;height:50px;border-radius:99px;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 20 20"><path d="M10 2.5v9M6.5 5.5a5 5 0 107 0" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round"></path></svg></span>
+      <span style="width:50px;height:50px;border-radius:99px;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 20 20"><rect x="2.5" y="5.5" width="15" height="11" rx="2.4" fill="none" stroke="#fff" stroke-width="1.6"></rect><circle cx="10" cy="11" r="3.2" fill="none" stroke="#fff" stroke-width="1.6"></circle></rect></svg></span>
+    </div>
+  </div>
+</div>
+</x-import>
+<div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">8 · Kilit ekranı widget’ı</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;position:relative;background:{{ bandBg }};font-family:{{ ui }};overflow:hidden">
+  <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(0,0,0,.14),rgba(0,0,0,.34))"></div>
+  <div style="position:relative;height:100%;box-sizing:border-box;padding:66px 22px 40px;display:flex;flex-direction:column;gap:18px">
+    <div style="text-align:center;font-size:14px;color:rgba(255,255,255,.8)">9:41</div>
+    <div style="padding:16px 17px;background:{{ surf }};border-radius:22px;box-shadow:0 12px 30px rgba(0,0,0,.22)">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+        <span style="font-family:{{ meta }};font-size:10px;font-weight:700;letter-spacing:.14em;color:{{ ink2 }}">GÜNÜN AYETİ</span>
+        <span style="font-family:{{ meta }};font-size:11px;font-weight:600;color:{{ acc }}">İnşirah · 94:6</span>
+      </div>
+      <div style="margin-top:9px;font-family:{{ disp }};font-size:17px;line-height:1.45;color:{{ ink }};text-wrap:pretty">Şüphesiz her zorluğun ardından bir genişlik gelir.</div>
+      <div style="margin-top:11px;display:flex;align-items:center;gap:7px">
+        <span style="width:8px;height:8px;border-radius:99px;background:{{ acc }}"></span>
+        <span style="font-size:11px;color:{{ ink2 }}">El-Latîf · dokun, uygulamada aç</span>
+      </div>
+    </div>
+    <div style="display:flex;gap:16px">
+      <div style="width:76px;height:76px;border-radius:18px;background:{{ surf }};display:flex;align-items:center;justify-content:center">
+        <div style="width:52px;height:52px;background-image:url({{ logoUrl }});background-size:contain;background-repeat:no-repeat;background-position:center"></div>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:5px">
+        <span style="font-size:13px;font-weight:600;color:#FFFFFF">X</span>
+        <span style="font-size:11.5px;line-height:1.5;color:rgba(255,255,255,.78);text-wrap:pretty">Orta boy widget günde bir kez yenilenir; küçük boy yalnızca ismi gösterir.</span>
+      </div>
+    </div>
+    <div style="flex:1"></div>
+  </div>
+</div>
+</x-import>
+<div style="font-family:'DM Sans',system-ui;font-size:12.5px;color:#6B6B6B">8b · Ana ekran widget’ı</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:6890,&quot;height&quot;:940},&quot;bg&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#F4F1EA&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;surf&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFFDF7&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;ink&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#1B1E19&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;ink2&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#6A6656&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;line&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#DCD6C4&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;acc&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#4E5B3A&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;accInk&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#F4F1EA&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;bandBg&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#E5E1D3&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Ana sayfa bandı&quot;},&quot;bandInk&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#1B1E19&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Ana sayfa bandı&quot;},&quot;deco&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;none&quot;,&quot;rule&quot;,&quot;pattern&quot;,&quot;wash&quot;,&quot;photo&quot;],&quot;default&quot;:&quot;rule&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Ana sayfa bandı&quot;},&quot;rad&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;13px&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Tipografi ve form&quot;},&quot;radOut&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;17px&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Tipografi ve form&quot;},&quot;disp&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Spectral, serif&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Tipografi ve form&quot;},&quot;ui&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;'DM Sans', system-ui&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Tipografi ve form&quot;},&quot;meta&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;'DM Sans', system-ui&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Tipografi ve form&quot;},&quot;ayet&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;23px&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Tipografi ve form&quot;},&quot;h1&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;28px&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Tipografi ve form&quot;},&quot;btn&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;17px&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Tipografi ve form&quot;},&quot;ls&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;0&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Tipografi ve form&quot;},&quot;caps&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;none&quot;,&quot;uppercase&quot;],&quot;default&quot;:&quot;none&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Tipografi ve form&quot;},&quot;dark&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;},&quot;kBg&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#15171A&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Karşıt tema&quot;},&quot;kInk&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#ECEAE4&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Karşıt tema&quot;},&quot;kAcc&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#8FA6C4&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Karşıt tema&quot;},&quot;kMode&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;dark&quot;,&quot;light&quot;],&quot;default&quot;:&quot;dark&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Karşıt tema&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const p = this.props, deco = p.deco || 'none';
+    const kLight = (p.kMode || 'dark') === 'light';
+    return {
+      isRule: deco === 'rule', isPattern: deco === 'pattern',
+      isWash: deco === 'wash', isPhoto: deco === 'photo',
+      ornate: !!p.ornate && !p.swap, plain: !p.ornate && !p.swap,
+      swapped: !!p.swap, notSwapped: !p.swap,
+      radIn: p.radIn || p.rad || '12px',
+      logoUrl: p.logo || '',
+      logoBand: p.logoBand || p.logo || '',
+      danger: p.dark ? '#E88478' : '#B3261E',
+      imageBand: ['pattern', 'wash', 'photo'].includes(deco),
+      glassCard: !!p.glassCard, solidCard: !p.glassCard,
+      caps: p.caps || 'none', ls: p.ls || '0',
+      rad: p.rad || '10px', radOut: p.radOut || '14px',
+      ayet: p.ayet || '23px', h1: p.h1 || '28px', btn: p.btn || '20px',
+      meta: p.meta || p.ui || 'system-ui',
+      glass: p.dark ? 'rgba(255,255,255,0.09)' : 'rgba(255,255,255,0.62)',
+      glassLine: p.dark ? 'rgba(255,255,255,0.16)' : 'rgba(255,255,255,0.9)',
+      kBg: p.kBg || '#15171A',
+      kInk: p.kInk || '#ECEAE4',
+      kAcc: p.kAcc || p.acc,
+      kInk2: kLight ? 'rgba(0,0,0,0.5)' : 'rgba(255,255,255,0.6)',
+      kSurf: kLight ? 'rgba(255,255,255,0.7)' : 'rgba(255,255,255,0.06)',
+      kLine: kLight ? 'rgba(0,0,0,0.11)' : 'rgba(255,255,255,0.14)',
+      kGlass: kLight ? 'rgba(255,255,255,0.68)' : 'rgba(255,255,255,0.08)',
+      kDark: !kLight,
+      altLabel: kLight ? '5 · Ayet odak — açık tema karşılığı' : '5 · Ayet odak — koyu tema',
+    };
+  }
+}
+</script>
+</body>
+</html>

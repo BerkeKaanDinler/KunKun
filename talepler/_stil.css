@@ -1,0 +1,42 @@
+@page { size: A4; margin: 18mm 16mm 16mm 16mm; }
+* { box-sizing: border-box; }
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10.2pt; line-height: 1.5; color: #24292e; margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+h1 { font-size: 26pt; letter-spacing: -.02em; margin: 0 0 2px; color: #1a1a17; }
+.sub { font-size: 12pt; color: #4a5560; margin: 0 0 2px; font-weight: 400; }
+.subsub { font-size: 9pt; color: #8a9198; margin: 0 0 18px; }
+h2 { font-size: 15pt; color: #2c5f8a; margin: 26px 0 8px; padding-top: 4px; border-top: 2px solid #dfe4e8; }
+h2:first-of-type { margin-top: 18px; }
+h3 { font-size: 11pt; margin: 16px 0 5px; color: #1a1a17; }
+p { margin: 0 0 8px; }
+.lead { background: #f6f8fa; border-left: 3px solid #2c5f8a; padding: 10px 12px; margin: 0 0 16px; font-size: 10pt; }
+.warn { background: #fdf4f2; border-left: 3px solid #b3261e; padding: 10px 12px; margin: 12px 0; font-size: 9.6pt; color: #7a2018; }
+table { width: 100%; border-collapse: collapse; margin: 8px 0 14px; font-size: 9.3pt; }
+th { background: #eef1f4; text-align: left; padding: 6px 8px; border-bottom: 1.5px solid #cdd4da; font-size: 8.6pt; text-transform: uppercase; letter-spacing: .06em; color: #4a5560; }
+td { padding: 6px 8px; border-bottom: 1px solid #e6eaee; vertical-align: top; }
+code, .mono { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 8.8pt; background: #f2f4f6; padding: 1px 4px; border-radius: 3px; }
+pre { background: #f6f8fa; border: 1px solid #e1e6ea; border-radius: 4px; padding: 10px 12px; font-family: "SF Mono", Menlo, monospace; font-size: 8.6pt; line-height: 1.45; overflow: hidden; margin: 8px 0 12px; }
+.item { border: 1px solid #dfe4e8; border-radius: 5px; padding: 11px 13px 9px; margin: 0 0 11px; page-break-inside: avoid; }
+.ihead { display: flex; align-items: baseline; gap: 8px; margin-bottom: 5px; }
+.id { font-family: "SF Mono", Menlo, monospace; font-size: 8.6pt; font-weight: 700; color: #fff; background: #2c5f8a; padding: 2px 7px; border-radius: 3px; letter-spacing: .04em; }
+.id.blk { background: #b3261e; }
+.id.med { background: #b8860b; }
+.q { font-weight: 700; font-size: 10.4pt; color: #1a1a17; }
+.tag { font-size: 7.6pt; text-transform: uppercase; letter-spacing: .08em; padding: 2px 6px; border-radius: 3px; font-weight: 700; }
+.t-blk { background: #fdeceb; color: #b3261e; }
+.t-med { background: #fdf4e3; color: #8a6100; }
+.t-low { background: #eef1f4; color: #5a6570; }
+.why { font-size: 9.2pt; color: #4a5560; margin: 0 0 7px; }
+.rec { background: #f0f7f3; border-left: 3px solid #1f7a5c; padding: 7px 10px; font-size: 9.3pt; margin: 7px 0; }
+.rec b { color: #145c44; }
+.opts { margin: 7px 0 0; font-size: 9.3pt; }
+.opt { padding: 3px 0 3px 20px; text-indent: -20px; }
+.box { display: inline-block; width: 11px; height: 11px; border: 1.4px solid #7a848c; border-radius: 2px; margin-right: 7px; vertical-align: -1px; }
+.legend { display: flex; gap: 18px; font-size: 8.8pt; color: #4a5560; margin: 0 0 18px; padding: 9px 12px; background: #f6f8fa; border-radius: 4px; }
+ul { margin: 4px 0 8px; padding-left: 18px; }
+li { margin: 2px 0; }
+.foot { margin-top: 26px; padding-top: 10px; border-top: 1px solid #dfe4e8; font-size: 8.4pt; color: #8a9198; }
+.pgbrk { page-break-before: always; }

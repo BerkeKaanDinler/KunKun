@@ -1,0 +1,332 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8">
+<title>KUN · Ürün Kararları Talebi</title>
+<link rel="stylesheet" href="_stil.css"></head><body>
+
+<h1>KUN · İlm-i Hâl</h1>
+<p class="sub">Ürün Kararları Talebi — Aşama 1 öncesi</p>
+<p class="subsub">Sürüm 1.0 · 9 Eylül 2026 · Claude Code → Berke Kaan Dinler</p>
+
+<div class="lead">
+Bu doküman, Aşama 1'in kodlanmasına başlamadan önce <b>yalnızca senin verebileceğin</b> kararları listeler.
+Mimari brief ve tasarım dökümü okundu; aşağıdaki maddeler ya iki kaynak arasında çelişiyor, ya hiçbirinde
+tanımlı değil, ya da "kod yazılırken uydurulmamalı" diye açıkça işaretlenmiş.
+Her maddede bir önerim var — <b>"önerine uy"</b> demen yeterli, madde madde cevap vermek zorunda değilsin.
+</div>
+
+<div class="legend">
+  <span><b style="color:#b3261e">BLOKE</b> — cevap gelmeden ilgili ekran kodlanamaz</span>
+  <span><b style="color:#8a6100">EKRAN</b> — cevap ekranın görünüşünü değiştirir</span>
+  <span><b style="color:#5a6570">TERCİH</b> — makul varsayılanım var</span>
+</div>
+
+<h2>1 · Kapsam ve özellik bayrakları</h2>
+<p>Mimari brief <code>Features</code> sınıfıyla kapsamı kod silmeden yönetmeyi söylüyor. Aşağıdaki bayrakların
+Aşama 1 değerleri ekranların görünüşünü doğrudan belirliyor.</p>
+
+<div class="item">
+  <div class="ihead"><span class="id med">Ü1</span><span class="q">Ses kapalıyken beş ekranın alt çubuğu gidiyor — onaylıyor musun?</span><span class="tag t-med">Ekran</span></div>
+  <p class="why">Tasarım dökümünde <b>Tüm ayetler, Keşif, Kategori, Ayet odak ve Karşılaştırma</b> ekranlarının hepsinin
+  altında cam çalar çubuğu var. Mimari brief ise <code>audio == false</code> iken "alt çalar çubuğu <b>hiç çizilmez</b>"
+  diyor. Brief kazanır kuralına göre bu beş ekran tasarım mock'undaki alt çubuğunu kaybediyor — ekranların
+  alt bandında boşluk kalıyor. Bu, tasarımdan en görünür sapma.</p>
+  <div class="rec"><b>Önerim:</b> Brief'e uy. Alt çubuk çizilmez, alt boşluk kaydırma alanına eklenir.
+  Ayet odak ekranındaki oynat butonu brief'in dediği gibi <b>çizilir ama pasiftir</b>; dokununca
+  "Ses kaydı henüz eklenmedi" bilgi metni çıkar.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy — alt çubuk beş ekranda da çizilmez</div>
+    <div class="opt"><span class="box"></span>Alt çubuk pasif/soluk olarak çizilsin (tasarıma sadık kal)</div>
+    <div class="opt"><span class="box"></span>Başka: ...........................................................</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id med">Ü2</span><span class="q">Kaydedilenler ekranı tek sekmeye mi düşsün?</span><span class="tag t-med">Ekran</span></div>
+  <p class="why">Tasarımda "Ayetler | Notlar" iki sekme var. Brief <code>notes = false</code> (Aşama 3) ve
+  "Notlar sekmesi çizilmez, tek sekme kalır, sekme çubuğu gizlenir" diyor.</p>
+  <div class="rec"><b>Önerim:</b> Brief'e uy. Notlar sekmesini yine de tam kodlarım; bayrağı <code>true</code>
+  yaptığın an çalışır hâlde çıkar. Aşama 3'te sıfırdan yazma maliyeti olmaz.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy — tek sekme, çubuk gizli, kod hazır bekler</div>
+    <div class="opt"><span class="box"></span>Notlar'ı Aşama 1'de aç (<code>notes = true</code>)</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id blk">Ü3</span><span class="q">Ayarlar › KAYITLAR › "geçmiş" satırı ne olacak?</span><span class="tag t-blk">Bloke</span></div>
+  <p class="why">Bu çelişkiyi brief'in kendisi işaretlemiş: tasarımda satır duruyor ama ürün kararlarında
+  otomatik okuma geçmişi kaldırılmış ("eşiği belirsiz, sıfır-veri duruşuyla çelişiyor").
+  Brief "ya kaldırılmalı ya da neyi kaydettiği yeniden tanımlanmalı" diyor — yani karar sende.</p>
+  <div class="rec"><b>Önerim:</b> Satırı kaldır. Uygulama hiçbir şeyi arka planda kaydetmiyor duruşu
+  en temizi; kullanıcı ne kaydettiyse o "Kaydedilenler"de duruyor zaten.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Kaldır (önerim)</div>
+    <div class="opt"><span class="box"></span>Kalsın ama "Son bakılanlar · son 20 ayet, cihazda" olarak yeniden tanımla</div>
+    <div class="opt"><span class="box"></span>Kalsın ama pasif/yakında olarak göster</div>
+    <div class="opt"><span class="box"></span>Başka tanım: ...............................................</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id blk">Ü4</span><span class="q">Esmâ-i Hüsnâ verisi var mı? Yoksa ana sayfa hero'su ne gösterecek?</span><span class="tag t-blk">Bloke</span></div>
+  <p class="why">Ana sayfanın en büyük öğesi 196 px'lik hero: <span class="mono">"BUGÜNÜN İSMİ · 99 İSİMDEN 69."</span>
+  + isim + Arapça + alt metin. Bu <code>asmaul_husna</code> tablosundan besleniyor ve <b>elimde 99 kayıt yok</b>
+  (name_tr, name_ar, transliteration, meaning). Bu dinî içeriktir; kural gereği üretmem, tek kaydını bile yazmam.
+  Aynı veri Z5'teki "Yâ Latîf · bugünün ismiyle" örneğini de besliyor.</p>
+  <div class="warn"><b>Bu madde cevaplanmadan ana sayfa tamamlanamaz.</b> Hero'yu boş bırakırsam ekranın
+  yarısı yer tutucu görünür ve "gezilebilir uygulama" hedefi zayıflar.</div>
+  <div class="rec"><b>Önerim:</b> 99 ismi bir CSV/JSON olarak ver (kaynağını da yaz — lisans kaydı zorunlu build
+  kontrollerinden biri). Veremeyeceksen <code>asmaulHusna = false</code> yapalım; hero yerine "Günün ayeti"
+  kartı yukarı çıkar, ana sayfa dengeli kalır, Aşama 2'de veri gelince bayrak açılır.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Veriyi göndereceğim (biçim: ..................., kaynak: ...................)</div>
+    <div class="opt"><span class="box"></span><code>asmaulHusna = false</code> — hero'yu Aşama 2'ye bırak (önerim)</div>
+    <div class="opt"><span class="box"></span>Hero çerçevesi çizilsin, içi "veri bekleniyor" durumu olsun</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id">Ü5</span><span class="q">Widget önizleme ekranlarına giriş noktası nereden olacak?</span><span class="tag t-low">Tercih</span></div>
+  <p class="why">Brief 15 Kur'an ekranının ikisinin widget önizlemesi olduğunu ve Aşama 1'de
+  "yalnızca uygulama içi önizleme" olarak çizileceğini söylüyor. Ama <code>lockWidget = false</code> ve
+  tasarım bu ekranlara nereden gidildiğini söylemiyor. Alt sekme çubuğu da yok.</p>
+  <div class="rec"><b>Önerim:</b> Ayarlar 1 › WIDGET grubu görünür kalsın; "Kilit ekranı" ve "Ana ekran"
+  satırları önizleme ekranlarını açsın. Satırlarda küçük <span class="mono">ÖNİZLEME</span> künyesi olsun ki
+  kullanıcı gerçek widget kurduğunu sanmasın. "Yenileme" satırı pasif.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy — Ayarlar › WIDGET grubundan</div>
+    <div class="opt"><span class="box"></span>WIDGET grubu da gizlensin, önizleme ekranları Aşama 3'e ertelensin</div>
+  </div>
+</div>
+
+<h2>2 · Fixture içerik politikası</h2>
+<p>İçerik bütünlüğü kuralı istisnasız: ayet metni, meal, sure/ayet numarası veya dinî açıklama üretilmez.
+Fixture katmanının <b>ne göstereceğini</b> bu yüzden senin onaylaman gerekiyor.</p>
+
+<div class="item">
+  <div class="ihead"><span class="id blk">Ü6</span><span class="q">Fixture ayet metinleri ne olacak?</span><span class="tag t-blk">Bloke</span></div>
+  <p class="why">Brief 58, 124, 246, 512 ve 908 karakterlik uzunluk bantları istiyor (en uzunu ayet kartını
+  test ediyor) ama <b>bu metinlerin içeriğini tanımlamıyor</b>. ~60 fixture ayetinin hepsi bu bantlardan seçilecek.</p>
+  <div class="rec"><b>Önerim:</b> Ayete benzemeyen, açıkça teknik nötr Türkçe yer tutucu metin. Örnek başlangıç:
+  <span class="mono">"Bu bir yer tutucu metindir. Gerçek meal verisi henüz eklenmedi…"</span> — istenen karakter
+  sayısına kadar uzatılır. Ayrıca <b>her fixture ayet kartında küçük <span class="mono">ÖRNEK VERİ</span> künyesi</b>
+  bulunsun; ekran görüntüsü dışarı çıktığında kimse meal sanmasın.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy — nötr yer tutucu + ÖRNEK VERİ künyesi</div>
+    <div class="opt"><span class="box"></span>Lorem ipsum kullan (Türkçe değil, kesinlikle meal sanılmaz)</div>
+    <div class="opt"><span class="box"></span>Kendi yer tutucu metnimi göndereceğim</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id blk">Ü7</span><span class="q">Fixture sure/ayet künyeleri ne olacak?</span><span class="tag t-blk">Bloke</span></div>
+  <p class="why">Kategori, ayet odak, karşılaştırma, kaydedilenler ve tüm ayetler ekranları monospace
+  sure künyesi gösteriyor. Sure adı ve ayet numarası üretemem — kural bunu da kapsıyor.</p>
+  <div class="rec"><b>Önerim:</b> Gerçek referansla karışması imkânsız sentetik künye:
+  <span class="mono">ÖRNEK 01:03</span>, <span class="mono">ÖRNEK 07:12</span>. Sure adı alanı
+  <span class="mono">"Örnek sûre 1"</span>. Aşama 2'de gerçek veriyle tek satırda değişir.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy</div>
+    <div class="opt"><span class="box"></span>Künye alanı tamamen boş kalsın (ekranda çizgi/tire görünür)</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id">Ü8</span><span class="q">Arama alanı placeholder'ındaki "2:255" kalsın mı?</span><span class="tag t-low">Tercih</span></div>
+  <p class="why">Tasarım dökümü "Tüm ayetler" ekranının arama placeholder'ını
+  <span class="mono">"Sûre veya ayet ara · '2:255'"</span> olarak veriyor. Bu gerçek bir ayet referansı,
+  ama benim ürettiğim değil — tasarımdan geldi. Yine de fixture ortamında gerçek referans göstermek
+  tutarsız olabilir.</div>
+  <div class="rec"><b>Önerim:</b> Aşama 1'de <span class="mono">"Sûre veya ayet ara"</span> olarak nötrleştir,
+  Aşama 2'de gerçek veri gelince tasarımdaki hâline dön.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Nötrleştir (önerim)</div>
+    <div class="opt"><span class="box"></span>Tasarımdaki gibi kalsın</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id">Ü9</span><span class="q">Fixture çevirmen adları ne olacak?</span><span class="tag t-low">Tercih</span></div>
+  <p class="why">Lisans şartı: çevirmen adı ve meal sürümü ayet ekranında görünür olmalı. Karşılaştırma ekranı
+  ayrıca <b>en az iki meal</b> gerektiriyor. Gerçek çevirmen adı yazmam doğru olmaz — henüz kimseyle anlaşma yok.</p>
+  <div class="rec"><b>Önerim:</b> <span class="mono">Örnek Meal A (yer tutucu)</span> ve
+  <span class="mono">Örnek Meal B (yer tutucu)</span>. Künye alanları (eser adı, baskı, yıl, lisans notu)
+  şemadaki gibi dolu ama açıkça sahte.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy</div>
+    <div class="opt"><span class="box"></span>Anlaşma yapılan çevirmen(ler) belli, adlarını göndereceğim</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id">Ü10</span><span class="q">Kategori–ayet eşleşme dağılımı nasıl olsun?</span><span class="tag t-low">Tercih</span></div>
+  <p class="why">160 kategori var, fixture'da ~60 ayet. Brief eşleşmelerin de sahte olabileceğini söylüyor
+  ("sahte olan yalnızca ayet metinleri ve eşleşmelerdir"). Keşif ekranı her kategorinin yanında sayı gösteriyor,
+  ve her ekranın boş durumu da gösterilmeli.</p>
+  <div class="rec"><b>Önerim:</b> Deterministik (rastgele değil, tohumlu) eşleşme:
+  ~140 kategoride 1–8 ayet · <b>~20 kategori kasıtlı boş</b> (boş durumu gerçekten gezebilmek için) ·
+  P ailesinde Fil / Karınca / Örümcek 1–3 ayet (brief'in istisnasına uygun). Aynı ayet en fazla 5 kategoride.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy</div>
+    <div class="opt"><span class="box"></span>Hiçbir kategori boş olmasın, boş durumu ayrı bir demo ekranında göster</div>
+  </div>
+</div>
+
+<h2 class="pgbrk">3 · Zikir modülü</h2>
+
+<div class="item">
+  <div class="ihead"><span class="id blk">Ü11</span><span class="q">Hazır setin Arapça metinleri — orijinal dosyayı alabilir miyim?</span><span class="tag t-blk">Bloke</span></div>
+  <p class="why">Tasarım dökümü bana <b>bozuk kodlamayla</b> ulaştı. Doğruladım: Türkçe'nin çoğu kurtarılabiliyor
+  ama <b>bütün Arapça harekeler taşımada silinmiş</b>. Harfler kısmen duruyor, hareke baytları yok.
+  Bunları tamamlamak dinî metin üretmek olur, yapmam.</p>
+  <pre>Gelen  : Ø³ÙØ¨ÙØ­ÙØ§ÙÙ Ø§ÙÙÙÙ°ÙÙ
+Çözüm  : harfler kısmen ayakta, her harekenin baytı düşmüş
+Sebep  : UTF-8 → Latin-1 hatalı çözümleme; ikinci baytı 0x80–0x9F
+         aralığındaki her karakter kayboldu (harekeler, ayrıca ğ ş Ğ Ş)</pre>
+  <div class="rec"><b>Önerim:</b> <code>md/</code> klasörünü orijinal UTF-8 hâliyle repoya kopyala.
+  Tek bir dosya bile yeterli: <code>11-zikir-ekranlari.md</code>. Alternatif olarak dört zikrin
+  Arapça metnini ayrı bir metin dosyası hâlinde gönder. Gelene kadar Arapça alanları <b>boş bırakırım</b>
+  (brief zaten "veri yoksa yer tutucu bırakılır" diyor).</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Orijinal <code>md/</code> klasörünü koyacağım</div>
+    <div class="opt"><span class="box"></span>Arapça metinleri ayrı göndereceğim</div>
+    <div class="opt"><span class="box"></span>Şimdilik boş bırak, Aşama 2'de gelsin</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id med">Ü12</span><span class="q">Setin kapanışı — fıkhî doğrulama yapıldı mı?</span><span class="tag t-med">Ekran</span></div>
+  <p class="why">Brief'in kendi uyarısı: tasarımda "kapanışta Sübhanallah 1" yazılı, ama tesbihatın kapanışı için
+  yaygın uygulama tehlil cümlesidir; bazı geleneklerde 34. tekbirle 100'e tamamlanır.
+  Brief "<b>yayından önce bir din görevlisine doğrulattırılmalıdır — sayı ve metin fıkhî bir meseledir,
+  yazılım kararı değildir</b>" diyor.</p>
+  <div class="rec"><b>Önerim:</b> Aşama 1'de tasarımdaki hâliyle kodlarım (33·33·33 + Sübhanallah 1),
+  değiştirmem. Ama bu maddeyi <b>açık</b> olarak takip listesine alalım — dördüncü adımın metni/sayısı
+  değişirse tek bir fixture satırı değişir, kod değişmez. Doğrulamayı yayından önce yaptırman gerekiyor.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Tasarımdaki gibi kodla, doğrulama bende, açık madde kalsın</div>
+    <div class="opt"><span class="box"></span>Doğrulama yapıldı, kapanış şu olacak: ...............................</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id blk">Ü13</span><span class="q">Seri (streak) kuralı — brief karar istiyor</span><span class="tag t-blk">Bloke</span></div>
+  <p class="why">Z8 istatistik ekranı "12 gün kesintisiz seri" ve "en uzun seri" gösteriyor.
+  Brief bu kuralın "tanımlanması, kod yazılırken uydurulmaması" gerektiğini açıkça söylüyor.</p>
+  <div class="rec"><b>Önerim — dört maddelik kural:</b>
+  <ul>
+    <li>Bir günün sayılması için <b>en az 1 zikir</b> yeterli (brief'in de önerisi)</li>
+    <li>Gün sınırı <b>yerel saat gece yarısı</b></li>
+    <li>Seri <code>daily_stats</code> satırlarından <b>türetilir</b>, ayrı sayaç tutulmaz</li>
+    <li>Cihaz saati geri alınırsa: geçmiş satırlar asla silinmez, yalnızca yeni gün eklenmez.
+        Seri ne kırılır ne şişer — kullanıcı saatle oynayarak seri kasamaz</li>
+  </ul></div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy</div>
+    <div class="opt"><span class="box"></span>Gün eşiği farklı olsun: en az .......... zikir</div>
+    <div class="opt"><span class="box"></span>Başka: ...........................................................</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id">Ü14</span><span class="q">Günün ayeti ve bugünün ismi — deterministik formül onayı</span><span class="tag t-low">Tercih</span></div>
+  <p class="why">Brief: seçim tarihten türetilir, rastgele değil; uygulama ve widget aynı sonucu üretmeli;
+  algoritma tek yerde tanımlanır; ayet havuzu kategorilere bağlı ayetlerden seçilir, tüm Kur'an'dan değil.</p>
+  <div class="rec"><b>Önerim:</b> <code>indeks = (yerel epoch gün numarası + sabit ofset) % havuzBoyu</code>,
+  tek dosyada (<code>core/daily_pick.dart</code>). Ayet havuzu = <code>verse_categories</code>'te en az bir
+  eşleşmesi olan ayetler. Aşama 3'te native widget aynı formülü çağırır.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy</div>
+  </div>
+</div>
+
+<h2>4 · Teknik ürün kararları</h2>
+
+<div class="item">
+  <div class="ihead"><span class="id blk">Ü15</span><span class="q">Aşama 1'de kullanıcı verisi kalıcı olsun mu?</span><span class="tag t-blk">Bloke</span></div>
+  <p class="why">Kaydetme, serbest zikir ekleme ve zikir sayaçları Aşama 1'de <b>gerçek kullanıcı eylemi</b>.
+  Ama <code>user.db</code> (Drift) brief'in faz tablosunda Aşama 2'ye ait. Arada bir boşluk var.</p>
+  <table>
+    <tr><th style="width:22%">Seçenek</th><th>Sonuç</th></tr>
+    <tr><td><b>a) Bellek içi</b></td><td>En basit. Uygulamayı kapatınca zikir sayacın ve kayıtların sıfırlanır — demo'da bozuk hissettirir</td></tr>
+    <tr><td><b>b) JSON snapshot</b></td><td><code>path_provider</code> ile dosyaya yazar. Yeni bağımlılık yok, repository arayüzü aynı. Aşama 2'de Drift'e geçiş tek dosya değişikliği</td></tr>
+    <tr><td><b>c) user.db şimdi</b></td><td>Drift + build_runner'ı Aşama 1'e çeker. Doğru son hâl ama fixture turunda ağırlık yapar</td></tr>
+  </table>
+  <div class="rec"><b>Önerim: (b) JSON snapshot.</b> Uygulama gerçekten kullanılabilir hissettirir,
+  bağımlılık eklemez, Aşama 2'ye geçişi bozmaz.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>b — JSON snapshot (önerim)</div>
+    <div class="opt"><span class="box"></span>a — bellek içi, Aşama 2'de gerçek kalıcılık</div>
+    <div class="opt"><span class="box"></span>c — user.db'yi şimdi kur</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id">Ü16</span><span class="q">Hata durumları nasıl gezilebilir olacak?</span><span class="tag t-low">Tercih</span></div>
+  <p class="why">"Her ekranın boş, dolu ve hata durumu var" teslim şartı. Ama uygulama tamamen çevrimdışı ve
+  fixture ile çalışıyor — doğal bir hata yolu yok. Ayrıca "İnternet yok" mesajı hiçbir yerde görünmemeli.</p>
+  <div class="rec"><b>Önerim:</b> Repository'ler <code>Result&lt;T&gt;</code> döner + Ayarlar'ın en altında
+  <b>geliştirici bölümü</b> olsun: "Hata modunu zorla" anahtarı. Açıkken repository'ler hata döner,
+  her ekranın hata durumu gerçekten gezilebilir. Yayın derlemesinde bu bölüm görünmez.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy</div>
+    <div class="opt"><span class="box"></span>Hata durumları sadece ayrı bir galeri ekranında gösterilsin</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id">Ü17</span><span class="q">Paket adı / bundle identifier</span><span class="tag t-low">Tercih</span></div>
+  <p class="why">Sonradan değiştirmek iOS ve Android tarafında ağrılı; şimdi sabitlemek gerekiyor.</p>
+  <div class="rec"><b>Önerim:</b> <code>com.kun.ilmihal</code> · uygulama adı <b>KUN</b> ·
+  Flutter proje adı <code>kun</code></div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy</div>
+    <div class="opt"><span class="box"></span>Bundle id: ...................................................</div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="ihead"><span class="id">Ü18</span><span class="q">Aşama 1'de Drift kurulmasın — onaylıyor musun?</span><span class="tag t-low">Tercih</span></div>
+  <p class="why">Brief'in faz tablosu "gerçek şema · Drift repository'leri · FTS5" maddelerini Aşama 2'ye koyuyor.
+  Aşama 1 yalnızca repository <b>arayüzleri</b> + fixture implementasyonlarıyla çalışabilir.</p>
+  <div class="rec"><b>Önerim:</b> Aşama 1'de Drift ve <code>build_runner</code> yok.
+  Arayüzler baştan doğru tasarlanır (<code>VerseRepository</code>, <code>CategoryRepository</code>,
+  <code>SavedRepository</code>, <code>DhikrRepository</code>), <code>FixtureVerseRepository</code> bunları uygular,
+  Aşama 2'de <code>DriftVerseRepository</code> yanına eklenir. Ekranlar hiçbir şey bilmez.</div>
+  <div class="opts">
+    <div class="opt"><span class="box"></span>Önerine uy</div>
+  </div>
+</div>
+
+<h2>5 · Cevap özeti</h2>
+<p>Hızlı yol: aşağıyı işaretle, gerisini es geç.</p>
+<table>
+  <tr><th style="width:9%">Madde</th><th style="width:53%">Konu</th><th>Cevabın</th></tr>
+  <tr><td class="mono">Ü1</td><td>Ses kapalı → alt çubuk çizilmez</td><td></td></tr>
+  <tr><td class="mono">Ü2</td><td>Kaydedilenler tek sekme</td><td></td></tr>
+  <tr><td class="mono">Ü3</td><td><b>"Geçmiş" satırı</b></td><td></td></tr>
+  <tr><td class="mono">Ü4</td><td><b>Esmâ-i Hüsnâ verisi / hero</b></td><td></td></tr>
+  <tr><td class="mono">Ü5</td><td>Widget önizleme giriş noktası</td><td></td></tr>
+  <tr><td class="mono">Ü6</td><td><b>Fixture ayet metni</b></td><td></td></tr>
+  <tr><td class="mono">Ü7</td><td><b>Fixture künyeleri</b></td><td></td></tr>
+  <tr><td class="mono">Ü8</td><td>Arama placeholder "2:255"</td><td></td></tr>
+  <tr><td class="mono">Ü9</td><td>Fixture çevirmen adları</td><td></td></tr>
+  <tr><td class="mono">Ü10</td><td>Eşleşme dağılımı</td><td></td></tr>
+  <tr><td class="mono">Ü11</td><td><b>Arapça zikir metinleri</b></td><td></td></tr>
+  <tr><td class="mono">Ü12</td><td>Kapanış — fıkhî doğrulama</td><td></td></tr>
+  <tr><td class="mono">Ü13</td><td><b>Seri (streak) kuralı</b></td><td></td></tr>
+  <tr><td class="mono">Ü14</td><td>Deterministik seçim formülü</td><td></td></tr>
+  <tr><td class="mono">Ü15</td><td><b>Kullanıcı verisi kalıcılığı</b></td><td></td></tr>
+  <tr><td class="mono">Ü16</td><td>Hata modu anahtarı</td><td></td></tr>
+  <tr><td class="mono">Ü17</td><td>Bundle id</td><td></td></tr>
+  <tr><td class="mono">Ü18</td><td>Drift Aşama 2'ye</td><td></td></tr>
+</table>
+
+<div class="warn">
+<b>Bloke eden altı madde:</b> Ü3 · Ü4 · Ü6 · Ü7 · Ü11 · Ü13 · Ü15.
+Bunlar cevaplanmadan sırasıyla Ayarlar 2, Ana sayfa, bütün ayet ekranları ve Zikir modülü tamamlanamaz.
+Bölüm 1 (altyapı + tema katmanı) bunların hiçbirine bağlı değil — onay verirsen Ü maddeleri beklerken
+Bölüm 1'e başlayabilirim.
+</div>
+
+<p class="foot">KUN · İlm-i Hâl — Ürün Kararları Talebi v1.0 · Kaynak: kun-mimari-brief.pdf v1.0 + md/ tasarım dökümü</p>
+</body></html>

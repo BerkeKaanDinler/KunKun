@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><meta name="design_doc_mode" content="canvas"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Spectral:ital,wght@0,300;0,400;0,500;1,400&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600;7..72,700&family=Libre+Franklin:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Lora:wght@400;500;600&family=Archivo:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"><style>body{margin:0;background:#e9e6e0;font-family:'DM Sans',system-ui,sans-serif}.dv-turn{padding:44px 48px 36px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 8px}.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}.dv-tsub{margin:0 0 26px;max-width:760px;font:400 12.5px/1.6 system-ui,sans-serif;color:rgba(0,0,0,.55)}.dv-opts{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-start}.dv-opt{flex:none;display:flex;flex-direction:column;gap:10px;scroll-margin-top:16px}.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}.dv-olabel{display:flex;align-items:baseline;gap:9px;font:400 11.5px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.55)}.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}.dv-set{display:flex;gap:22px;align-items:flex-start}.dv-meta{width:264px;padding:20px 22px;background:#fff;border:1px solid rgba(0,0,0,.09);border-radius:10px;box-sizing:border-box}.dv-meta h4{margin:0 0 4px;font:600 15px/1.3 system-ui,sans-serif;color:#161616}.dv-meta p{margin:0 0 18px;font:400 12.5px/1.65 system-ui,sans-serif;color:rgba(0,0,0,.6)}.dv-meta h5{margin:0 0 8px;font:600 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.09em;text-transform:uppercase;color:rgba(0,0,0,.38)}.dv-sw{display:flex;flex-direction:column;gap:5px;margin:0 0 18px}.dv-swr{display:flex;align-items:center;gap:9px;font:400 11px/1 ui-monospace,Menlo,monospace;color:rgba(0,0,0,.5)}.dv-swr i{width:20px;height:20px;border-radius:4px;border:1px solid rgba(0,0,0,.12);flex:none}.dv-swr b{font-weight:400;color:rgba(0,0,0,.8);width:78px}.dv-ty{display:flex;flex-direction:column;gap:6px;margin:0 0 4px}.dv-tyr{display:flex;justify-content:space-between;gap:10px;font:400 11.5px/1.35 system-ui,sans-serif;color:rgba(0,0,0,.75);padding-bottom:6px;border-bottom:1px solid rgba(0,0,0,.06)}.dv-tyr span{font:400 10.5px/1.35 ui-monospace,Menlo,monospace;color:rgba(0,0,0,.42);text-align:right;flex:none}.dv-cap{margin:7px 0 0;font:400 10.5px/1.5 ui-monospace,Menlo,monospace;color:rgba(0,0,0,.35)}.dv-next{margin:26px 0 0;font:12px/1.6 system-ui,sans-serif;color:rgba(0,0,0,.5)}</style></helmet>
+
+<section class="dv-turn" id="t4">
+<div class="dv-thd"><a class="dv-tid" href="#t4">4</a><span class="dv-tname">Tek temada baştan sona akış — Zeytin (<a class="dv-oid" href="#3a">3a</a> + <a class="dv-oid" href="#1a">1a</a>)</span></div>
+<p class="dv-tsub">Kullanıcının uygulamayı ilk kez açtığı andan itibaren sırayla göreceği ekranlar. Sekiz ekranın tamamı ve zorunlu durumlar bu akışta geçiyor; adım numaraları sırayı, alt satırlar o adımda ne olduğunu anlatıyor.</p>
+<div class="dv-opts">
+
+<div class="dv-opt" id="4a">
+<div class="dv-olabel"><a class="dv-oid" href="#4a">4a</a>01 · Splash — dizin hazırlanıyor</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden">
+  <div style="padding:34px 30px 0;display:flex;align-items:center;gap:11px"><div style="width:26px;height:26px;border-radius:7px;background:#4E5B3A;flex:none"></div><div style="font:500 11px/1 'DM Sans';letter-spacing:.16em;color:#6E7A57">AYET REHBERİ</div></div>
+  <div style="padding:0 30px">
+    <div style="font:400 32px/1.35 Spectral,serif;color:#1B1E19;text-wrap:pretty">Yaşadığın şeye temas eden ayeti bul, oku, dinle.</div>
+    <div style="width:40px;height:1px;background:#CFC8B4;margin:24px 0"></div>
+    <div style="font:400 15.5px/1.65 'DM Sans';color:#6A6656;text-wrap:pretty">150 konu başlığında Türkçe meal rehberi.</div>
+  </div>
+  <div style="padding:0 30px">
+    <div style="display:flex;align-items:center;justify-content:center;gap:10px;padding:17px 0;border-radius:13px;background:#E7E3D4;font:500 17px/1 'DM Sans';color:#8A8570"><div style="width:14px;height:14px;border-radius:7px;border:2px solid #B9B2A0;border-top-color:#4E5B3A"></div>Kategoriler hazırlanıyor</div>
+    <div style="margin-top:14px;height:3px;border-radius:2px;background:#E3DECF;position:relative"><div style="position:absolute;left:0;top:0;bottom:0;width:64%;border-radius:2px;background:#4E5B3A"></div></div>
+    <div style="margin-top:12px;text-align:center;font:400 13px/1.6 'DM Sans';color:#8A8570">İlk açılışta ayet dizini bir kez hazırlanır</div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Yalnızca ilk açılışta görünür, 1–2 saniye.</p>
+</div>
+
+<div class="dv-opt" id="4b">
+<div class="dv-olabel"><a class="dv-oid" href="#4b">4b</a>02 · Splash — hazır</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden">
+  <div style="padding:34px 30px 0;display:flex;align-items:center;gap:11px"><div style="width:26px;height:26px;border-radius:7px;background:#4E5B3A;flex:none"></div><div style="font:500 11px/1 'DM Sans';letter-spacing:.16em;color:#6E7A57">AYET REHBERİ</div></div>
+  <div style="padding:0 30px">
+    <div style="font:400 32px/1.35 Spectral,serif;color:#1B1E19;text-wrap:pretty">Yaşadığın şeye temas eden ayeti bul, oku, dinle.</div>
+    <div style="width:40px;height:1px;background:#CFC8B4;margin:24px 0"></div>
+    <div style="font:400 15.5px/1.65 'DM Sans';color:#6A6656;text-wrap:pretty">150 konu başlığında Türkçe meal rehberi. Sıralı okuma ya da hatim takibi yok; konuya göre ayet keşfi var.</div>
+  </div>
+  <div style="padding:0 30px">
+    <div style="display:flex;align-items:center;justify-content:center;padding:17px 0;border-radius:13px;background:#4E5B3A;font:500 17px/1 'DM Sans';color:#F4F1EA">Ayetlere başla</div>
+    <div style="margin-top:16px;text-align:center;font:400 13px/1.6 'DM Sans';color:#8A8570">Tamamen çevrimdışı çalışır · hesap gerekmez</div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Düğmeye basınca ana sayfa açılır; sonraki açılışlar bu adımı atlar.</p>
+</div>
+
+<div class="dv-opt" id="4c">
+<div class="dv-olabel"><a class="dv-oid" href="#4c">4c</a>03 · Ana sayfa — “Ne yaşıyorsun?”</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:6px 20px 0;font:500 10.5px/1 'DM Sans';letter-spacing:.14em;color:#6E7A57">AYET REHBERİ</div>
+  <div style="margin:14px 20px 0;display:flex;align-items:center;gap:9px;background:#FFFDF7;border:1px solid #DCD6C4;border-radius:11px;padding:12px 13px">
+    <svg width="15" height="15" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#8A8570" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#8A8570" stroke-width="1.6"></line></svg>
+    <span style="font:400 16px/1 'DM Sans';color:#8A8570">Ayet veya konu ara</span>
+  </div>
+  <div style="margin:16px 20px 0;display:flex;gap:8px">
+    <div style="flex:1;text-align:center;padding:11px 6px;border-radius:9px;background:#4E5B3A;font:500 15px/1 'DM Sans';color:#F4F1EA">Ne yaşıyorsun?</div>
+    <div style="flex:1;text-align:center;padding:11px 6px;border-radius:9px;border:1px solid #DCD6C4;font:500 15px/1 'DM Sans';color:#5A5647">Ne hakkında?</div>
+  </div>
+  <div style="flex:1;overflow:hidden;margin-top:18px;padding:0 20px;display:flex;flex-direction:column;gap:10px">
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:13px;padding:15px 16px"><div style="font:600 18px/1.25 'DM Sans';color:#1B1E19">Zor duygular</div><div style="margin-top:5px;font:400 14px/1.5 'DM Sans';color:#6A6656;text-wrap:pretty">Kaygı, korku, üzüntü gibi ağır günlerde okunacak ayetler.</div><div style="margin-top:9px;font:500 12.5px/1 'DM Sans';color:#6E7A57">10 kategori</div></div>
+    <div style="background:#FFFDF7;border:1.5px solid #4E5B3A;border-radius:13px;padding:15px 16px"><div style="font:600 18px/1.25 'DM Sans';color:#1B1E19">Güçlenme ve umut</div><div style="margin-top:5px;font:400 14px/1.5 'DM Sans';color:#6A6656;text-wrap:pretty">Sabır, tevekkül, şükür ve yeniden başlama üzerine ayetler.</div><div style="margin-top:9px;font:500 12.5px/1 'DM Sans';color:#6E7A57">10 kategori</div></div>
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:13px;padding:15px 16px"><div style="font:600 18px/1.25 'DM Sans';color:#1B1E19">Kayıp, hastalık, kriz</div><div style="margin-top:5px;font:400 14px/1.5 'DM Sans';color:#6A6656;text-wrap:pretty">Hastalık, yas, maddi sıkıntı ve haksızlık zamanları için.</div><div style="margin-top:9px;font:500 12.5px/1 'DM Sans';color:#6E7A57">10 kategori</div></div>
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:13px;padding:15px 16px 40px"><div style="font:600 18px/1.25 'DM Sans';color:#1B1E19">Kararlar ve değişim</div><div style="margin-top:5px;font:400 14px/1.5 'DM Sans';color:#6A6656">Karar vermek, belirsizlik, ayrılık ve yeni bir düzen.</div></div>
+  </div>
+  <div style="border-top:1px solid #E3DECF;padding:13px 20px 0"><div style="font:500 10.5px/1 'DM Sans';letter-spacing:.1em;color:#8A8570">SON BAKILANLAR</div><div style="margin-top:10px;display:flex;gap:8px"><div style="padding:8px 13px;border:1px solid #DCD6C4;border-radius:20px;font:500 14px/1 'DM Sans';color:#3D4433">Sabır</div><div style="padding:8px 13px;border:1px solid #DCD6C4;border-radius:20px;font:500 14px/1 'DM Sans';color:#3D4433">Yas ve kayıp</div><div style="padding:8px 13px;border:1px solid #DCD6C4;border-radius:20px;font:500 14px/1 'DM Sans';color:#3D4433">Şükür</div></div></div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">İlk açılışta son bakılanlar boş olur; burada dönen kullanıcı hâli gösteriliyor. Seçilen kart: Güçlenme ve umut.</p>
+</div>
+
+<div class="dv-opt" id="4d">
+<div class="dv-olabel"><a class="dv-oid" href="#4d">4d</a>04 · Arama modu — boş</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" keyboard="keyboard" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 0;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;gap:10px">
+    <div style="flex:1;display:flex;align-items:center;gap:9px;background:#FFFDF7;border:1.5px solid #4E5B3A;border-radius:11px;padding:12px 13px">
+      <svg width="15" height="15" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#4E5B3A" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#4E5B3A" stroke-width="1.6"></line></svg>
+      <span style="font:400 16px/1 'DM Sans';color:#1B1E19">sab<span style="opacity:.35">|</span></span>
+    </div>
+    <div style="font:500 15px/1 'DM Sans';color:#6E7A57;flex:none">Vazgeç</div>
+  </div>
+  <div style="padding:22px 20px 0">
+    <div style="font:500 10.5px/1 'DM Sans';letter-spacing:.1em;color:#8A8570">SON ARAMALAR</div>
+    <div style="margin-top:14px;display:flex;flex-direction:column;gap:0">
+      <div style="padding:13px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:center"><span style="font:400 16.5px/1 'DM Sans';color:#2A2D26">sabır</span><span style="font:400 15px/1 'DM Sans';color:#A8A392">✕</span></div>
+      <div style="padding:13px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:center"><span style="font:400 16.5px/1 'DM Sans';color:#2A2D26">yalnızlık</span><span style="font:400 15px/1 'DM Sans';color:#A8A392">✕</span></div>
+      <div style="padding:13px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:center"><span style="font:400 16.5px/1 'DM Sans';color:#2A2D26">borç</span><span style="font:400 15px/1 'DM Sans';color:#A8A392">✕</span></div>
+    </div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Yeni ekran açılmıyor; aile kartları yerini aramaya bırakıyor. Klavye açık, “Vazgeç” geri döndürüyor.</p>
+</div>
+
+<div class="dv-opt" id="4e">
+<div class="dv-olabel"><a class="dv-oid" href="#4e">4e</a>05 · Arama sonuçları — iki bölüm</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;gap:10px">
+    <div style="flex:1;display:flex;align-items:center;gap:9px;background:#FFFDF7;border:1.5px solid #4E5B3A;border-radius:11px;padding:12px 13px">
+      <svg width="15" height="15" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#4E5B3A" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#4E5B3A" stroke-width="1.6"></line></svg>
+      <span style="font:400 16px/1 'DM Sans';color:#1B1E19">sabır</span>
+    </div>
+    <div style="font:500 15px/1 'DM Sans';color:#6E7A57;flex:none">Vazgeç</div>
+  </div>
+  <div style="flex:1;overflow:hidden;padding:20px 20px 0">
+    <div style="font:500 10.5px/1 'DM Sans';letter-spacing:.1em;color:#8A8570">MEALDE GEÇENLER · 12</div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF;margin-top:11px">
+      <div style="font:500 13px/1 'DM Sans';color:#6E7A57">Bakara · 2:153</div>
+      <div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 15.5px/1.65 Spectral,serif;color:#2A2D26">Ey iman edenler, <span style="background:#E2E6D4">sabır</span> ve namazla dayanma gücü arayın; dayananlarla birlikte olan</div>
+    </div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF">
+      <div style="font:500 13px/1 'DM Sans';color:#6E7A57">Ra'd · 13:24</div>
+      <div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 15.5px/1.65 Spectral,serif;color:#2A2D26"><span style="background:#E2E6D4">Sabır</span> ettiğiniz için size selam olsun; sonucun güzel olduğu yurda hoş geldiniz</div>
+    </div>
+    <div style="padding:22px 0 0;margin-top:6px;border-top:1px solid #CFC8B4">
+      <div style="font:500 10.5px/1 'DM Sans';letter-spacing:.1em;color:#8A8570">İLGİLİ KONULAR · 4</div>
+      <div style="margin-top:12px;display:flex;flex-direction:column;gap:8px">
+        <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:11px;padding:13px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px"><div style="min-width:0"><div style="font:600 16px/1.2 'DM Sans';color:#1B1E19">Sabır</div><div style="margin-top:3px;font:400 12.5px/1 'DM Sans';color:#8A8570">Güçlenme ve umut · 8 ayet</div></div><span style="font:400 18px/1 'DM Sans';color:#A8A392">›</span></div>
+        <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:11px;padding:13px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px"><div style="min-width:0"><div style="font:600 16px/1.2 'DM Sans';color:#1B1E19">Tevekkül</div><div style="margin-top:3px;font:400 12.5px/1 'DM Sans';color:#8A8570">Güçlenme ve umut · 6 ayet</div></div><span style="font:400 18px/1 'DM Sans';color:#A8A392">›</span></div>
+        <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:11px;padding:13px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px"><div style="min-width:0"><div style="font:600 16px/1.2 'DM Sans';color:#1B1E19">İmtihan bilinci</div><div style="margin-top:3px;font:400 12.5px/1 'DM Sans';color:#8A8570">Kayıp, hastalık, kriz · 7 ayet</div></div><span style="font:400 18px/1 'DM Sans';color:#A8A392">›</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">İki bölüm ayrı başlıkta: eşleşen mealler ve kategori önerileri karışmıyor.</p>
+</div>
+
+<div class="dv-opt" id="4f">
+<div class="dv-olabel"><a class="dv-oid" href="#4f">4f</a>06 · Sonuç yok</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;gap:10px">
+    <div style="flex:1;display:flex;align-items:center;gap:9px;background:#FFFDF7;border:1.5px solid #4E5B3A;border-radius:11px;padding:12px 13px">
+      <svg width="15" height="15" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#4E5B3A" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#4E5B3A" stroke-width="1.6"></line></svg>
+      <span style="font:400 16px/1 'DM Sans';color:#1B1E19">iş görüşmesi</span>
+    </div>
+    <div style="font:500 15px/1 'DM Sans';color:#6E7A57;flex:none">Vazgeç</div>
+  </div>
+  <div style="flex:1;overflow:hidden;padding:26px 20px 0">
+    <div style="font:400 20px/1.45 Spectral,serif;color:#1B1E19;text-wrap:pretty">Bu kelime mealde geçmiyor.</div>
+    <div style="margin-top:10px;font:400 14.5px/1.6 'DM Sans';color:#6A6656;text-wrap:pretty">Yakın duran konular şunlar; birinden girip ayetlere bakabilirsin.</div>
+    <div style="margin-top:22px;display:flex;flex-direction:column;gap:8px">
+      <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:11px;padding:13px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px"><div style="min-width:0"><div style="font:600 16px/1.2 'DM Sans';color:#1B1E19">Bekleyiş</div><div style="margin-top:3px;font:400 12.5px/1 'DM Sans';color:#8A8570">Kararlar ve değişim · 6 ayet</div></div><span style="font:400 18px/1 'DM Sans';color:#A8A392">›</span></div>
+      <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:11px;padding:13px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px"><div style="min-width:0"><div style="font:600 16px/1.2 'DM Sans';color:#1B1E19">İşsizlik</div><div style="margin-top:3px;font:400 12.5px/1 'DM Sans';color:#8A8570">Kayıp, hastalık, kriz · 5 ayet</div></div><span style="font:400 18px/1 'DM Sans';color:#A8A392">›</span></div>
+      <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:11px;padding:13px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px"><div style="min-width:0"><div style="font:600 16px/1.2 'DM Sans';color:#1B1E19">Hedef ve niyet</div><div style="margin-top:3px;font:400 12.5px/1 'DM Sans';color:#8A8570">Kararlar ve değişim · 7 ayet</div></div><span style="font:400 18px/1 'DM Sans';color:#A8A392">›</span></div>
+    </div>
+    <div style="margin-top:24px;padding-top:16px;border-top:1px solid #E3DECF;font:400 13px/1.6 'DM Sans';color:#8A8570;text-wrap:pretty">Arama, meal metninde ve kategori adlarında geçen kelimelere bakar.</div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Boş sonuç bir çıkmaz değil: yakın konular öneriliyor, özür dili yok.</p>
+</div>
+
+<div class="dv-opt" id="4g">
+<div class="dv-olabel"><a class="dv-oid" href="#4g">4g</a>07 · Aile detayı — geçiş noktası</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;gap:6px;font:500 15px/1 'DM Sans';color:#6E7A57"><span style="font-size:20px;line-height:1">‹</span>Ne yaşıyorsun?</div>
+  <div style="padding:16px 20px 0">
+    <div style="font:600 27px/1.15 'DM Sans';color:#1B1E19">Güçlenme ve umut</div>
+    <div style="margin-top:7px;font:400 14.5px/1.55 'DM Sans';color:#6A6656;text-wrap:pretty">Ayakta kalma tarafı: sabır, tevekkül, şükür ve yeniden başlamak.</div>
+    <div style="margin-top:12px;font:500 12.5px/1 'DM Sans';color:#8A8570">10 kategori · 68 ayet</div>
+  </div>
+  <div style="flex:1;overflow:hidden;margin-top:18px;padding:0 20px">
+    <div style="padding:14px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:center"><span style="font:500 17px/1.2 'DM Sans';color:#2A2D26">Umut</span><span style="font:400 13px/1 'DM Sans';color:#8A8570">7 ayet ›</span></div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:center"><span style="font:500 17px/1.2 'DM Sans';color:#2A2D26">Sabır</span><span style="font:400 13px/1 'DM Sans';color:#8A8570">8 ayet ›</span></div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:center"><span style="font:500 17px/1.2 'DM Sans';color:#2A2D26">Tevekkül</span><span style="font:400 13px/1 'DM Sans';color:#8A8570">6 ayet ›</span></div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:center"><span style="font:500 17px/1.2 'DM Sans';color:#2A2D26">Cesaret</span><span style="font:400 13px/1 'DM Sans';color:#8A8570">5 ayet ›</span></div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:center"><span style="font:500 17px/1.2 'DM Sans';color:#2A2D26">Şükür</span><span style="font:400 13px/1 'DM Sans';color:#8A8570">7 ayet ›</span></div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:center"><span style="font:500 17px/1.2 'DM Sans';color:#2A2D26">Tövbe</span><span style="font:400 13px/1 'DM Sans';color:#8A8570">6 ayet ›</span></div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:center"><span style="font:500 17px/1.2 'DM Sans';color:#2A2D26">Bağışlanma ümidi</span><span style="font:400 13px/1 'DM Sans';color:#8A8570">7 ayet ›</span></div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:center"><span style="font:500 17px/1.2 'DM Sans';color:#2A2D26">Yeni başlangıç</span><span style="font:400 13px/1 'DM Sans';color:#8A8570">6 ayet ›</span></div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:center"><span style="font:500 17px/1.2 'DM Sans';color:#2A2D26">İç huzur</span><span style="font:400 13px/1 'DM Sans';color:#8A8570">8 ayet ›</span></div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:center"><span style="font:500 17px/1.2 'DM Sans';color:#2A2D26">Ferahlık</span><span style="font:400 13px/1 'DM Sans';color:#8A8570">8 ayet ›</span></div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Sade düz liste; 10 kategori tek ekranda, durulacak yer değil.</p>
+</div>
+
+<div class="dv-opt" id="4h">
+<div class="dv-olabel"><a class="dv-oid" href="#4h">4h</a>08 · Kategori detayı — ayet listesi</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;gap:6px;font:500 15px/1 'DM Sans';color:#6E7A57"><span style="font-size:20px;line-height:1">‹</span>Güçlenme ve umut</div>
+  <div style="padding:16px 20px 0">
+    <div style="font:600 28px/1.15 'DM Sans';color:#1B1E19">Sabır</div>
+    <div style="margin-top:7px;font:400 14.5px/1.55 'DM Sans';color:#6A6656;text-wrap:pretty">Zorluk uzadığında dayanma gücü üzerine ayetler; kaçmak değil, taşımak üzerine.</div>
+  </div>
+  <div style="margin:16px 20px 0;display:flex;align-items:center;gap:9px;background:#EDE9DC;border-radius:10px;padding:11px 13px">
+    <svg width="14" height="14" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#8A8570" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#8A8570" stroke-width="1.6"></line></svg>
+    <span style="font:400 15px/1 'DM Sans';color:#8A8570">Bu kategoride ara</span>
+  </div>
+  <div style="padding:16px 20px 8px;font:500 12.5px/1 'DM Sans';color:#8A8570">8 ayet</div>
+  <div style="flex:1;overflow:hidden;padding:0 20px">
+    <div style="padding:14px 0;border-top:1px solid #E3DECF"><div style="font:500 13px/1 'DM Sans';color:#6E7A57">İnşirah · 94:6</div><div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 15.5px/1.65 Spectral,serif;color:#2A2D26">Şüphesiz her zorluğun ardından bir genişlik gelir.</div></div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF;background:#EDE9DC;margin:0 -8px;padding-left:8px;padding-right:8px;border-radius:8px"><div style="font:500 13px/1 'DM Sans';color:#6E7A57">Ra'd · 13:28</div><div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 15.5px/1.65 Spectral,serif;color:#2A2D26">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler; iyilik edenleri seven bir merhamet sahibi</div></div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF"><div style="font:500 13px/1 'DM Sans';color:#6E7A57">Bakara · 2:153</div><div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 15.5px/1.65 Spectral,serif;color:#2A2D26">Ey iman edenler, sabır ve namazla dayanma gücü arayın; dayananlarla birlikte olan</div></div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF"><div style="font:500 13px/1 'DM Sans';color:#6E7A57">Hucurât · 49:12</div><div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 15.5px/1.65 Spectral,serif;color:#2A2D26">Birbirinizin eksiğini araştırmayın ve arkasından konuşmayın; kimse kardeşinin etini yemek ister mi</div></div>
+    <div style="padding:14px 0 0;border-top:1px solid #E3DECF"><div style="font:500 13px/1 'DM Sans';color:#6E7A57">Nûr · 24:35</div></div>
+  </div>
+  <div style="border-top:1px solid #E3DECF;padding:13px 20px 0"><div style="font:500 10.5px/1 'DM Sans';letter-spacing:.1em;color:#8A8570">İLGİLİ KATEGORİLER</div><div style="margin-top:10px;display:flex;gap:8px"><div style="padding:8px 13px;border:1px solid #DCD6C4;border-radius:20px;font:500 14px/1 'DM Sans';color:#3D4433">Tevekkül</div><div style="padding:8px 13px;border:1px solid #DCD6C4;border-radius:20px;font:500 14px/1 'DM Sans';color:#3D4433">İç huzur</div><div style="padding:8px 13px;border:1px solid #DCD6C4;border-radius:20px;font:500 14px/1 'DM Sans';color:#3D4433">İmtihan</div></div></div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Uzun meal 2 satırda kırpılıyor. Dokunulan satır Ra'd 13:28.</p>
+</div>
+
+<div class="dv-opt" id="4i">
+<div class="dv-olabel"><a class="dv-oid" href="#4i">4i</a>09 · Ayet odak — okuma</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:6px;font:500 15px/1 'DM Sans';color:#6E7A57"><span style="font-size:20px;line-height:1">‹</span>Sabır</div>
+    <div style="font:500 14px/1 'DM Sans';color:#6E7A57">Kaydet</div>
+  </div>
+  <div style="flex:1;overflow:hidden;padding:26px 24px 0">
+    <div style="font:600 15px/1 'DM Sans';color:#4E5B3A">Ra'd · 13:28</div>
+    <div style="margin-top:20px;font:400 24px/1.62 Spectral,serif;color:#1B1E19;text-wrap:pretty">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler; iyilik edenleri seven bir merhamet sahibi, onların çabasını karşılıksız bırakmaz ve gönüllerine bir dinginlik indirir.</div>
+    <div style="margin-top:22px;font:400 12.5px/1.5 'DM Sans';color:#8A8570">Türkçe meal · kaynak sürümü 0.1 (yer tutucu metin)</div>
+  </div>
+  <div style="padding:0 24px 18px">
+    <div style="display:flex;gap:9px;margin-bottom:16px">
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 0;border-radius:12px;background:#4E5B3A;font:500 16px/1 'DM Sans';color:#F4F1EA"><span style="font-size:12px">▶</span>Oynat</div>
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:15px 0;border-radius:12px;border:1px solid #CFC8B4;font:500 16px/1 'DM Sans';color:#3D4433">Bağlamı gör</div>
+    </div>
+    <div style="font:500 10.5px/1 'DM Sans';letter-spacing:.1em;color:#8A8570">BU AYETİN KATEGORİLERİ</div>
+    <div style="margin-top:11px;display:flex;flex-wrap:wrap;gap:7px">
+      <div style="padding:8px 12px;border-radius:8px;background:#E7E3D4;font:500 13.5px/1 'DM Sans';color:#3D4433">Sabır</div>
+      <div style="padding:8px 12px;border-radius:8px;background:#E7E3D4;font:500 13.5px/1 'DM Sans';color:#3D4433">İç huzur</div>
+      <div style="padding:8px 12px;border-radius:8px;background:#E7E3D4;font:500 13.5px/1 'DM Sans';color:#3D4433">Affetmek ve barışmak</div>
+      <div style="padding:8px 12px;border-radius:8px;background:#E7E3D4;font:500 13.5px/1 'DM Sans';color:#3D4433">Öfke</div>
+    </div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Meal ekranın tek kahramanı; kaynak satırı gizlenmiyor.</p>
+</div>
+
+<div class="dv-opt" id="4j">
+<div class="dv-olabel"><a class="dv-oid" href="#4j">4j</a>10 · Bağlam sheet'i — önceki 2, sonraki 2</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden;position:relative">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;justify-content:space-between;opacity:.4">
+    <div style="display:flex;align-items:center;gap:6px;font:500 15px/1 'DM Sans';color:#6E7A57"><span style="font-size:20px;line-height:1">‹</span>Sabır</div>
+    <div style="font:500 14px/1 'DM Sans';color:#6E7A57">Kaydet</div>
+  </div>
+  <div style="padding:26px 24px 0;opacity:.4">
+    <div style="font:600 15px/1 'DM Sans';color:#4E5B3A">Ra'd · 13:28</div>
+    <div style="margin-top:20px;font:400 24px/1.62 Spectral,serif;color:#1B1E19">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler;</div>
+  </div>
+  <div style="position:absolute;left:0;right:0;bottom:0;top:196px;background:#FFFDF7;border-radius:20px 20px 0 0;box-shadow:0 -12px 40px rgba(27,30,25,.16);display:flex;flex-direction:column;overflow:hidden">
+    <div style="padding:10px 0 0;display:flex;justify-content:center"><div style="width:38px;height:4px;border-radius:2px;background:#DCD6C4"></div></div>
+    <div style="padding:14px 22px 0;display:flex;align-items:baseline;justify-content:space-between">
+      <div><div style="font:600 19px/1.2 'DM Sans';color:#1B1E19">Bağlam</div><div style="margin-top:4px;font:400 13px/1.5 'DM Sans';color:#8A8570">Ra'd suresi · 26–30. ayetler</div></div>
+      <div style="font:500 14px/1 'DM Sans';color:#6E7A57">Kapat</div>
+    </div>
+    <div style="flex:1;overflow:hidden;padding:16px 22px 0">
+      <div style="padding:12px 0;border-top:1px solid #EDE9DC"><div style="font:500 12.5px/1 'DM Sans';color:#8A8570">13:26</div><div style="margin-top:5px;font:400 15px/1.6 Spectral,serif;color:#6A6656">Rızkı genişleten ve ölçüyle veren O'dur; kimileri bu dünyanın hâline sevinir, oysa dünya geçici bir yararlanmadır.</div></div>
+      <div style="padding:12px 0;border-top:1px solid #EDE9DC"><div style="font:500 12.5px/1 'DM Sans';color:#8A8570">13:27</div><div style="margin-top:5px;font:400 15px/1.6 Spectral,serif;color:#6A6656">Diyorlar ki: Ona bir işaret indirilseydi. Yolunu arayana yol gösterilir, yüzünü çevirene değil.</div></div>
+      <div style="padding:14px 12px;margin:6px -12px;border-radius:10px;background:#EDE9DC"><div style="font:600 12.5px/1 'DM Sans';color:#4E5B3A">13:28 · okuduğun ayet</div><div style="margin-top:5px;font:400 15.5px/1.6 Spectral,serif;color:#1B1E19">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler; gönüllerine bir dinginlik indirir.</div></div>
+      <div style="padding:12px 0;border-top:1px solid #EDE9DC"><div style="font:500 12.5px/1 'DM Sans';color:#8A8570">13:29</div><div style="margin-top:5px;font:400 15px/1.6 Spectral,serif;color:#6A6656">İnanan ve iyi işler yapanlara güzellik ve varılacak güzel bir yurt vardır.</div></div>
+      <div style="padding:12px 0;border-top:1px solid #EDE9DC"><div style="font:500 12.5px/1 'DM Sans';color:#8A8570">13:30</div><div style="margin-top:5px;font:400 15px/1.6 Spectral,serif;color:#6A6656">Sana da böyle bir bildirim gönderdik; kalpler ancak anmakla dinginlik bulur.</div></div>
+    </div>
+    <div style="padding:12px 22px 16px;border-top:1px solid #EDE9DC;font:400 12.5px/1.55 'DM Sans';color:#8A8570;text-wrap:pretty">Kategori adı, ayetin tek ve kesin anlamı değildir; bağlamı görmek için sure akışı burada.</div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Ürünün etik omurgası: ayet, sure akışının içinde gösteriliyor.</p>
+</div>
+
+<div class="dv-opt" id="4k">
+<div class="dv-olabel"><a class="dv-oid" href="#4k">4k</a>11 · Ayetten çıkış — mini player kalıyor</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:6px 20px 0;font:500 10.5px/1 'DM Sans';letter-spacing:.14em;color:#6E7A57">AYET REHBERİ</div>
+  <div style="margin:14px 20px 0;display:flex;align-items:center;gap:9px;background:#FFFDF7;border:1px solid #DCD6C4;border-radius:11px;padding:12px 13px">
+    <svg width="15" height="15" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#8A8570" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#8A8570" stroke-width="1.6"></line></svg>
+    <span style="font:400 16px/1 'DM Sans';color:#8A8570">Ayet veya konu ara</span>
+  </div>
+  <div style="margin:16px 20px 0;display:flex;gap:8px">
+    <div style="flex:1;text-align:center;padding:11px 6px;border-radius:9px;border:1px solid #DCD6C4;font:500 15px/1 'DM Sans';color:#5A5647">Ne yaşıyorsun?</div>
+    <div style="flex:1;text-align:center;padding:11px 6px;border-radius:9px;background:#4E5B3A;font:500 15px/1 'DM Sans';color:#F4F1EA">Ne hakkında?</div>
+  </div>
+  <div style="flex:1;overflow:hidden;margin-top:18px;padding:0 20px;display:flex;flex-direction:column;gap:10px">
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:13px;padding:15px 16px"><div style="font:600 18px/1.25 'DM Sans';color:#1B1E19">Allah'ı tanımak</div><div style="margin-top:5px;font:400 14px/1.5 'DM Sans';color:#6A6656;text-wrap:pretty">Birliği, isimleri, rahmeti ve adaleti üzerine ayetler.</div><div style="margin-top:9px;font:500 12.5px/1 'DM Sans';color:#6E7A57">10 kategori</div></div>
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:13px;padding:15px 16px"><div style="font:600 18px/1.25 'DM Sans';color:#1B1E19">İbadet ve kulluk</div><div style="margin-top:5px;font:400 14px/1.5 'DM Sans';color:#6A6656;text-wrap:pretty">Namaz, oruç, dua, zikir ve helal–haram üzerine ayetler.</div><div style="margin-top:9px;font:500 12.5px/1 'DM Sans';color:#6E7A57">10 kategori</div></div>
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:13px;padding:15px 16px"><div style="font:600 18px/1.25 'DM Sans';color:#1B1E19">Kıssalar ve peygamberler</div><div style="margin-top:5px;font:400 14px/1.5 'DM Sans';color:#6A6656;text-wrap:pretty">Hz. Yûsuf'tan Ashâb-ı Kehf'e, anlatılan hayatlar.</div><div style="margin-top:9px;font:500 12.5px/1 'DM Sans';color:#6E7A57">10 kategori</div></div>
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:13px;padding:15px 16px 30px"><div style="font:600 18px/1.25 'DM Sans';color:#1B1E19">Kâinat ve yaratılış</div><div style="margin-top:5px;font:400 14px/1.5 'DM Sans';color:#6A6656">Gece ve gündüz, yağmur, dağlar, yıldızlar.</div></div>
+  </div>
+  <div style="background:#EDE9DC;border-top:1px solid #E3DECF;padding:11px 20px;display:flex;align-items:center;gap:12px">
+    <div style="width:34px;height:34px;border-radius:8px;background:#4E5B3A;display:flex;align-items:center;justify-content:center;font:400 13px/1 'DM Sans';color:#F4F1EA;letter-spacing:1px">❙❙</div>
+    <div style="flex:1;min-width:0"><div style="font:500 13.5px/1.2 'DM Sans';color:#1B1E19">Ra'd · 13:28</div><div style="margin-top:3px;font:400 11.5px/1 'DM Sans';color:#8A8570">okunuyor · 0:41 / 1:02</div></div>
+    <div style="font:400 15px/1 'DM Sans';color:#8A8570">✕</div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Ses kesilmiyor; kullanıcı konu eksenine geçse bile alt çubuk kalıyor.</p>
+</div>
+
+<div class="dv-opt" id="4l">
+<div class="dv-olabel"><a class="dv-oid" href="#4l">4l</a>12 · Kaydedilenler — ilk kez boş</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;gap:6px;font:500 15px/1 'DM Sans';color:#6E7A57"><span style="font-size:20px;line-height:1">‹</span>Ana sayfa</div>
+  <div style="padding:16px 20px 0"><div style="font:600 28px/1.15 'DM Sans';color:#1B1E19">Kaydedilenler</div></div>
+  <div style="flex:1;padding:0 20px;display:flex;flex-direction:column;justify-content:center">
+    <div style="width:34px;height:34px;border-radius:9px;border:1.5px solid #CFC8B4"></div>
+    <div style="margin-top:20px;font:400 22px/1.4 Spectral,serif;color:#1B1E19;text-wrap:pretty">Burası senin ayrı tuttuğun ayetlerin yeri.</div>
+    <div style="margin-top:12px;font:400 15px/1.65 'DM Sans';color:#6A6656;text-wrap:pretty">Bir ayeti okurken Kaydet'e dokun; buraya en son kaydettiğin üstte gelir. Kayıtlar cihazda kalır.</div>
+    <div style="margin-top:24px;display:inline-flex;align-self:flex-start;padding:14px 20px;border-radius:12px;background:#4E5B3A;font:500 16px/1 'DM Sans';color:#F4F1EA">Kategorilere göz at</div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Boş durum davet ediyor: alanı adlandırıyor ve ne yapılacağını söylüyor.</p>
+</div>
+
+<div class="dv-opt" id="4m">
+<div class="dv-olabel"><a class="dv-oid" href="#4m">4m</a>13 · Kaydedilenler — dolu, silme onayı</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden;position:relative">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;gap:6px;font:500 15px/1 'DM Sans';color:#6E7A57"><span style="font-size:20px;line-height:1">‹</span>Ana sayfa</div>
+  <div style="padding:16px 20px 0"><div style="font:600 28px/1.15 'DM Sans';color:#1B1E19">Kaydedilenler</div><div style="margin-top:6px;font:500 12.5px/1 'DM Sans';color:#8A8570">4 ayet · en son kaydedilen üstte</div></div>
+  <div style="flex:1;overflow:hidden;margin-top:16px;padding:0 20px">
+    <div style="display:flex;gap:0;border-top:1px solid #E3DECF">
+      <div style="flex:1;min-width:0;padding:14px 0"><div style="font:500 13px/1 'DM Sans';color:#6E7A57">Ra'd · 13:28</div><div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 15.5px/1.65 Spectral,serif;color:#2A2D26">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler; iyilik</div></div>
+      <div style="width:88px;flex:none;margin:8px -20px 8px 12px;border-radius:10px 0 0 10px;background:#8A5A2B;display:flex;align-items:center;justify-content:center;font:500 14.5px/1 'DM Sans';color:#F4F1EA">Sil</div>
+    </div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF"><div style="font:500 13px/1 'DM Sans';color:#6E7A57">İnşirah · 94:6</div><div style="margin-top:6px;font:400 15.5px/1.65 Spectral,serif;color:#2A2D26">Şüphesiz her zorluğun ardından bir genişlik gelir.</div></div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF"><div style="font:500 13px/1 'DM Sans';color:#6E7A57">Hucurât · 49:12</div><div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 15.5px/1.65 Spectral,serif;color:#2A2D26">Birbirinizin eksiğini araştırmayın ve arkasından konuşmayın; kimse kardeşinin etini</div></div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF"><div style="font:500 13px/1 'DM Sans';color:#6E7A57">Bakara · 2:282</div><div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 15.5px/1.65 Spectral,serif;color:#2A2D26">Ey iman edenler, belirli bir süreye kadar birbirinize borçlandığınız zaman onu yazın; aranızda bir</div></div>
+  </div>
+  <div style="position:absolute;left:0;right:0;bottom:0;background:rgba(27,30,25,.28);top:0"></div>
+  <div style="position:absolute;left:16px;right:16px;bottom:20px;background:#FFFDF7;border-radius:16px;padding:20px;box-shadow:0 16px 44px rgba(27,30,25,.24)">
+    <div style="font:600 18px/1.3 'DM Sans';color:#1B1E19">Bu ayeti kaydedilenlerden çıkar</div>
+    <div style="margin-top:8px;font:400 14.5px/1.6 'DM Sans';color:#6A6656;text-wrap:pretty">Ra'd 13:28 listeden kalkar. Ayet uygulamada kalmaya devam eder, kategorisinden yine bulabilirsin.</div>
+    <div style="margin-top:18px;display:flex;gap:9px">
+      <div style="flex:1;text-align:center;padding:14px 0;border-radius:11px;border:1px solid #CFC8B4;font:500 15.5px/1 'DM Sans';color:#3D4433">Vazgeç</div>
+      <div style="flex:1;text-align:center;padding:14px 0;border-radius:11px;background:#8A5A2B;font:500 15.5px/1 'DM Sans';color:#FFFDF7">Çıkar</div>
+    </div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Kaydırarak silme + onay; onay metni ne olacağını söylüyor, korkutmuyor.</p>
+</div>
+
+<div class="dv-opt" id="4n">
+<div class="dv-olabel"><a class="dv-oid" href="#4n">4n</a>14 · Ayarlar — ses kullanılamıyor uyarısı</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;gap:6px;font:500 15px/1 'DM Sans';color:#6E7A57"><span style="font-size:20px;line-height:1">‹</span>Ana sayfa</div>
+  <div style="padding:16px 20px 0"><div style="font:600 28px/1.15 'DM Sans';color:#1B1E19">Ayarlar</div></div>
+  <div style="flex:1;overflow:hidden;margin-top:20px;padding:0 20px">
+    <div style="font:500 10.5px/1 'DM Sans';letter-spacing:.1em;color:#8A8570">OKUMA</div>
+    <div style="margin-top:11px;background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:13px;overflow:hidden">
+      <div style="padding:15px 16px;border-bottom:1px solid #EDE9DC">
+        <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font:500 16px/1 'DM Sans';color:#1B1E19">Metin boyutu</span><span style="font:400 13.5px/1 'DM Sans';color:#8A8570">%135</span></div>
+        <div style="margin-top:14px;display:flex;align-items:center;gap:10px"><span style="font:400 13px/1 'DM Sans';color:#8A8570">A</span><div style="flex:1;height:3px;border-radius:2px;background:#E3DECF;position:relative"><div style="position:absolute;left:0;top:0;bottom:0;width:72%;border-radius:2px;background:#4E5B3A"></div><div style="position:absolute;left:72%;top:-7px;width:17px;height:17px;border-radius:9px;background:#FFFDF7;border:1px solid #CFC8B4;transform:translateX(-8px)"></div></div><span style="font:400 19px/1 'DM Sans';color:#3D4433">A</span></div>
+      </div>
+      <div style="padding:15px 16px;display:flex;justify-content:space-between;align-items:center"><span style="font:500 16px/1 'DM Sans';color:#1B1E19">Koyu tema</span><div style="width:48px;height:29px;border-radius:15px;background:#4E5B3A;position:relative"><div style="position:absolute;top:2.5px;right:2.5px;width:24px;height:24px;border-radius:12px;background:#FFFDF7"></div></div></div>
+    </div>
+    <div style="margin-top:22px;font:500 10.5px/1 'DM Sans';letter-spacing:.1em;color:#8A8570">SES</div>
+    <div style="margin-top:11px;background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:13px;padding:15px 16px">
+      <div style="font:500 16px/1.3 'DM Sans';color:#1B1E19">Türkçe konuşma sesi kurulu değil</div>
+      <div style="margin-top:7px;font:400 14px/1.6 'DM Sans';color:#6A6656;text-wrap:pretty">Meal sesi cihazın konuşma sesiyle okunur. iOS'ta Ayarlar › Erişilebilirlik › Konuşulan İçerik › Sesler bölümünden Türkçe sesi indirdiğinde Oynat düğmesi çalışır.</div>
+      <div style="margin-top:14px;display:inline-flex;padding:12px 16px;border-radius:11px;border:1px solid #CFC8B4;font:500 15px/1 'DM Sans';color:#3D4433">Ayarları aç</div>
+    </div>
+    <div style="margin-top:22px;padding:15px 16px;background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:13px;display:flex;justify-content:space-between;align-items:center"><span style="font:500 16px/1 'DM Sans';color:#1B1E19">Kaynaklar ve lisanslar</span><span style="font:400 18px/1 'DM Sans';color:#A8A392">›</span></div>
+    <div style="margin-top:16px;font:400 12.5px/1.6 'DM Sans';color:#8A8570;text-wrap:pretty">Hastalık, yas ve kriz kategorilerindeki ayetler profesyonel yardımın yerine geçmez.</div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Ses yoksa neyin eksik olduğu ve nereden kurulacağı yazılı; metin ölçeği ve tema burada.</p>
+</div>
+
+<div id="dv-end4"></div>
+</div>
+<p class="dv-next">Sıradaki adımlar: “bu akışı tıklanabilir prototip yap” · “aynı akışı koyu temada göster” · “%135 metin ölçeğinde akış turu”</p>
+</section>
+
+<section class="dv-turn" id="t3">
+<div class="dv-thd"><a class="dv-tid" href="#t3">3</a><span class="dv-tname">İlk giriş ekranı — düğmeye basınca uygulama açılır</span></div>
+<p class="dv-tsub">Brief'te onboarding yok, ekran sayısı da kapalı — bu yüzden yeni ekran eklemiyorum: 6 numaralı splash ekranının ilk açılış hâli olarak tasarlandı. Veri hazır olduğunda “Ayetlere başla” düğmesi görünür, basınca ana sayfa açılır; sonraki açılışlarda aynı ekran düğmesiz, doğrudan geçer. Aynı ekran üç palette (<a class="dv-oid" href="#1a">1a</a>, <a class="dv-oid" href="#1c">1c</a>, <a class="dv-oid" href="#1f">1f</a>) ve <a class="dv-oid" href="#3d">3d</a>'de zorunlu iki durumla.</p>
+<div class="dv-opts">
+
+<div class="dv-opt" id="3a">
+<div class="dv-olabel"><a class="dv-oid" href="#3a">3a</a>Zeytin</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden">
+  <div style="padding:34px 30px 0;display:flex;align-items:center;gap:11px">
+    <div style="width:26px;height:26px;border-radius:7px;background:#4E5B3A;flex:none"></div>
+    <div style="font:500 11px/1 'DM Sans';letter-spacing:.16em;color:#6E7A57">AYET REHBERİ</div>
+  </div>
+  <div style="padding:0 30px">
+    <div style="font:400 32px/1.35 Spectral,serif;color:#1B1E19;text-wrap:pretty">Yaşadığın şeye temas eden ayeti bul, oku, dinle.</div>
+    <div style="width:40px;height:1px;background:#CFC8B4;margin:24px 0"></div>
+    <div style="font:400 15.5px/1.65 'DM Sans';color:#6A6656;text-wrap:pretty">150 konu başlığında Türkçe meal rehberi. Sıralı okuma ya da hatim takibi yok; konuya göre ayet keşfi var.</div>
+  </div>
+  <div style="padding:0 30px">
+    <div style="display:flex;align-items:center;justify-content:center;padding:17px 0;border-radius:13px;background:#4E5B3A;font:500 17px/1 'DM Sans';color:#F4F1EA">Ayetlere başla</div>
+    <div style="margin-top:16px;text-align:center;font:400 13px/1.6 'DM Sans';color:#8A8570">Tamamen çevrimdışı çalışır · hesap gerekmez</div>
+    <div style="margin-top:22px;padding-top:16px;border-top:1px solid #E3DECF;font:400 12.5px/1.6 'DM Sans';color:#8A8570;text-wrap:pretty">Türkçe meal · kaynak sürümü 0.1. Meal ve kategori bilgileri Kaynaklar ve lisanslar ekranında.</div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Vaat tek cümlede: meal rehberi, mushaf okuyucu değil. Cami/hilal imgesi yok, marka yüzeyi tek bir düz blok.</p>
+</div>
+
+<div class="dv-opt" id="3b">
+<div class="dv-olabel"><a class="dv-oid" href="#3b">3b</a>Gece mürekkebi</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#101114;font-family:'Libre Franklin',system-ui;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden">
+  <div style="padding:34px 28px 0;display:flex;align-items:center;gap:11px">
+    <div style="width:24px;height:24px;border-radius:6px;background:#8FA6C4;flex:none"></div>
+    <div style="font:600 11px/1 'Libre Franklin';letter-spacing:.18em;color:#7E8CA3">AYET REHBERİ</div>
+  </div>
+  <div style="padding:0 28px">
+    <div style="font:300 30px/1.45 Newsreader,serif;color:#EDEBE6;text-wrap:pretty">Şüphesiz her zorluğun ardından bir genişlik gelir.</div>
+    <div style="margin-top:18px;font:600 12px/1 'Libre Franklin';letter-spacing:.1em;color:#8FA6C4">İNŞİRAH · 94:6</div>
+    <div style="margin-top:34px;font:400 15px/1.65 'Libre Franklin';color:#98A0AE;text-wrap:pretty">150 konu başlığında Türkçe meal rehberi. Durumundan ya da merak ettiğin konudan başla.</div>
+  </div>
+  <div style="padding:0 28px">
+    <div style="display:flex;align-items:center;justify-content:center;padding:17px 0;border-radius:13px;background:#EDEBE6;font:600 17px/1 'Libre Franklin';color:#101114">Ayetlere başla</div>
+    <div style="margin-top:16px;text-align:center;font:400 13px/1.6 'Libre Franklin';color:#6E7686">Tamamen çevrimdışı çalışır · hesap gerekmez</div>
+    <div style="margin-top:22px;padding-top:16px;border-top:1px solid #23262D;font:400 12.5px/1.6 'Libre Franklin';color:#6E7686;text-wrap:pretty">Açılışta gösterilen ayet, yalnızca yer tutucu metindir; kaynak seçildiğinde gerçek meal gelir.</div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Açılışta kısa bant bir ayet — uygulamanın ne olduğunu göstererek anlatıyor. Günlük rotasyon değil, sabit tek ayet.</p>
+</div>
+
+<div class="dv-opt" id="3c">
+<div class="dv-olabel"><a class="dv-oid" href="#3c">3c</a>Geometrik</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#EFEBE2;font-family:Manrope,system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:30px 26px 0;display:flex;align-items:center;gap:10px">
+    <div style="width:13px;height:13px;background:#B4553C;transform:rotate(45deg);flex:none"></div>
+    <div style="font:700 11px/1 Manrope;letter-spacing:.18em;color:#5C574C">AYET REHBERİ</div>
+  </div>
+  <div style="flex:1;overflow:hidden;padding:44px 26px 0">
+    <div style="font:700 34px/1.12 Manrope;color:#14161A;letter-spacing:-.025em;text-wrap:pretty">Konuya göre<br>ayet keşfi.</div>
+    <div style="margin-top:22px;font:400 18px/1.55 'EB Garamond',serif;color:#3A3D42;text-wrap:pretty">İki soru, iki eksen: ne yaşıyorsun, ne hakkında. 150 kategori, tek dokunuşla ayete iniyor.</div>
+    <div style="margin-top:30px;display:flex;gap:2px;height:64px">
+      <div style="flex:1;background:repeating-linear-gradient(45deg,#B4553C 0 6px,#EFEBE2 6px 12px,#14161A 12px 18px,#EFEBE2 18px 24px)"></div>
+      <div style="flex:1;background:repeating-linear-gradient(-45deg,#14161A 0 5px,#EFEBE2 5px 13px,#B4553C 13px 18px,#EFEBE2 18px 26px)"></div>
+      <div style="flex:1;background:repeating-linear-gradient(90deg,#14161A 0 4px,#EFEBE2 4px 14px,#B4553C 14px 17px,#EFEBE2 17px 28px)"></div>
+    </div>
+    <div style="margin-top:12px;font:500 11.5px/1 ui-monospace,Menlo,monospace;color:#7D786B">15 aile · 150 kategori · çevrimdışı</div>
+  </div>
+  <div style="padding:0 26px">
+    <div style="display:flex;align-items:center;justify-content:center;padding:17px 0;background:#14161A;font:700 17px/1 Manrope;color:#EFEBE2">Ayetlere başla</div>
+    <div style="margin-top:14px;font:500 12.5px/1.6 Manrope;color:#7D786B;text-wrap:pretty">Arapça kıraat bu sürümde yok; ses, cihazın Türkçe konuşma sesiyle meali okur.</div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Konumlandırma en açık burada: “Kur'an uygulaması” değil, konuya göre keşif. Desen aile işaretinin önizlemesi.</p>
+</div>
+
+<div class="dv-opt" id="3d">
+<div class="dv-olabel"><a class="dv-oid" href="#3d">3d</a>Zorunlu durumlar — yükleniyor · veri hatası</div>
+<div class="dv-set">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden">
+  <div style="padding:34px 30px 0;display:flex;align-items:center;gap:11px">
+    <div style="width:26px;height:26px;border-radius:7px;background:#4E5B3A;flex:none"></div>
+    <div style="font:500 11px/1 'DM Sans';letter-spacing:.16em;color:#6E7A57">AYET REHBERİ</div>
+  </div>
+  <div style="padding:0 30px">
+    <div style="font:400 32px/1.35 Spectral,serif;color:#1B1E19;text-wrap:pretty">Yaşadığın şeye temas eden ayeti bul, oku, dinle.</div>
+    <div style="width:40px;height:1px;background:#CFC8B4;margin:24px 0"></div>
+    <div style="font:400 15.5px/1.65 'DM Sans';color:#6A6656;text-wrap:pretty">150 konu başlığında Türkçe meal rehberi. Sıralı okuma ya da hatim takibi yok; konuya göre ayet keşfi var.</div>
+  </div>
+  <div style="padding:0 30px">
+    <div style="display:flex;align-items:center;justify-content:center;gap:10px;padding:17px 0;border-radius:13px;background:#E7E3D4;font:500 17px/1 'DM Sans';color:#8A8570">
+      <div style="width:14px;height:14px;border-radius:7px;border:2px solid #B9B2A0;border-top-color:#4E5B3A"></div>Kategoriler hazırlanıyor
+    </div>
+    <div style="margin-top:14px;height:3px;border-radius:2px;background:#E3DECF;position:relative"><div style="position:absolute;left:0;top:0;bottom:0;width:64%;border-radius:2px;background:#4E5B3A"></div></div>
+    <div style="margin-top:12px;text-align:center;font:400 13px/1.6 'DM Sans';color:#8A8570">İlk açılışta ayet dizini bir kez hazırlanır</div>
+    <div style="margin-top:20px;padding-top:16px;border-top:1px solid #E3DECF;font:400 12.5px/1.6 'DM Sans';color:#8A8570">Türkçe meal · kaynak sürümü 0.1</div>
+  </div>
+</div>
+</x-import>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden">
+  <div style="padding:34px 30px 0;display:flex;align-items:center;gap:11px">
+    <div style="width:26px;height:26px;border-radius:7px;background:#4E5B3A;flex:none"></div>
+    <div style="font:500 11px/1 'DM Sans';letter-spacing:.16em;color:#6E7A57">AYET REHBERİ</div>
+  </div>
+  <div style="padding:0 30px">
+    <div style="width:34px;height:34px;border-radius:9px;background:#E7E3D4;display:flex;align-items:center;justify-content:center;font:500 18px/1 'DM Sans';color:#8A5A2B">·</div>
+    <div style="margin-top:20px;font:400 27px/1.35 Spectral,serif;color:#1B1E19;text-wrap:pretty">Ayet dizini açılamadı.</div>
+    <div style="margin-top:14px;font:400 15.5px/1.65 'DM Sans';color:#6A6656;text-wrap:pretty">Uygulama içindeki veri dosyası okunamadı; bu bağlantıyla ilgili değil, uygulama zaten çevrimdışı çalışır. Dizin yeniden kurulabilir, kaydedilen ayetler silinmez.</div>
+  </div>
+  <div style="padding:0 30px">
+    <div style="display:flex;align-items:center;justify-content:center;padding:17px 0;border-radius:13px;background:#4E5B3A;font:500 17px/1 'DM Sans';color:#F4F1EA">Dizini yeniden kur</div>
+    <div style="margin-top:10px;display:flex;align-items:center;justify-content:center;padding:16px 0;border-radius:13px;border:1px solid #CFC8B4;font:500 16px/1 'DM Sans';color:#3D4433">Kaydedilenleri aç</div>
+    <div style="margin-top:20px;padding-top:16px;border-top:1px solid #E3DECF;font:400 12.5px/1.6 'DM Sans';color:#8A8570">Sürmesi hâlinde: Ayarlar › Kaynaklar ve lisanslar › Veriyi sıfırla</div>
+  </div>
+</div>
+</x-import>
+</div>
+<p class="dv-cap" style="width:826px">Aynı iskelet, düğme alanı hâl değiştiriyor. Hata metni ne olduğunu ve ne yapılacağını söylüyor; ünlem yok, özür yok, internet ifadesi yok.</p>
+</div>
+
+</div>
+<p class="dv-next">Sıradaki adımlar: “<a class="dv-oid" href="#3b">3b</a>'nin açık tema hâli” · “<a class="dv-oid" href="#3a">3a</a>'yı seç, ana sayfa <a class="dv-oid" href="#2b">2b</a> ile eşle” · “giriş ekranından ana sayfaya geçişi tıklanabilir yap”</p>
+</section>
+
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname">Ana sayfa — 4 kurgu denemesi</span></div>
+<p class="dv-tsub">Yalnızca ana sayfa. Renk sabit tutuldu (<a class="dv-oid" href="#1a">1a</a> Zeytin ve <a class="dv-oid" href="#1f">1f</a> Geometrik paletleri) ki karşılaştırma kurgu üzerinden olsun: iki eksen nasıl sunuluyor, arama nerede duruyor, son bakılanlar ne kadar yer alıyor. Ekran sayısı değişmedi; arama hâlâ aynı ekranın bir modu.</p>
+<div class="dv-opts">
+
+<div class="dv-opt" id="2a">
+<div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a>Soru önde · 2 kolon ızgara</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:10px 20px 0">
+    <div style="font:400 26px/1.3 Spectral,serif;color:#1B1E19;text-wrap:pretty">Ne yaşıyorsun?</div>
+    <div style="margin-top:8px;display:flex;gap:16px;align-items:baseline">
+      <div style="font:600 14px/1 'DM Sans';color:#4E5B3A;border-bottom:2px solid #4E5B3A;padding-bottom:5px">Durum</div>
+      <div style="font:500 14px/1 'DM Sans';color:#8A8570;padding-bottom:5px">Konu</div>
+    </div>
+  </div>
+  <div style="margin:14px 20px 0;display:flex;align-items:center;gap:9px;background:#FFFDF7;border:1px solid #DCD6C4;border-radius:11px;padding:12px 13px">
+    <svg width="15" height="15" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#8A8570" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#8A8570" stroke-width="1.6"></line></svg>
+    <span style="font:400 16px/1 'DM Sans';color:#8A8570">Ayet veya konu ara</span>
+  </div>
+  <div style="flex:1;overflow:hidden;margin-top:16px;padding:0 20px;display:grid;grid-template-columns:1fr 1fr;gap:9px;align-content:start">
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:12px;padding:14px;min-height:104px;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font:600 16.5px/1.2 'DM Sans';color:#1B1E19;text-wrap:pretty">Zor duygular</div>
+      <div style="font:500 12px/1 'DM Sans';color:#6E7A57">10 kategori</div>
+    </div>
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:12px;padding:14px;min-height:104px;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font:600 16.5px/1.2 'DM Sans';color:#1B1E19;text-wrap:pretty">Güçlenme ve umut</div>
+      <div style="font:500 12px/1 'DM Sans';color:#6E7A57">10 kategori</div>
+    </div>
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:12px;padding:14px;min-height:104px;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font:600 16.5px/1.2 'DM Sans';color:#1B1E19;text-wrap:pretty">Kayıp, hastalık, kriz</div>
+      <div style="font:500 12px/1 'DM Sans';color:#6E7A57">10 kategori</div>
+    </div>
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:12px;padding:14px;min-height:104px;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font:600 16.5px/1.2 'DM Sans';color:#1B1E19;text-wrap:pretty">Kararlar ve değişim</div>
+      <div style="font:500 12px/1 'DM Sans';color:#6E7A57">10 kategori</div>
+    </div>
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:12px;padding:14px;min-height:104px;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font:600 16.5px/1.2 'DM Sans';color:#1B1E19">İlişkiler</div>
+      <div style="font:500 12px/1 'DM Sans';color:#6E7A57">10 kategori</div>
+    </div>
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:12px;padding:14px;min-height:104px;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font:600 16.5px/1.2 'DM Sans';color:#1B1E19;text-wrap:pretty">Kendinle mücadele</div>
+      <div style="font:500 12px/1 'DM Sans';color:#6E7A57">10 kategori</div>
+    </div>
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:12px;padding:14px;min-height:60px;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font:600 16.5px/1.2 'DM Sans';color:#1B1E19;text-wrap:pretty">Hayat evreleri ve varoluş</div>
+    </div>
+    <div style="background:transparent;border:1px dashed #DCD6C4;border-radius:12px;padding:14px;min-height:60px;display:flex;align-items:center;justify-content:center;font:400 11px/1.4 ui-monospace,Menlo,monospace;color:#A8A392;text-align:center">7 aile<br>tek ekranda</div>
+  </div>
+  <div style="border-top:1px solid #E3DECF;padding:12px 20px 0">
+    <div style="display:flex;gap:8px;align-items:center">
+      <span style="font:500 11px/1 'DM Sans';letter-spacing:.1em;color:#8A8570;flex:none">SON</span>
+      <div style="padding:7px 12px;border:1px solid #DCD6C4;border-radius:18px;font:500 13.5px/1 'DM Sans';color:#3D4433">Sabır</div>
+      <div style="padding:7px 12px;border:1px solid #DCD6C4;border-radius:18px;font:500 13.5px/1 'DM Sans';color:#3D4433">Yas ve kayıp</div>
+      <div style="padding:7px 12px;border:1px solid #DCD6C4;border-radius:18px;font:500 13.5px/1 'DM Sans';color:#3D4433">Şükür</div>
+    </div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">7 aile kaydırmasız görünüyor; kart adı 2 satıra çıkabiliyor. Arama sorunun altında, ikincil.</p>
+</div>
+
+<div class="dv-opt" id="2b">
+<div class="dv-olabel"><a class="dv-oid" href="#2b">2b</a>Aile rayı + kategori listesi</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:6px 20px 0;display:flex;align-items:center;justify-content:space-between">
+    <div style="font:500 10.5px/1 'DM Sans';letter-spacing:.14em;color:#6E7A57">AYET REHBERİ</div>
+    <div style="font:500 13.5px/1 'DM Sans';color:#6E7A57">Kaydedilenler</div>
+  </div>
+  <div style="margin:12px 20px 0;display:flex;align-items:center;gap:9px;background:#FFFDF7;border:1px solid #DCD6C4;border-radius:11px;padding:12px 13px">
+    <svg width="15" height="15" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#8A8570" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#8A8570" stroke-width="1.6"></line></svg>
+    <span style="font:400 16px/1 'DM Sans';color:#8A8570">Ayet veya konu ara</span>
+  </div>
+  <div style="margin:16px 20px 0;display:flex;gap:8px">
+    <div style="flex:1;text-align:center;padding:11px 6px;border-radius:9px;background:#4E5B3A;font:500 15px/1 'DM Sans';color:#F4F1EA">Ne yaşıyorsun?</div>
+    <div style="flex:1;text-align:center;padding:11px 6px;border-radius:9px;border:1px solid #DCD6C4;font:500 15px/1 'DM Sans';color:#5A5647">Ne hakkında?</div>
+  </div>
+  <div style="margin-top:18px;padding:0 0 0 20px;display:flex;gap:8px;overflow:hidden;flex:none">
+    <div style="flex:none;width:132px;background:#4E5B3A;border-radius:12px;padding:13px 14px;box-sizing:border-box">
+      <div style="font:600 15.5px/1.25 'DM Sans';color:#F4F1EA;text-wrap:pretty">Zor duygular</div>
+      <div style="margin-top:22px;font:500 11.5px/1 'DM Sans';color:rgba(244,241,234,.7)">10 kategori</div>
+    </div>
+    <div style="flex:none;width:132px;background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:12px;padding:13px 14px;box-sizing:border-box">
+      <div style="font:600 15.5px/1.25 'DM Sans';color:#1B1E19;text-wrap:pretty">Güçlenme ve umut</div>
+      <div style="margin-top:22px;font:500 11.5px/1 'DM Sans';color:#6E7A57">10 kategori</div>
+    </div>
+    <div style="flex:none;width:132px;background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:12px;padding:13px 14px;box-sizing:border-box">
+      <div style="font:600 15.5px/1.25 'DM Sans';color:#1B1E19;text-wrap:pretty">Kayıp, hastalık, kriz</div>
+      <div style="margin-top:22px;font:500 11.5px/1 'DM Sans';color:#6E7A57">10 kategori</div>
+    </div>
+  </div>
+  <div style="padding:20px 20px 8px;display:flex;align-items:baseline;justify-content:space-between">
+    <div style="font:600 17px/1 'DM Sans';color:#1B1E19">Zor duygular</div>
+    <div style="font:500 13px/1 'DM Sans';color:#6E7A57">Tümü ›</div>
+  </div>
+  <div style="flex:1;overflow:hidden;padding:0 20px">
+    <div style="padding:13px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font:500 16.5px/1.2 'DM Sans';color:#2A2D26">Kaygı</span><span style="font:400 12.5px/1 'DM Sans';color:#8A8570">7 ayet</span></div>
+    <div style="padding:13px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font:500 16.5px/1.2 'DM Sans';color:#2A2D26">Korku</span><span style="font:400 12.5px/1 'DM Sans';color:#8A8570">6 ayet</span></div>
+    <div style="padding:13px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font:500 16.5px/1.2 'DM Sans';color:#2A2D26">Üzüntü</span><span style="font:400 12.5px/1 'DM Sans';color:#8A8570">8 ayet</span></div>
+    <div style="padding:13px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font:500 16.5px/1.2 'DM Sans';color:#2A2D26">Yalnızlık</span><span style="font:400 12.5px/1 'DM Sans';color:#8A8570">5 ayet</span></div>
+    <div style="padding:13px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font:500 16.5px/1.2 'DM Sans';color:#2A2D26">Umutsuzluk</span><span style="font:400 12.5px/1 'DM Sans';color:#8A8570">6 ayet</span></div>
+    <div style="padding:13px 0;border-top:1px solid #E3DECF;display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font:500 16.5px/1.2 'DM Sans';color:#2A2D26">Öfke</span><span style="font:400 12.5px/1 'DM Sans';color:#8A8570">7 ayet</span></div>
+  </div>
+  <div style="border-top:1px solid #E3DECF;padding:12px 20px 0">
+    <div style="font:500 10.5px/1 'DM Sans';letter-spacing:.1em;color:#8A8570">SON BAKILANLAR</div>
+    <div style="margin-top:9px;font:500 14.5px/1.5 'DM Sans';color:#3D4433">Sabır · Yas ve kayıp · Şükür</div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Aile detayı ekranını atlatır: kategoriler ana sayfada. Riski, iki eksenin rayda sıkışması.</p>
+</div>
+
+<div class="dv-opt" id="2c">
+<div class="dv-olabel"><a class="dv-oid" href="#2c">2c</a>İndeks — kodlu, yoğun</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#EFEBE2;font-family:Manrope,system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:8px 20px 0;display:flex;align-items:center;justify-content:space-between">
+    <div style="font:700 22px/1 Manrope;color:#14161A;letter-spacing:-.02em">150 kategori</div>
+    <div style="width:11px;height:11px;background:#B4553C;transform:rotate(45deg)"></div>
+  </div>
+  <div style="margin:12px 20px 0;display:flex;align-items:center;gap:9px;background:#E4DFD3;padding:12px 13px">
+    <svg width="15" height="15" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#7D786B" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#7D786B" stroke-width="1.6"></line></svg>
+    <span style="font:500 16px/1 Manrope;color:#7D786B">Ayet veya konu ara</span>
+  </div>
+  <div style="margin:14px 20px 0;display:flex;gap:2px">
+    <div style="flex:1;text-align:center;padding:11px 4px;background:#14161A;font:700 14px/1 Manrope;color:#EFEBE2">Ne yaşıyorsun? · 70</div>
+    <div style="flex:1;text-align:center;padding:11px 4px;background:#E4DFD3;font:600 14px/1 Manrope;color:#5C574C">Ne hakkında? · 80</div>
+  </div>
+  <div style="flex:1;overflow:hidden;margin-top:16px;padding:0 20px">
+    <div style="padding:12px 0;border-top:2px solid #14161A;display:flex;gap:12px;align-items:baseline">
+      <span style="width:16px;flex:none;font:700 13px/1 ui-monospace,Menlo,monospace;color:#B4553C">A</span>
+      <div style="flex:1;min-width:0">
+        <div style="font:700 16.5px/1.2 Manrope;color:#14161A">Zor duygular</div>
+        <div style="margin-top:5px;font:500 12.5px/1.5 Manrope;color:#676256">Kaygı · Korku · Üzüntü · Yalnızlık · Umutsuzluk · Öfke · +4</div>
+      </div>
+    </div>
+    <div style="padding:12px 0;border-top:1px solid #DCD6C6;display:flex;gap:12px;align-items:baseline">
+      <span style="width:16px;flex:none;font:700 13px/1 ui-monospace,Menlo,monospace;color:#B4553C">B</span>
+      <div style="flex:1;min-width:0">
+        <div style="font:700 16.5px/1.2 Manrope;color:#14161A">Güçlenme ve umut</div>
+        <div style="margin-top:5px;font:500 12.5px/1.5 Manrope;color:#676256">Umut · Sabır · Tevekkül · Cesaret · Şükür · Tövbe · +4</div>
+      </div>
+    </div>
+    <div style="padding:12px 0;border-top:1px solid #DCD6C6;display:flex;gap:12px;align-items:baseline">
+      <span style="width:16px;flex:none;font:700 13px/1 ui-monospace,Menlo,monospace;color:#B4553C">C</span>
+      <div style="flex:1;min-width:0">
+        <div style="font:700 16.5px/1.2 Manrope;color:#14161A">Kayıp, hastalık, kriz</div>
+        <div style="margin-top:5px;font:500 12.5px/1.5 Manrope;color:#676256">Hastalık · Yas ve kayıp · Maddi sıkıntı · Borç · +6</div>
+      </div>
+    </div>
+    <div style="padding:12px 0;border-top:1px solid #DCD6C6;display:flex;gap:12px;align-items:baseline">
+      <span style="width:16px;flex:none;font:700 13px/1 ui-monospace,Menlo,monospace;color:#B4553C">D</span>
+      <div style="flex:1;min-width:0">
+        <div style="font:700 16.5px/1.2 Manrope;color:#14161A">Kararlar ve değişim</div>
+        <div style="margin-top:5px;font:500 12.5px/1.5 Manrope;color:#676256">Karar vermek · İstişare · Belirsizlik · Ayrılık · +6</div>
+      </div>
+    </div>
+    <div style="padding:12px 0;border-top:1px solid #DCD6C6;display:flex;gap:12px;align-items:baseline">
+      <span style="width:16px;flex:none;font:700 13px/1 ui-monospace,Menlo,monospace;color:#B4553C">E</span>
+      <div style="flex:1;min-width:0">
+        <div style="font:700 16.5px/1.2 Manrope;color:#14161A">İlişkiler</div>
+        <div style="margin-top:5px;font:500 12.5px/1.5 Manrope;color:#676256">Anne baba · Evlilik · Çocuklar · Dostluk · +6</div>
+      </div>
+    </div>
+    <div style="padding:12px 0;border-top:1px solid #DCD6C6;display:flex;gap:12px;align-items:baseline">
+      <span style="width:16px;flex:none;font:700 13px/1 ui-monospace,Menlo,monospace;color:#B4553C">F</span>
+      <div style="flex:1;min-width:0">
+        <div style="font:700 16.5px/1.2 Manrope;color:#14161A">Kendinle mücadele</div>
+        <div style="margin-top:5px;font:500 12.5px/1.5 Manrope;color:#676256">Nefis ve dürtüler · Haset · Kibir · Kanaat · +6</div>
+      </div>
+    </div>
+    <div style="padding:12px 0;border-top:1px solid #DCD6C6;display:flex;gap:12px;align-items:baseline">
+      <span style="width:16px;flex:none;font:700 13px/1 ui-monospace,Menlo,monospace;color:#B4553C">M</span>
+      <div style="flex:1;min-width:0">
+        <div style="font:700 16.5px/1.2 Manrope;color:#14161A">Hayat evreleri ve varoluş</div>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:2px solid #14161A;padding:11px 20px 0">
+    <div style="font:700 10.5px/1 Manrope;letter-spacing:.16em;color:#7D786B">SON BAKILANLAR</div>
+    <div style="margin-top:8px;display:flex;gap:6px">
+      <div style="padding:7px 11px;background:#E4DFD3;font:600 13px/1 Manrope;color:#14161A">Sabır</div>
+      <div style="padding:7px 11px;background:#E4DFD3;font:600 13px/1 Manrope;color:#14161A">Yas ve kayıp</div>
+      <div style="padding:7px 11px;background:#E4DFD3;font:600 13px/1 Manrope;color:#14161A">Şükür</div>
+    </div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Aileyi kategori örnekleriyle açıyor — ne bulacağını baştan gösterir. Yoğun; %135 ölçekte önizleme satırı kısalır.</p>
+</div>
+
+<div class="dv-opt" id="2d">
+<div class="dv-olabel"><a class="dv-oid" href="#2d">2d</a>Arama önde · aile ikincil</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:14px 22px 0">
+    <div style="font:400 27px/1.35 Spectral,serif;color:#1B1E19;text-wrap:pretty">Bir kelime yaz, ya da<br>durumundan başla.</div>
+  </div>
+  <div style="margin:18px 22px 0;display:flex;align-items:center;gap:10px;background:#FFFDF7;border:1.5px solid #4E5B3A;border-radius:12px;padding:15px 14px">
+    <svg width="16" height="16" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#4E5B3A" stroke-width="1.7"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#4E5B3A" stroke-width="1.7"></line></svg>
+    <span style="font:400 17px/1 'DM Sans';color:#8A8570">Ayet veya konu ara</span>
+  </div>
+  <div style="padding:20px 22px 0">
+    <div style="font:500 10.5px/1 'DM Sans';letter-spacing:.1em;color:#8A8570">SON ARAMALAR</div>
+    <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:7px">
+      <div style="padding:8px 13px;border-radius:20px;background:#E7E3D4;font:500 14px/1 'DM Sans';color:#3D4433">sabır</div>
+      <div style="padding:8px 13px;border-radius:20px;background:#E7E3D4;font:500 14px/1 'DM Sans';color:#3D4433">yalnızlık</div>
+      <div style="padding:8px 13px;border-radius:20px;background:#E7E3D4;font:500 14px/1 'DM Sans';color:#3D4433">borç</div>
+      <div style="padding:8px 13px;border-radius:20px;background:#E7E3D4;font:500 14px/1 'DM Sans';color:#3D4433">Hz. Yûsuf</div>
+    </div>
+  </div>
+  <div style="margin:22px 22px 0;display:flex;gap:8px">
+    <div style="flex:1;text-align:center;padding:11px 6px;border-radius:9px;background:#4E5B3A;font:500 15px/1 'DM Sans';color:#F4F1EA">Ne yaşıyorsun?</div>
+    <div style="flex:1;text-align:center;padding:11px 6px;border-radius:9px;border:1px solid #DCD6C4;font:500 15px/1 'DM Sans';color:#5A5647">Ne hakkında?</div>
+  </div>
+  <div style="flex:1;overflow:hidden;margin-top:14px;padding:0 22px">
+    <div style="padding:14px 0;border-top:1px solid #E3DECF;display:flex;align-items:center;gap:12px">
+      <div style="flex:1;min-width:0"><div style="font:600 17px/1.2 'DM Sans';color:#1B1E19">Zor duygular</div><div style="margin-top:4px;font:400 13px/1.45 'DM Sans';color:#6A6656">Kaygı, korku, üzüntü gibi ağır günlerde.</div></div>
+      <span style="font:400 18px/1 'DM Sans';color:#A8A392;flex:none">›</span>
+    </div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF;display:flex;align-items:center;gap:12px">
+      <div style="flex:1;min-width:0"><div style="font:600 17px/1.2 'DM Sans';color:#1B1E19">Güçlenme ve umut</div><div style="margin-top:4px;font:400 13px/1.45 'DM Sans';color:#6A6656">Sabır, tevekkül, şükür, yeniden başlamak.</div></div>
+      <span style="font:400 18px/1 'DM Sans';color:#A8A392;flex:none">›</span>
+    </div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF;display:flex;align-items:center;gap:12px">
+      <div style="flex:1;min-width:0"><div style="font:600 17px/1.2 'DM Sans';color:#1B1E19">Kayıp, hastalık, kriz</div><div style="margin-top:4px;font:400 13px/1.45 'DM Sans';color:#6A6656">Hastalık, yas, maddi sıkıntı.</div></div>
+      <span style="font:400 18px/1 'DM Sans';color:#A8A392;flex:none">›</span>
+    </div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF;display:flex;align-items:center;gap:12px">
+      <div style="flex:1;min-width:0"><div style="font:600 17px/1.2 'DM Sans';color:#1B1E19">Kararlar ve değişim</div></div>
+      <span style="font:400 18px/1 'DM Sans';color:#A8A392;flex:none">›</span>
+    </div>
+  </div>
+</div>
+</x-import>
+<p class="dv-cap" style="width:402px">Arama birincil, aileler altta. Son aramalar boş durumu burada doğal duruyor; riski, taksonomiyi geri plana atması.</p>
+</div>
+
+</div>
+<p class="dv-next">Sıradaki adımlar: “<a class="dv-oid" href="#2b">2b</a>'yi <a class="dv-oid" href="#1c">1c</a> koyu paletiyle göster” · “<a class="dv-oid" href="#2a">2a</a> + <a class="dv-oid" href="#2c">2c</a>: ızgara ama kategori örnekleriyle” · “<a class="dv-oid" href="#2c">2c</a>'nin arama modu ve sonuç yok durumu”</p>
+</section>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Adım 1 — 6 görsel yön · 3 güvenli, 3 cesur</span></div>
+<p class="dv-tsub">Her yön aynı üç ekranla: ana sayfa (sekmeler + aile kartları) → kategori detayı (ayet listesi) → ayet odak (okuma). Ekranlar iOS 402×874 çerçevede, gerçek uzunluk bantlarındaki yer tutucu meallerle. Arapça metin hiçbir ekranda yok; hiyerarşi yalnızca sure adı, ayet numarası ve Türkçe meal üzerine kurulu. Etkileşim ve durum ekranları yön seçildikten sonra (Adım 2–3) üretilecek.</p>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Zeytin — güvenli</div>
+<div class="dv-set">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:6px 20px 0;font:500 10.5px/1 'DM Sans';letter-spacing:.14em;color:#6E7A57">AYET REHBERİ</div>
+  <div style="margin:14px 20px 0;display:flex;align-items:center;gap:9px;background:#FFFDF7;border:1px solid #DCD6C4;border-radius:11px;padding:12px 13px">
+    <svg width="15" height="15" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#8A8570" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#8A8570" stroke-width="1.6"></line></svg>
+    <span style="font:400 16px/1 'DM Sans';color:#8A8570">Ayet veya konu ara</span>
+  </div>
+  <div style="margin:16px 20px 0;display:flex;gap:8px">
+    <div style="flex:1;text-align:center;padding:11px 6px;border-radius:9px;background:#4E5B3A;font:500 15px/1 'DM Sans';color:#F4F1EA">Ne yaşıyorsun?</div>
+    <div style="flex:1;text-align:center;padding:11px 6px;border-radius:9px;background:transparent;border:1px solid #DCD6C4;font:500 15px/1 'DM Sans';color:#5A5647">Ne hakkında?</div>
+  </div>
+  <div style="flex:1;overflow:hidden;margin-top:18px;padding:0 20px;display:flex;flex-direction:column;gap:10px">
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:13px;padding:15px 16px">
+      <div style="font:600 18px/1.25 'DM Sans';color:#1B1E19">Zor duygular</div>
+      <div style="margin-top:5px;font:400 14px/1.5 'DM Sans';color:#6A6656;text-wrap:pretty">Kaygı, korku, üzüntü gibi ağır günlerde okunacak ayetler.</div>
+      <div style="margin-top:9px;font:500 12.5px/1 'DM Sans';color:#6E7A57">10 kategori</div>
+    </div>
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:13px;padding:15px 16px">
+      <div style="font:600 18px/1.25 'DM Sans';color:#1B1E19">Güçlenme ve umut</div>
+      <div style="margin-top:5px;font:400 14px/1.5 'DM Sans';color:#6A6656;text-wrap:pretty">Sabır, tevekkül, şükür ve yeniden başlama üzerine ayetler.</div>
+      <div style="margin-top:9px;font:500 12.5px/1 'DM Sans';color:#6E7A57">10 kategori</div>
+    </div>
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:13px;padding:15px 16px">
+      <div style="font:600 18px/1.25 'DM Sans';color:#1B1E19">Kayıp, hastalık, kriz</div>
+      <div style="margin-top:5px;font:400 14px/1.5 'DM Sans';color:#6A6656;text-wrap:pretty">Hastalık, yas, maddi sıkıntı ve haksızlık zamanları için.</div>
+      <div style="margin-top:9px;font:500 12.5px/1 'DM Sans';color:#6E7A57">10 kategori</div>
+    </div>
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:13px;padding:15px 16px">
+      <div style="font:600 18px/1.25 'DM Sans';color:#1B1E19">Kararlar ve değişim</div>
+      <div style="margin-top:5px;font:400 14px/1.5 'DM Sans';color:#6A6656;text-wrap:pretty">Karar vermek, belirsizlik, ayrılık ve yeni bir düzen kurmak.</div>
+      <div style="margin-top:9px;font:500 12.5px/1 'DM Sans';color:#6E7A57">10 kategori</div>
+    </div>
+    <div style="background:#FFFDF7;border:1px solid rgba(78,91,58,.18);border-radius:13px;padding:15px 16px 40px">
+      <div style="font:600 18px/1.25 'DM Sans';color:#1B1E19">İlişkiler</div>
+      <div style="margin-top:5px;font:400 14px/1.5 'DM Sans';color:#6A6656">Anne baba, evlilik, dostluk ve anlaşmazlıklar.</div>
+    </div>
+  </div>
+  <div style="border-top:1px solid #E3DECF;padding:13px 20px 0;background:#F4F1EA">
+    <div style="font:500 10.5px/1 'DM Sans';letter-spacing:.1em;color:#8A8570">SON BAKILANLAR</div>
+    <div style="margin-top:10px;display:flex;gap:8px">
+      <div style="padding:8px 13px;border:1px solid #DCD6C4;border-radius:20px;font:500 14px/1 'DM Sans';color:#3D4433">Sabır</div>
+      <div style="padding:8px 13px;border:1px solid #DCD6C4;border-radius:20px;font:500 14px/1 'DM Sans';color:#3D4433">Yas ve kayıp</div>
+      <div style="padding:8px 13px;border:1px solid #DCD6C4;border-radius:20px;font:500 14px/1 'DM Sans';color:#3D4433">Şükür</div>
+    </div>
+  </div>
+</div>
+</x-import>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;gap:6px;font:500 15px/1 'DM Sans';color:#6E7A57"><span style="font-size:20px;line-height:1">‹</span>Güçlenme ve umut</div>
+  <div style="padding:16px 20px 0">
+    <div style="font:600 28px/1.15 'DM Sans';color:#1B1E19">Sabır</div>
+    <div style="margin-top:7px;font:400 14.5px/1.55 'DM Sans';color:#6A6656;text-wrap:pretty">Zorluk uzadığında dayanma gücü üzerine ayetler; kaçmak değil, taşımak üzerine.</div>
+  </div>
+  <div style="margin:16px 20px 0;display:flex;align-items:center;gap:9px;background:#EDE9DC;border-radius:10px;padding:11px 13px">
+    <svg width="14" height="14" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#8A8570" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#8A8570" stroke-width="1.6"></line></svg>
+    <span style="font:400 15px/1 'DM Sans';color:#8A8570">Bu kategoride ara</span>
+  </div>
+  <div style="padding:16px 20px 8px;font:500 12.5px/1 'DM Sans';color:#8A8570">8 ayet</div>
+  <div style="flex:1;overflow:hidden;padding:0 20px">
+    <div style="padding:14px 0;border-top:1px solid #E3DECF">
+      <div style="font:500 13px/1 'DM Sans';color:#6E7A57">İnşirah · 94:6</div>
+      <div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 15.5px/1.65 Spectral,serif;color:#2A2D26">Şüphesiz her zorluğun ardından bir genişlik gelir.</div>
+    </div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF">
+      <div style="font:500 13px/1 'DM Sans';color:#6E7A57">Ra'd · 13:28</div>
+      <div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 15.5px/1.65 Spectral,serif;color:#2A2D26">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler; iyilik edenleri seven bir merhamet sahibi</div>
+    </div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF">
+      <div style="font:500 13px/1 'DM Sans';color:#6E7A57">Bakara · 2:282</div>
+      <div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 15.5px/1.65 Spectral,serif;color:#2A2D26">Ey iman edenler, belirli bir süreye kadar birbirinize borçlandığınız zaman onu yazın; aranızda bir yazıcı doğrulukla yazsın</div>
+    </div>
+    <div style="padding:14px 0;border-top:1px solid #E3DECF">
+      <div style="font:500 13px/1 'DM Sans';color:#6E7A57">Hucurât · 49:12</div>
+      <div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 15.5px/1.65 Spectral,serif;color:#2A2D26">Birbirinizin eksiğini araştırmayın ve arkasından konuşmayın; kimse kardeşinin etini yemek ister mi</div>
+    </div>
+    <div style="padding:14px 0 0;border-top:1px solid #E3DECF">
+      <div style="font:500 13px/1 'DM Sans';color:#6E7A57">Nûr · 24:35</div>
+    </div>
+  </div>
+  <div style="background:#EDE9DC;border-top:1px solid #E3DECF;padding:11px 20px;display:flex;align-items:center;gap:12px">
+    <div style="width:34px;height:34px;border-radius:8px;background:#4E5B3A;display:flex;align-items:center;justify-content:center;font:400 13px/1 'DM Sans';color:#F4F1EA;letter-spacing:1px">❙❙</div>
+    <div style="flex:1;min-width:0">
+      <div style="font:500 13.5px/1.2 'DM Sans';color:#1B1E19">Ra'd · 13:28</div>
+      <div style="margin-top:3px;font:400 11.5px/1 'DM Sans';color:#8A8570">okunuyor · 0:24 / 1:02</div>
+    </div>
+    <div style="font:400 15px/1 'DM Sans';color:#8A8570">✕</div>
+  </div>
+</div>
+</x-import>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F4F1EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:6px;font:500 15px/1 'DM Sans';color:#6E7A57"><span style="font-size:20px;line-height:1">‹</span>Sabır</div>
+    <div style="font:500 14px/1 'DM Sans';color:#6E7A57">Kaydet</div>
+  </div>
+  <div style="flex:1;overflow:hidden;padding:26px 24px 0">
+    <div style="font:600 15px/1 'DM Sans';letter-spacing:.02em;color:#4E5B3A">Ra'd · 13:28</div>
+    <div style="margin-top:20px;font:400 24px/1.62 Spectral,serif;color:#1B1E19;text-wrap:pretty">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler; iyilik edenleri seven bir merhamet sahibi, onların çabasını karşılıksız bırakmaz ve gönüllerine bir dinginlik indirir.</div>
+    <div style="margin-top:22px;font:400 12.5px/1.5 'DM Sans';color:#8A8570">Türkçe meal · kaynak sürümü 0.1 (yer tutucu metin)</div>
+  </div>
+  <div style="padding:0 24px 18px">
+    <div style="display:flex;gap:9px;margin-bottom:16px">
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 0;border-radius:12px;background:#4E5B3A;font:500 16px/1 'DM Sans';color:#F4F1EA"><span style="font-size:12px">▶</span>Oynat</div>
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:15px 0;border-radius:12px;border:1px solid #CFC8B4;font:500 16px/1 'DM Sans';color:#3D4433">Bağlamı gör</div>
+    </div>
+    <div style="font:500 10.5px/1 'DM Sans';letter-spacing:.1em;color:#8A8570">BU AYETİN KATEGORİLERİ</div>
+    <div style="margin-top:11px;display:flex;flex-wrap:wrap;gap:7px">
+      <div style="padding:8px 12px;border-radius:8px;background:#E7E3D4;font:500 13.5px/1 'DM Sans';color:#3D4433">Sabır</div>
+      <div style="padding:8px 12px;border-radius:8px;background:#E7E3D4;font:500 13.5px/1 'DM Sans';color:#3D4433">İç huzur</div>
+      <div style="padding:8px 12px;border-radius:8px;background:#E7E3D4;font:500 13.5px/1 'DM Sans';color:#3D4433">Affetmek ve barışmak</div>
+      <div style="padding:8px 12px;border-radius:8px;background:#E7E3D4;font:500 13.5px/1 'DM Sans';color:#3D4433">Öfke</div>
+    </div>
+  </div>
+</div>
+</x-import>
+<div class="dv-meta">
+<h4>Zeytin</h4>
+<p>Zeytin yeşili ve kırık krem, dinî şablona hiç dokunmadan sakin ve doğal bir zemin kurar; vurgu rengi yalnızca yön göstermek için çalışır.</p>
+<h5>Palet</h5>
+<div class="dv-sw">
+<div class="dv-swr"><i style="background:#F4F1EA"></i><b>zemin</b>#F4F1EA</div>
+<div class="dv-swr"><i style="background:#FFFDF7"></i><b>yüzey</b>#FFFDF7</div>
+<div class="dv-swr"><i style="background:#1B1E19"></i><b>metin</b>#1B1E19</div>
+<div class="dv-swr"><i style="background:#6A6656"></i><b>ikincil</b>#6A6656</div>
+<div class="dv-swr"><i style="background:#4E5B3A"></i><b>vurgu</b>#4E5B3A</div>
+<div class="dv-swr"><i style="background:#E3DECF"></i><b>ayırıcı</b>#E3DECF</div>
+</div>
+<h5>Tipografi ölçeği</h5>
+<div class="dv-ty">
+<div class="dv-tyr">Meal — Spectral 400<span>24 / 39</span></div>
+<div class="dv-tyr">Ekran başlığı — DM Sans 600<span>28 / 32</span></div>
+<div class="dv-tyr">Kart adı — DM Sans 600<span>18 / 22</span></div>
+<div class="dv-tyr">Gövde — DM Sans 400<span>14.5 / 22</span></div>
+<div class="dv-tyr">Meta — DM Sans 500<span>12.5 / 16</span></div>
+</div>
+<p class="dv-cap">%135 ölçekte kart yüksekliği serbest, kırpma yok.</p>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Sıcak kağıt — güvenli</div>
+<div class="dv-set">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#EFE6D6;font-family:Literata,serif;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:8px 26px 0;font:600 27px/1.15 Literata;color:#33251A;letter-spacing:-.01em">Bugün neye temas ediyorsun?</div>
+  <div style="margin:16px 26px 0;display:flex;align-items:center;gap:9px;border-bottom:1.5px solid #C6B49A;padding:0 2px 10px">
+    <svg width="15" height="15" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#8C7359" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#8C7359" stroke-width="1.6"></line></svg>
+    <span style="font:400 16px/1 Literata;color:#8C7359">Ayet veya konu ara</span>
+  </div>
+  <div style="margin:20px 26px 0;display:flex;gap:22px;border-bottom:1px solid #DCCDB6">
+    <div style="padding:0 0 10px;border-bottom:2.5px solid #8A5A2B;font:600 15.5px/1 Literata;color:#33251A">Ne yaşıyorsun?</div>
+    <div style="padding:0 0 10px;font:400 15.5px/1 Literata;color:#8C7359">Ne hakkında?</div>
+  </div>
+  <div style="flex:1;overflow:hidden;padding:4px 26px 0">
+    <div style="padding:17px 0;border-bottom:1px solid #DCCDB6">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><span style="font:600 19px/1.2 Literata;color:#33251A">Zor duygular</span><span style="font:400 12.5px/1 Literata;color:#A08A6C">10</span></div>
+      <div style="margin-top:6px;font:400 14px/1.55 Literata;color:#6F5B45;text-wrap:pretty">Kaygı, korku, üzüntü gibi ağır günlerde okunacak ayetler.</div>
+    </div>
+    <div style="padding:17px 0;border-bottom:1px solid #DCCDB6">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><span style="font:600 19px/1.2 Literata;color:#33251A">Güçlenme ve umut</span><span style="font:400 12.5px/1 Literata;color:#A08A6C">10</span></div>
+      <div style="margin-top:6px;font:400 14px/1.55 Literata;color:#6F5B45;text-wrap:pretty">Sabır, tevekkül, şükür ve yeniden başlama üzerine ayetler.</div>
+    </div>
+    <div style="padding:17px 0;border-bottom:1px solid #DCCDB6">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><span style="font:600 19px/1.2 Literata;color:#33251A">Kayıp, hastalık, kriz</span><span style="font:400 12.5px/1 Literata;color:#A08A6C">10</span></div>
+      <div style="margin-top:6px;font:400 14px/1.55 Literata;color:#6F5B45;text-wrap:pretty">Hastalık, yas, maddi sıkıntı ve haksızlık zamanları için.</div>
+    </div>
+    <div style="padding:17px 0;border-bottom:1px solid #DCCDB6">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><span style="font:600 19px/1.2 Literata;color:#33251A">Kararlar ve değişim</span><span style="font:400 12.5px/1 Literata;color:#A08A6C">10</span></div>
+      <div style="margin-top:6px;font:400 14px/1.55 Literata;color:#6F5B45;text-wrap:pretty">Karar vermek, belirsizlik, ayrılık ve yeni bir düzen kurmak.</div>
+    </div>
+    <div style="padding:17px 0;border-bottom:1px solid #DCCDB6">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><span style="font:600 19px/1.2 Literata;color:#33251A">İlişkiler</span><span style="font:400 12.5px/1 Literata;color:#A08A6C">10</span></div>
+      <div style="margin-top:6px;font:400 14px/1.55 Literata;color:#6F5B45">Anne baba, evlilik, dostluk ve anlaşmazlıklar.</div>
+    </div>
+  </div>
+  <div style="padding:14px 26px 0;border-top:1px solid #C6B49A">
+    <div style="font:400 11.5px/1 Literata;letter-spacing:.08em;color:#A08A6C">SON BAKILANLAR</div>
+    <div style="margin-top:9px;font:400 15px/1.6 Literata;color:#33251A">Sabır · Yas ve kayıp · Şükür</div>
+  </div>
+</div>
+</x-import>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#EFE6D6;font-family:Literata,serif;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 26px 0;display:flex;align-items:center;gap:6px;font:400 15px/1 Literata;color:#8A5A2B"><span style="font-size:20px;line-height:1">‹</span>Güçlenme ve umut</div>
+  <div style="padding:18px 26px 0">
+    <div style="font:600 30px/1.12 Literata;color:#33251A">Sabır</div>
+    <div style="margin-top:8px;font:400 14.5px/1.6 Literata;color:#6F5B45;text-wrap:pretty">Zorluk uzadığında dayanma gücü üzerine ayetler; kaçmak değil, taşımak üzerine.</div>
+  </div>
+  <div style="margin:18px 26px 0;display:flex;align-items:center;gap:9px;border-bottom:1px solid #C6B49A;padding:0 2px 9px">
+    <svg width="14" height="14" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#8C7359" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#8C7359" stroke-width="1.6"></line></svg>
+    <span style="font:400 15px/1 Literata;color:#8C7359">Bu kategoride ara</span>
+  </div>
+  <div style="padding:15px 26px 6px;font:400 12px/1 Literata;letter-spacing:.06em;color:#A08A6C">8 AYET</div>
+  <div style="flex:1;overflow:hidden;padding:0 26px">
+    <div style="padding:15px 0;border-top:1px solid #DCCDB6;display:flex;gap:14px">
+      <div style="width:62px;flex:none;font:400 12.5px/1.4 Literata;color:#8A5A2B">İnşirah<br>94:6</div>
+      <div style="flex:1;max-height:50px;overflow:hidden;font:400 15.5px/1.6 Literata;color:#3A2A1C">Şüphesiz her zorluğun ardından bir genişlik gelir.</div>
+    </div>
+    <div style="padding:15px 0;border-top:1px solid #DCCDB6;display:flex;gap:14px">
+      <div style="width:62px;flex:none;font:400 12.5px/1.4 Literata;color:#8A5A2B">Ra'd<br>13:28</div>
+      <div style="flex:1;max-height:50px;overflow:hidden;font:400 15.5px/1.6 Literata;color:#3A2A1C">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler; iyilik</div>
+    </div>
+    <div style="padding:15px 0;border-top:1px solid #DCCDB6;display:flex;gap:14px">
+      <div style="width:62px;flex:none;font:400 12.5px/1.4 Literata;color:#8A5A2B">Bakara<br>2:282</div>
+      <div style="flex:1;max-height:50px;overflow:hidden;font:400 15.5px/1.6 Literata;color:#3A2A1C">Ey iman edenler, belirli bir süreye kadar birbirinize borçlandığınız zaman onu yazın; aranızda</div>
+    </div>
+    <div style="padding:15px 0;border-top:1px solid #DCCDB6;display:flex;gap:14px">
+      <div style="width:62px;flex:none;font:400 12.5px/1.4 Literata;color:#8A5A2B">Hucurât<br>49:12</div>
+      <div style="flex:1;max-height:50px;overflow:hidden;font:400 15.5px/1.6 Literata;color:#3A2A1C">Birbirinizin eksiğini araştırmayın ve arkasından konuşmayın; kimse kardeşinin</div>
+    </div>
+    <div style="padding:15px 0;border-top:1px solid #DCCDB6;display:flex;gap:14px">
+      <div style="width:62px;flex:none;font:400 12.5px/1.4 Literata;color:#8A5A2B">Nûr<br>24:35</div>
+      <div style="flex:1;max-height:50px;overflow:hidden;font:400 15.5px/1.6 Literata;color:#3A2A1C">Bir kandil gibidir; kandil bir cam içindedir, cam ise parlayan bir yıldız</div>
+    </div>
+  </div>
+  <div style="background:#E6D9C3;border-top:1px solid #C6B49A;padding:11px 26px;display:flex;align-items:center;gap:13px">
+    <div style="width:32px;height:32px;border-radius:16px;background:#8A5A2B;display:flex;align-items:center;justify-content:center;font:400 12px/1 Literata;color:#EFE6D6;letter-spacing:1px">❙❙</div>
+    <div style="flex:1;min-width:0"><div style="font:600 13.5px/1.2 Literata;color:#33251A">Ra'd · 13:28</div><div style="margin-top:3px;font:400 11.5px/1 Literata;color:#8C7359">duraklatıldı · 0:24 / 1:02</div></div>
+    <div style="font:400 15px/1 Literata;color:#8C7359">✕</div>
+  </div>
+</div>
+</x-import>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#EFE6D6;font-family:Literata,serif;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 26px 0;display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:6px;font:400 15px/1 Literata;color:#8A5A2B"><span style="font-size:20px;line-height:1">‹</span>Sabır</div>
+    <div style="font:400 14px/1 Literata;color:#8A5A2B">Kaydedildi</div>
+  </div>
+  <div style="flex:1;overflow:hidden;padding:28px 28px 0">
+    <div style="font:400 14px/1 Literata;letter-spacing:.06em;color:#8A5A2B">RA'D · 13:28</div>
+    <div style="width:44px;height:1px;background:#C6B49A;margin:16px 0 20px"></div>
+    <div style="font:400 23px/1.72 Literata;color:#3A2A1C;text-wrap:pretty">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler; iyilik edenleri seven bir merhamet sahibi, onların çabasını karşılıksız bırakmaz ve gönüllerine bir dinginlik indirir.</div>
+    <div style="margin-top:24px;font:400 12.5px/1.55 Literata;color:#8C7359">Türkçe meal · kaynak sürümü 0.1 (yer tutucu metin)</div>
+  </div>
+  <div style="padding:0 28px 18px">
+    <div style="display:flex;gap:0;margin-bottom:18px;border-top:1px solid #C6B49A;border-bottom:1px solid #C6B49A">
+      <div style="flex:1;text-align:center;padding:15px 0;border-right:1px solid #C6B49A;font:400 15.5px/1 Literata;color:#33251A">▶ Oynat</div>
+      <div style="flex:1;text-align:center;padding:15px 0;font:400 15.5px/1 Literata;color:#33251A">Bağlamı gör</div>
+    </div>
+    <div style="font:400 11.5px/1 Literata;letter-spacing:.08em;color:#A08A6C">BU AYETİN KATEGORİLERİ</div>
+    <div style="margin-top:10px;font:400 15px/1.7 Literata;color:#33251A">Sabır · İç huzur · Affetmek ve barışmak · Öfke</div>
+  </div>
+</div>
+</x-import>
+<div class="dv-meta">
+<h4>Sıcak kağıt</h4>
+<p>Krem zemin ve koyu kahve metin, ekranı bir kitap sayfası gibi kurar; kart yok, hairline çizgiler var — okuma ritmi listede de sürüyor.</p>
+<h5>Palet</h5>
+<div class="dv-sw">
+<div class="dv-swr"><i style="background:#EFE6D6"></i><b>zemin</b>#EFE6D6</div>
+<div class="dv-swr"><i style="background:#E6D9C3"></i><b>yüzey</b>#E6D9C3</div>
+<div class="dv-swr"><i style="background:#3A2A1C"></i><b>metin</b>#3A2A1C</div>
+<div class="dv-swr"><i style="background:#6F5B45"></i><b>ikincil</b>#6F5B45</div>
+<div class="dv-swr"><i style="background:#8A5A2B"></i><b>vurgu</b>#8A5A2B</div>
+<div class="dv-swr"><i style="background:#DCCDB6"></i><b>ayırıcı</b>#DCCDB6</div>
+</div>
+<h5>Tipografi ölçeği</h5>
+<div class="dv-ty">
+<div class="dv-tyr">Meal — Literata 400<span>23 / 40</span></div>
+<div class="dv-tyr">Ekran başlığı — Literata 600<span>30 / 34</span></div>
+<div class="dv-tyr">Liste adı — Literata 600<span>19 / 23</span></div>
+<div class="dv-tyr">Gövde — Literata 400<span>14.5 / 23</span></div>
+<div class="dv-tyr">Meta — Literata 400<span>12.5 / 19</span></div>
+</div>
+<p class="dv-cap">Tek aile; ağırlık ve boşluk hiyerarşiyi taşıyor.</p>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Gece mürekkebi — güvenli</div>
+<div class="dv-set">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#101114;font-family:'Libre Franklin',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:6px 20px 0;font:600 10.5px/1 'Libre Franklin';letter-spacing:.16em;color:#7E8CA3">AYET REHBERİ</div>
+  <div style="margin:14px 20px 0;display:flex;align-items:center;gap:9px;background:#191B20;border:1px solid #262A32;border-radius:12px;padding:13px">
+    <svg width="15" height="15" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#6E7686" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#6E7686" stroke-width="1.6"></line></svg>
+    <span style="font:400 16px/1 'Libre Franklin';color:#6E7686">Ayet veya konu ara</span>
+  </div>
+  <div style="margin:18px 20px 0;display:flex;background:#191B20;border-radius:10px;padding:3px">
+    <div style="flex:1;text-align:center;padding:10px 4px;border-radius:8px;background:#2B303A;font:600 14.5px/1 'Libre Franklin';color:#EDEBE6">Ne yaşıyorsun?</div>
+    <div style="flex:1;text-align:center;padding:10px 4px;font:500 14.5px/1 'Libre Franklin';color:#8A93A3">Ne hakkında?</div>
+  </div>
+  <div style="flex:1;overflow:hidden;margin-top:20px;padding:0 20px;display:flex;flex-direction:column">
+    <div style="padding:16px 0;border-bottom:1px solid #23262D">
+      <div style="display:flex;align-items:baseline;gap:9px"><span style="font:600 18.5px/1.2 'Libre Franklin';color:#EDEBE6">Zor duygular</span><span style="width:5px;height:5px;border-radius:3px;background:#8FA6C4;flex:none"></span></div>
+      <div style="margin-top:6px;font:400 14px/1.55 'Libre Franklin';color:#98A0AE;text-wrap:pretty">Kaygı, korku, üzüntü gibi ağır günlerde okunacak ayetler.</div>
+      <div style="margin-top:8px;font:500 12px/1 'Libre Franklin';color:#7E8CA3">10 kategori</div>
+    </div>
+    <div style="padding:16px 0;border-bottom:1px solid #23262D">
+      <div style="display:flex;align-items:baseline;gap:9px"><span style="font:600 18.5px/1.2 'Libre Franklin';color:#EDEBE6">Güçlenme ve umut</span><span style="width:5px;height:5px;border-radius:3px;background:#8FA6C4;flex:none"></span></div>
+      <div style="margin-top:6px;font:400 14px/1.55 'Libre Franklin';color:#98A0AE;text-wrap:pretty">Sabır, tevekkül, şükür ve yeniden başlama üzerine ayetler.</div>
+      <div style="margin-top:8px;font:500 12px/1 'Libre Franklin';color:#7E8CA3">10 kategori</div>
+    </div>
+    <div style="padding:16px 0;border-bottom:1px solid #23262D">
+      <div style="display:flex;align-items:baseline;gap:9px"><span style="font:600 18.5px/1.2 'Libre Franklin';color:#EDEBE6">Kayıp, hastalık, kriz</span><span style="width:5px;height:5px;border-radius:3px;background:#8FA6C4;flex:none"></span></div>
+      <div style="margin-top:6px;font:400 14px/1.55 'Libre Franklin';color:#98A0AE;text-wrap:pretty">Hastalık, yas, maddi sıkıntı ve haksızlık zamanları için.</div>
+      <div style="margin-top:8px;font:500 12px/1 'Libre Franklin';color:#7E8CA3">10 kategori</div>
+    </div>
+    <div style="padding:16px 0;border-bottom:1px solid #23262D">
+      <div style="display:flex;align-items:baseline;gap:9px"><span style="font:600 18.5px/1.2 'Libre Franklin';color:#EDEBE6">Kararlar ve değişim</span><span style="width:5px;height:5px;border-radius:3px;background:#8FA6C4;flex:none"></span></div>
+      <div style="margin-top:6px;font:400 14px/1.55 'Libre Franklin';color:#98A0AE;text-wrap:pretty">Karar vermek, belirsizlik, ayrılık ve yeni bir düzen kurmak.</div>
+      <div style="margin-top:8px;font:500 12px/1 'Libre Franklin';color:#7E8CA3">10 kategori</div>
+    </div>
+    <div style="padding:16px 0;border-bottom:1px solid #23262D">
+      <div style="font:600 18.5px/1.2 'Libre Franklin';color:#EDEBE6">İlişkiler</div>
+      <div style="margin-top:6px;font:400 14px/1.55 'Libre Franklin';color:#98A0AE">Anne baba, evlilik, dostluk ve anlaşmazlıklar.</div>
+    </div>
+  </div>
+  <div style="padding:14px 20px 0;border-top:1px solid #23262D">
+    <div style="font:600 10.5px/1 'Libre Franklin';letter-spacing:.12em;color:#6E7686">SON BAKILANLAR</div>
+    <div style="margin-top:10px;display:flex;gap:7px">
+      <div style="padding:8px 12px;border-radius:8px;background:#191B20;font:500 13.5px/1 'Libre Franklin';color:#D6D9DF">Sabır</div>
+      <div style="padding:8px 12px;border-radius:8px;background:#191B20;font:500 13.5px/1 'Libre Franklin';color:#D6D9DF">Yas ve kayıp</div>
+      <div style="padding:8px 12px;border-radius:8px;background:#191B20;font:500 13.5px/1 'Libre Franklin';color:#D6D9DF">Şükür</div>
+    </div>
+  </div>
+</div>
+</x-import>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#101114;font-family:'Libre Franklin',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;gap:6px;font:500 15px/1 'Libre Franklin';color:#8FA6C4"><span style="font-size:20px;line-height:1">‹</span>Güçlenme ve umut</div>
+  <div style="padding:18px 20px 0">
+    <div style="font:700 28px/1.15 'Libre Franklin';color:#EDEBE6;letter-spacing:-.01em">Sabır</div>
+    <div style="margin-top:8px;font:400 14.5px/1.55 'Libre Franklin';color:#98A0AE;text-wrap:pretty">Zorluk uzadığında dayanma gücü üzerine ayetler; kaçmak değil, taşımak üzerine.</div>
+  </div>
+  <div style="margin:18px 20px 0;display:flex;align-items:center;gap:9px;background:#191B20;border-radius:10px;padding:11px 13px">
+    <svg width="14" height="14" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#6E7686" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#6E7686" stroke-width="1.6"></line></svg>
+    <span style="font:400 15px/1 'Libre Franklin';color:#6E7686">Bu kategoride ara</span>
+  </div>
+  <div style="padding:16px 20px 8px;font:600 11px/1 'Libre Franklin';letter-spacing:.1em;color:#6E7686">8 AYET</div>
+  <div style="flex:1;overflow:hidden;padding:0 20px">
+    <div style="padding:15px 0;border-top:1px solid #23262D">
+      <div style="font:600 12.5px/1 'Libre Franklin';color:#8FA6C4">İnşirah · 94:6</div>
+      <div style="margin-top:7px;max-height:54px;overflow:hidden;font:300 16px/1.7 Newsreader,serif;color:#DCDAD4">Şüphesiz her zorluğun ardından bir genişlik gelir.</div>
+    </div>
+    <div style="padding:15px 0;border-top:1px solid #23262D">
+      <div style="font:600 12.5px/1 'Libre Franklin';color:#8FA6C4">Ra'd · 13:28</div>
+      <div style="margin-top:7px;max-height:54px;overflow:hidden;font:300 16px/1.7 Newsreader,serif;color:#DCDAD4">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler; iyilik edenleri</div>
+    </div>
+    <div style="padding:15px 0;border-top:1px solid #23262D">
+      <div style="font:600 12.5px/1 'Libre Franklin';color:#8FA6C4">Bakara · 2:282</div>
+      <div style="margin-top:7px;max-height:54px;overflow:hidden;font:300 16px/1.7 Newsreader,serif;color:#DCDAD4">Ey iman edenler, belirli bir süreye kadar birbirinize borçlandığınız zaman onu yazın; aranızda bir yazıcı</div>
+    </div>
+    <div style="padding:15px 0;border-top:1px solid #23262D">
+      <div style="font:600 12.5px/1 'Libre Franklin';color:#8FA6C4">Hucurât · 49:12</div>
+      <div style="margin-top:7px;max-height:54px;overflow:hidden;font:300 16px/1.7 Newsreader,serif;color:#DCDAD4">Birbirinizin eksiğini araştırmayın ve arkasından konuşmayın; kimse kardeşinin etini</div>
+    </div>
+    <div style="padding:15px 0;border-top:1px solid #23262D">
+      <div style="font:600 12.5px/1 'Libre Franklin';color:#8FA6C4">Nûr · 24:35</div>
+      <div style="margin-top:7px;max-height:54px;overflow:hidden;font:300 16px/1.7 Newsreader,serif;color:#DCDAD4">Bir kandil gibidir; kandil bir cam içindedir, cam ise parlayan bir yıldız gibidir</div>
+    </div>
+  </div>
+  <div style="background:#191B20;border-top:1px solid #23262D;padding:11px 20px;display:flex;align-items:center;gap:12px">
+    <div style="width:34px;height:34px;border-radius:9px;background:#8FA6C4;display:flex;align-items:center;justify-content:center;font:400 13px/1 'Libre Franklin';color:#101114;letter-spacing:1px">❙❙</div>
+    <div style="flex:1;min-width:0"><div style="font:600 13.5px/1.2 'Libre Franklin';color:#EDEBE6">Ra'd · 13:28</div><div style="margin-top:3px;font:400 11.5px/1 'Libre Franklin';color:#7E8CA3">okunuyor · 0:24 / 1:02</div></div>
+    <div style="font:400 15px/1 'Libre Franklin';color:#7E8CA3">✕</div>
+  </div>
+</div>
+</x-import>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#101114;font-family:'Libre Franklin',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:6px;font:500 15px/1 'Libre Franklin';color:#8FA6C4"><span style="font-size:20px;line-height:1">‹</span>Sabır</div>
+    <div style="font:500 14px/1 'Libre Franklin';color:#8FA6C4">Kaydet</div>
+  </div>
+  <div style="flex:1;overflow:hidden;padding:24px 22px 0">
+    <div style="font:600 13px/1 'Libre Franklin';letter-spacing:.1em;color:#8FA6C4">BAKARA · 2:184</div>
+    <div style="margin-top:18px;font:300 22px/1.68 Newsreader,serif;color:#EDEBE6;text-wrap:pretty">Hani İbrâhîm, babasına ve kavmine sormuştu: “Sizin şu karşısında durup beklediğiniz şeyler nedir?” Onlar da, atalarımızı böyle bulduk, dediler. Ashâb-ı Kehf'in mağarada geçirdiği yıllar gibi, Zülkarneyn'in yolculuğunda da düşünmek isteyenler için apaçık işaretler bırakılmıştır; kimi kalpler bunları görür, kimi kalpler ise üzerinden geçip gider.</div>
+    <div style="margin-top:20px;font:400 12.5px/1.5 'Libre Franklin';color:#6E7686">Türkçe meal · kaynak sürümü 0.1 (yer tutucu metin)</div>
+  </div>
+  <div style="padding:0 22px 18px">
+    <div style="display:flex;gap:9px;margin-bottom:15px">
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 0;border-radius:12px;background:#EDEBE6;font:600 16px/1 'Libre Franklin';color:#101114"><span style="font-size:11px">▶</span>Oynat</div>
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:15px 0;border-radius:12px;border:1px solid #2B303A;font:500 16px/1 'Libre Franklin';color:#D6D9DF">Bağlamı gör</div>
+    </div>
+    <div style="font:600 10.5px/1 'Libre Franklin';letter-spacing:.12em;color:#6E7686">BU AYETİN KATEGORİLERİ</div>
+    <div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:7px">
+      <div style="padding:8px 12px;border-radius:8px;border:1px solid #2B303A;font:500 13.5px/1 'Libre Franklin';color:#D6D9DF">Sabır</div>
+      <div style="padding:8px 12px;border-radius:8px;border:1px solid #2B303A;font:500 13.5px/1 'Libre Franklin';color:#D6D9DF">Kıssalar</div>
+      <div style="padding:8px 12px;border-radius:8px;border:1px solid #2B303A;font:500 13.5px/1 'Libre Franklin';color:#D6D9DF">Tefekkür daveti</div>
+      <div style="padding:8px 12px;border-radius:8px;border:1px solid #2B303A;font:500 13.5px/1 'Libre Franklin';color:#D6D9DF">Şüphe ve iman krizi</div>
+    </div>
+  </div>
+</div>
+</x-import>
+<div class="dv-meta">
+<h4>Gece mürekkebi</h4>
+<p>Koyu zemin, yüksek kontrast metin ve tek soğuk vurgu; gece okumasında ekran sessizleşiyor, meal tek parlak yüzey olarak kalıyor.</p>
+<h5>Palet</h5>
+<div class="dv-sw">
+<div class="dv-swr"><i style="background:#101114"></i><b>zemin</b>#101114</div>
+<div class="dv-swr"><i style="background:#191B20"></i><b>yüzey</b>#191B20</div>
+<div class="dv-swr"><i style="background:#EDEBE6"></i><b>metin</b>#EDEBE6</div>
+<div class="dv-swr"><i style="background:#98A0AE"></i><b>ikincil</b>#98A0AE</div>
+<div class="dv-swr"><i style="background:#8FA6C4"></i><b>vurgu</b>#8FA6C4</div>
+<div class="dv-swr"><i style="background:#23262D"></i><b>ayırıcı</b>#23262D</div>
+</div>
+<h5>Tipografi ölçeği</h5>
+<div class="dv-ty">
+<div class="dv-tyr">Meal — Newsreader 300<span>22 / 37</span></div>
+<div class="dv-tyr">Ekran başlığı — Libre Franklin 700<span>28 / 32</span></div>
+<div class="dv-tyr">Liste adı — Libre Franklin 600<span>18.5 / 22</span></div>
+<div class="dv-tyr">Gövde — Libre Franklin 400<span>14.5 / 22</span></div>
+<div class="dv-tyr">Meta — Libre Franklin 600<span>12.5 / 16</span></div>
+</div>
+<p class="dv-cap">Ayet odak, 512 karakterlik uzun bant ile gösterildi.</p>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="1d">
+<div class="dv-olabel"><a class="dv-oid" href="#1d">1d</a>Ebru — cesur</div>
+<div class="dv-set">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;background:#F3F0EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden;padding-bottom:34px">
+  <div style="position:relative;height:250px;flex:none;overflow:hidden;background:#1F3A3D">
+    <svg width="402" height="250" viewBox="0 0 402 250" style="position:absolute;inset:0;display:block"><defs><filter id="ebru1" x="-20%" y="-20%" width="140%" height="140%"><feTurbulence type="turbulence" baseFrequency="0.006 0.05" numOctaves="4" seed="7" result="t"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="t" scale="58" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap><feGaussianBlur stdDeviation="0.6"></feGaussianBlur></filter></defs><g filter="url(#ebru1)"><rect x="-40" y="-30" width="482" height="60" fill="#1F3A3D"></rect><rect x="-40" y="24" width="482" height="34" fill="#2E6B6B"></rect><rect x="-40" y="56" width="482" height="18" fill="#E4DCC8"></rect><rect x="-40" y="72" width="482" height="40" fill="#8C4A32"></rect><rect x="-40" y="110" width="482" height="22" fill="#D9CBAE"></rect><rect x="-40" y="130" width="482" height="46" fill="#22484E"></rect><rect x="-40" y="174" width="482" height="26" fill="#B5643F"></rect><rect x="-40" y="198" width="482" height="90" fill="#1A2F33"></rect></g><rect x="0" y="0" width="402" height="250" fill="#0E1A1C" opacity="0.32"></rect></svg>
+    <div style="position:absolute;inset:0;padding:60px 22px 18px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font:500 10.5px/1 'DM Sans';letter-spacing:.16em;color:rgba(255,255,255,.72)">AYET REHBERİ</div>
+      <div>
+        <div style="font:600 25px/1.25 Lora,serif;color:#FBF8F2;max-width:290px;text-wrap:pretty">Ne yaşadığından başla.</div>
+        <div style="margin-top:14px;display:flex;align-items:center;gap:9px;background:rgba(255,255,255,.92);border-radius:12px;padding:12px 13px">
+          <svg width="15" height="15" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#7C7568" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#7C7568" stroke-width="1.6"></line></svg>
+          <span style="font:400 16px/1 'DM Sans';color:#7C7568">Ayet veya konu ara</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="margin:16px 20px 0;display:flex;gap:20px;border-bottom:1px solid #E0DACB">
+    <div style="padding:0 0 9px;border-bottom:2px solid #2E6B6B;font:600 15px/1 'DM Sans';color:#1E2427">Ne yaşıyorsun?</div>
+    <div style="padding:0 0 9px;font:500 15px/1 'DM Sans';color:#847D6E">Ne hakkında?</div>
+  </div>
+  <div style="flex:1;overflow:hidden;padding:14px 20px 0;display:flex;flex-direction:column;gap:9px">
+    <div style="display:flex;gap:13px;background:#FBF8F2;border-radius:12px;padding:14px;align-items:flex-start">
+      <div style="width:38px;height:38px;border-radius:10px;flex:none;overflow:hidden"><svg width="38" height="38" viewBox="0 0 38 38"><g filter="url(#ebru1)"><rect x="-6" y="-4" width="50" height="16" fill="#22484E"></rect><rect x="-6" y="10" width="50" height="10" fill="#E4DCC8"></rect><rect x="-6" y="18" width="50" height="14" fill="#8C4A32"></rect><rect x="-6" y="30" width="50" height="14" fill="#1F3A3D"></rect></g></svg></div>
+      <div style="flex:1;min-width:0">
+        <div style="font:600 17.5px/1.25 'DM Sans';color:#1E2427">Zor duygular</div>
+        <div style="margin-top:4px;font:400 13.5px/1.5 'DM Sans';color:#6C6659;text-wrap:pretty">Kaygı, korku, üzüntü gibi ağır günlerde okunacak ayetler.</div>
+        <div style="margin-top:7px;font:500 12px/1 'DM Sans';color:#2E6B6B">10 kategori</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:13px;background:#FBF8F2;border-radius:12px;padding:14px;align-items:flex-start">
+      <div style="width:38px;height:38px;border-radius:10px;flex:none;overflow:hidden"><svg width="38" height="38" viewBox="0 0 38 38"><g filter="url(#ebru1)"><rect x="-6" y="-4" width="50" height="14" fill="#B5643F"></rect><rect x="-6" y="8" width="50" height="12" fill="#D9CBAE"></rect><rect x="-6" y="18" width="50" height="12" fill="#2E6B6B"></rect><rect x="-6" y="28" width="50" height="16" fill="#1A2F33"></rect></g></svg></div>
+      <div style="flex:1;min-width:0">
+        <div style="font:600 17.5px/1.25 'DM Sans';color:#1E2427">Güçlenme ve umut</div>
+        <div style="margin-top:4px;font:400 13.5px/1.5 'DM Sans';color:#6C6659;text-wrap:pretty">Sabır, tevekkül, şükür ve yeniden başlama üzerine ayetler.</div>
+        <div style="margin-top:7px;font:500 12px/1 'DM Sans';color:#2E6B6B">10 kategori</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:13px;background:#FBF8F2;border-radius:12px;padding:14px;align-items:flex-start">
+      <div style="width:38px;height:38px;border-radius:10px;flex:none;overflow:hidden"><svg width="38" height="38" viewBox="0 0 38 38"><g filter="url(#ebru1)"><rect x="-6" y="-4" width="50" height="18" fill="#1F3A3D"></rect><rect x="-6" y="12" width="50" height="10" fill="#8C4A32"></rect><rect x="-6" y="20" width="50" height="10" fill="#E4DCC8"></rect><rect x="-6" y="28" width="50" height="16" fill="#22484E"></rect></g></svg></div>
+      <div style="flex:1;min-width:0">
+        <div style="font:600 17.5px/1.25 'DM Sans';color:#1E2427">Kayıp, hastalık, kriz</div>
+        <div style="margin-top:4px;font:400 13.5px/1.5 'DM Sans';color:#6C6659;text-wrap:pretty">Hastalık, yas, maddi sıkıntı ve haksızlık zamanları için.</div>
+        <div style="margin-top:7px;font:500 12px/1 'DM Sans';color:#2E6B6B">10 kategori</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:13px;background:#FBF8F2;border-radius:12px;padding:14px 14px 30px;align-items:flex-start">
+      <div style="width:38px;height:38px;border-radius:10px;flex:none;overflow:hidden"><svg width="38" height="38" viewBox="0 0 38 38"><g filter="url(#ebru1)"><rect x="-6" y="-4" width="50" height="12" fill="#D9CBAE"></rect><rect x="-6" y="6" width="50" height="16" fill="#2E6B6B"></rect><rect x="-6" y="20" width="50" height="12" fill="#B5643F"></rect><rect x="-6" y="30" width="50" height="14" fill="#1F3A3D"></rect></g></svg></div>
+      <div style="flex:1;min-width:0">
+        <div style="font:600 17.5px/1.25 'DM Sans';color:#1E2427">Kararlar ve değişim</div>
+        <div style="margin-top:4px;font:400 13.5px/1.5 'DM Sans';color:#6C6659">Karar vermek, belirsizlik, ayrılık ve yeni bir düzen.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</x-import>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F3F0EA;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;gap:6px;font:500 15px/1 'DM Sans';color:#2E6B6B"><span style="font-size:20px;line-height:1">‹</span>Güçlenme ve umut</div>
+  <div style="padding:16px 20px 0;display:flex;gap:14px;align-items:flex-start">
+    <div style="width:52px;height:52px;border-radius:13px;flex:none;overflow:hidden"><svg width="52" height="52" viewBox="0 0 52 52"><g filter="url(#ebru1)"><rect x="-8" y="-6" width="68" height="20" fill="#1F3A3D"></rect><rect x="-8" y="12" width="68" height="12" fill="#E4DCC8"></rect><rect x="-8" y="22" width="68" height="16" fill="#8C4A32"></rect><rect x="-8" y="36" width="68" height="22" fill="#22484E"></rect></g></svg></div>
+    <div style="flex:1;min-width:0">
+      <div style="font:600 27px/1.1 Lora,serif;color:#1E2427">Sabır</div>
+      <div style="margin-top:7px;font:400 14px/1.5 'DM Sans';color:#6C6659;text-wrap:pretty">Zorluk uzadığında dayanma gücü üzerine ayetler; kaçmak değil, taşımak üzerine.</div>
+    </div>
+  </div>
+  <div style="margin:16px 20px 0;display:flex;align-items:center;gap:9px;background:#FBF8F2;border-radius:10px;padding:11px 13px">
+    <svg width="14" height="14" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#7C7568" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#7C7568" stroke-width="1.6"></line></svg>
+    <span style="font:400 15px/1 'DM Sans';color:#7C7568">Bu kategoride ara</span>
+  </div>
+  <div style="padding:15px 20px 6px;font:500 12px/1 'DM Sans';letter-spacing:.06em;color:#847D6E">8 AYET</div>
+  <div style="flex:1;overflow:hidden;padding:0 20px;display:flex;flex-direction:column;gap:8px">
+    <div style="background:#FBF8F2;border-radius:11px;padding:13px 14px;border-left:3px solid #2E6B6B">
+      <div style="font:500 12.5px/1 'DM Sans';color:#2E6B6B">İnşirah · 94:6</div>
+      <div style="margin-top:6px;max-height:50px;overflow:hidden;font:400 15.5px/1.6 Lora,serif;color:#22262A">Şüphesiz her zorluğun ardından bir genişlik gelir.</div>
+    </div>
+    <div style="background:#FBF8F2;border-radius:11px;padding:13px 14px;border-left:3px solid #8C4A32">
+      <div style="font:500 12.5px/1 'DM Sans';color:#2E6B6B">Ra'd · 13:28</div>
+      <div style="margin-top:6px;max-height:50px;overflow:hidden;font:400 15.5px/1.6 Lora,serif;color:#22262A">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları</div>
+    </div>
+    <div style="background:#FBF8F2;border-radius:11px;padding:13px 14px;border-left:3px solid #22484E">
+      <div style="font:500 12.5px/1 'DM Sans';color:#2E6B6B">Bakara · 2:282</div>
+      <div style="margin-top:6px;max-height:50px;overflow:hidden;font:400 15.5px/1.6 Lora,serif;color:#22262A">Ey iman edenler, belirli bir süreye kadar birbirinize borçlandığınız zaman onu yazın;</div>
+    </div>
+    <div style="background:#FBF8F2;border-radius:11px;padding:13px 14px;border-left:3px solid #B5643F">
+      <div style="font:500 12.5px/1 'DM Sans';color:#2E6B6B">Hucurât · 49:12</div>
+      <div style="margin-top:6px;max-height:50px;overflow:hidden;font:400 15.5px/1.6 Lora,serif;color:#22262A">Birbirinizin eksiğini araştırmayın ve arkasından konuşmayın; kimse</div>
+    </div>
+  </div>
+  <div style="background:#FBF8F2;border-top:1px solid #E0DACB;padding:11px 20px;display:flex;align-items:center;gap:12px">
+    <div style="width:34px;height:34px;border-radius:17px;background:#2E6B6B;display:flex;align-items:center;justify-content:center;font:400 13px/1 'DM Sans';color:#FBF8F2;letter-spacing:1px">❙❙</div>
+    <div style="flex:1;min-width:0"><div style="font:600 13.5px/1.2 'DM Sans';color:#1E2427">Ra'd · 13:28</div><div style="margin-top:3px;font:400 11.5px/1 'DM Sans';color:#847D6E">okunuyor · 0:24 / 1:02</div></div>
+    <div style="font:400 15px/1 'DM Sans';color:#847D6E">✕</div>
+  </div>
+</div>
+</x-import>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#FBF8F2;font-family:'DM Sans',system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 22px 0;display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:6px;font:500 15px/1 'DM Sans';color:#2E6B6B"><span style="font-size:20px;line-height:1">‹</span>Sabır</div>
+    <div style="font:500 14px/1 'DM Sans';color:#2E6B6B">Kaydet</div>
+  </div>
+  <div style="flex:1;overflow:hidden;padding:22px 24px 0">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="width:26px;height:26px;border-radius:7px;overflow:hidden;flex:none"><svg width="26" height="26" viewBox="0 0 26 26"><g filter="url(#ebru1)"><rect x="-4" y="-3" width="34" height="10" fill="#1F3A3D"></rect><rect x="-4" y="6" width="34" height="7" fill="#E4DCC8"></rect><rect x="-4" y="12" width="34" height="8" fill="#8C4A32"></rect><rect x="-4" y="19" width="34" height="12" fill="#22484E"></rect></g></svg></div>
+      <div style="font:600 14.5px/1 'DM Sans';color:#1E2427">Ra'd · 13:28</div>
+    </div>
+    <div style="margin-top:22px;font:400 24px/1.65 Lora,serif;color:#1A1E22;text-wrap:pretty">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler; iyilik edenleri seven bir merhamet sahibi, onların çabasını karşılıksız bırakmaz ve gönüllerine bir dinginlik indirir.</div>
+    <div style="margin-top:22px;font:400 12.5px/1.5 'DM Sans';color:#847D6E">Türkçe meal · kaynak sürümü 0.1 (yer tutucu metin)</div>
+  </div>
+  <div style="padding:0 24px 18px">
+    <div style="display:flex;gap:9px;margin-bottom:15px">
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 0;border-radius:12px;background:#1F3A3D;font:500 16px/1 'DM Sans';color:#FBF8F2"><span style="font-size:11px">▶</span>Oynat</div>
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:15px 0;border-radius:12px;background:#EDE7DA;font:500 16px/1 'DM Sans';color:#1F3A3D">Bağlamı gör</div>
+    </div>
+    <div style="font:500 10.5px/1 'DM Sans';letter-spacing:.12em;color:#847D6E">BU AYETİN KATEGORİLERİ</div>
+    <div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:7px">
+      <div style="padding:8px 12px;border-radius:20px;background:#EDE7DA;font:500 13.5px/1 'DM Sans';color:#2A2F33">Sabır</div>
+      <div style="padding:8px 12px;border-radius:20px;background:#EDE7DA;font:500 13.5px/1 'DM Sans';color:#2A2F33">İç huzur</div>
+      <div style="padding:8px 12px;border-radius:20px;background:#EDE7DA;font:500 13.5px/1 'DM Sans';color:#2A2F33">Affetmek ve barışmak</div>
+      <div style="padding:8px 12px;border-radius:20px;background:#EDE7DA;font:500 13.5px/1 'DM Sans';color:#2A2F33">Öfke</div>
+    </div>
+  </div>
+</div>
+</x-import>
+<div class="dv-meta">
+<h4>Ebru</h4>
+<p>Ebru yalnızca seçici yüzeylerde zemin ve aile işareti olarak çalışıyor; okuma yüzeyi tamamen temiz kalıyor, desen ayete hiç karışmıyor.</p>
+<h5>Palet</h5>
+<div class="dv-sw">
+<div class="dv-swr"><i style="background:#F3F0EA"></i><b>zemin</b>#F3F0EA</div>
+<div class="dv-swr"><i style="background:#FBF8F2"></i><b>yüzey</b>#FBF8F2</div>
+<div class="dv-swr"><i style="background:#1A1E22"></i><b>metin</b>#1A1E22</div>
+<div class="dv-swr"><i style="background:#1F3A3D"></i><b>ebru koyu</b>#1F3A3D</div>
+<div class="dv-swr"><i style="background:#2E6B6B"></i><b>vurgu</b>#2E6B6B</div>
+<div class="dv-swr"><i style="background:#8C4A32"></i><b>ebru sıcak</b>#8C4A32</div>
+</div>
+<h5>Tipografi ölçeği</h5>
+<div class="dv-ty">
+<div class="dv-tyr">Meal — Lora 400<span>24 / 40</span></div>
+<div class="dv-tyr">Ekran başlığı — Lora 600<span>27 / 30</span></div>
+<div class="dv-tyr">Kart adı — DM Sans 600<span>17.5 / 22</span></div>
+<div class="dv-tyr">Gövde — DM Sans 400<span>13.5 / 20</span></div>
+<div class="dv-tyr">Meta — DM Sans 500<span>12 / 16</span></div>
+</div>
+<p class="dv-cap">Ebru yüzeyleri prosedürel yer tutucu; final görsel lisanslı ebru taramasından gelir.</p>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="1e">
+<div class="dv-olabel"><a class="dv-oid" href="#1e">1e</a>Fotoğraf zemin — cesur</div>
+<div class="dv-set">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="dark" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;background:#0F0F0E;font-family:Archivo,system-ui;display:flex;flex-direction:column;overflow:hidden;padding-bottom:34px">
+  <div style="position:relative;height:328px;flex:none;overflow:hidden;background:repeating-linear-gradient(115deg,#3C3A35 0px,#3C3A35 7px,#33322D 7px,#33322D 14px)">
+    <div style="position:absolute;inset:0;background:rgba(12,12,11,.52)"></div>
+    <div style="position:absolute;top:104px;left:0;right:0;text-align:center;font:400 10.5px/1.6 ui-monospace,Menlo,monospace;color:rgba(255,255,255,.5)">[ mimari fotoğraf · 402×328 ]<br>düz karartma · desenli yüzey yok</div>
+    <div style="position:absolute;inset:0;padding:58px 22px 20px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font:600 10.5px/1 Archivo;letter-spacing:.18em;color:rgba(255,255,255,.7)">AYET REHBERİ</div>
+      <div>
+        <div style="font:400 30px/1.3 Spectral,serif;color:#FFFFFF;max-width:300px;text-wrap:pretty">Hangi hâlin için ayet arıyorsun?</div>
+        <div style="margin-top:18px;display:flex;align-items:center;gap:9px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:13px">
+          <svg width="15" height="15" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="rgba(255,255,255,.65)" stroke-width="1.6"></line></svg>
+          <span style="font:400 16px/1 Archivo;color:rgba(255,255,255,.72)">Ayet veya konu ara</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;gap:0;background:#0F0F0E;border-bottom:1px solid #232320">
+    <div style="flex:1;text-align:center;padding:14px 4px;border-bottom:2px solid #E8E4DA;font:600 14.5px/1 Archivo;color:#F2EFE7">Ne yaşıyorsun?</div>
+    <div style="flex:1;text-align:center;padding:14px 4px;font:500 14.5px/1 Archivo;color:#8B8880">Ne hakkında?</div>
+  </div>
+  <div style="flex:1;overflow:hidden;padding:6px 0 0">
+    <div style="padding:15px 22px;border-bottom:1px solid #1C1C1A;display:flex;justify-content:space-between;align-items:center;gap:12px">
+      <div style="flex:1;min-width:0">
+        <div style="font:600 17.5px/1.2 Archivo;color:#F2EFE7">Zor duygular</div>
+        <div style="margin-top:5px;font:400 13.5px/1.5 Archivo;color:#9A968C;text-wrap:pretty">Kaygı, korku, üzüntü gibi ağır günlerde okunacak ayetler.</div>
+      </div>
+      <div style="font:400 12px/1 ui-monospace,Menlo,monospace;color:#6E6B64;flex:none">10</div>
+    </div>
+    <div style="padding:15px 22px;border-bottom:1px solid #1C1C1A;display:flex;justify-content:space-between;align-items:center;gap:12px">
+      <div style="flex:1;min-width:0">
+        <div style="font:600 17.5px/1.2 Archivo;color:#F2EFE7">Güçlenme ve umut</div>
+        <div style="margin-top:5px;font:400 13.5px/1.5 Archivo;color:#9A968C;text-wrap:pretty">Sabır, tevekkül, şükür ve yeniden başlama üzerine ayetler.</div>
+      </div>
+      <div style="font:400 12px/1 ui-monospace,Menlo,monospace;color:#6E6B64;flex:none">10</div>
+    </div>
+    <div style="padding:15px 22px;border-bottom:1px solid #1C1C1A;display:flex;justify-content:space-between;align-items:center;gap:12px">
+      <div style="flex:1;min-width:0">
+        <div style="font:600 17.5px/1.2 Archivo;color:#F2EFE7">Kayıp, hastalık, kriz</div>
+        <div style="margin-top:5px;font:400 13.5px/1.5 Archivo;color:#9A968C;text-wrap:pretty">Hastalık, yas, maddi sıkıntı ve haksızlık zamanları için.</div>
+      </div>
+      <div style="font:400 12px/1 ui-monospace,Menlo,monospace;color:#6E6B64;flex:none">10</div>
+    </div>
+    <div style="padding:15px 22px;border-bottom:1px solid #1C1C1A;display:flex;justify-content:space-between;align-items:center;gap:12px">
+      <div style="flex:1;min-width:0">
+        <div style="font:600 17.5px/1.2 Archivo;color:#F2EFE7">Kararlar ve değişim</div>
+        <div style="margin-top:5px;font:400 13.5px/1.5 Archivo;color:#9A968C">Karar vermek, belirsizlik, ayrılık ve yeni bir düzen.</div>
+      </div>
+      <div style="font:400 12px/1 ui-monospace,Menlo,monospace;color:#6E6B64;flex:none">10</div>
+    </div>
+  </div>
+  <div style="padding:13px 22px 0;border-top:1px solid #232320">
+    <div style="font:600 10.5px/1 Archivo;letter-spacing:.14em;color:#6E6B64">SON BAKILANLAR</div>
+    <div style="margin-top:9px;display:flex;gap:7px">
+      <div style="padding:8px 12px;border-radius:6px;background:#1A1A18;font:500 13.5px/1 Archivo;color:#D9D5CB">Sabır</div>
+      <div style="padding:8px 12px;border-radius:6px;background:#1A1A18;font:500 13.5px/1 Archivo;color:#D9D5CB">Yas ve kayıp</div>
+      <div style="padding:8px 12px;border-radius:6px;background:#1A1A18;font:500 13.5px/1 Archivo;color:#D9D5CB">Şükür</div>
+    </div>
+  </div>
+</div>
+</x-import>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#FAF8F3;font-family:Archivo,system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 22px 0;display:flex;align-items:center;gap:6px;font:500 15px/1 Archivo;color:#4A463E"><span style="font-size:20px;line-height:1">‹</span>Güçlenme ve umut</div>
+  <div style="padding:18px 22px 0">
+    <div style="font:600 29px/1.1 Archivo;color:#151512;letter-spacing:-.015em">Sabır</div>
+    <div style="margin-top:8px;font:400 14px/1.55 Archivo;color:#6A665D;text-wrap:pretty">Zorluk uzadığında dayanma gücü üzerine ayetler; kaçmak değil, taşımak üzerine.</div>
+  </div>
+  <div style="margin:18px 22px 0;display:flex;align-items:center;gap:9px;background:#F0EDE4;border-radius:8px;padding:11px 13px">
+    <svg width="14" height="14" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#8A867C" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#8A867C" stroke-width="1.6"></line></svg>
+    <span style="font:400 15px/1 Archivo;color:#8A867C">Bu kategoride ara</span>
+  </div>
+  <div style="padding:16px 22px 6px;font:400 11.5px/1 ui-monospace,Menlo,monospace;color:#8A867C">8 ayet · 5–8 arası tipik</div>
+  <div style="flex:1;overflow:hidden;padding:0 22px">
+    <div style="padding:15px 0;border-top:1px solid #E4E0D5">
+      <div style="font:400 12px/1 ui-monospace,Menlo,monospace;color:#8A867C">İnşirah 94:6</div>
+      <div style="margin-top:7px;max-height:52px;overflow:hidden;font:400 16px/1.62 Spectral,serif;color:#22211D">Şüphesiz her zorluğun ardından bir genişlik gelir.</div>
+    </div>
+    <div style="padding:15px 0;border-top:1px solid #E4E0D5">
+      <div style="font:400 12px/1 ui-monospace,Menlo,monospace;color:#8A867C">Ra'd 13:28</div>
+      <div style="margin-top:7px;max-height:52px;overflow:hidden;font:400 16px/1.62 Spectral,serif;color:#22211D">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler; iyilik edenleri</div>
+    </div>
+    <div style="padding:15px 0;border-top:1px solid #E4E0D5">
+      <div style="font:400 12px/1 ui-monospace,Menlo,monospace;color:#8A867C">Bakara 2:282</div>
+      <div style="margin-top:7px;max-height:52px;overflow:hidden;font:400 16px/1.62 Spectral,serif;color:#22211D">Ey iman edenler, belirli bir süreye kadar birbirinize borçlandığınız zaman onu yazın; aranızda bir yazıcı</div>
+    </div>
+    <div style="padding:15px 0;border-top:1px solid #E4E0D5">
+      <div style="font:400 12px/1 ui-monospace,Menlo,monospace;color:#8A867C">Hucurât 49:12</div>
+      <div style="margin-top:7px;max-height:52px;overflow:hidden;font:400 16px/1.62 Spectral,serif;color:#22211D">Birbirinizin eksiğini araştırmayın ve arkasından konuşmayın; kimse kardeşinin etini</div>
+    </div>
+    <div style="padding:15px 0;border-top:1px solid #E4E0D5">
+      <div style="font:400 12px/1 ui-monospace,Menlo,monospace;color:#8A867C">Nûr 24:35</div>
+      <div style="margin-top:7px;max-height:52px;overflow:hidden;font:400 16px/1.62 Spectral,serif;color:#22211D">Bir kandil gibidir; kandil bir cam içindedir, cam ise parlayan bir yıldız gibidir</div>
+    </div>
+  </div>
+  <div style="background:#151512;padding:12px 22px;display:flex;align-items:center;gap:12px">
+    <div style="width:32px;height:32px;border-radius:6px;background:#FAF8F3;display:flex;align-items:center;justify-content:center;font:400 12px/1 Archivo;color:#151512;letter-spacing:1px">❙❙</div>
+    <div style="flex:1;min-width:0"><div style="font:600 13.5px/1.2 Archivo;color:#FAF8F3">Ra'd 13:28</div><div style="margin-top:3px;font:400 11px/1 ui-monospace,Menlo,monospace;color:#9A968C">okunuyor · 0:24 / 1:02</div></div>
+    <div style="font:400 15px/1 Archivo;color:#9A968C">✕</div>
+  </div>
+</div>
+</x-import>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#FAF8F3;font-family:Archivo,system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 22px 0;display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:6px;font:500 15px/1 Archivo;color:#4A463E"><span style="font-size:20px;line-height:1">‹</span>Sabır</div>
+    <div style="font:500 14px/1 Archivo;color:#4A463E">Kaydet</div>
+  </div>
+  <div style="flex:1;overflow:hidden;padding:24px 24px 0">
+    <div style="font:400 12.5px/1 ui-monospace,Menlo,monospace;color:#8A867C">Ra'd 13:28</div>
+    <div style="margin-top:20px;font:400 25px/1.6 Spectral,serif;color:#1A1916;text-wrap:pretty">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler; iyilik edenleri seven bir merhamet sahibi, onların çabasını karşılıksız bırakmaz ve gönüllerine bir dinginlik indirir.</div>
+    <div style="margin-top:22px;padding-top:14px;border-top:1px solid #E4E0D5;font:400 12px/1.5 ui-monospace,Menlo,monospace;color:#8A867C">Türkçe meal · kaynak sürümü 0.1 (yer tutucu metin)</div>
+  </div>
+  <div style="padding:0 24px 18px">
+    <div style="display:flex;gap:8px;margin-bottom:16px">
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 0;border-radius:8px;background:#151512;font:500 16px/1 Archivo;color:#FAF8F3"><span style="font-size:11px">▶</span>Oynat</div>
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:15px 0;border-radius:8px;background:#F0EDE4;font:500 16px/1 Archivo;color:#151512">Bağlamı gör</div>
+    </div>
+    <div style="font:400 11px/1 ui-monospace,Menlo,monospace;color:#8A867C">bu ayetin kategorileri</div>
+    <div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:6px">
+      <div style="padding:8px 11px;border-radius:6px;background:#F0EDE4;font:500 13.5px/1 Archivo;color:#2A2822">Sabır</div>
+      <div style="padding:8px 11px;border-radius:6px;background:#F0EDE4;font:500 13.5px/1 Archivo;color:#2A2822">İç huzur</div>
+      <div style="padding:8px 11px;border-radius:6px;background:#F0EDE4;font:500 13.5px/1 Archivo;color:#2A2822">Affetmek ve barışmak</div>
+      <div style="padding:8px 11px;border-radius:6px;background:#F0EDE4;font:500 13.5px/1 Archivo;color:#2A2822">Öfke</div>
+    </div>
+  </div>
+</div>
+</x-import>
+<div class="dv-meta">
+<h4>Fotoğraf zemin</h4>
+<p>Fotoğraf yalnızca ana sayfada, düz karartmayla; liste ve okuma yüzeyleri kağıt gibi temiz kalıyor, böylece atmosfer okunabilirliği yemiyor.</p>
+<h5>Palet</h5>
+<div class="dv-sw">
+<div class="dv-swr"><i style="background:#FAF8F3"></i><b>zemin</b>#FAF8F3</div>
+<div class="dv-swr"><i style="background:#F0EDE4"></i><b>yüzey</b>#F0EDE4</div>
+<div class="dv-swr"><i style="background:#151512"></i><b>metin/koyu</b>#151512</div>
+<div class="dv-swr"><i style="background:#6A665D"></i><b>ikincil</b>#6A665D</div>
+<div class="dv-swr"><i style="background:#E4E0D5"></i><b>ayırıcı</b>#E4E0D5</div>
+<div class="dv-swr"><i style="background:#0F0F0E"></i><b>karartma</b>#0F0F0E 52%</div>
+</div>
+<h5>Tipografi ölçeği</h5>
+<div class="dv-ty">
+<div class="dv-tyr">Meal — Spectral 400<span>25 / 40</span></div>
+<div class="dv-tyr">Kapak sorusu — Spectral 400<span>30 / 39</span></div>
+<div class="dv-tyr">Ekran başlığı — Archivo 600<span>29 / 32</span></div>
+<div class="dv-tyr">Gövde — Archivo 400<span>14 / 22</span></div>
+<div class="dv-tyr">Meta — mono 400<span>12 / 18</span></div>
+</div>
+<p class="dv-cap">Fotoğraf alanı yer tutucu; final görsel lisanslı arşivden gelir.</p>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="1f">
+<div class="dv-olabel"><a class="dv-oid" href="#1f">1f</a>Geometrik — cesur</div>
+<div class="dv-set">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#EFEBE2;font-family:Manrope,system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:6px 20px 0;display:flex;align-items:center;gap:9px">
+    <div style="width:12px;height:12px;background:#B4553C;transform:rotate(45deg)"></div>
+    <div style="font:700 10.5px/1 Manrope;letter-spacing:.18em;color:#5C574C">AYET REHBERİ</div>
+  </div>
+  <div style="margin:14px 20px 0;display:flex;align-items:center;gap:9px;background:#E4DFD3;border-radius:2px;padding:13px">
+    <svg width="15" height="15" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#7D786B" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#7D786B" stroke-width="1.6"></line></svg>
+    <span style="font:500 16px/1 Manrope;color:#7D786B">Ayet veya konu ara</span>
+  </div>
+  <div style="margin:16px 20px 0;display:flex;gap:2px">
+    <div style="flex:1;text-align:center;padding:12px 4px;background:#14161A;font:700 14.5px/1 Manrope;color:#EFEBE2">Ne yaşıyorsun?</div>
+    <div style="flex:1;text-align:center;padding:12px 4px;background:#E4DFD3;font:600 14.5px/1 Manrope;color:#5C574C">Ne hakkında?</div>
+  </div>
+  <div style="flex:1;overflow:hidden;margin-top:16px;padding:0 20px;display:flex;flex-direction:column;gap:2px">
+    <div style="display:flex;align-items:stretch;background:#F7F4EC">
+      <div style="width:56px;flex:none;background:repeating-linear-gradient(45deg,#B4553C 0 6px,#F7F4EC 6px 12px,#14161A 12px 18px,#F7F4EC 18px 24px)"></div>
+      <div style="flex:1;min-width:0;padding:14px 15px">
+        <div style="font:700 17.5px/1.2 Manrope;color:#14161A">Zor duygular</div>
+        <div style="margin-top:5px;font:500 13.5px/1.5 Manrope;color:#676256;text-wrap:pretty">Kaygı, korku, üzüntü gibi ağır günlerde okunacak ayetler.</div>
+        <div style="margin-top:7px;font:700 11.5px/1 Manrope;letter-spacing:.06em;color:#B4553C">10 KATEGORİ</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:stretch;background:#F7F4EC">
+      <div style="width:56px;flex:none;background:repeating-linear-gradient(-45deg,#14161A 0 5px,#F7F4EC 5px 13px,#B4553C 13px 18px,#F7F4EC 18px 26px)"></div>
+      <div style="flex:1;min-width:0;padding:14px 15px">
+        <div style="font:700 17.5px/1.2 Manrope;color:#14161A">Güçlenme ve umut</div>
+        <div style="margin-top:5px;font:500 13.5px/1.5 Manrope;color:#676256;text-wrap:pretty">Sabır, tevekkül, şükür ve yeniden başlama üzerine ayetler.</div>
+        <div style="margin-top:7px;font:700 11.5px/1 Manrope;letter-spacing:.06em;color:#B4553C">10 KATEGORİ</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:stretch;background:#F7F4EC">
+      <div style="width:56px;flex:none;background:repeating-linear-gradient(90deg,#14161A 0 4px,#F7F4EC 4px 14px,#B4553C 14px 17px,#F7F4EC 17px 28px)"></div>
+      <div style="flex:1;min-width:0;padding:14px 15px">
+        <div style="font:700 17.5px/1.2 Manrope;color:#14161A">Kayıp, hastalık, kriz</div>
+        <div style="margin-top:5px;font:500 13.5px/1.5 Manrope;color:#676256;text-wrap:pretty">Hastalık, yas, maddi sıkıntı ve haksızlık zamanları için.</div>
+        <div style="margin-top:7px;font:700 11.5px/1 Manrope;letter-spacing:.06em;color:#B4553C">10 KATEGORİ</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:stretch;background:#F7F4EC">
+      <div style="width:56px;flex:none;background:repeating-linear-gradient(135deg,#B4553C 0 5px,#F7F4EC 5px 12px,#14161A 12px 16px,#F7F4EC 16px 24px)"></div>
+      <div style="flex:1;min-width:0;padding:14px 15px 26px">
+        <div style="font:700 17.5px/1.2 Manrope;color:#14161A">Kararlar ve değişim</div>
+        <div style="margin-top:5px;font:500 13.5px/1.5 Manrope;color:#676256">Karar vermek, belirsizlik, ayrılık ve yeni bir düzen.</div>
+      </div>
+    </div>
+  </div>
+  <div style="padding:13px 20px 0;border-top:2px solid #14161A">
+    <div style="font:700 10.5px/1 Manrope;letter-spacing:.16em;color:#7D786B">SON BAKILANLAR</div>
+    <div style="margin-top:9px;display:flex;gap:6px">
+      <div style="padding:8px 12px;background:#E4DFD3;font:600 13.5px/1 Manrope;color:#14161A">Sabır</div>
+      <div style="padding:8px 12px;background:#E4DFD3;font:600 13.5px/1 Manrope;color:#14161A">Yas ve kayıp</div>
+      <div style="padding:8px 12px;background:#E4DFD3;font:600 13.5px/1 Manrope;color:#14161A">Şükür</div>
+    </div>
+  </div>
+</div>
+</x-import>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#EFEBE2;font-family:Manrope,system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;gap:6px;font:600 15px/1 Manrope;color:#B4553C"><span style="font-size:20px;line-height:1">‹</span>Güçlenme ve umut</div>
+  <div style="padding:16px 20px 0">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="width:10px;height:10px;background:#B4553C;transform:rotate(45deg);flex:none"></div>
+      <div style="font:700 28px/1.05 Manrope;color:#14161A;letter-spacing:-.02em">Sabır</div>
+    </div>
+    <div style="margin-top:9px;font:500 14px/1.55 Manrope;color:#676256;text-wrap:pretty">Zorluk uzadığında dayanma gücü üzerine ayetler; kaçmak değil, taşımak üzerine.</div>
+  </div>
+  <div style="margin:16px 20px 0;display:flex;align-items:center;gap:9px;background:#E4DFD3;padding:11px 13px">
+    <svg width="14" height="14" viewBox="0 0 15 15"><circle cx="6.2" cy="6.2" r="4.6" fill="none" stroke="#7D786B" stroke-width="1.6"></circle><line x1="9.7" y1="9.7" x2="13" y2="13" stroke="#7D786B" stroke-width="1.6"></line></svg>
+    <span style="font:500 15px/1 Manrope;color:#7D786B">Bu kategoride ara</span>
+  </div>
+  <div style="padding:15px 20px 7px;font:700 11.5px/1 Manrope;letter-spacing:.1em;color:#7D786B">8 AYET</div>
+  <div style="flex:1;overflow:hidden;padding:0 20px;display:flex;flex-direction:column;gap:2px">
+    <div style="background:#F7F4EC;padding:13px 15px;display:flex;gap:12px">
+      <div style="width:3px;flex:none;background:#B4553C"></div>
+      <div style="flex:1;min-width:0"><div style="font:700 12px/1 Manrope;letter-spacing:.06em;color:#B4553C">İNŞİRAH 94:6</div><div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 17px/1.55 'EB Garamond',serif;color:#1A1C20">Şüphesiz her zorluğun ardından bir genişlik gelir.</div></div>
+    </div>
+    <div style="background:#F7F4EC;padding:13px 15px;display:flex;gap:12px">
+      <div style="width:3px;flex:none;background:#B4553C"></div>
+      <div style="flex:1;min-width:0"><div style="font:700 12px/1 Manrope;letter-spacing:.06em;color:#B4553C">RA'D 13:28</div><div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 17px/1.55 'EB Garamond',serif;color:#1A1C20">Onlar ki bollukta ve darlıkta bağışta bulunurlar, öfkelerini yenerler ve insanları affederler; iyilik edenleri</div></div>
+    </div>
+    <div style="background:#F7F4EC;padding:13px 15px;display:flex;gap:12px">
+      <div style="width:3px;flex:none;background:#B4553C"></div>
+      <div style="flex:1;min-width:0"><div style="font:700 12px/1 Manrope;letter-spacing:.06em;color:#B4553C">BAKARA 2:282</div><div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 17px/1.55 'EB Garamond',serif;color:#1A1C20">Ey iman edenler, belirli bir süreye kadar birbirinize borçlandığınız zaman onu yazın; aranızda bir yazıcı doğrulukla</div></div>
+    </div>
+    <div style="background:#F7F4EC;padding:13px 15px;display:flex;gap:12px">
+      <div style="width:3px;flex:none;background:#B4553C"></div>
+      <div style="flex:1;min-width:0"><div style="font:700 12px/1 Manrope;letter-spacing:.06em;color:#B4553C">HUCURÂT 49:12</div><div style="margin-top:6px;max-height:52px;overflow:hidden;font:400 17px/1.55 'EB Garamond',serif;color:#1A1C20">Birbirinizin eksiğini araştırmayın ve arkasından konuşmayın; kimse kardeşinin etini</div></div>
+    </div>
+  </div>
+  <div style="background:#14161A;padding:12px 20px;display:flex;align-items:center;gap:12px">
+    <div style="width:32px;height:32px;background:#B4553C;display:flex;align-items:center;justify-content:center;font:600 12px/1 Manrope;color:#F7F4EC;letter-spacing:1px">❙❙</div>
+    <div style="flex:1;min-width:0"><div style="font:700 13.5px/1.2 Manrope;color:#F7F4EC">Ra'd 13:28</div><div style="margin-top:3px;font:500 11.5px/1 Manrope;color:#9E9A8E">duraklatıldı · 0:24 / 1:02</div></div>
+    <div style="font:500 15px/1 Manrope;color:#9E9A8E">✕</div>
+  </div>
+</div>
+</x-import>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;box-sizing:border-box;padding:58px 0 34px;background:#F7F4EC;font-family:Manrope,system-ui;display:flex;flex-direction:column;overflow:hidden">
+  <div style="padding:4px 20px 0;display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:6px;font:600 15px/1 Manrope;color:#B4553C"><span style="font-size:20px;line-height:1">‹</span>Borç</div>
+    <div style="font:600 14px/1 Manrope;color:#B4553C">Kaydet</div>
+  </div>
+  <div style="flex:1;overflow:hidden;padding:20px 22px 0;position:relative">
+    <div style="display:flex;align-items:center;gap:9px">
+      <div style="width:9px;height:9px;background:#B4553C;transform:rotate(45deg);flex:none"></div>
+      <div style="font:700 13.5px/1 Manrope;letter-spacing:.08em;color:#14161A">BAKARA 2:282</div>
+    </div>
+    <div style="margin-top:16px;font:400 20px/1.62 'EB Garamond',serif;color:#14161A;text-wrap:pretty">Ey iman edenler, belirli bir süreye kadar birbirinize borçlandığınız zaman onu yazın; aranızda bir yazıcı doğrulukla yazsın, yazıcı kendisine öğretildiği gibi yazmaktan çekinmesin ve borçlu olan da yazdırsın, üzerindeki hakkı eksiltmeden ve hiçbir şeyi gizlemeden. Eğer borçlu olan kimse aklen zayıf ya da güçsüz ise yahut kendisi yazdıramayacak durumdaysa, onun velisi doğrulukla yazdırsın. Aranızdan iki de şahit tutun; eğer iki erkek bulunmazsa, razı olacağınız şahitlerden bir erkek ve iki kadın olsun ki biri unuttuğunda diğeri ona hatırlatsın. Şahitler çağrıldıklarında gelmekten kaçınmasınlar.</div>
+    <div style="position:absolute;left:0;right:0;bottom:0;height:56px;background:linear-gradient(to top,#F7F4EC,rgba(247,244,236,0))"></div>
+  </div>
+  <div style="padding:0 22px 16px">
+    <div style="display:flex;align-items:center;gap:8px;padding:9px 0 14px;font:500 11.5px/1 Manrope;color:#7D786B"><div style="flex:1;height:2px;background:#E0DACC;position:relative"><div style="position:absolute;left:0;top:0;bottom:0;width:62%;background:#14161A"></div></div>908 karakter</div>
+    <div style="display:flex;gap:2px;margin-bottom:14px">
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 0;background:#14161A;font:700 16px/1 Manrope;color:#F7F4EC"><span style="font-size:11px">▶</span>Oynat</div>
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:15px 0;background:#E4DFD3;font:600 16px/1 Manrope;color:#14161A">Bağlamı gör</div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px">
+      <div style="padding:8px 11px;background:#E4DFD3;font:600 13.5px/1 Manrope;color:#14161A">Borç</div>
+      <div style="padding:8px 11px;background:#E4DFD3;font:600 13.5px/1 Manrope;color:#14161A">Emanet</div>
+      <div style="padding:8px 11px;background:#E4DFD3;font:600 13.5px/1 Manrope;color:#14161A">Ticaret ve ölçü</div>
+      <div style="padding:8px 11px;background:#E4DFD3;font:600 13.5px/1 Manrope;color:#14161A">Adalet</div>
+    </div>
+    <div style="margin-top:12px;font:500 11.5px/1.5 Manrope;color:#7D786B">Türkçe meal · kaynak sürümü 0.1 (yer tutucu metin)</div>
+  </div>
+</div>
+</x-import>
+<div class="dv-meta">
+<h4>Geometrik</h4>
+<p>İslam geometrisi indirgenmiş çizgi ritmine dönüşüyor: desen aile ayırt edici işareti oluyor, süsleme değil; keskin köşeler jenerik kart dilinden uzaklaştırıyor.</p>
+<h5>Palet</h5>
+<div class="dv-sw">
+<div class="dv-swr"><i style="background:#EFEBE2"></i><b>zemin</b>#EFEBE2</div>
+<div class="dv-swr"><i style="background:#F7F4EC"></i><b>yüzey</b>#F7F4EC</div>
+<div class="dv-swr"><i style="background:#14161A"></i><b>metin</b>#14161A</div>
+<div class="dv-swr"><i style="background:#676256"></i><b>ikincil</b>#676256</div>
+<div class="dv-swr"><i style="background:#B4553C"></i><b>vurgu</b>#B4553C</div>
+<div class="dv-swr"><i style="background:#E4DFD3"></i><b>ikincil yüzey</b>#E4DFD3</div>
+</div>
+<h5>Tipografi ölçeği</h5>
+<div class="dv-ty">
+<div class="dv-tyr">Meal — EB Garamond 400<span>20 / 32</span></div>
+<div class="dv-tyr">Ekran başlığı — Manrope 700<span>28 / 29</span></div>
+<div class="dv-tyr">Liste adı — Manrope 700<span>17.5 / 21</span></div>
+<div class="dv-tyr">Gövde — Manrope 500<span>14 / 22</span></div>
+<div class="dv-tyr">Meta — Manrope 700<span>11.5 / 14</span></div>
+</div>
+<p class="dv-cap">Ayet odak, 908 karakterlik Bakara 2:282 bandıyla stres testinde.</p>
+</div>
+</div>
+</div>
+
+<div id="dv-end"></div>
+</div>
+<p class="dv-next">Sıradaki adımlar: “<a class="dv-oid" href="#1a">1a</a> ile <a class="dv-oid" href="#1f">1f</a>'i birleştir” · “<a class="dv-oid" href="#1c">1c</a>'yi açık temada göster” · “seçilen yön için token sistemi ve 8 ekran”</p>
+</section>
+</x-dc>
+</body>
+</html>

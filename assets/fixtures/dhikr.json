@@ -1,0 +1,57 @@
+{
+  "_not": "Hazır set SABİTTİR: metin, anlam ve sayı değiştirilemez, silinemez. Arapça metinler md/11-zikir-ekranlari.md'den birebir alınmıştır.",
+  "presets": [
+    {
+      "slug": "preset-1",
+      "nameTr": "Sübhanallah",
+      "textAr": "سُبْحَانَ اللّٰهِ",
+      "meaning": "Allah'ı her türlü eksiklikten tenzih ederim",
+      "targetCount": 33,
+      "stepOrder": 1
+    },
+    {
+      "slug": "preset-2",
+      "nameTr": "Elhamdülillah",
+      "textAr": "الْحَمْدُ لِلّٰهِ",
+      "meaning": "Hamd, âlemlerin Rabbi Allah'a mahsustur",
+      "targetCount": 33,
+      "stepOrder": 2
+    },
+    {
+      "slug": "preset-3",
+      "nameTr": "Allahu Ekber",
+      "textAr": "اللّٰهُ أَكْبَرُ",
+      "meaning": "Allah her şeyden büyüktür",
+      "targetCount": 33,
+      "stepOrder": 3
+    },
+    {
+      "slug": "preset-4",
+      "nameTr": "Sübhanallah",
+      "textAr": "سُبْحَانَ اللّٰهِ",
+      "meaning": "Seti kapatan tek zikir · 99'un ardından",
+      "targetCount": 1,
+      "stepOrder": 4
+    }
+  ],
+  "customExamples": [
+    {
+      "name": "Sübhânallâhi ve bihamdihî",
+      "textAr": "سُبْحَانَ اللّٰهِ وَبِحَمْدِهِ",
+      "meaning": "Sabah zikri",
+      "note": "md/12 · örnek kullanıcı kaydı"
+    },
+    {
+      "name": "Hasbünallâhü ve ni'mel vekîl",
+      "textAr": "حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيلُ",
+      "meaning": "Zor günlerde",
+      "note": "md/12 · örnek kullanıcı kaydı"
+    },
+    {
+      "name": "Yâ Latîf",
+      "textAr": "يَا لَطِيفُ",
+      "meaning": "Bugünün ismiyle",
+      "note": "md/12 · örnek kullanıcı kaydı"
+    }
+  ]
+}

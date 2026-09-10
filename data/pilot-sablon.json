@@ -1,0 +1,65 @@
+{
+  "_not": "Aday listeleri editoryaldir; bu dosyayı insan doldurur. verseIds 'sure:ayet' biçiminde.",
+  "pilot": [
+    {
+      "categoryId": "H01",
+      "name": "Namaz",
+      "band": "bol",
+      "verseIds": []
+    },
+    {
+      "categoryId": "K06",
+      "name": "Cennet",
+      "band": "bol",
+      "verseIds": []
+    },
+    {
+      "categoryId": "G03",
+      "name": "Rahmeti",
+      "band": "bol",
+      "verseIds": []
+    },
+    {
+      "categoryId": "B02",
+      "name": "Sabır",
+      "band": "orta",
+      "verseIds": []
+    },
+    {
+      "categoryId": "B05",
+      "name": "Şükür",
+      "band": "orta",
+      "verseIds": []
+    },
+    {
+      "categoryId": "L02",
+      "name": "Adalet",
+      "band": "orta",
+      "verseIds": []
+    },
+    {
+      "categoryId": "A01",
+      "name": "Kaygı",
+      "band": "orta",
+      "verseIds": []
+    },
+    {
+      "categoryId": "P04",
+      "name": "Fil",
+      "band": "kıt",
+      "verseIds": []
+    },
+    {
+      "categoryId": "P02",
+      "name": "Karınca",
+      "band": "kıt",
+      "verseIds": []
+    },
+    {
+      "categoryId": "P03",
+      "name": "Örümcek",
+      "band": "kıt",
+      "verseIds": []
+    }
+  ]
+}

@@ -1,0 +1,2227 @@
+{
+  "_not": "Ü6/Ü7 · metinler yer tutucudur, meal değildir. Künyeler sentetiktir. Ayet sayısı 200: brief'in 'bir ayet en fazla ~5 kategoriye bağlanır' normu korunurken 138 dolu kategorinin dolabilmesi için.",
+  "translators": [
+    {
+      "id": "ornek-a",
+      "slug": "ornek-a",
+      "name": "Örnek Meal A (yer tutucu)",
+      "workTitle": "Yer tutucu meal",
+      "edition": "—",
+      "year": null,
+      "licenseNote": "Fixture verisi · lisans yok",
+      "sortOrder": 0
+    },
+    {
+      "id": "ornek-b",
+      "slug": "ornek-b",
+      "name": "Örnek Meal B (yer tutucu)",
+      "workTitle": "Yer tutucu meal",
+      "edition": "—",
+      "year": null,
+      "licenseNote": "Fixture verisi · lisans yok",
+      "sortOrder": 1
+    }
+  ],
+  "verses": [
+    {
+      "id": "F01:01",
+      "surahNumber": 1,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 1",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F01:02",
+      "surahNumber": 1,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 1",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F01:03",
+      "surahNumber": 1,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 1",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F01:04",
+      "surahNumber": 1,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 1",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F01:05",
+      "surahNumber": 1,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 1",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F01:06",
+      "surahNumber": 1,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 1",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F01:07",
+      "surahNumber": 1,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 1",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F01:08",
+      "surahNumber": 1,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 1",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F02:01",
+      "surahNumber": 2,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 2",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F02:02",
+      "surahNumber": 2,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 2",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F02:03",
+      "surahNumber": 2,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 2",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F02:04",
+      "surahNumber": 2,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 2",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F02:05",
+      "surahNumber": 2,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 2",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F02:06",
+      "surahNumber": 2,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 2",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F02:07",
+      "surahNumber": 2,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 2",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F02:08",
+      "surahNumber": 2,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 2",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F03:01",
+      "surahNumber": 3,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 3",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F03:02",
+      "surahNumber": 3,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 3",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F03:03",
+      "surahNumber": 3,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 3",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F03:04",
+      "surahNumber": 3,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 3",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F03:05",
+      "surahNumber": 3,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 3",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F03:06",
+      "surahNumber": 3,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 3",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F03:07",
+      "surahNumber": 3,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 3",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F03:08",
+      "surahNumber": 3,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 3",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F04:01",
+      "surahNumber": 4,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 4",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F04:02",
+      "surahNumber": 4,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 4",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F04:03",
+      "surahNumber": 4,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 4",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F04:04",
+      "surahNumber": 4,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 4",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F04:05",
+      "surahNumber": 4,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 4",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F04:06",
+      "surahNumber": 4,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 4",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F04:07",
+      "surahNumber": 4,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 4",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F04:08",
+      "surahNumber": 4,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 4",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F05:01",
+      "surahNumber": 5,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 5",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F05:02",
+      "surahNumber": 5,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 5",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F05:03",
+      "surahNumber": 5,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 5",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F05:04",
+      "surahNumber": 5,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 5",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F05:05",
+      "surahNumber": 5,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 5",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F05:06",
+      "surahNumber": 5,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 5",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F05:07",
+      "surahNumber": 5,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 5",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F05:08",
+      "surahNumber": 5,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 5",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F06:01",
+      "surahNumber": 6,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 6",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F06:02",
+      "surahNumber": 6,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 6",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F06:03",
+      "surahNumber": 6,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 6",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F06:04",
+      "surahNumber": 6,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 6",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F06:05",
+      "surahNumber": 6,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 6",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F06:06",
+      "surahNumber": 6,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 6",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F06:07",
+      "surahNumber": 6,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 6",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F06:08",
+      "surahNumber": 6,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 6",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F07:01",
+      "surahNumber": 7,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 7",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F07:02",
+      "surahNumber": 7,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 7",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F07:03",
+      "surahNumber": 7,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 7",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F07:04",
+      "surahNumber": 7,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 7",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F07:05",
+      "surahNumber": 7,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 7",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F07:06",
+      "surahNumber": 7,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 7",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F07:07",
+      "surahNumber": 7,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 7",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F07:08",
+      "surahNumber": 7,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 7",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F08:01",
+      "surahNumber": 8,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 8",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F08:02",
+      "surahNumber": 8,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 8",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F08:03",
+      "surahNumber": 8,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 8",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F08:04",
+      "surahNumber": 8,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 8",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F08:05",
+      "surahNumber": 8,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 8",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F08:06",
+      "surahNumber": 8,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 8",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F08:07",
+      "surahNumber": 8,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 8",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F08:08",
+      "surahNumber": 8,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 8",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F09:01",
+      "surahNumber": 9,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 9",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F09:02",
+      "surahNumber": 9,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 9",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F09:03",
+      "surahNumber": 9,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 9",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F09:04",
+      "surahNumber": 9,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 9",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F09:05",
+      "surahNumber": 9,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 9",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F09:06",
+      "surahNumber": 9,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 9",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F09:07",
+      "surahNumber": 9,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 9",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F09:08",
+      "surahNumber": 9,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 9",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F10:01",
+      "surahNumber": 10,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 10",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F10:02",
+      "surahNumber": 10,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 10",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F10:03",
+      "surahNumber": 10,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 10",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F10:04",
+      "surahNumber": 10,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 10",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F10:05",
+      "surahNumber": 10,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 10",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F10:06",
+      "surahNumber": 10,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 10",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F10:07",
+      "surahNumber": 10,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 10",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F10:08",
+      "surahNumber": 10,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 10",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F11:01",
+      "surahNumber": 11,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 11",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F11:02",
+      "surahNumber": 11,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 11",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F11:03",
+      "surahNumber": 11,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 11",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F11:04",
+      "surahNumber": 11,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 11",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F11:05",
+      "surahNumber": 11,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 11",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F11:06",
+      "surahNumber": 11,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 11",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F11:07",
+      "surahNumber": 11,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 11",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F11:08",
+      "surahNumber": 11,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 11",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F12:01",
+      "surahNumber": 12,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 12",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F12:02",
+      "surahNumber": 12,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 12",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F12:03",
+      "surahNumber": 12,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 12",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F12:04",
+      "surahNumber": 12,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 12",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F12:05",
+      "surahNumber": 12,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 12",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F12:06",
+      "surahNumber": 12,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 12",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F12:07",
+      "surahNumber": 12,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 12",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F12:08",
+      "surahNumber": 12,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 12",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F13:01",
+      "surahNumber": 13,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 13",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F13:02",
+      "surahNumber": 13,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 13",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F13:03",
+      "surahNumber": 13,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 13",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F13:04",
+      "surahNumber": 13,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 13",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F13:05",
+      "surahNumber": 13,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 13",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F13:06",
+      "surahNumber": 13,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 13",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F13:07",
+      "surahNumber": 13,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 13",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F13:08",
+      "surahNumber": 13,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 13",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F14:01",
+      "surahNumber": 14,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 14",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F14:02",
+      "surahNumber": 14,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 14",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F14:03",
+      "surahNumber": 14,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 14",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F14:04",
+      "surahNumber": 14,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 14",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F14:05",
+      "surahNumber": 14,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 14",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F14:06",
+      "surahNumber": 14,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 14",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F14:07",
+      "surahNumber": 14,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 14",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F14:08",
+      "surahNumber": 14,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 14",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F15:01",
+      "surahNumber": 15,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 15",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F15:02",
+      "surahNumber": 15,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 15",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F15:03",
+      "surahNumber": 15,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 15",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F15:04",
+      "surahNumber": 15,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 15",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F15:05",
+      "surahNumber": 15,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 15",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F15:06",
+      "surahNumber": 15,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 15",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F15:07",
+      "surahNumber": 15,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 15",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F15:08",
+      "surahNumber": 15,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 15",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F16:01",
+      "surahNumber": 16,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 16",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F16:02",
+      "surahNumber": 16,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 16",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F16:03",
+      "surahNumber": 16,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 16",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F16:04",
+      "surahNumber": 16,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 16",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F16:05",
+      "surahNumber": 16,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 16",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F16:06",
+      "surahNumber": 16,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 16",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F16:07",
+      "surahNumber": 16,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 16",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F16:08",
+      "surahNumber": 16,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 16",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F17:01",
+      "surahNumber": 17,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 17",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F17:02",
+      "surahNumber": 17,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 17",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F17:03",
+      "surahNumber": 17,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 17",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F17:04",
+      "surahNumber": 17,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 17",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F17:05",
+      "surahNumber": 17,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 17",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F17:06",
+      "surahNumber": 17,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 17",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F17:07",
+      "surahNumber": 17,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 17",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F17:08",
+      "surahNumber": 17,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 17",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F18:01",
+      "surahNumber": 18,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 18",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F18:02",
+      "surahNumber": 18,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 18",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F18:03",
+      "surahNumber": 18,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 18",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F18:04",
+      "surahNumber": 18,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 18",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F18:05",
+      "surahNumber": 18,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 18",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F18:06",
+      "surahNumber": 18,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 18",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F18:07",
+      "surahNumber": 18,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 18",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F18:08",
+      "surahNumber": 18,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 18",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F19:01",
+      "surahNumber": 19,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 19",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F19:02",
+      "surahNumber": 19,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 19",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F19:03",
+      "surahNumber": 19,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 19",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F19:04",
+      "surahNumber": 19,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 19",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F19:05",
+      "surahNumber": 19,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 19",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F19:06",
+      "surahNumber": 19,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 19",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F19:07",
+      "surahNumber": 19,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 19",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F19:08",
+      "surahNumber": 19,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 19",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F20:01",
+      "surahNumber": 20,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 20",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F20:02",
+      "surahNumber": 20,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 20",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F20:03",
+      "surahNumber": 20,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 20",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F20:04",
+      "surahNumber": 20,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 20",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F20:05",
+      "surahNumber": 20,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 20",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F20:06",
+      "surahNumber": 20,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 20",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F20:07",
+      "surahNumber": 20,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 20",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F20:08",
+      "surahNumber": 20,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 20",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F21:01",
+      "surahNumber": 21,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 21",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F21:02",
+      "surahNumber": 21,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 21",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F21:03",
+      "surahNumber": 21,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 21",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F21:04",
+      "surahNumber": 21,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 21",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F21:05",
+      "surahNumber": 21,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 21",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F21:06",
+      "surahNumber": 21,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 21",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F21:07",
+      "surahNumber": 21,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 21",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F21:08",
+      "surahNumber": 21,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 21",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F22:01",
+      "surahNumber": 22,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 22",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F22:02",
+      "surahNumber": 22,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 22",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F22:03",
+      "surahNumber": 22,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 22",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F22:04",
+      "surahNumber": 22,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 22",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F22:05",
+      "surahNumber": 22,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 22",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F22:06",
+      "surahNumber": 22,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 22",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F22:07",
+      "surahNumber": 22,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 22",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F22:08",
+      "surahNumber": 22,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 22",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F23:01",
+      "surahNumber": 23,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 23",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F23:02",
+      "surahNumber": 23,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 23",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F23:03",
+      "surahNumber": 23,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 23",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F23:04",
+      "surahNumber": 23,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 23",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F23:05",
+      "surahNumber": 23,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 23",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F23:06",
+      "surahNumber": 23,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 23",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F23:07",
+      "surahNumber": 23,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 23",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F23:08",
+      "surahNumber": 23,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 23",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F24:01",
+      "surahNumber": 24,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 24",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F24:02",
+      "surahNumber": 24,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 24",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F24:03",
+      "surahNumber": 24,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 24",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F24:04",
+      "surahNumber": 24,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 24",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F24:05",
+      "surahNumber": 24,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 24",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F24:06",
+      "surahNumber": 24,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 24",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F24:07",
+      "surahNumber": 24,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 24",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F24:08",
+      "surahNumber": 24,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 24",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F25:01",
+      "surahNumber": 25,
+      "ayahNumber": 1,
+      "surahName": "Örnek sûre 25",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F25:02",
+      "surahNumber": 25,
+      "ayahNumber": 2,
+      "surahName": "Örnek sûre 25",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F25:03",
+      "surahNumber": 25,
+      "ayahNumber": 3,
+      "surahName": "Örnek sûre 25",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    },
+    {
+      "id": "F25:04",
+      "surahNumber": 25,
+      "ayahNumber": 4,
+      "surahName": "Örnek sûre 25",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz ekle…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal·…"
+      }
+    },
+    {
+      "id": "F25:05",
+      "surahNumber": 25,
+      "ayahNumber": 5,
+      "surahName": "Örnek sûre 25",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet·…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin"
+      }
+    },
+    {
+      "id": "F25:06",
+      "surahNumber": 25,
+      "ayahNumber": 6,
+      "surahName": "Örnek sûre 25",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek s…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek·…"
+      }
+    },
+    {
+      "id": "F25:07",
+      "surahNumber": 25,
+      "ayahNumber": 7,
+      "surahName": "Örnek sûre 25",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde d…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu sa…"
+      }
+    },
+    {
+      "id": "F25:08",
+      "surahNumber": 25,
+      "ayahNumber": 8,
+      "surahName": "Örnek sûre 25",
+      "textAr": null,
+      "translations": {
+        "ornek-a": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının f…",
+        "ornek-b": "Bu bir yer tutucu metindir; gerçek meal verisi henüz eklenmedi. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir. Ayet kartının farklı uzunluklarda nasıl davrandığını ölçmek için kullanılır. Gerçek veri Aşama 2'de gömülecek ve bu satır tek seferde değişecektir. Kategori eşleşmeleri editoryaldir, dinî hüküm değildir. Uzunluk bandını temsil eder, dinî bir metin değildir."
+      }
+    }
+  ]
+}

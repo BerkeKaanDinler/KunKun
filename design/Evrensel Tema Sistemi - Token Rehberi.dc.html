@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+doc-page:not(:defined){visibility:hidden}
+a{color:#1F5C8B}
+a:hover{color:#144160}
+</style>
+<script src="./doc-page.js"></script>
+</helmet>
+<doc-page margin="0.7in">
+
+<div style="font-family:'DM Sans',system-ui;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A8A85">TASARIM SİSTEMİ REHBERİ · v1 · AĞUSTOS 2026</div>
+<h1 style="margin:9px 0 0;font-family:Newsreader,serif;font-size:33px;font-weight:600;line-height:1.15;letter-spacing:-.01em;color:#17181A">Evrensel Tema ve Token Rehberi</h1>
+<p style="margin:11px 0 0;font-family:'DM Sans',system-ui;font-size:13.5px;line-height:1.65;color:#43454A">Otuz temanın tüm renk, cam, tipografi ve geometri değerleri. Token adları içerikten bağımsızdır: aynı sistem bir okuma uygulamasında, bir spor uygulamasında ya da bir finans panosunda değişmeden çalışır. Her bölüm başka bir tasarımcıya ya da modele doğrudan verilebilecek biçimde yazıldı.</p>
+
+<div style="margin:18px 0 0;padding:14px 16px;background:#F7F7F5;border:1px solid #E6E5E1;border-radius:9px;break-inside:avoid">
+<div style="font-family:'DM Sans',system-ui;font-size:10px;font-weight:700;letter-spacing:.14em;color:#8A8A85">SİSTEMİN ÜÇ KURALI</div>
+<ol style="margin:9px 0 0;padding-left:19px;font-family:'DM Sans',system-ui;font-size:13px;line-height:1.65;color:#43454A">
+<li><strong>Tek aksan rengi.</strong> Her tema tek bir vurgu tonu kullanır: birincil buton, seçili durum, ilerleme çubuğu, bağlantı. İkinci bir vurgu rengi yok. Uyarı ve yıkıcı eylem için ayrı bir <code style="font-family:'JetBrains Mono',monospace;font-size:11.5px">danger</code> tokenı vardır.</li>
+<li><strong>Cam bir malzemedir, dekorasyon değil.</strong> Yalnızca içeriğin üzerinde yüzen katmanlar cam olur — arama çubuğu, yüzen çubuk, oynatıcı, yapışkan başlık. Liste ve okuma yüzeyleri düzdür.</li>
+<li><strong>Üç metin kademesi yeter.</strong> <code style="font-family:'JetBrains Mono',monospace;font-size:11.5px">textPrimary</code> / <code style="font-family:'JetBrains Mono',monospace;font-size:11.5px">textSecondary</code> / <code style="font-family:'JetBrains Mono',monospace;font-size:11.5px">textTertiary</code>. Dördüncü bir gri eklemek hiyerarşiyi bulanıklaştırır.</li>
+</ol>
+</div>
+
+<h2 style="margin:28px 0 0;font-family:Newsreader,serif;font-size:21px;font-weight:600;color:#17181A">1 · Token modeli</h2>
+<p style="margin:7px 0 0;font-family:'DM Sans',system-ui;font-size:13.5px;line-height:1.65;color:#43454A">On üç token. Bir tema üretmek bu on üç değeri doldurmaktır; başka hiçbir renk tanımlanmaz. Sağ kolon, bu tokenların bir okuma uygulamasında hangi adla geçtiğini gösterir — kendi projenizde evrensel adları kullanın.</p>
+
+<table style="margin:11px 0 0;width:100%;border-collapse:collapse;font-family:'DM Sans',system-ui;font-size:11.5px">
+<thead><tr style="background:#F2F2F0">
+<th style="padding:7px 9px;text-align:left;border-bottom:1px solid #E0DFDB;color:#17181A">Token</th>
+<th style="padding:7px 9px;text-align:left;border-bottom:1px solid #E0DFDB;color:#17181A">Görevi</th>
+<th style="padding:7px 9px;text-align:left;border-bottom:1px solid #E0DFDB;color:#17181A">Nerede</th>
+</tr></thead>
+<tbody>
+<sc-for list="{{ tokens }}" as="t" hint-placeholder-count="13">
+<tr>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace;font-size:11px;color:#17181A">{{ t.name }}</td>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;color:#43454A">{{ t.role }}</td>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;color:#77797D">{{ t.where }}</td>
+</tr>
+</sc-for>
+</tbody>
+</table>
+
+<h2 style="margin:28px 0 0;font-family:Newsreader,serif;font-size:21px;font-weight:600;color:#17181A">2 · Kod biçimleri</h2>
+<p style="margin:7px 0 0;font-family:'DM Sans',system-ui;font-size:13.5px;line-height:1.65;color:#43454A">Aşağıdaki dört blok aynı temayı (<strong>Kömür + bakır</strong>) dört biçimde verir. Diğer temalar için yalnızca değerleri katalogdan değiştirin; anahtar adları sabittir.</p>
+
+<h3 style="margin:14px 0 0;font-family:'DM Sans',system-ui;font-size:13.5px;font-weight:700;color:#17181A">CSS custom properties</h3>
+<div style="margin:7px 0 0;padding:13px 15px;background:#17181A;border-radius:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;line-height:1.75;color:#E8E6E1;white-space:pre;break-inside:avoid">:root[data-theme="charcoal-copper"] {
+  --surface:          #121110;
+  --surface-raised:   #1C1A18;
+  --surface-sunken:   #171514;
+  --border:           rgba(255,255,255,.12);
+  --divider:          rgba(255,255,255,.09);
+  --accent:           #E0894A;
+  --accent-soft:      rgba(224,137,74,.14);
+  --on-accent:        #10100F;
+  --text-primary:     #F2EDE7;
+  --text-secondary:   rgba(242,237,231,.60);
+  --text-tertiary:    rgba(242,237,231,.38);
+  --hero-surface:     #2B211A;
+  --danger:           #FF6B5E;
+
+  --glass-fill:       rgba(255,235,215,.07);
+  --glass-border:     rgba(255,225,200,.14);
+  --glass-blur:       22px;
+
+  --radius-lg: 22px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+}</div>
+
+<h3 style="margin:16px 0 0;font-family:'DM Sans',system-ui;font-size:13.5px;font-weight:700;color:#17181A">JSON token dosyası</h3>
+<div style="margin:7px 0 0;padding:13px 15px;background:#17181A;border-radius:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;line-height:1.75;color:#E8E6E1;white-space:pre;break-inside:avoid">{
+  "name": "charcoal-copper",
+  "mode": "dark",
+  "color": {
+    "surface": "#121110",
+    "surfaceRaised": "#1C1A18",
+    "surfaceSunken": "#171514",
+    "border": "rgba(255,255,255,0.12)",
+    "divider": "rgba(255,255,255,0.09)",
+    "accent": "#E0894A",
+    "accentSoft": "rgba(224,137,74,0.14)",
+    "onAccent": "#10100F",
+    "textPrimary": "#F2EDE7",
+    "textSecondary": "rgba(242,237,231,0.60)",
+    "textTertiary": "rgba(242,237,231,0.38)",
+    "heroSurface": "#2B211A",
+    "danger": "#FF6B5E"
+  },
+  "glass": {
+    "fill": "rgba(255,235,215,0.07)",
+    "border": "rgba(255,225,200,0.14)",
+    "blur": 22
+  },
+  "radius": { "lg": 22, "md": 14, "sm": 10 }
+}</div>
+
+<h3 style="margin:16px 0 0;font-family:'DM Sans',system-ui;font-size:13.5px;font-weight:700;color:#17181A">Tailwind config</h3>
+<div style="margin:7px 0 0;padding:13px 15px;background:#17181A;border-radius:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;line-height:1.75;color:#E8E6E1;white-space:pre;break-inside:avoid">// tailwind.config.js — tokenlar CSS değişkeninden okunur,
+// tema değişimi :root[data-theme] ile yapılır.
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        surface:  "var(--surface)",
+        raised:   "var(--surface-raised)",
+        sunken:   "var(--surface-sunken)",
+        accent:   "var(--accent)",
+        accentsoft: "var(--accent-soft)",
+        onaccent: "var(--on-accent)",
+        ink:      "var(--text-primary)",
+        ink2:     "var(--text-secondary)",
+        ink3:     "var(--text-tertiary)",
+        hero:     "var(--hero-surface)",
+        danger:   "var(--danger)"
+      },
+      borderColor: {
+        DEFAULT: "var(--border)",
+        divider: "var(--divider)"
+      },
+      borderRadius: { lg: "22px", md: "14px", sm: "10px" },
+      backdropBlur: { glass: "22px" }
+    }
+  }
+};</div>
+
+<h3 style="margin:16px 0 0;font-family:'DM Sans',system-ui;font-size:13.5px;font-weight:700;color:#17181A">Swift / SwiftUI</h3>
+<div style="margin:7px 0 0;padding:13px 15px;background:#17181A;border-radius:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;line-height:1.75;color:#E8E6E1;white-space:pre;break-inside:avoid">extension Color {
+  init(hex: UInt32, alpha: Double = 1) {
+    self.init(.sRGB,
+      red:   Double((hex &gt;&gt; 16) &amp; 0xFF) / 255,
+      green: Double((hex &gt;&gt; 8)  &amp; 0xFF) / 255,
+      blue:  Double( hex        &amp; 0xFF) / 255,
+      opacity: alpha)
+  }
+}
+
+struct Theme {
+  let surface, surfaceRaised, surfaceSunken: Color
+  let border, divider: Color
+  let accent, accentSoft, onAccent: Color
+  let textPrimary, textSecondary, textTertiary: Color
+  let heroSurface, danger: Color
+  let radiusLG: CGFloat, radiusMD: CGFloat, radiusSM: CGFloat
+
+  static let charcoalCopper = Theme(
+    surface:       Color(hex: 0x121110),
+    surfaceRaised: Color(hex: 0x1C1A18),
+    surfaceSunken: Color(hex: 0x171514),
+    border:        Color(hex: 0xFFFFFF, alpha: 0.12),
+    divider:       Color(hex: 0xFFFFFF, alpha: 0.09),
+    accent:        Color(hex: 0xE0894A),
+    accentSoft:    Color(hex: 0xE0894A, alpha: 0.14),
+    onAccent:      Color(hex: 0x10100F),
+    textPrimary:   Color(hex: 0xF2EDE7),
+    textSecondary: Color(hex: 0xF2EDE7, alpha: 0.60),
+    textTertiary:  Color(hex: 0xF2EDE7, alpha: 0.38),
+    heroSurface:   Color(hex: 0x2B211A),
+    danger:        Color(hex: 0xFF6B5E),
+    radiusLG: 22, radiusMD: 14, radiusSM: 10)
+}
+
+// Cam katman:
+.background(.ultraThinMaterial)              // sistem camı
+.overlay(RoundedRectangle(cornerRadius: 22)
+  .stroke(Color(hex: 0xFFE1C8, alpha: 0.14)))</div>
+
+<h2 style="margin:28px 0 0;font-family:Newsreader,serif;font-size:21px;font-weight:600;color:#17181A">3 · Cam reçetesi</h2>
+<p style="margin:7px 0 0;font-family:'DM Sans',system-ui;font-size:13.5px;line-height:1.65;color:#43454A">Cam üç bileşendir: düşük alfalı dolgu, bir tık yüksek alfalı kenar, bulanıklık. Kritik ayrım: <strong>koyu temada dolgu beyaz değildir</strong> — zeminin sıcak/soğuk yönüne çekilmiş açık bir tondur. Saf beyaz cam koyu zeminde gri ve ölü görünür. Açık temada ise dolgu beyazdır ve doygunluk taşımaz.</p>
+
+<table style="margin:11px 0 0;width:100%;border-collapse:collapse;font-family:'DM Sans',system-ui;font-size:11.5px">
+<thead><tr style="background:#F2F2F0">
+<th style="padding:7px 9px;text-align:left;border-bottom:1px solid #E0DFDB;color:#17181A">Mod</th>
+<th style="padding:7px 9px;text-align:left;border-bottom:1px solid #E0DFDB;color:#17181A">Dolgu</th>
+<th style="padding:7px 9px;text-align:left;border-bottom:1px solid #E0DFDB;color:#17181A">Kenar</th>
+<th style="padding:7px 9px;text-align:left;border-bottom:1px solid #E0DFDB;color:#17181A">Blur</th>
+<th style="padding:7px 9px;text-align:left;border-bottom:1px solid #E0DFDB;color:#17181A">Gölge</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9">Açık</td>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace;font-size:10.5px">rgba(255,255,255,.60–.66)</td>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace;font-size:10.5px">rgba(255,255,255,.86–.92)</td>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9">16–22px</td>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace;font-size:10.5px">0 10px 26px rgba(0,0,0,.10)</td>
+</tr>
+<tr>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9">Koyu</td>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace;font-size:10.5px">rgba(açık ton,.06–.10)</td>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace;font-size:10.5px">rgba(açık ton,.13–.18)</td>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9">18–24px</td>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;color:#77797D">yok — ayrımı kenar yapar</td>
+</tr>
+<tr>
+<td style="padding:6px 9px">Duvar kağıdı üstü<br><span style="color:#77797D">(kilit ekranı widget'ı)</span></td>
+<td style="padding:6px 9px;font-family:'JetBrains Mono',monospace;font-size:10.5px">rgba(255,255,255,.14)</td>
+<td style="padding:6px 9px;font-family:'JetBrains Mono',monospace;font-size:10.5px">rgba(255,255,255,.20)</td>
+<td style="padding:6px 9px">22px</td>
+<td style="padding:6px 9px;color:#77797D">yok</td>
+</tr>
+</tbody>
+</table>
+
+<h3 style="margin:16px 0 0;font-family:'DM Sans',system-ui;font-size:13.5px;font-weight:700;color:#17181A">Katman başına blur</h3>
+<table style="margin:8px 0 0;width:100%;border-collapse:collapse;font-family:'DM Sans',system-ui;font-size:11.5px">
+<tbody>
+<sc-for list="{{ glassLayers }}" as="g" hint-placeholder-count="6">
+<tr>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;width:38%;color:#17181A">{{ g.layer }}</td>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;width:14%;font-family:'JetBrains Mono',monospace;font-size:10.5px">{{ g.blur }}</td>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;color:#77797D">{{ g.note }}</td>
+</tr>
+</sc-for>
+</tbody>
+</table>
+
+<div style="margin:13px 0 0;padding:13px 15px;background:#FDF9F2;border:1px solid #E8DFCC;border-radius:9px;font-family:'DM Sans',system-ui;font-size:12.5px;line-height:1.6;color:#5A4F3C;break-inside:avoid">
+<strong>Cam yalnızca arkasında bir şey varken cam görünür.</strong> Düz zemin üzerine konan cam, hafif açık bir dikdörtgenden ibarettir. Her cam katmanın altında ya bir hero bandı, ya kaydırılan liste, ya duvar kağıdı olmalı. Yoksa düz <code style="font-family:'JetBrains Mono',monospace;font-size:11.5px">surfaceRaised</code> kullanın.
+</div>
+
+<h2 style="margin:28px 0 0;font-family:Newsreader,serif;font-size:21px;font-weight:600;color:#17181A">4 · Tipografi ve boşluk</h2>
+<table style="margin:9px 0 0;width:100%;border-collapse:collapse;font-family:'DM Sans',system-ui;font-size:11.5px">
+<thead><tr style="background:#F2F2F0">
+<th style="padding:7px 9px;text-align:left;border-bottom:1px solid #E0DFDB;color:#17181A">Rol</th>
+<th style="padding:7px 9px;text-align:left;border-bottom:1px solid #E0DFDB;color:#17181A">Boyut / ağırlık</th>
+<th style="padding:7px 9px;text-align:left;border-bottom:1px solid #E0DFDB;color:#17181A">Not</th>
+</tr></thead>
+<tbody>
+<sc-for list="{{ typeScale }}" as="s" hint-placeholder-count="9">
+<tr>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;color:#17181A">{{ s.role }}</td>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;font-family:'JetBrains Mono',monospace;font-size:10.5px">{{ s.spec }}</td>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;color:#77797D">{{ s.note }}</td>
+</tr>
+</sc-for>
+</tbody>
+</table>
+
+<ul style="margin:11px 0 0;padding-left:19px;font-family:'DM Sans',system-ui;font-size:13px;line-height:1.7;color:#43454A">
+<li><strong>Yazı ailesi:</strong> sistem tipi (<code style="font-family:'JetBrains Mono',monospace;font-size:11.5px">system-ui, -apple-system</code>) platform temaları için; karakterli temalar tek bir serif başlık ailesi + tek bir sans gövde ailesi kullanır. Üçüncü aile yalnızca monospace künye içindir.</li>
+<li><strong>Ekran kenar boşluğu:</strong> 18px. Cam çubuklar 12–14px — kenara daha yakın dururlar, yüzme hissi güçlenir.</li>
+<li><strong>Dikey ritim:</strong> bloklar arası 9–12px · grup etiketi ile grup arası 7px · kart içi başlık ile gövde arası 8–9px.</li>
+<li><strong>Padding:</strong> kart 13–17px · liste satırı 12–14px dikey, 15px yatay · birincil buton 22–30px dikey.</li>
+<li><strong>Dokunma alanı:</strong> her etkileşimli öğe en az 44×44px. İkon 17–20px çizilir, 44px kutuya ortalanır.</li>
+<li><strong>Yarıçap kademesi:</strong> <code style="font-family:'JetBrains Mono',monospace;font-size:11.5px">lg</code> büyük yüzey ve cam çubuk · <code style="font-family:'JetBrains Mono',monospace;font-size:11.5px">md</code> kart · <code style="font-family:'JetBrains Mono',monospace;font-size:11.5px">sm</code> küçük kontrol · 99px rozet ve ilerleme. Karakterli temalarda üç kademe birlikte değişir (brutalist 0px, yumuşak 22px).</li>
+<li><strong>Gölge:</strong> yalnızca birincil buton ve yüzen kart — <code style="font-family:'JetBrains Mono',monospace;font-size:11.5px">0 14px 30px rgba(0,0,0,.5)</code> koyu, <code style="font-family:'JetBrains Mono',monospace;font-size:11.5px">0 12px 30px rgba(0,0,0,.10)</code> açık.</li>
+</ul>
+
+<h2 style="margin:28px 0 0;font-family:Newsreader,serif;font-size:21px;font-weight:600;color:#17181A">5 · Bileşen tarifleri</h2>
+<p style="margin:7px 0 0;font-family:'DM Sans',system-ui;font-size:13.5px;line-height:1.65;color:#43454A">Sistemin tutarlılığı renkten değil, tekrarlanan geometriden gelir. Aşağıdaki sayılar temadan temaya değişmez; yalnızca token değerleri değişir.</p>
+
+<sc-for list="{{ components }}" as="c" hint-placeholder-count="8">
+<div style="margin:13px 0 0;break-inside:avoid">
+<div style="font-family:'DM Sans',system-ui;font-size:13px;font-weight:700;color:#17181A">{{ c.name }}</div>
+<div style="margin-top:4px;font-family:'DM Sans',system-ui;font-size:12.5px;line-height:1.6;color:#43454A">{{ c.recipe }}</div>
+</div>
+</sc-for>
+
+<h2 style="margin:30px 0 0;font-family:Newsreader,serif;font-size:21px;font-weight:600;color:#17181A">6 · Tema kataloğu</h2>
+<p style="margin:7px 0 0;font-family:'DM Sans',system-ui;font-size:13.5px;line-height:1.65;color:#43454A">Otuz tema, dört aile. Her satır bir temanın tam token seti. <span style="font-family:'JetBrains Mono',monospace;font-size:11px">on</span> = accent üzerindeki metin, <span style="font-family:'JetBrains Mono',monospace;font-size:11px">hero</span> = tam kanama bant zemini. Metin kademeleri koyu temalarda alfa ile türetilir (ikincil %60, üçüncül %38); açık temalarda tabloda verilen düz renklerdir.</p>
+
+<sc-for list="{{ families }}" as="f" hint-placeholder-count="4">
+<div style="margin:20px 0 0">
+<div style="font-family:'DM Sans',system-ui;font-size:14px;font-weight:700;color:#17181A">{{ f.title }}</div>
+<div style="margin-top:4px;font-family:'DM Sans',system-ui;font-size:12.5px;line-height:1.6;color:#5C5E62">{{ f.note }}</div>
+<table style="margin:9px 0 0;width:100%;border-collapse:collapse;font-family:'JetBrains Mono',monospace;font-size:9px">
+<thead><tr style="background:#F2F2F0">
+<th style="padding:6px 5px;text-align:left;border-bottom:1px solid #E0DFDB;font-family:'DM Sans',system-ui;font-size:10px;color:#17181A">Tema</th>
+<th style="padding:6px 5px;text-align:left;border-bottom:1px solid #E0DFDB;font-family:'DM Sans',system-ui;font-size:10px;color:#17181A">surface</th>
+<th style="padding:6px 5px;text-align:left;border-bottom:1px solid #E0DFDB;font-family:'DM Sans',system-ui;font-size:10px;color:#17181A">raised</th>
+<th style="padding:6px 5px;text-align:left;border-bottom:1px solid #E0DFDB;font-family:'DM Sans',system-ui;font-size:10px;color:#17181A">border</th>
+<th style="padding:6px 5px;text-align:left;border-bottom:1px solid #E0DFDB;font-family:'DM Sans',system-ui;font-size:10px;color:#17181A">accent</th>
+<th style="padding:6px 5px;text-align:left;border-bottom:1px solid #E0DFDB;font-family:'DM Sans',system-ui;font-size:10px;color:#17181A">on</th>
+<th style="padding:6px 5px;text-align:left;border-bottom:1px solid #E0DFDB;font-family:'DM Sans',system-ui;font-size:10px;color:#17181A">text1</th>
+<th style="padding:6px 5px;text-align:left;border-bottom:1px solid #E0DFDB;font-family:'DM Sans',system-ui;font-size:10px;color:#17181A">text2</th>
+<th style="padding:6px 5px;text-align:left;border-bottom:1px solid #E0DFDB;font-family:'DM Sans',system-ui;font-size:10px;color:#17181A">hero</th>
+<th style="padding:6px 5px;text-align:left;border-bottom:1px solid #E0DFDB;font-family:'DM Sans',system-ui;font-size:10px;color:#17181A">r</th>
+<th style="padding:6px 5px;text-align:left;border-bottom:1px solid #E0DFDB;font-family:'DM Sans',system-ui;font-size:10px;color:#17181A">AA</th>
+</tr></thead>
+<tbody>
+<sc-for list="{{ f.rows }}" as="r" hint-placeholder-count="12">
+<tr>
+<td style="padding:5px;border-bottom:1px solid #EDECE9;font-family:'DM Sans',system-ui;font-size:10.5px;color:#17181A">{{ r.name }}<sc-if value="{{ r.isDark }}" hint-placeholder-val="{{ false }}"><span style="color:#8A8A85"> · koyu</span></sc-if></td>
+<td style="padding:5px;border-bottom:1px solid #EDECE9">{{ r.surface }}</td>
+<td style="padding:5px;border-bottom:1px solid #EDECE9">{{ r.raised }}</td>
+<td style="padding:5px;border-bottom:1px solid #EDECE9">{{ r.border }}</td>
+<td style="padding:5px;border-bottom:1px solid #EDECE9">{{ r.accent }}</td>
+<td style="padding:5px;border-bottom:1px solid #EDECE9">{{ r.onAccent }}</td>
+<td style="padding:5px;border-bottom:1px solid #EDECE9">{{ r.text1 }}</td>
+<td style="padding:5px;border-bottom:1px solid #EDECE9">{{ r.text2 }}</td>
+<td style="padding:5px;border-bottom:1px solid #EDECE9">{{ r.hero }}</td>
+<td style="padding:5px;border-bottom:1px solid #EDECE9">{{ r.radius }}</td>
+<td style="padding:5px;border-bottom:1px solid #EDECE9;font-family:'DM Sans',system-ui;font-size:10px;color:#43454A">{{ r.aa }}</td>
+</tr>
+</sc-for>
+</tbody>
+</table>
+</div>
+</sc-for>
+
+<h3 style="margin:20px 0 0;font-family:'DM Sans',system-ui;font-size:13.5px;font-weight:700;color:#17181A">Platform temalarının özel tokenları</h3>
+<p style="margin:6px 0 0;font-family:'DM Sans',system-ui;font-size:12.5px;line-height:1.6;color:#43454A">iOS ve Android temaları sistem paletlerine bağlıdır; alfa tabanlı gri kademeleri kendi platform kurallarını izler.</p>
+<table style="margin:8px 0 0;width:100%;border-collapse:collapse;font-family:'DM Sans',system-ui;font-size:11px">
+<tbody>
+<sc-for list="{{ platformExtras }}" as="p" hint-placeholder-count="8">
+<tr>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;width:26%;color:#17181A">{{ p.k }}</td>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;width:32%;font-family:'JetBrains Mono',monospace;font-size:10px">{{ p.v }}</td>
+<td style="padding:6px 9px;border-bottom:1px solid #EDECE9;color:#77797D">{{ p.n }}</td>
+</tr>
+</sc-for>
+</tbody>
+</table>
+
+<h3 style="margin:18px 0 0;font-family:'DM Sans',system-ui;font-size:13.5px;font-weight:700;color:#17181A">Widget tonları</h3>
+<p style="margin:6px 0 0;font-family:'DM Sans',system-ui;font-size:12.5px;line-height:1.6;color:#43454A">Karakterli temalar, widget için ayrı bir üçlü taşır: widget çoğu zaman uygulamanın karşıt modunda görünür (açık temanın widget'ı koyu, koyu temanın widget'ı açık).</p>
+<table style="margin:8px 0 0;width:100%;border-collapse:collapse;font-family:'JetBrains Mono',monospace;font-size:9.5px">
+<thead><tr style="background:#F2F2F0">
+<th style="padding:6px 6px;text-align:left;border-bottom:1px solid #E0DFDB;font-family:'DM Sans',system-ui;font-size:10px;color:#17181A">Tema</th>
+<th style="padding:6px 6px;text-align:left;border-bottom:1px solid #E0DFDB;font-family:'DM Sans',system-ui;font-size:10px;color:#17181A">widget surface</th>
+<th style="padding:6px 6px;text-align:left;border-bottom:1px solid #E0DFDB;font-family:'DM Sans',system-ui;font-size:10px;color:#17181A">widget text</th>
+<th style="padding:6px 6px;text-align:left;border-bottom:1px solid #E0DFDB;font-family:'DM Sans',system-ui;font-size:10px;color:#17181A">widget accent</th>
+</tr></thead>
+<tbody>
+<sc-for list="{{ widgetTones }}" as="w" hint-placeholder-count="12">
+<tr>
+<td style="padding:5px 6px;border-bottom:1px solid #EDECE9;font-family:'DM Sans',system-ui;font-size:10.5px;color:#17181A">{{ w.name }}</td>
+<td style="padding:5px 6px;border-bottom:1px solid #EDECE9">{{ w.bg }}</td>
+<td style="padding:5px 6px;border-bottom:1px solid #EDECE9">{{ w.ink }}</td>
+<td style="padding:5px 6px;border-bottom:1px solid #EDECE9">{{ w.acc }}</td>
+</tr>
+</sc-for>
+</tbody>
+</table>
+
+<h2 style="margin:30px 0 0;font-family:Newsreader,serif;font-size:21px;font-weight:600;color:#17181A">7 · Erişilebilirlik</h2>
+<p style="margin:7px 0 0;font-family:'DM Sans',system-ui;font-size:13.5px;line-height:1.65;color:#43454A">Katalogdaki <strong>AA</strong> kolonu iki oranı birlikte özetler: birincil metnin zemin üstündeki kontrastı ve aksan üzerindeki metnin kontrastı. Ölçütler:</p>
+<ul style="margin:9px 0 0;padding-left:19px;font-family:'DM Sans',system-ui;font-size:13px;line-height:1.7;color:#43454A">
+<li>Gövde metni ≥ 4.5:1 · 24px üstü başlık ≥ 3:1 · ikon ve kenar ≥ 3:1.</li>
+<li>Buton metni her zaman aksanla en yüksek kontrastı veren uçtan seçilir: açık aksanda koyu metin (<code style="font-family:'JetBrains Mono',monospace;font-size:11.5px">#10100F</code>), koyu aksanda açık metin. Beyaz metni açık aksanın üstüne koymak sistemin en sık hatasıdır.</li>
+<li>İkincil metin alfası %60'ın altına indirilmez; üçüncül (%38) yalnızca künye, sayaç ve zaman damgası içindir — hiçbir zaman okunması gereken içerik için değil.</li>
+<li>Yalnızca renkle bilgi verilmez: seçili durum aksan dolgu <em>ve</em> kalınlık farkı taşır; hata durumu <code style="font-family:'JetBrains Mono',monospace;font-size:11.5px">danger</code> rengi <em>ve</em> metin taşır.</li>
+<li>En küçük metin 11px. Cam katman üzerindeki metin, blur nedeniyle bir kademe daha kalın yazılır (500 yerine 600).</li>
+</ul>
+
+<h2 style="margin:28px 0 0;font-family:Newsreader,serif;font-size:21px;font-weight:600;color:#17181A">8 · Yeni tema türetme</h2>
+<p style="margin:7px 0 0;font-family:'DM Sans',system-ui;font-size:13.5px;line-height:1.65;color:#43454A">Sekiz adım. Sıra önemli: aksanı zeminden önce seçmek, sonradan düzeltilemeyen kontrast sorunları doğurur.</p>
+<ol style="margin:9px 0 0;padding-left:19px;font-family:'DM Sans',system-ui;font-size:13px;line-height:1.75;color:#43454A">
+<li><strong>Modu seç.</strong> Açık mı koyu mu. İkisini birden istiyorsan iki ayrı token seti üret, tek seti alfa ile çevirmeye çalışma.</li>
+<li><strong>surface'ı seç.</strong> Nötr griden kaçın; zemine 2–4 birim sıcaklık ya da soğukluk kat (örn. #F4F1EA yerine #F2F2F2 değil). Koyu modda #000 kullanma, #0A–#14 aralığı daha derin görünür.</li>
+<li><strong>raised ve sunken'ı türet.</strong> Açık modda surface'tan 2–4% daha aydınlık, koyu modda 3–6% daha aydınlık. Sunken, raised'ın bir tık altıdır ve yalnızca iç içe yüzey gerektiğinde kullanılır.</li>
+<li><strong>Metin kademesini kur.</strong> Koyu modda tek bir açık ton seçip %100 / %60 / %38 alfa ile üç kademe üret. Açık modda üç düz renk: koyu, orta, açık gri — ama hepsi zeminin sıcaklığını taşır.</li>
+<li><strong>Aksanı seç.</strong> Zeminin karşıt sıcaklığından ya da aynı sıcaklığın doygun halinden. Koyu zeminde açık ve doygunluğu %70–85 arası tonlar (neon titrer); açık zeminde koyu ve doygun tonlar. Kontrastı ölç: metin için 4.5:1.</li>
+<li><strong>onAccent'i belirle.</strong> Aksanın parlaklığına bak: L* &gt; 60 ise koyu metin, altında ise açık metin.</li>
+<li><strong>accentSoft ve border.</strong> accentSoft = aksanın %10–16 alfası. border/divider = koyu modda beyaz %9–13, açık modda zeminin 8–12% koyusu.</li>
+<li><strong>Cam dolgusunu zemine göre ısıt.</strong> Sıcak zeminde <code style="font-family:'JetBrains Mono',monospace;font-size:11.5px">rgba(255,235,215,.07)</code>, soğuk zeminde <code style="font-family:'JetBrains Mono',monospace;font-size:11.5px">rgba(150,190,255,.09)</code> gibi. Dolgunun rengi camın karakterini belirler.</li>
+</ol>
+
+<div style="margin:16px 0 0;padding:13px 15px;background:#FDF3F2;border:1px solid #EBD6D3;border-radius:9px;font-family:'DM Sans',system-ui;font-size:12.5px;line-height:1.65;color:#6A4744;break-inside:avoid">
+<strong>Kaçınılacak dört şey.</strong> Gradyan zeminler (cam onların üstünde çamurlanır) · ikinci bir vurgu rengi · saf siyah/beyaz uçlar · yarıçap kademelerini bileşen bazında bozmak. Bir tema karakterini renkten değil, üç yarıçap kademesinin ve tek aksanın tutarlı tekrarından alır.
+</div>
+
+<div style="margin:22px 0 0;padding:14px 16px;background:#F7F7F5;border:1px solid #E6E5E1;border-radius:9px;font-family:'DM Sans',system-ui;font-size:12.5px;line-height:1.65;color:#43454A;break-inside:avoid">
+<strong>Başka bir uygulamada kurarken:</strong> önce on üç tokenı doldurun, cam reçetesini tek bir yardımcıya bağlayın ve yalnızca yüzen katmanlarda çağırın. Bileşen tariflerindeki sayıları değiştirmeden içeriği değiştirin — bir spor uygulamasında "birincil buton" antrenman başlatır, bir okuma uygulamasında bölüm açar; geometri aynı kalır.
+</div>
+
+</doc-page>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  lum(hex) {
+    const h = hex.replace('#', '');
+    const v = [0, 2, 4].map(i => {
+      const c = parseInt(h.slice(i, i + 2), 16) / 255;
+      return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+    });
+    return 0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2];
+  }
+  cr(a, b) {
+    if (!a || !b || a[0] !== '#' || b[0] !== '#') return null;
+    const l1 = this.lum(a), l2 = this.lum(b);
+    return (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05);
+  }
+  aaLabel(t) {
+    const body = this.cr(t.text1, t.surface);
+    const btn = this.cr(t.onAccent, t.accent);
+    const f = x => x == null ? '—' : x.toFixed(1);
+    const ok = (body == null || body >= 4.5) && (btn == null || btn >= 4.5);
+    return f(body) + ' / ' + f(btn) + (ok ? '' : ' ⚠');
+  }
+  rows(list) {
+    return list.map(t => Object.assign({}, t, { aa: this.aaLabel(t) }));
+  }
+  renderVals() {
+    const tokens = [
+      { name: 'surface', role: 'Ekran zemini', where: 'Tüm ekranların tabanı' },
+      { name: 'surfaceRaised', role: 'Yükseltilmiş düz yüzey', where: 'Kart, liste grubu, panel' },
+      { name: 'surfaceSunken', role: 'İç içe / gömülü yüzey', where: 'Kart içindeki alıntı, kod, ikincil panel' },
+      { name: 'border', role: 'Yüzey kenarı', where: 'Kart ve panel çevresi, 1px' },
+      { name: 'divider', role: 'Satır ayıracı', where: 'Liste satırları arası, 1px' },
+      { name: 'accent', role: 'Tek vurgu rengi', where: 'Birincil buton, seçili durum, ilerleme, bağlantı' },
+      { name: 'accentSoft', role: 'Aksanın %10–16 alfası', where: 'Rozet, etiket, seçili satır zemini' },
+      { name: 'onAccent', role: 'Aksan üstündeki metin', where: 'Buton metni ve ikonu' },
+      { name: 'textPrimary', role: 'Birincil metin', where: 'Başlık, gövde, liste satırı' },
+      { name: 'textSecondary', role: 'İkincil metin (%60)', where: 'Açıklama satırı, alt başlık' },
+      { name: 'textTertiary', role: 'Üçüncül metin (%38)', where: 'Künye, sayaç, zaman damgası' },
+      { name: 'heroSurface', role: 'Tam kanama bant zemini', where: 'Üst hero bloğu, widget duvar kağıdı' },
+      { name: 'danger', role: 'Yıkıcı eylem', where: 'Silme metni, hata durumu' }
+    ];
+    const glassLayers = [
+      { layer: 'Arama çubuğu', blur: '20px', note: 'Liste üstünde yapışkan durur' },
+      { layer: 'Yapışkan grup başlığı', blur: '18px', note: 'Kaydırılan içeriğin üstünde' },
+      { layer: 'Öne çıkan kart', blur: '22px', note: 'Hero bandının kenarına biner' },
+      { layer: 'Mini oynatıcı / durum çubuğu', blur: '22px', note: 'Ekranın altında yüzer' },
+      { layer: 'Aksiyon çubuğu', blur: '24px', note: 'Dört eşit sütun, en az 44px' },
+      { layer: 'Kilit ekranı widget’ı', blur: '22px', note: 'Beyaz alfa, duvar kağıdı üstünde' }
+    ];
+    const typeScale = [
+      { role: 'Büyük başlık', spec: '34 / 700 · ls −.02em', note: 'Ekranın kök başlığı, tek satır' },
+      { role: 'Ekran başlığı', spec: '27 / 700 · ls −.02em', note: 'Alt ekranlar' },
+      { role: 'Bölüm başlığı', spec: '19–22 / 600–700', note: 'Kart ve grup başlıkları' },
+      { role: 'Tanıtım başlığı', spec: '30 / 700 · lh 1.2', note: 'İki satırı geçmez' },
+      { role: 'Öne çıkan metin', spec: '26–30 / 400 · lh 1.42', note: 'Alıntı, okuma metni; kendi panelinde' },
+      { role: 'Gövde / liste', spec: '16–17 / 400', note: 'iOS taban ölçüsü' },
+      { role: 'İkincil satır', spec: '12.5–13 / 400', note: 'textSecondary ile' },
+      { role: 'Grup etiketi', spec: '10.5–11 / 600–700 · ls .12–.14em · versal', note: 'En küçük ölçü 11px' },
+      { role: 'Künye / sayaç', spec: '11–12 / 400', note: 'textTertiary ile' }
+    ];
+    const components = [
+      { name: 'Hero bandı', recipe: '200–240px yüksek, lg yarıçap, heroSurface zemin. İçinde iki radyal gradyan — sol üstte %14–16 beyaz ışık, sağ altta %45–50 siyah gölge — ve köşede %7–20 opaklıkta geometrik motif. Fotoğraf gerekmez; doku kodla üretilir. Metin bloğu sol altta, 20px içeriden.' },
+      { name: 'Birincil buton', recipe: 'Ekranın en ağır elemanı. 22–30px dikey padding, lg yarıçap, dolu accent zemin, onAccent metin. İki satırlı: 24–26/700 başlık + 12.5–13 açıklama, sağda ok. Alt bölgeye yerleşir, üstünde esnek boşluk. Ekran başına en fazla bir tane.' },
+      { name: 'Liste grubu', recipe: 'surfaceRaised zemin, 1px border, lg yarıçap, overflow gizli. Satırlar arası 1px divider; son satırda ayıraç yok. Satır: solda başlık + isteğe bağlı ikincil satır, sağda değer + 13px chevron.' },
+      { name: 'Yapışkan grup başlığı', recipe: 'Cam katman, md yarıçap. Solda 11px renk noktası (accent, aileler arası %100 / %55 / %30 opaklık), ortada 16.5–17/700 başlık, sağda sayaç. Altında 21px girintili açıklama satırı.' },
+      { name: 'Arama çubuğu', recipe: 'Cam katman, md yarıçap, 11–13px padding. 16px büyüteç ikonu + 15–17px yer tutucu metin (textTertiary). Her zaman içeriğin üstünde yüzer.' },
+      { name: 'Mini oynatıcı / durum çubuğu', recipe: 'Cam çubuk, lg yarıçap. Solda 38–40px accent kare (sm yarıçap) içinde ikon, ortada iki satır (künye + 3px ilerleme), sağda süre. İlerleme dolgusu accent, yatağı border.' },
+      { name: 'Aksiyon çubuğu', recipe: 'Ekranın altında yüzen cam, lg yarıçap. Üç ila beş eşit sütun: 19px ikon + 10.5px etiket, her sütun en az 44px. Yalnızca birincil eylem accent renkli, diğerleri textPrimary.' },
+      { name: 'Anahtar ve seçim', recipe: 'iOS ölçüsü: 51×31px yatak, 27px sap. Açıkken yatak accent, kapalıyken rgba(120,120,128,.36). Segment kontrolü: eşit iki-üç sütun, seçili olan accent dolgu + onAccent metin, diğerleri 1px border.' },
+      { name: 'Geometrik motif', recipe: 'İki kare (biri 45° dönük) + merkez daire, konturlu. Üç ölçek: 22px marka işareti, 42–72px boş durum görseli, 190–250px %7–20 opaklıkta filigran. Kontur kalınlığı ölçekle ters (küçükte 1, büyükte 0.5).' }
+    ];
+    const light = [
+      { name: 'Zeytin', surface: '#F4F1EA', raised: '#FFFDF7', border: '#DCD6C4', accent: '#4E5B3A', onAccent: '#F4F1EA', text1: '#1B1E19', text2: '#6A6656', hero: '#EFEBE2', radius: '13/17' },
+      { name: 'Sıcak kağıt', surface: '#F3E9D8', raised: '#FBF4E6', border: '#DFCFB4', accent: '#8A5A2B', onAccent: '#FBF4E6', text1: '#33251A', text2: '#7C6650', hero: '#EEE2CE', radius: '5/8' },
+      { name: 'Gece mürekkebi', isDark: true, surface: '#101114', raised: '#191B20', border: '#262A31', accent: '#8FA6C4', onAccent: '#101114', text1: '#EDEBE6', text2: '#98A0AE', hero: '#191B20', radius: '14/18' },
+      { name: 'Sis', surface: '#F2F2F1', raised: '#FAFAF9', border: '#E2E2E0', accent: '#17181A', onAccent: '#FAFAF9', text1: '#17181A', text2: '#7C7E82', hero: '#EDEDEB', radius: '2/4' },
+      { name: 'Ebru', surface: '#EDE7E1', raised: '#F8F5F1', border: '#DCD2CE', accent: '#4A4468', onAccent: '#F8F5F1', text1: '#221E22', text2: '#6E6470', hero: '#DDD4D8', radius: '16/20' },
+      { name: 'Fotoğraf zemin', surface: '#E8E6E1', raised: '#FFFFFF', border: '#DDDCD7', accent: '#16181A', onAccent: '#FFFFFF', text1: '#16181A', text2: '#6B6E72', hero: '#2B2E30', radius: '10/14' },
+      { name: 'Geometrik', surface: '#EFEBE2', raised: '#F7F4EC', border: '#D8D2C4', accent: '#B4553C', onAccent: '#F7F4EC', text1: '#14161A', text2: '#6A6559', hero: '#E4DFD3', radius: '0/0' },
+      { name: 'Çini', surface: '#F4F6F8', raised: '#FFFFFF', border: '#D3DEE8', accent: '#1F5C8B', onAccent: '#FFFFFF', text1: '#10233A', text2: '#5B7591', hero: '#DCE7F0', radius: '12/16' },
+      { name: 'Toprak', surface: '#F0E6DC', raised: '#FAF3EB', border: '#DFCCBA', accent: '#A85434', onAccent: '#FAF3EB', text1: '#2E211A', text2: '#7E6552', hero: '#EADDCF', radius: '18/22' },
+      { name: 'Brutalist', surface: '#EDEDE8', raised: '#E4E4DE', border: '#0A0A0A', accent: '#0A0A0A', onAccent: '#EDEDE8', text1: '#0A0A0A', text2: '#575753', hero: '#0A0A0A', radius: '0/0' },
+      { name: 'Gece + bakır', isDark: true, surface: '#131211', raised: '#1B1917', border: '#292521', accent: '#C1743C', onAccent: '#131211', text1: '#F0EAE2', text2: '#9A9187', hero: '#1B1917', radius: '10/14' },
+      { name: 'Kâğıt indeks', surface: '#EAE8E1', raised: '#F6F5F0', border: '#D6D3C9', accent: '#2B4A5A', onAccent: '#F6F5F0', text1: '#1A1A17', text2: '#6D6B62', hero: '#E4E1D8', radius: '4/6' }
+    ];
+    const editorial = [
+      { name: 'Mavi seramik', surface: '#F4F6F8', raised: '#FFFFFF', border: '#DBE2E8', accent: '#1F5C8B', onAccent: '#FFFFFF', text1: '#10233A', text2: '#5B7591', hero: '#DCE7F0', radius: '14' },
+      { name: 'Mor mürekkep', isDark: true, surface: '#221E22', raised: '#2B262C', border: '#3A343C', accent: '#B49FDB', onAccent: '#1B1720', text1: '#F3EFF6', text2: '#A79FB4', hero: '#2B262C', radius: '16' },
+      { name: 'Zeytin (editoryal)', surface: '#F4F1EA', raised: '#FFFDF7', border: '#DCD6C4', accent: '#4E5B3A', onAccent: '#F4F1EA', text1: '#1B1E19', text2: '#6A6656', hero: '#EFEBE2', radius: '14–20' },
+      { name: 'Sıcak kağıt (madalyon)', surface: '#F3E9D8', raised: '#FBF4E6', border: '#DFCFB2', accent: '#8A5A2B', onAccent: '#FBF4E6', text1: '#33251A', text2: '#7A6244', hero: '#EEE2CE', radius: '6' },
+      { name: 'Kömür + bakır (bant)', isDark: true, surface: '#131211', raised: '#1B1917', border: '#292521', accent: '#C1743C', onAccent: '#131211', text1: '#F0EAE2', text2: '#9A9187', hero: '#2B211A', radius: '14' },
+      { name: 'Toprak (şerit)', surface: '#F0E6DC', raised: '#FAF3EB', border: '#DFCCBA', accent: '#A85434', onAccent: '#FAF3EB', text1: '#2E211A', text2: '#7E6552', hero: '#EADDCF', radius: '20' },
+      { name: 'Orman gecesi', isDark: true, surface: '#141613', raised: '#1D201B', border: '#2A2E27', accent: '#A8B79A', onAccent: '#141613', text1: '#F1EFE8', text2: '#9AA394', hero: '#1D201B', radius: '18' },
+      { name: 'Kitap kapağı', surface: '#EFEEE9', raised: '#FFFFFF', border: '#C9D6E1', accent: '#1F5C8B', onAccent: '#FFFFFF', text1: '#10233A', text2: '#5B7591', hero: '#DCE4EB', radius: '0' }
+    ];
+    const platform = [
+      { name: 'iOS · sistem', surface: '#F2F2F7', raised: '#FFFFFF', border: 'rgba(60,60,67,.16)', accent: '#007AFF', onAccent: '#FFFFFF', text1: '#000000', text2: 'rgba(60,60,67,.62)', hero: '#1C1C1E', radius: '10–22' },
+      { name: 'Android · Material 3', surface: '#FEF7FF', raised: '#F3EDF7', border: '#CAC4D0', accent: '#6750A4', onAccent: '#FFFFFF', text1: '#1D1B20', text2: '#49454F', hero: '#EADDFF', radius: '12–28' },
+      { name: 'Cam · gece (iOS koyu)', isDark: true, surface: '#0F1115', raised: '#191C22', border: 'rgba(255,255,255,.12)', accent: '#0A84FF', onAccent: '#FFFFFF', text1: '#F2F3F5', text2: 'rgba(235,235,245,.62)', hero: '#191C22', radius: '14–22' },
+      { name: 'Cam · kum', surface: '#F6F1E9', raised: '#FFFDF9', border: 'rgba(90,72,50,.14)', accent: '#B07C3C', onAccent: '#FFFDF9', text1: '#2A2118', text2: 'rgba(60,48,34,.66)', hero: '#2A2118', radius: '14–22' },
+      { name: 'Cam · yeşim', surface: '#EEF4F1', raised: '#FFFFFF', border: 'rgba(30,70,58,.13)', accent: '#1F7A5C', onAccent: '#FFFFFF', text1: '#12241E', text2: 'rgba(20,50,42,.64)', hero: '#12241E', radius: '14–22' }
+    ];
+    const darkGlass = [
+      { name: 'Gece yeşimi', isDark: true, surface: '#0B1613', raised: '#122019', border: 'rgba(255,255,255,.12)', accent: '#4FD1A5', onAccent: '#10100F', text1: '#E8F2EC', text2: 'alfa %62', hero: '#12332A', radius: '22/14/10' },
+      { name: 'Mürekkep moru', isDark: true, surface: '#0F0C18', raised: '#181428', border: 'rgba(255,255,255,.13)', accent: '#A78BFA', onAccent: '#10100F', text1: '#EDE9FB', text2: 'alfa %62', hero: '#241B3D', radius: '22/14/10' },
+      { name: 'Kömür + bakır', isDark: true, surface: '#121110', raised: '#1C1A18', border: 'rgba(255,255,255,.12)', accent: '#E0894A', onAccent: '#10100F', text1: '#F2EDE7', text2: 'alfa %60', hero: '#2B211A', radius: '22/14/10' },
+      { name: 'Derin lacivert', isDark: true, surface: '#0A1020', raised: '#121A2E', border: 'rgba(255,255,255,.13)', accent: '#5AA9FF', onAccent: '#10100F', text1: '#E6EDF8', text2: 'alfa %62', hero: '#16233C', radius: '22/14/10' },
+      { name: 'Siyah + kum', isDark: true, surface: '#0C0C0C', raised: '#161514', border: 'rgba(255,255,255,.11)', accent: '#D9C08A', onAccent: '#10100F', text1: '#F0EDE6', text2: 'alfa %58', hero: '#1F1B14', radius: '22/14/10' }
+    ];
+    const families = [
+      { title: 'A · Karakterli temalar (12)', note: 'Her biri farklı bir malzeme fikri: kağıt, seramik, mürekkep, tipografi. Yarıçap kolonu iç/dış kademeyi verir. Sekiz açık, ikisi koyu, ikisi yüksek kontrastlı nötr.', rows: this.rows(light) },
+      { title: 'B · Editoryal varyantlar (8)', note: 'A ailesinin fotoğraf ve süs ağırlıklı türevleri; tek yarıçap kademesi kullanırlar. Aynı aksanı farklı yüzey sıcaklıklarıyla eşler.', rows: this.rows(editorial) },
+      { title: 'C · Platform temaları (5)', note: 'Sistem paletlerine bağlı olanlar. iOS ve Material 3 kendi renk kurallarını izler; cam üçlüsü aynı geometriyi farklı sıcaklıklarda tekrar eder.', rows: this.rows(platform) },
+      { title: 'D · Koyu cam ailesi (5)', note: 'Hepsi koyu, hepsi aynı 13 tokenı doldurur. Değişen tek şey zemin sıcaklığı ve aksan. Metin kademeleri alfa ile türetilir; yarıçap kolonu lg/md/sm verir.', rows: this.rows(darkGlass) }
+    ];
+    const platformExtras = [
+      { k: 'iOS · başarı', v: '#34C759', n: 'Onay durumu, tamamlanan görev' },
+      { k: 'iOS · uyarı/yıkıcı', v: '#FF3B30', n: 'Silme, geri alınamaz eylem' },
+      { k: 'iOS · gruplu zemin', v: '#F2F2F7', n: 'Ayarlar tipi liste ekranlarının tabanı' },
+      { k: 'iOS · koyu kart', v: '#1C1C1E', n: 'Koyu modda surfaceRaised' },
+      { k: 'iOS · üçüncül metin', v: 'rgba(60,60,67,.45)', n: 'Alfa tabanlı, zemine uyum sağlar' },
+      { k: 'M3 · primary container', v: '#EADDFF', n: 'Tonal buton ve seçili çip zemini' },
+      { k: 'M3 · surface container', v: '#F3EDF7', n: 'Kart ve liste yüzeyi' },
+      { k: 'M3 · outline', v: '#79747E', n: 'Kontur buton ve alan kenarı' },
+      { k: 'M3 · outline variant', v: '#CAC4D0', n: 'Ayıraç ve pasif kenar' },
+      { k: 'Koyu cam · uyarı', v: '#FF453A / #FF6B5E', n: 'Koyu zeminde açılmış kırmızı' }
+    ];
+    const widgetTones = [
+      { name: 'Zeytin', bg: '#14160F', ink: '#EDEBE2', acc: '#9BAE79' },
+      { name: 'Sıcak kağıt', bg: '#1A130D', ink: '#F2E7D6', acc: '#C98A4B' },
+      { name: 'Gece mürekkebi', bg: '#F5F6F8', ink: '#14161A', acc: '#3C5A80' },
+      { name: 'Sis', bg: '#121314', ink: '#F2F2F1', acc: '#EDEDEB' },
+      { name: 'Ebru', bg: '#17141B', ink: '#EDE8EE', acc: '#9E8FC4' },
+      { name: 'Fotoğraf zemin', bg: '#111314', ink: '#F0EFEC', acc: '#F0EFEC' },
+      { name: 'Geometrik', bg: '#121316', ink: '#EFEBE2', acc: '#D2704F' },
+      { name: 'Çini', bg: '#0B1A2B', ink: '#E9F1F8', acc: '#6FA8D6' },
+      { name: 'Toprak', bg: '#1B120D', ink: '#F3E8DD', acc: '#D07A50' },
+      { name: 'Brutalist', bg: '#0A0A0A', ink: '#EDEDE8', acc: '#EDEDE8' },
+      { name: 'Gece + bakır', bg: '#FAF6F1', ink: '#1A1714', acc: '#A85A25' },
+      { name: 'Kâğıt indeks', bg: '#111417', ink: '#EDEBE4', acc: '#76A2B8' }
+    ];
+    return { tokens, glassLayers, typeScale, components, families, platformExtras, widgetTones };
+  }
+}
+</script>
+</body>
+</html>
